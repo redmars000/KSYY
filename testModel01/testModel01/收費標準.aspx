@@ -16,105 +16,96 @@
             <tr>
                 <td style="width: 100%">
                     <div id="text">
-                        <h2><font color="#ff6600" size="5"><strong>收費標準表</strong></font></h2>
-                        <font size="4"></font><font size="4"> 
-</font><font size="4"> </font><font size="4"> </font><font size="4"> 
-</font><font size="4"> </font><font size="4"> </font><font size="4"> 
-</font><font size="4"> </font><font size="4"> </font><font size="4"> 
-</font><font size="4"> </font><font size="4"> </font><font size="4"> 
-</font><font size="4"> </font><font size="4"> </font><font size="4"> 
-</font><font size="4"> </font><font size="4"> </font><font size="4"> 
-</font><font size="4"> </font><font size="4"> </font><font size="4"> 
-</font><font size="4"> </font><font size="4"> </font><font size="4"> 
-</font><font size="4"> </font>
+                        <h2 style="color: #ff6600;"><strong>收費標準表</strong></h2>
+                        
                         <table style="background-color: #ff9933; border: 0; width: 99%;">
                             <tbody>
-                                <tr bgcolor="#ff9900">
-                                    <td width="17%">
-                                        <div align="center"><font color="#ffffff" size="4">住&nbsp; 房 </font></div>
+                                <tr style="background-color: #ff9900;">
+                                    <td style="width: 17%;">
+                                        <div style="text-align:center"><font color="#ffffff" size="4">住&nbsp; 房 </font></div>
                                     </td>
-                                    <td width="36%"><font size="4"></font>
-                                        <p align="center"><font color="#ffffff" size="4">基本月費<br>（含住房費、水電費、洗衣費、一般伙食費）</font></p>
+                                    <td style="width:36%"><font size="4"></font>
+                                        <p style="text-align:center"><font color="#ffffff" size="4">基本月費<br>（含住房費、水電費、洗衣費、一般伙食費）</font></p>
                                     </td>
-                                    <td width="22%"><font size="4"></font>
-                                        <p align="center"><font color="#ffffff" size="4">特殊照護費</font></p>
+                                    <td style="width:22%"><font size="4"></font>
+                                        <p style="text-align:center"><font color="#ffffff" size="4">特殊照護費</font></p>
                                     </td>
-                                    <td width="20%"><font size="4"></font>
-                                        <p align="center"><font color="#ffffff" size="4">費用</font></p>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td width="17%" bgcolor="#ffffff">
-                                        <p align="center"><font size="4">五人房 </font></p>
-                                    </td>
-                                    <td width="36%" bgcolor="#ffffff"><font size="4"></font>
-                                        <p align="center"><font size="4">25000元</font></p>
-                                    </td>
-                                    <td width="22%" bgcolor="#ffffff"><font size="4"></font>
-                                        <p align="center"><font size="4">鼻胃管護理</font></p>
-                                    </td>
-                                    <td width="20%" bgcolor="#ffffff"><font size="4"></font>
-                                        <p align="center"><font size="4">1000元</font></p>
+                                    <td style="width:20%"><font size="4"></font>
+                                        <p style="text-align:center"><font color="#ffffff" size="4">費用</font></p>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td width="17%" bgcolor="#ffffcc"><font size="4"></font>
-                                        <p align="center"><font size="4">四人房</font></p>
+                                    <td style="background-color: #ffffff; width:17%" >
+                                        <p style="text-align:center"><font size="4">五人房 </font></p>
                                     </td>
-                                    <td width="36%" bgcolor="#ffffcc"><font size="4"></font>
-                                        <p align="center"><font size="4">26500元</font></p>
+                                    <td style="background-color: #ffffff; width:36%"><font size="4"></font>
+                                        <p style="text-align:center"><font size="4">25000元</font></p>
                                     </td>
-                                    <td width="22%" bgcolor="#ffffcc"><font size="4"></font>
-                                        <p align="center"><font size="4">導尿管護理</font></p>
+                                    <td style="background-color: #ffffff; width:22%"><font size="4"></font>
+                                        <p style="text-align:center"><font size="4">鼻胃管護理</font></p>
                                     </td>
-                                    <td width="20%" bgcolor="#ffffcc"><font size="4"></font>
-                                        <p align="center"><font size="4">1000元</font></p>
+                                    <td style="background-color: #ffffff; width:20%"><font size="4"></font>
+                                        <p style="text-align:center"><font size="4">1000元</font></p>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td width="17%" bgcolor="#ffffff"><font size="4"></font>
-                                        <p align="center"><font size="4">二人房</font></p>
+                                    <td style="background-color: #ffffcc; width:17%"><font size="4"></font>
+                                        <p style="text-align:center"><font size="4">四人房</font></p>
                                     </td>
-                                    <td width="36%" bgcolor="#ffffff"><font size="4"></font>
-                                        <p align="center"><font size="4">32000元</font></p>
+                                    <td style="background-color: #ffffcc; width:36%"><font size="4"></font>
+                                        <p style="text-align:center"><font size="4">26500元</font></p>
                                     </td>
-                                    <td width="22%" bgcolor="#ffffff"><font size="4"></font>
+                                    <td style="background-color: #ffffcc; width:22%"><font size="4"></font>
+                                        <p style="text-align:center"><font size="4">導尿管護理</font></p>
+                                    </td>
+                                    <td style="background-color: #ffffcc; width:20%"><font size="4"></font>
+                                        <p style="text-align:center"><font size="4">1000元</font></p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="background-color: #ffffff; width:17%"><font size="4"></font>
+                                        <p style="text-align:center"><font size="4">二人房</font></p>
+                                    </td>
+                                    <td style="background-color: #ffffff; width:36%"><font size="4"></font>
+                                        <p style="text-align:center"><font size="4">32000元</font></p>
+                                    </td>
+                                    <td style="background-color: #ffffff; width:22%"><font size="4"></font>
                                         <font size="4"><p align="center"><font size="4">機構內復健</font></p></font></td>
-                                    <td width="20%" bgcolor="#ffffff"><font size="4"><p align="center"><font size="4">1500元</font></p></font></td>
+                                    <td style="background-color: #ffffff; width:20%"><font size="4"><p align="center"><font size="4">1500元</font></p></font></td>
                                 </tr>
                                 <tr>
-                                    <td width="17%" bgcolor="#ffffcc"><font size="4"></font>
-                                        <p align="center"><font size="4">保證金</font></p>
+                                    <td style="background-color: #ffffcc; width:17%"><font size="4"></font>
+                                        <p style="text-align:center"><font size="4">保證金</font></p>
                                     </td>
-                                    <td width="36%" bgcolor="#ffffcc"><font size="4"></font>
-                                        <p align="center"><font size="4">30000元</font></p>
+                                    <td style="background-color: #ffffcc; width:36%"><font size="4"></font>
+                                        <p style="text-align:center"><font size="4">30000元</font></p>
                                     </td>
-                                    <td width="22%" bgcolor="#ffffcc"><font size="4"></font>
-                                        <p align="center"><font size="4">救護車</font>&nbsp;</p>
+                                    <td style="background-color: #ffffcc; width:22%"><font size="4"></font>
+                                        <p style="text-align:center"><font size="4">救護車</font>&nbsp;</p>
                                     </td>
-                                    <td width="20%" bgcolor="#ffffcc"><font size="4"></font>
-                                        <p align="center"><font size="4">1200~1600元/單趟<br>（含隨車人員）</font>&nbsp;</p>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td width="17%" bgcolor="#ffffff">
-                                        <p align="center"></p>
-                                        <p align="center"><font size="4"></font>&nbsp;</p>
-                                        <p align="center"><font size="4">&nbsp;</font></p>
-                                    </td>
-                                    <td width="36%" bgcolor="#ffffff">
-                                        <p align="center"><font size="4"></font>&nbsp;</p>
-                                        <p align="center"></p>
-                                    </td>
-                                    <td width="22%" bgcolor="#ffffff">
-                                        <p align="center"><font size="4"></font>&nbsp;</p>
-                                    </td>
-                                    <td width="20%" bgcolor="#ffffff"><font size="4"></font>
-                                        <p align="center"><font size="4"></font>&nbsp;</p>
+                                    <td style="background-color: #ffffcc; width:20%"><font size="4"></font>
+                                        <p style="text-align:center"><font size="4">1200~1600元/單趟<br>（含隨車人員）</font>&nbsp;</p>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td bgcolor="#ffffff" colspan="4"><font size="4"></font>
+                                    <td style="background-color: #ffffff; width:17%">
+                                        <p style="text-align:center"></p>
+                                        <p style="text-align:center"><font size="4"></font>&nbsp;</p>
+                                        <p style="text-align:center"><font size="4">&nbsp;</font></p>
+                                    </td>
+                                    <td style="background-color: #ffffff; width:36%">
+                                        <p style="text-align:center"><font size="4"></font>&nbsp;</p>
+                                        <p style="text-align:center"></p>
+                                    </td>
+                                    <td style="background-color: #ffffff; width:22%">
+                                        <p style="text-align:center"><font size="4"></font>&nbsp;</p>
+                                    </td>
+                                    <td style="background-color: #ffffff; width:20%"><font size="4"></font>
+                                        <p style="text-align:center"><font size="4"></font>&nbsp;</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="background-color: #ffffff; " colspan="4"><font size="4"></font>
                                         <ol>
                                             <font size="4"> </font>
                                             <li><font size="4">單人隔離房平日不使用，若需使用時即按元住房收費標準收費 </font>

@@ -11,12 +11,12 @@
     </div>
     <div class="container">
         <h4>關於我們</h4>
-        <table border="0" style="text-align: left; color: rgb(51, 51, 51); font-family: 新細明體, Verdana, Arial, Helvetica, sans-serif; font-size: 13px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: 1px; line-height: normal; orphans: auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);" width="98%">
+        <table border="0" style="text-align: left; width:98%;color: rgb(51, 51, 51); font-family: 新細明體, Verdana, Arial, Helvetica, sans-serif; font-size: 13px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: 1px; line-height: normal; orphans: auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);" >
             <tr style="padding: 0px; margin: 0px;">
                 <td colspan="2" style="padding: 0px; margin: 0px; width: 100%"></td>
             </tr>
             <tr style="padding: 0px; margin: 0px;">
-                <td colspan="2" style="padding: 0px; margin: 0px;" width="100%">
+                <td colspan="2" style="padding: 0px; margin: 0px; width:100%">
                     <div id="text" style="font-size: 10.5pt; font-family: 微軟正黑體, 新細明體, Verdana, Arial, Helvetica, sans-serif; line-height: 1.5; color: rgb(49, 49, 49); word-spacing: 1px; margin: 0px; padding: 0px; text-align: left;">
                         <p>
                             <font size="3"><font color="#0000ff">康欣養護中心</font>於90年6月30日立案49床，位於溪北街開業逾十年，因典寶溪上游河道過於狹窄，加上又位處低漥地區，大雨一來就宣洩不及，年年飽受淹水及緊急撤離院民之苦。故邱院長斥資上億元，打造4層樓高之長期照護家園，將原有<font color="#0000ff">康欣養護中心</font>遷移至本棟建築之一樓，二樓至四樓將籌設護理之家。</font>

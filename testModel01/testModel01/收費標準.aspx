@@ -30,9 +30,11 @@
         .attention-item3 {
             color: #CC66FF;
         }
+
         .attention-item4 {
             color: #990000;
         }
+
         .attention-item5 {
             color: #FF0000;
         }
@@ -76,12 +78,15 @@
         .money-table2 {
             height: 19px;
         }
+
         .money-table3 {
             height: 23px;
         }
+
         .money-table4 {
             font-size: medium;
         }
+
         .money-table5 {
             height: 19px;
             font-size: medium;
@@ -91,176 +96,176 @@
         <h4>日常照護收費評估表</h4>
         <div>
             <p>康欣老人長期照顧中心 住民日常照護收費評估表</p>
-            <table class="money-table1 table-striped table-bordered">
+            <table class="money-table1 table-striped table-bordered table-hover">
                 <tr>
-                    <td><span style="color: rgb(49, 49, 49); font-family: 微軟正黑體, 新細明體, Verdana, Arial, Helvetica, sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: 1px; line-height: 18.2000007629395px; orphans: auto; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 1px; -webkit-text-stroke-width: 0px; display: inline !important; float: none; background-color: rgb(255, 255, 255);">病史:</span></td>
-                    <td><span style="color: rgb(49, 49, 49); font-family: 微軟正黑體, 新細明體, Verdana, Arial, Helvetica, sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: 1px; line-height: 18.2000007629395px; orphans: auto; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 1px; -webkit-text-stroke-width: 0px; display: inline !important; float: none; background-color: rgb(255, 255, 255);">姓名:</span></td>
-                    <td><span style="color: rgb(49, 49, 49); font-family: 微軟正黑體, 新細明體, Verdana, Arial, Helvetica, sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: 1px; line-height: 18.2000007629395px; orphans: auto; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 1px; -webkit-text-stroke-width: 0px; display: inline !important; float: none; background-color: rgb(255, 255, 255);">性別:</span></td>
+                    <td>病史:</td>
+                    <td>姓名:</td>
+                    <td>性別:</td>
                 </tr>
                 <tr>
-                    <td><span style="color: rgb(49, 49, 49); font-family: 微軟正黑體, 新細明體, Verdana, Arial, Helvetica, sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: 1px; line-height: 18.2000007629395px; orphans: auto; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 1px; -webkit-text-stroke-width: 0px; display: inline !important; float: none; background-color: rgb(255, 255, 255);">床號:</span></td>
-                    <td><span style="color: rgb(49, 49, 49); font-family: 微軟正黑體, 新細明體, Verdana, Arial, Helvetica, sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: 1px; line-height: 18.2000007629395px; orphans: auto; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 1px; -webkit-text-stroke-width: 0px; display: inline !important; float: none; background-color: rgb(255, 255, 255);">出生日期:</span></td>
-                    <td><span style="color: rgb(49, 49, 49); font-family: 微軟正黑體, 新細明體, Verdana, Arial, Helvetica, sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: 1px; line-height: 18.2000007629395px; orphans: auto; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 1px; -webkit-text-stroke-width: 0px; display: inline !important; float: none; background-color: rgb(255, 255, 255);">評估者:</span><br style="color: rgb(49, 49, 49); font-family: 微軟正黑體, 新細明體, Verdana, Arial, Helvetica, sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: 1px; line-height: 18.2000007629395px; orphans: auto; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 1px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);" />
-                        <span style="color: rgb(49, 49, 49); font-family: 微軟正黑體, 新細明體, Verdana, Arial, Helvetica, sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: 1px; line-height: 18.2000007629395px; orphans: auto; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 1px; -webkit-text-stroke-width: 0px; display: inline !important; float: none; background-color: rgb(255, 255, 255);">日期:</span></td>
+                    <td><床號:</td>
+                    <td>出生日期:</td>
+                    <td>評估者:<br/>
+                        日期:</td>
                 </tr>
             </table>
 
-            <table class="money-table1 table-striped table-bordered">
+            <table class="money-table1 table-striped table-bordered table-hover">
                 <tr>
-                    <td class="money-table3"><span style="color: rgb(49, 49, 49); font-family: 微軟正黑體, 新細明體, Verdana, Arial, Helvetica, sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: 1px; line-height: 18.2000007629395px; orphans: auto; text-align: -webkit-center; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 1px; -webkit-text-stroke-width: 0px; display: inline !important; float: none; background-color: rgb(255, 255, 255);">項目</span></td>
-                    <td class="money-table3"><span style="color: rgb(49, 49, 49); font-family: 微軟正黑體, 新細明體, Verdana, Arial, Helvetica, sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: 1px; line-height: 18.2000007629395px; orphans: auto; text-align: -webkit-center; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 1px; -webkit-text-stroke-width: 0px; display: inline !important; float: none; background-color: rgb(255, 255, 255);">自我照顧能力程度</span></td>
+                    <td class="money-table3">項目</td>
+                    <td class="money-table3">自我照顧能力程度</td>
                     <td class="money-table3"></td>
                     <td class="money-table3"></td>
                 </tr>
                 <tr>
-                    <td><span style="color: rgb(49, 49, 49); font-family: 微軟正黑體, 新細明體, Verdana, Arial, Helvetica, sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: 1px; line-height: 18.2000007629395px; orphans: auto; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 1px; -webkit-text-stroke-width: 0px; display: inline !important; float: none; background-color: rgb(255, 255, 255);">1)進食</span></td>
-                    <td><span style="color: rgb(49, 49, 49); font-family: 微軟正黑體, 新細明體, Verdana, Arial, Helvetica, sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: 1px; line-height: 18.2000007629395px; orphans: auto; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 1px; -webkit-text-stroke-width: 0px; display: inline !important; float: none; background-color: rgb(255, 255, 255);">可自行進食</span></td>
+                    <td>1)進食</td>
+                    <td>可自行進食</td>
                     <td class="money-table4">A</td>
                     <td>&nbsp;</td>
                 </tr>
                 <tr>
                     <td>&nbsp;</td>
-                    <td><span style="color: rgb(49, 49, 49); font-family: 微軟正黑體, 新細明體, Verdana, Arial, Helvetica, sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: 1px; line-height: 18.2000007629395px; orphans: auto; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 1px; -webkit-text-stroke-width: 0px; display: inline !important; float: none; background-color: rgb(255, 255, 255);">需協助進食</span></td>
+                    <td>需協助進食</td>
                     <td class="money-table4">B</td>
                     <td>&nbsp;</td>
                 </tr>
                 <tr>
                     <td>&nbsp;</td>
-                    <td><span style="color: rgb(49, 49, 49); font-family: 微軟正黑體, 新細明體, Verdana, Arial, Helvetica, sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: 1px; line-height: 18.2000007629395px; orphans: auto; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 1px; -webkit-text-stroke-width: 0px; display: inline !important; float: none; background-color: rgb(255, 255, 255);">完全需餵食或管灌</span></td>
+                    <td>完全需餵食或管灌</td>
                     <td class="money-table4">C</td>
                     <td>&nbsp;</td>
                 </tr>
                 <tr>
-                    <td><span style="color: rgb(49, 49, 49); font-family: 微軟正黑體, 新細明體, Verdana, Arial, Helvetica, sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: 1px; line-height: 18.2000007629395px; orphans: auto; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 1px; -webkit-text-stroke-width: 0px; display: inline !important; float: none; background-color: rgb(255, 255, 255);">2)個人清潔</span></td>
-                    <td><span style="color: rgb(49, 49, 49); font-family: 微軟正黑體, 新細明體, Verdana, Arial, Helvetica, sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: 1px; line-height: 18.2000007629395px; orphans: auto; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 1px; -webkit-text-stroke-width: 0px; display: inline !important; float: none; background-color: rgb(255, 255, 255);">能自行獨立完成梳洗</span></td>
+                    <td>2)個人清潔</td>
+                    <td>能自行獨立完成梳洗</td>
                     <td class="money-table4">A</td>
                     <td>&nbsp;</td>
                 </tr>
                 <tr>
                     <td>&nbsp;</td>
-                    <td><span style="color: rgb(49, 49, 49); font-family: 微軟正黑體, 新細明體, Verdana, Arial, Helvetica, sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: 1px; line-height: 18.2000007629395px; orphans: auto; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 1px; -webkit-text-stroke-width: 0px; display: inline !important; float: none; background-color: rgb(255, 255, 255);">需部分協助</span></td>
+                    <td>需部分協助</td>
                     <td class="money-table4">B</td>
                     <td>&nbsp;</td>
                 </tr>
                 <tr>
                     <td>&nbsp;</td>
-                    <td><span style="color: rgb(49, 49, 49); font-family: 微軟正黑體, 新細明體, Verdana, Arial, Helvetica, sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: 1px; line-height: 18.2000007629395px; orphans: auto; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 1px; -webkit-text-stroke-width: 0px; display: inline !important; float: none; background-color: rgb(255, 255, 255);">完全依賴</span></td>
+                    <td>完全依賴</td>
                     <td class="money-table4">C</td>
                     <td>&nbsp;</td>
                 </tr>
                 <tr>
-                    <td><span style="color: rgb(49, 49, 49); font-family: 微軟正黑體, 新細明體, Verdana, Arial, Helvetica, sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: 1px; line-height: 18.2000007629395px; orphans: auto; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 1px; -webkit-text-stroke-width: 0px; display: inline !important; float: none; background-color: rgb(255, 255, 255);">3)穿脫衣服</span></td>
-                    <td><span style="color: rgb(49, 49, 49); font-family: 微軟正黑體, 新細明體, Verdana, Arial, Helvetica, sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: 1px; line-height: 18.2000007629395px; orphans: auto; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 1px; -webkit-text-stroke-width: 0px; display: inline !important; float: none; background-color: rgb(255, 255, 255);">可自行穿脫衣服、鞋子、輔具</span></td>
+                    <td><3)穿脫衣服/td>
+                    <td>可自行穿脫衣服、鞋子、輔具</td>
                     <td class="money-table4">A</td>
                     <td>&nbsp;</td>
                 </tr>
                 <tr>
                     <td>&nbsp;</td>
-                    <td><span style="color: rgb(49, 49, 49); font-family: 微軟正黑體, 新細明體, Verdana, Arial, Helvetica, sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: 1px; line-height: 18.2000007629395px; orphans: auto; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 1px; -webkit-text-stroke-width: 0px; display: inline !important; float: none; background-color: rgb(255, 255, 255);">需部分協助</span></td>
+                    <td>需部分協助</td>
                     <td class="money-table4">B</td>
                     <td>&nbsp;</td>
                 </tr>
                 <tr>
                     <td>&nbsp;</td>
-                    <td><span style="color: rgb(49, 49, 49); font-family: 微軟正黑體, 新細明體, Verdana, Arial, Helvetica, sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: 1px; line-height: 18.2000007629395px; orphans: auto; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 1px; -webkit-text-stroke-width: 0px; display: inline !important; float: none; background-color: rgb(255, 255, 255);">完全依賴</span></td>
+                    <td>完全依賴</td>
                     <td class="money-table4">C</td>
                     <td>&nbsp;</td>
                 </tr>
                 <tr>
-                    <td><span style="color: rgb(49, 49, 49); font-family: 微軟正黑體, 新細明體, Verdana, Arial, Helvetica, sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: 1px; line-height: 18.2000007629395px; orphans: auto; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 1px; -webkit-text-stroke-width: 0px; display: inline !important; float: none; background-color: rgb(255, 255, 255);">4)上廁所,如廁</span></td>
-                    <td><span style="color: rgb(49, 49, 49); font-family: 微軟正黑體, 新細明體, Verdana, Arial, Helvetica, sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: 1px; line-height: 18.2000007629395px; orphans: auto; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 1px; -webkit-text-stroke-width: 0px; display: inline !important; float: none; background-color: rgb(255, 255, 255);">可自行進出廁所、完成如廁</span></td>
+                    <td>4)上廁所,如廁</td>
+                    <td>可自行進出廁所、完成如廁</td>
                     <td class="money-table4">A</td>
                     <td>&nbsp;</td>
                 </tr>
                 <tr>
                     <td>&nbsp;</td>
-                    <td><span style="color: rgb(49, 49, 49); font-family: 微軟正黑體, 新細明體, Verdana, Arial, Helvetica, sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: 1px; line-height: 18.2000007629395px; orphans: auto; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 1px; -webkit-text-stroke-width: 0px; display: inline !important; float: none; background-color: rgb(255, 255, 255);">需協助倒尿壺、便盆、並清洗</span></td>
+                    <td>需協助倒尿壺、便盆、並清洗</td>
                     <td class="money-table4">B</td>
                     <td>&nbsp;</td>
                 </tr>
                 <tr>
                     <td>&nbsp;</td>
-                    <td><span style="color: rgb(49, 49, 49); font-family: 微軟正黑體, 新細明體, Verdana, Arial, Helvetica, sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: 1px; line-height: 18.2000007629395px; orphans: auto; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 1px; -webkit-text-stroke-width: 0px; display: inline !important; float: none; background-color: rgb(255, 255, 255);">失禁換尿布或協助帶至廁所</span></td>
+                    <td>失禁換尿布或協助帶至廁所</td>
                     <td class="money-table4">C</td>
                     <td>&nbsp;</td>
                 </tr>
                 <tr>
-                    <td><span style="color: rgb(49, 49, 49); font-family: 微軟正黑體, 新細明體, Verdana, Arial, Helvetica, sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: 1px; line-height: 18.2000007629395px; orphans: auto; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 1px; -webkit-text-stroke-width: 0px; display: inline !important; float: none; background-color: rgb(255, 255, 255);">5)洗澡</span></td>
-                    <td><span style="color: rgb(49, 49, 49); font-family: 微軟正黑體, 新細明體, Verdana, Arial, Helvetica, sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: 1px; line-height: 18.2000007629395px; orphans: auto; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 1px; -webkit-text-stroke-width: 0px; display: inline !important; float: none; background-color: rgb(255, 255, 255);">可自行脫衣服、洗澡</span></td>
+                    <td>5)洗澡</td>
+                    <td>可自行脫衣服、洗澡</td>
                     <td class="money-table4">A</td>
                     <td>&nbsp;</td>
                 </tr>
                 <tr>
                     <td>&nbsp;</td>
-                    <td><span style="color: rgb(49, 49, 49); font-family: 微軟正黑體, 新細明體, Verdana, Arial, Helvetica, sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: 1px; line-height: 18.2000007629395px; orphans: auto; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 1px; -webkit-text-stroke-width: 0px; display: inline !important; float: none; background-color: rgb(255, 255, 255);">部分協助、參與洗澡</span></td>
+                    <td></span>部分協助、參與洗澡</td>
                     <td class="money-table4">B</td>
                     <td>&nbsp;</td>
                 </tr>
                 <tr>
                     <td>&nbsp;</td>
-                    <td><span style="color: rgb(49, 49, 49); font-family: 微軟正黑體, 新細明體, Verdana, Arial, Helvetica, sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: 1px; line-height: 18.2000007629395px; orphans: auto; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 1px; -webkit-text-stroke-width: 0px; display: inline !important; float: none; background-color: rgb(255, 255, 255);">完全依賴</span></td>
+                    <td>完全依賴</td>
                     <td class="money-table4">C</td>
                     <td>&nbsp;</td>
                 </tr>
                 <tr>
-                    <td class="money-table2"><span style="color: rgb(49, 49, 49); font-family: 微軟正黑體, 新細明體, Verdana, Arial, Helvetica, sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: 1px; line-height: 18.2000007629395px; orphans: auto; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 1px; -webkit-text-stroke-width: 0px; display: inline !important; float: none; background-color: rgb(255, 255, 255);">6)移位,上下床,輪椅</span></td>
-                    <td class="money-table2"><span style="color: rgb(49, 49, 49); font-family: 微軟正黑體, 新細明體, Verdana, Arial, Helvetica, sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: 1px; line-height: 18.2000007629395px; orphans: auto; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 1px; -webkit-text-stroke-width: 0px; display: inline !important; float: none; background-color: rgb(255, 255, 255);">獨立上下床及輪椅</span></td>
+                    <td class="money-table2">6)移位,上下床,輪椅</td>
+                    <td class="money-table2">獨立上下床及輪椅</td>
                     <td class="money-table5">A</td>
                     <td class="money-table2"></td>
                 </tr>
                 <tr>
                     <td>&nbsp;</td>
-                    <td><span style="color: rgb(49, 49, 49); font-family: 微軟正黑體, 新細明體, Verdana, Arial, Helvetica, sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: 1px; line-height: 18.2000007629395px; orphans: auto; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 1px; -webkit-text-stroke-width: 0px; display: inline !important; float: none; background-color: rgb(255, 255, 255);">需注意與部分協助</span></td>
+                    <td>需注意與部分協助</td>
                     <td class="money-table4">B</td>
                     <td>&nbsp;</td>
                 </tr>
                 <tr>
                     <td>&nbsp;</td>
-                    <td><span style="color: rgb(49, 49, 49); font-family: 微軟正黑體, 新細明體, Verdana, Arial, Helvetica, sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: 1px; line-height: 18.2000007629395px; orphans: auto; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 1px; -webkit-text-stroke-width: 0px; display: inline !important; float: none; background-color: rgb(255, 255, 255);">完全依賴</span></td>
+                    <td>完全依賴</td>
                     <td class="money-table4">C</td>
                     <td>&nbsp;</td>
                 </tr>
                 <tr>
-                    <td><span style="color: rgb(49, 49, 49); font-family: 微軟正黑體, 新細明體, Verdana, Arial, Helvetica, sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: 1px; line-height: 18.2000007629395px; orphans: auto; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 1px; -webkit-text-stroke-width: 0px; display: inline !important; float: none; background-color: rgb(255, 255, 255);">7)行走</span></td>
-                    <td><span style="color: rgb(49, 49, 49); font-family: 微軟正黑體, 新細明體, Verdana, Arial, Helvetica, sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: 1px; line-height: 18.2000007629395px; orphans: auto; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 1px; -webkit-text-stroke-width: 0px; display: inline !important; float: none; background-color: rgb(255, 255, 255);">可獨立行走</span></td>
+                    <td>7)行走</td>
+                    <td>可獨立行走</td>
                     <td class="money-table4">A</td>
                     <td>&nbsp;</td>
                 </tr>
                 <tr>
                     <td>&nbsp;</td>
-                    <td><span style="color: rgb(49, 49, 49); font-family: 微軟正黑體, 新細明體, Verdana, Arial, Helvetica, sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: 1px; line-height: 18.2000007629395px; orphans: auto; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 1px; -webkit-text-stroke-width: 0px; display: inline !important; float: none; background-color: rgb(255, 255, 255);">部分需協助</span></td>
+                    <td>部分需協助</td>
                     <td class="money-table4">B</td>
                     <td>&nbsp;</td>
                 </tr>
                 <tr>
                     <td>&nbsp;</td>
-                    <td><span style="color: rgb(49, 49, 49); font-family: 微軟正黑體, 新細明體, Verdana, Arial, Helvetica, sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: 1px; line-height: 18.2000007629395px; orphans: auto; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 1px; -webkit-text-stroke-width: 0px; display: inline !important; float: none; background-color: rgb(255, 255, 255);">完全依賴、行走全程配陪伴</span></td>
+                    <td>完全依賴、行走全程配陪伴</td>
                     <td class="money-table4">C</td>
                     <td>&nbsp;</td>
                 </tr>
                 <tr>
-                    <td><span style="color: rgb(49, 49, 49); font-family: 微軟正黑體, 新細明體, Verdana, Arial, Helvetica, sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: 1px; line-height: 18.2000007629395px; orphans: auto; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 1px; -webkit-text-stroke-width: 0px; display: inline !important; float: none; background-color: rgb(255, 255, 255);">8)翻身</span></td>
-                    <td><span style="color: rgb(49, 49, 49); font-family: 微軟正黑體, 新細明體, Verdana, Arial, Helvetica, sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: 1px; line-height: 18.2000007629395px; orphans: auto; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 1px; -webkit-text-stroke-width: 0px; display: inline !important; float: none; background-color: rgb(255, 255, 255);">可自行翻身</span></td>
+                    <td>8)翻身</td>
+                    <td>可自行翻身</td>
                     <td class="money-table4">A</td>
                     <td>&nbsp;</td>
                 </tr>
                 <tr>
                     <td>&nbsp;</td>
-                    <td><span style="color: rgb(49, 49, 49); font-family: 微軟正黑體, 新細明體, Verdana, Arial, Helvetica, sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: 1px; line-height: 18.2000007629395px; orphans: auto; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 1px; -webkit-text-stroke-width: 0px; display: inline !important; float: none; background-color: rgb(255, 255, 255);">需協助翻身</span></td>
+                    <td>需協助翻身</td>
                     <td class="money-table4">C</td>
                     <td>&nbsp;</td>
                 </tr>
                 <tr>
-                    <td><span style="color: rgb(49, 49, 49); font-family: 微軟正黑體, 新細明體, Verdana, Arial, Helvetica, sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: 1px; line-height: 18.2000007629395px; orphans: auto; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 1px; -webkit-text-stroke-width: 0px; display: inline !important; float: none; background-color: rgb(255, 255, 255);">分級標準</span></td>
-                    <td colspan="3"><span style="color: rgb(49, 49, 49); font-family: 微軟正黑體, 新細明體, Verdana, Arial, Helvetica, sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: 1px; line-height: 18.2000007629395px; orphans: auto; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 1px; -webkit-text-stroke-width: 0px; display: inline !important; float: none; background-color: rgb(255, 255, 255);">一個C以上,照護費為 3000 元</span><br style="color: rgb(49, 49, 49); font-family: 微軟正黑體, 新細明體, Verdana, Arial, Helvetica, sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: 1px; line-height: 18.2000007629395px; orphans: auto; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 1px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);" />
-                        <span style="color: rgb(49, 49, 49); font-family: 微軟正黑體, 新細明體, Verdana, Arial, Helvetica, sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: 1px; line-height: 18.2000007629395px; orphans: auto; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 1px; -webkit-text-stroke-width: 0px; display: inline !important; float: none; background-color: rgb(255, 255, 255);">三個B以上無C項者照護費為1500元</span><br style="color: rgb(49, 49, 49); font-family: 微軟正黑體, 新細明體, Verdana, Arial, Helvetica, sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: 1px; line-height: 18.2000007629395px; orphans: auto; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 1px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);" />
-                        <span style="color: rgb(49, 49, 49); font-family: 微軟正黑體, 新細明體, Verdana, Arial, Helvetica, sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: 1px; line-height: 18.2000007629395px; orphans: auto; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 1px; -webkit-text-stroke-width: 0px; display: inline !important; float: none; background-color: rgb(255, 255, 255);">二個B以下照護費為0元</span></td>
+                    <td>分級標準</td>
+                    <td colspan="3">一個C以上,照護費為 3000 元<br/>
+                        三個B以上無C項者照護費為1500元<br/>
+                        二個B以下照護費為0元</td>
                 </tr>
                 <tr>
-                    <td colspan="4"><span style="color: rgb(49, 49, 49); font-family: 微軟正黑體, 新細明體, Verdana, Arial, Helvetica, sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: 1px; line-height: 18.2000007629395px; orphans: auto; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 1px; -webkit-text-stroke-width: 0px; display: inline !important; float: none; background-color: rgb(255, 255, 255);">失智者CDR表評估為：&nbsp;<span class="Apple-converted-space">&nbsp;</span></span><br style="color: rgb(49, 49, 49); font-family: 微軟正黑體, 新細明體, Verdana, Arial, Helvetica, sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: 1px; line-height: 18.2000007629395px; orphans: auto; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 1px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);" />
-                        <span style="color: rgb(49, 49, 49); font-family: 微軟正黑體, 新細明體, Verdana, Arial, Helvetica, sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: 1px; line-height: 18.2000007629395px; orphans: auto; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 1px; -webkit-text-stroke-width: 0px; display: inline !important; float: none; background-color: rgb(255, 255, 255);">&nbsp; 1分輕度(30000元)</span><br style="color: rgb(49, 49, 49); font-family: 微軟正黑體, 新細明體, Verdana, Arial, Helvetica, sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: 1px; line-height: 18.2000007629395px; orphans: auto; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 1px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);" />
-                        <span style="color: rgb(49, 49, 49); font-family: 微軟正黑體, 新細明體, Verdana, Arial, Helvetica, sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: 1px; line-height: 18.2000007629395px; orphans: auto; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 1px; -webkit-text-stroke-width: 0px; display: inline !important; float: none; background-color: rgb(255, 255, 255);">&nbsp; 2分中度(35000元)</span><br style="color: rgb(49, 49, 49); font-family: 微軟正黑體, 新細明體, Verdana, Arial, Helvetica, sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: 1px; line-height: 18.2000007629395px; orphans: auto; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 1px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);" />
-                        <span style="color: rgb(49, 49, 49); font-family: 微軟正黑體, 新細明體, Verdana, Arial, Helvetica, sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: 1px; line-height: 18.2000007629395px; orphans: auto; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 1px; -webkit-text-stroke-width: 0px; display: inline !important; float: none; background-color: rgb(255, 255, 255);">&nbsp; 3分重度(40000元)</span></td>
+                    <td colspan="4">失智者CDR表評估為：<br/>
+                        1分輕度(30000元)<br/>
+                        2分中度(35000元)<br/>
+                        3分重度(40000元)</td>
                 </tr>
             </table>
 

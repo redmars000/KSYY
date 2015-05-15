@@ -48,11 +48,51 @@
     </div>
     <div class="container">
         <h4>位置圖</h4>
-        <h1>0123456789</h1>
-        <h1>0123456789</h1>
-        <h1>0123456789</h1>
-        <h1>0123456789</h1>
-        <h1>0123456789</h1>
+        <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+        <style type="text/css">
+            #user_gmap {
+                width: 1100px;
+                height: 400px;
+                margin: 20px auto 0px;
+                border: solid 1px #111;
+            }
+
+            #user_glink {
+                width: 1100px;
+                text-align: right;
+                font-size: 10px;
+                font-weight: normal;
+                padding: 0px;
+                height: 20px;
+                margin: 0px auto;
+            }
+        </style>
+        <script type="text/javascript">
+            google.maps.event.addDomListener(window, 'load', function () {
+                var mapdiv = document.getElementById('user_gmap');
+                var myOptions = {
+                    zoom: 15,
+                    center: new google.maps.LatLng(22.7885764, 120.3434107),
+                    mapTypeId: google.maps.MapTypeId.ROADMAP,
+                    scaleControl: true
+                };
+                var map = new google.maps.Map(mapdiv, myOptions);
+                var marker = new google.maps.Marker({
+                    position: new google.maps.LatLng(22.7885764, 120.3434107),
+                    map: map,
+                    title: '康欣老人長期照顧中心(養護型)'
+                });
+                var infowindow = new google.maps.InfoWindow({
+                    content: '<strong>康欣老人長期照顧中心(養護型)</strong><br />電話：(07)614-1273<br />傳真：(07)614-0136<br />E-mail：t18428603@yahoo.com.tw<br />地址：高雄市燕巢區安招里安東街188號',
+                    size: new google.maps.Size(200, 200)
+                });
+                google.maps.event.addListener(marker, 'click', function () {
+                    infowindow.open(map, marker);
+                });
+                infowindow.open(map, marker);
+            });
+        </script>
+        <div id="user_gmap"></div>
         <hr />
     </div>
 

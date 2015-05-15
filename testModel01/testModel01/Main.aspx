@@ -9,16 +9,34 @@
         <h3>最新消息</h3>
         <hr style="background-color: blue; height: 1px" />
     </div>
-    <div class="container">
-        <h4>最新消息公告1</h4>
-        <h4>最新消息公告2</h4>
-        <h4>最新消息公告3</h4>
-        <h4>最新消息公告4</h4>
-        <div align="right">
-            <a href="最新消息.aspx">
-                <img src="pic/更多內容.gif" /></a>
-        </div>
-    <hr />
+    <div class="container ">
+        <table class="table table-bordered table-hover table-striped">
+            <thead>
+                <tr class="info">
+                    <th>發布日期</th>
+                    <th>標題</th>
+                    <th>Title3</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>2015/05/01</td>
+                    <td>獨腿老人照顧癱瘓妻子11年</td>
+                    <td>---</td>
+                </tr>
+                <tr>
+                    <td>2015/05/11</td>
+                    <td>老男照顧者的心聲</td>
+                    <td>---</td>
+                </tr>
+                <tr>
+                    <td>2015/05/15</td>
+                    <td>義剪活動</td>
+                    <td>---</td>
+                </tr>
+            </tbody>
+        </table>
+        <hr />
     </div>
     <div class="container">
         <h3>康欣老人長期照顧中心</h3>

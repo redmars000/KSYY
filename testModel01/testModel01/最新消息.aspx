@@ -9,17 +9,58 @@
         <h3>最新消息</h3>
         <hr style="background-color:blue; height:1px"/>
     </div>
-    <div class="container">        
-        <h4>新聞公告1</h4>
-        <h4>新聞公告2</h4>
-        <h4>新聞公告3</h4>
-        <h4>新聞公告4</h4>
-        <h4>新聞公告5</h4>
-        <h4>新聞公告6</h4>
-        <h4>新聞公告7</h4>
-        <h4>新聞公告8</h4>
-        <h4>新聞公告9</h4>
-        <h4>新聞公告10</h4>        
+    <div class="container ">
+        <table class="table table-bordered table-hover table-striped">
+            <thead>
+                <tr class="info">
+                    <th>發布日期</th>
+                    <th>標題</th>
+                    <th>Title3</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>2015/03/15</td>
+                    <td>泡腳</td>
+                    <td>---</td>
+                </tr>
+                <tr>
+                    <td>2015/03/19</td>
+                    <td>復健</td>
+                    <td>---</td>
+                </tr>
+                <tr>
+                    <td>2015/04/01</td>
+                    <td>104年4月慶生</td>
+                    <td>---</td>
+                </tr>
+                <tr>
+                    <td>2015/04/13</td>
+                    <td>宜縣老人照顧升級「老來寶」溪北首站啟用</td>
+                    <td>---</td>
+                </tr>
+                <tr>
+                    <td>2015/04/21</td>
+                    <td>老男照顧者的心聲</td>
+                    <td>---</td>
+                </tr>
+                <tr>
+                    <td>2015/05/01</td>
+                    <td>獨腿老人照顧癱瘓妻子11年</td>
+                    <td>---</td>
+                </tr>
+                <tr>
+                    <td>2015/05/11</td>
+                    <td>老男照顧者的心聲</td>
+                    <td>---</td>
+                </tr>
+                <tr>
+                    <td>2015/05/15</td>
+                    <td>義剪活動</td>
+                    <td>---</td>
+                </tr>
+            </tbody>
+        </table>
         <hr />
     </div>
 

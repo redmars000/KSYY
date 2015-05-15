@@ -22,30 +22,30 @@
                             <tbody>
                                 <tr style="background-color: #ff9900;">
                                     <td style="width: 17%;">
-                                        <div style="text-align:center"><font color="#ffffff" size="4">住&nbsp; 房 </font></div>
+                                        <div style="text-align:center;font-size:large;color:#ffffff">住&nbsp; 房 </div>
                                     </td>
-                                    <td style="width:36%"><font size="4"></font>
-                                        <p style="text-align:center"><font color="#ffffff" size="4">基本月費<br>（含住房費、水電費、洗衣費、一般伙食費）</font></p>
+                                    <td style="width:36%">
+                                        <div style="text-align:center;font-size:large;color:#ffffff">基本月費<br/>（含住房費、水電費、洗衣費、一般伙食費）</div>
                                     </td>
-                                    <td style="width:22%"><font size="4"></font>
-                                        <p style="text-align:center"><font color="#ffffff" size="4">特殊照護費</font></p>
+                                    <td style="width:22%">
+                                        <div style="text-align:center;font-size:large;color:#ffffff">特殊照護費</div>
                                     </td>
-                                    <td style="width:20%"><font size="4"></font>
-                                        <p style="text-align:center"><font color="#ffffff" size="4">費用</font></p>
+                                    <td style="width:20%">
+                                        <div style="text-align:center;font-size:large;color:#ffffff">費用</div>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td style="background-color: #ffffff; width:17%" >
-                                        <p style="text-align:center"><font size="4">五人房 </font></p>
+                                    <td style="background-color: #ffffff; width:22%" >
+                                        <div style="text-align:center;font-size:large;color:#000">五人房</div>
                                     </td>
-                                    <td style="background-color: #ffffff; width:36%"><font size="4"></font>
-                                        <p style="text-align:center"><font size="4">25000元</font></p>
+                                    <td style="background-color: #ffffff; width:36%">
+                                        <div style="text-align:center;font-size:large;color:#000">25000元</div>
                                     </td>
-                                    <td style="background-color: #ffffff; width:22%"><font size="4"></font>
-                                        <p style="text-align:center"><font size="4">鼻胃管護理</font></p>
+                                    <td style="background-color: #ffffff; width:22%">
+                                        <div style="text-align:center;font-size:large;color:#000">鼻胃管護理</div>
                                     </td>
-                                    <td style="background-color: #ffffff; width:20%"><font size="4"></font>
-                                        <p style="text-align:center"><font size="4">1000元</font></p>
+                                    <td style="background-color: #ffffff; width:20%">
+                                        <div style="text-align:center;font-size:large;color:#000">1000元</div>
                                     </td>
                                 </tr>
                                 <tr>
@@ -110,7 +110,7 @@
                                             <font size="4"> </font>
                                             <li><font size="4">單人隔離房平日不使用，若需使用時即按元住房收費標準收費 </font>
                                                 <li><font size="4">另外收費項目有：管灌特殊配方、護理耗材、就醫費用、掛號費、體檢費、日常用品耗材（全包3000元）…等   </font>
-                                                    <li><font size="4">每月基本費及照護費須於月初預繳，消耗品月結，於次月繳交 <br></font><font color="#3333cc"><font size="4">匯款：郵局代號700&nbsp;&nbsp;  帳號：0101523 0098245 
+                                                    <li><font size="4">每月基本費及照護費須於月初預繳，消耗品月結，於次月繳交 <br/></font><font color="#3333cc"><font size="4">匯款：郵局代號700&nbsp;&nbsp;  帳號：0101523 0098245 
 邱美玲</font> </font></li>
                                         </ol>
                                     </td>

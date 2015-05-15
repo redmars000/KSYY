@@ -208,7 +208,7 @@
                     <td>性別:</td>
                 </tr>
                 <tr>
-                    <td><床號:</td>
+                    <td>床號:</td>
                     <td>出生日期:</td>
                     <td>評估者:<br/>
                         日期:</td>
@@ -259,7 +259,7 @@
                     <td>&nbsp;</td>
                 </tr>
                 <tr>
-                    <td><3)穿脫衣服/td>
+                    <td>3)穿脫衣服</td>
                     <td>可自行穿脫衣服、鞋子、輔具</td>
                     <td class="money-table4">A</td>
                     <td>&nbsp;</td>

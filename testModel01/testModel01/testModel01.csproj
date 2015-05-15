@@ -87,6 +87,8 @@
     <Content Include="Content\bootstrap-theme.css.map" />
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Main.aspx" />
+    <Content Include="pic\康欣老人長期照顧中心.jpg" />
+    <Content Include="pic\更多內容.gif" />
     <Content Include="TempFolder\collapse.aspx" />
     <Content Include="最新消息.aspx" />
     <Content Include="收費標準.aspx" />

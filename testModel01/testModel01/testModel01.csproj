@@ -67,12 +67,12 @@
     <Content Include="Content\loginUI02.css" />
     <Content Include="Content\Site.css" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
-    <Content Include="headImg\2.jpg" />
-    <Content Include="Icon.png" />
     <Content Include="headImg\1.jpg" />
+    <Content Include="headImg\2.jpg" />
     <Content Include="headImg\3.jpg" />
     <Content Include="headImg\4.jpg" />
     <Content Include="headImg\5.jpg" />
+    <Content Include="Icon.png" />
     <Content Include="Login.aspx" />
     <Content Include="loginImg\1.jpg" />
     <Content Include="loginImg\2.jpg" />
@@ -87,13 +87,14 @@
     <Content Include="Content\bootstrap-theme.css.map" />
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Main.aspx" />
+    <Content Include="TempFolder\collapse.aspx" />
     <Content Include="最新消息.aspx" />
     <Content Include="收費標準.aspx" />
     <Content Include="環境介紹.aspx" />
     <Content Include="活動剪影.aspx" />
     <Content Include="聯絡我們.aspx" />
     <Content Include="關於康欣.aspx" />
-    <Content Include="床位.aspx" />
+    <Content Include="TempFolder\床位.aspx" />
     <None Include="Scripts\jquery-1.9.1.intellisense.js" />
     <Content Include="pic\ADD.png" />
     <Content Include="pic\empty.png" />
@@ -129,6 +130,13 @@
     </Compile>
     <Compile Include="Main.aspx.designer.cs">
       <DependentUpon>Main.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TempFolder\collapse.aspx.cs">
+      <DependentUpon>collapse.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TempFolder\collapse.aspx.designer.cs">
+      <DependentUpon>collapse.aspx</DependentUpon>
     </Compile>
     <Compile Include="最新消息.aspx.cs">
       <DependentUpon>最新消息.aspx</DependentUpon>
@@ -172,11 +180,11 @@
     <Compile Include="關於康欣.aspx.designer.cs">
       <DependentUpon>關於康欣.aspx</DependentUpon>
     </Compile>
-    <Compile Include="床位.aspx.cs">
+    <Compile Include="TempFolder\床位.aspx.cs">
       <DependentUpon>床位.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="床位.aspx.designer.cs">
+    <Compile Include="TempFolder\床位.aspx.designer.cs">
       <DependentUpon>床位.aspx</DependentUpon>
     </Compile>
   </ItemGroup>

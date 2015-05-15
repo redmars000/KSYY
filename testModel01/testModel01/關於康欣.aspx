@@ -5,25 +5,27 @@
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="BodyContent" runat="server">
 
-    <div class="row row-offcanvas row-offcanvas-left">
-        <div class="row-offcanvas row-offcanvas-right">
-            <div class="col-xs-6 col-sm-2 sidebar-offcanvas" id="sidebarLeft" role="navigation" style="padding-top: 19px">
-                <div id="menu" style="width: 200px">
-                    <div class="panel list-group">
-                        <a href="#" class="list-group-item" data-toggle="collapse" data-target="#sm" data-parent="#menu"><span class="glyphicon glyphicon-tags"></span> 關於康欣<%--<span class="label label-info">5</span>--%></a>
-                        <div id="sm" class="sublinks collapse">
-                            <a class="list-group-item small"><span class="glyphicon glyphicon-chevron-right pull-right"></span>關於我們</a>
-                            <a class="list-group-item small"><span class="glyphicon glyphicon-chevron-right pull-right"></span>位置圖</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-xs-12 col-sm-8">
-                <div class="jumbotron" style="height: 500px">
-                </div>
-            </div>
-        </div>
+    <div class="container">
+        <h3>康欣 - 關於康欣</h3>
+        <hr style="background-color:blue; height:1px"/>
+    </div>
+    <div class="container">
+        <h4>關於我們</h4>
+        <h1>0123456789</h1>
+        <h1>0123456789</h1>
+        <h1>0123456789</h1>
+        <h1>0123456789</h1>
+        <h1>0123456789</h1>
+        <hr />
+    </div>
+    <div class="container">
+        <h4>位置圖</h4>
+        <h1>0123456789</h1>
+        <h1>0123456789</h1>
+        <h1>0123456789</h1>
+        <h1>0123456789</h1>
+        <h1>0123456789</h1>
+        <hr />
     </div>
 
 </asp:Content>

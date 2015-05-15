@@ -36,6 +36,10 @@
                 </tr>
             </tbody>
         </table>
+        <div align="right">
+            <a href="最新消息.aspx">
+                <img src="pic/更多內容.gif" /></a>
+        </div>
         <hr />
     </div>
     <div class="container">

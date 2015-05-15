@@ -11,11 +11,125 @@
     </div>
     <div class="container">
         <h4>收費標準表</h4>
-        <h1>0123456789</h1>
-        <h1>0123456789</h1>
-        <h1>0123456789</h1>
-        <h1>0123456789</h1>
-        <h1>0123456789</h1>
+        <table style="border: 0; width: 98%;">
+
+            <tr>
+                <td style="width: 100%">
+                    <div id="text">
+                        <h2><font color="#ff6600" size="5"><strong>收費標準表</strong></font></h2>
+                        <font size="4"></font><font size="4"> 
+</font><font size="4"> </font><font size="4"> </font><font size="4"> 
+</font><font size="4"> </font><font size="4"> </font><font size="4"> 
+</font><font size="4"> </font><font size="4"> </font><font size="4"> 
+</font><font size="4"> </font><font size="4"> </font><font size="4"> 
+</font><font size="4"> </font><font size="4"> </font><font size="4"> 
+</font><font size="4"> </font><font size="4"> </font><font size="4"> 
+</font><font size="4"> </font><font size="4"> </font><font size="4"> 
+</font><font size="4"> </font><font size="4"> </font><font size="4"> 
+</font><font size="4"> </font>
+                        <table style="background-color: #ff9933; border: 0; width: 99%;">
+                            <tbody>
+                                <tr bgcolor="#ff9900">
+                                    <td width="17%">
+                                        <div align="center"><font color="#ffffff" size="4">住&nbsp; 房 </font></div>
+                                    </td>
+                                    <td width="36%"><font size="4"></font>
+                                        <p align="center"><font color="#ffffff" size="4">基本月費<br>（含住房費、水電費、洗衣費、一般伙食費）</font></p>
+                                    </td>
+                                    <td width="22%"><font size="4"></font>
+                                        <p align="center"><font color="#ffffff" size="4">特殊照護費</font></p>
+                                    </td>
+                                    <td width="20%"><font size="4"></font>
+                                        <p align="center"><font color="#ffffff" size="4">費用</font></p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="17%" bgcolor="#ffffff">
+                                        <p align="center"><font size="4">五人房 </font></p>
+                                    </td>
+                                    <td width="36%" bgcolor="#ffffff"><font size="4"></font>
+                                        <p align="center"><font size="4">25000元</font></p>
+                                    </td>
+                                    <td width="22%" bgcolor="#ffffff"><font size="4"></font>
+                                        <p align="center"><font size="4">鼻胃管護理</font></p>
+                                    </td>
+                                    <td width="20%" bgcolor="#ffffff"><font size="4"></font>
+                                        <p align="center"><font size="4">1000元</font></p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="17%" bgcolor="#ffffcc"><font size="4"></font>
+                                        <p align="center"><font size="4">四人房</font></p>
+                                    </td>
+                                    <td width="36%" bgcolor="#ffffcc"><font size="4"></font>
+                                        <p align="center"><font size="4">26500元</font></p>
+                                    </td>
+                                    <td width="22%" bgcolor="#ffffcc"><font size="4"></font>
+                                        <p align="center"><font size="4">導尿管護理</font></p>
+                                    </td>
+                                    <td width="20%" bgcolor="#ffffcc"><font size="4"></font>
+                                        <p align="center"><font size="4">1000元</font></p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="17%" bgcolor="#ffffff"><font size="4"></font>
+                                        <p align="center"><font size="4">二人房</font></p>
+                                    </td>
+                                    <td width="36%" bgcolor="#ffffff"><font size="4"></font>
+                                        <p align="center"><font size="4">32000元</font></p>
+                                    </td>
+                                    <td width="22%" bgcolor="#ffffff"><font size="4"></font>
+                                        <font size="4"><p align="center"><font size="4">機構內復健</font></p></font></td>
+                                    <td width="20%" bgcolor="#ffffff"><font size="4"><p align="center"><font size="4">1500元</font></p></font></td>
+                                </tr>
+                                <tr>
+                                    <td width="17%" bgcolor="#ffffcc"><font size="4"></font>
+                                        <p align="center"><font size="4">保證金</font></p>
+                                    </td>
+                                    <td width="36%" bgcolor="#ffffcc"><font size="4"></font>
+                                        <p align="center"><font size="4">30000元</font></p>
+                                    </td>
+                                    <td width="22%" bgcolor="#ffffcc"><font size="4"></font>
+                                        <p align="center"><font size="4">救護車</font>&nbsp;</p>
+                                    </td>
+                                    <td width="20%" bgcolor="#ffffcc"><font size="4"></font>
+                                        <p align="center"><font size="4">1200~1600元/單趟<br>（含隨車人員）</font>&nbsp;</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="17%" bgcolor="#ffffff">
+                                        <p align="center"></p>
+                                        <p align="center"><font size="4"></font>&nbsp;</p>
+                                        <p align="center"><font size="4">&nbsp;</font></p>
+                                    </td>
+                                    <td width="36%" bgcolor="#ffffff">
+                                        <p align="center"><font size="4"></font>&nbsp;</p>
+                                        <p align="center"></p>
+                                    </td>
+                                    <td width="22%" bgcolor="#ffffff">
+                                        <p align="center"><font size="4"></font>&nbsp;</p>
+                                    </td>
+                                    <td width="20%" bgcolor="#ffffff"><font size="4"></font>
+                                        <p align="center"><font size="4"></font>&nbsp;</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td bgcolor="#ffffff" colspan="4"><font size="4"></font>
+                                        <ol>
+                                            <font size="4"> </font>
+                                            <li><font size="4">單人隔離房平日不使用，若需使用時即按元住房收費標準收費 </font>
+                                                <li><font size="4">另外收費項目有：管灌特殊配方、護理耗材、就醫費用、掛號費、體檢費、日常用品耗材（全包3000元）…等   </font>
+                                                    <li><font size="4">每月基本費及照護費須於月初預繳，消耗品月結，於次月繳交 <br></font><font color="#3333cc"><font size="4">匯款：郵局代號700&nbsp;&nbsp;  帳號：0101523 0098245 
+邱美玲</font> </font></li>
+                                        </ol>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </td>
+            </tr>
+        </table>
         <hr />
     </div>
     <style type="text/css">

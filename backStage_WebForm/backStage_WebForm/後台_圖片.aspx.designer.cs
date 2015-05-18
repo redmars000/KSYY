@@ -7,7 +7,7 @@
 // </自動產生的>
 //------------------------------------------------------------------------------
 
-namespace testModel01 {
+namespace backStage_WebForm {
     
     
     public partial class WebForm2 {

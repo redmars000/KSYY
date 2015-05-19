@@ -11,7 +11,7 @@
     </div>
     <div class="container">
         <h4>關於我們</h4>
-        <table border="0" style="text-align: left; width:98%;color: rgb(51, 51, 51); font-family: 新細明體, Verdana, Arial, Helvetica, sans-serif; font-size: 13px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: 1px; line-height: normal; orphans:initial; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);" >
+        <table border="0" style="text-align: left; width:98%;color: rgb(51, 51, 51); font-family: 新細明體, Verdana, Arial, Helvetica, sans-serif; font-size: 13px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: 1px; line-height: normal; orphans: auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);" >
             <tr style="padding: 0px; margin: 0px;">
                 <td colspan="2" style="padding: 0px; margin: 0px; width: 100%"></td>
             </tr>

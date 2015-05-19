@@ -17,102 +17,91 @@
                 <td style="width: 100%">
                     <div id="text">
                         <h2 style="color: #ff6600;"><strong>收費標準表</strong></h2>
-                        
+
                         <table style="background-color: #ff9933; border: 0; width: 99%;">
                             <tbody>
                                 <tr style="background-color: #ff9900;">
                                     <td style="width: 17%;">
-                                        <div style="text-align:center"><font color="#ffffff" size="4">住&nbsp; 房 </font></div>
+                                        <div style="text-align: center; font-size: large; color: #000">住&nbsp; 房 </div>
                                     </td>
-                                    <td style="width:36%"><font size="4"></font>
-                                        <p style="text-align:center"><font color="#ffffff" size="4">基本月費<br>（含住房費、水電費、洗衣費、一般伙食費）</font></p>
+                                    <td style="width: 36%">
+                                        <div style="text-align: center; font-size: large; color: #000">
+                                            基本月費<br />
+                                            （含住房費、水電費、洗衣費、一般伙食費）
+                                        </div>
                                     </td>
-                                    <td style="width:22%"><font size="4"></font>
-                                        <p style="text-align:center"><font color="#ffffff" size="4">特殊照護費</font></p>
+                                    <td style="width: 22%">
+                                        <div style="text-align: center; font-size: large; color: #000">特殊照護費</div>
                                     </td>
-                                    <td style="width:20%"><font size="4"></font>
-                                        <p style="text-align:center"><font color="#ffffff" size="4">費用</font></p>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td style="background-color: #ffffff; width:17%" >
-                                        <p style="text-align:center"><font size="4">五人房 </font></p>
-                                    </td>
-                                    <td style="background-color: #ffffff; width:36%"><font size="4"></font>
-                                        <p style="text-align:center"><font size="4">25000元</font></p>
-                                    </td>
-                                    <td style="background-color: #ffffff; width:22%"><font size="4"></font>
-                                        <p style="text-align:center"><font size="4">鼻胃管護理</font></p>
-                                    </td>
-                                    <td style="background-color: #ffffff; width:20%"><font size="4"></font>
-                                        <p style="text-align:center"><font size="4">1000元</font></p>
+                                    <td style="width: 20%">
+                                        <div style="text-align: center; font-size: large; color: #000">費用</div>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td style="background-color: #ffffcc; width:17%"><font size="4"></font>
-                                        <p style="text-align:center"><font size="4">四人房</font></p>
+                                    <td style="background-color: #ffffff; width: 22%">
+                                        <div style="text-align: center; font-size: large; color: #000">五人房</div>
                                     </td>
-                                    <td style="background-color: #ffffcc; width:36%"><font size="4"></font>
-                                        <p style="text-align:center"><font size="4">26500元</font></p>
+                                    <td style="background-color: #ffffff; width: 36%">
+                                        <div style="text-align: center; font-size: large; color: #000">25000元</div>
                                     </td>
-                                    <td style="background-color: #ffffcc; width:22%"><font size="4"></font>
-                                        <p style="text-align:center"><font size="4">導尿管護理</font></p>
+                                    <td style="background-color: #ffffff; width: 22%">
+                                        <div style="text-align: center; font-size: large; color: #000">鼻胃管護理</div>
                                     </td>
-                                    <td style="background-color: #ffffcc; width:20%"><font size="4"></font>
-                                        <p style="text-align:center"><font size="4">1000元</font></p>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td style="background-color: #ffffff; width:17%"><font size="4"></font>
-                                        <p style="text-align:center"><font size="4">二人房</font></p>
-                                    </td>
-                                    <td style="background-color: #ffffff; width:36%"><font size="4"></font>
-                                        <p style="text-align:center"><font size="4">32000元</font></p>
-                                    </td>
-                                    <td style="background-color: #ffffff; width:22%"><font size="4"></font>
-                                        <font size="4"><p align="center"><font size="4">機構內復健</font></p></font></td>
-                                    <td style="background-color: #ffffff; width:20%"><font size="4"><p align="center"><font size="4">1500元</font></p></font></td>
-                                </tr>
-                                <tr>
-                                    <td style="background-color: #ffffcc; width:17%"><font size="4"></font>
-                                        <p style="text-align:center"><font size="4">保證金</font></p>
-                                    </td>
-                                    <td style="background-color: #ffffcc; width:36%"><font size="4"></font>
-                                        <p style="text-align:center"><font size="4">30000元</font></p>
-                                    </td>
-                                    <td style="background-color: #ffffcc; width:22%"><font size="4"></font>
-                                        <p style="text-align:center"><font size="4">救護車</font>&nbsp;</p>
-                                    </td>
-                                    <td style="background-color: #ffffcc; width:20%"><font size="4"></font>
-                                        <p style="text-align:center"><font size="4">1200~1600元/單趟<br>（含隨車人員）</font>&nbsp;</p>
+                                    <td style="background-color: #ffffff; width: 20%">
+                                        <div style="text-align: center; font-size: large; color: #000">1000元</div>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td style="background-color: #ffffff; width:17%">
-                                        <p style="text-align:center"></p>
-                                        <p style="text-align:center"><font size="4"></font>&nbsp;</p>
-                                        <p style="text-align:center"><font size="4">&nbsp;</font></p>
+                                    <td style="background-color: #ffffcc; width: 17%">
+                                        <div style="text-align: center; font-size: large; color: #000">四人房</div>
                                     </td>
-                                    <td style="background-color: #ffffff; width:36%">
-                                        <p style="text-align:center"><font size="4"></font>&nbsp;</p>
-                                        <p style="text-align:center"></p>
+                                    <td style="background-color: #ffffcc; width: 36%">
+                                        <div style="text-align: center; font-size: large; color: #000">26500元</div>
                                     </td>
-                                    <td style="background-color: #ffffff; width:22%">
-                                        <p style="text-align:center"><font size="4"></font>&nbsp;</p>
+                                    <td style="background-color: #ffffcc; width: 22%">
+                                        <div style="text-align: center; font-size: large; color: #000">導尿管護理</div>
                                     </td>
-                                    <td style="background-color: #ffffff; width:20%"><font size="4"></font>
-                                        <p style="text-align:center"><font size="4"></font>&nbsp;</p>
+                                    <td style="background-color: #ffffcc; width: 20%">
+                                        <div style="text-align: center; font-size: large; color: #000">1000元</div>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td style="background-color: #ffffff; " colspan="4"><font size="4"></font>
-                                        <ol>
-                                            <font size="4"> </font>
-                                            <li><font size="4">單人隔離房平日不使用，若需使用時即按元住房收費標準收費 </font>
-                                                <li><font size="4">另外收費項目有：管灌特殊配方、護理耗材、就醫費用、掛號費、體檢費、日常用品耗材（全包3000元）…等   </font>
-                                                    <li><font size="4">每月基本費及照護費須於月初預繳，消耗品月結，於次月繳交 <br></font><font color="#3333cc"><font size="4">匯款：郵局代號700&nbsp;&nbsp;  帳號：0101523 0098245 
-邱美玲</font> </font></li>
-                                        </ol>
+                                    <td style="background-color: #ffffff; width: 17%">
+                                        <div style="text-align: center; font-size: large; color: #000">二人房</div>
+                                    </td>
+                                    <td style="background-color: #ffffff; width: 36%">
+                                        <div style="text-align: center; font-size: large; color: #000">32000元</div>
+                                    </td>
+                                    <td style="background-color: #ffffff; width: 22%">
+                                        <div style="text-align: center; font-size: large; color: #000">機構內復健</div>
+                                    </td>
+                                    <td style="background-color: #ffffff; width: 20%">
+                                        <div style="text-align: center; font-size: large; color: #000">1500元</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="background-color: #ffffcc; width: 17%">
+                                        <div style="text-align: center; font-size: large; color: #000">保證金</div>
+                                    </td>
+                                    <td style="background-color: #ffffcc; width: 36%">
+                                        <div style="text-align: center; font-size: large; color: #000">30000元</div>
+                                    </td>
+                                    <td style="background-color: #ffffcc; width: 22%">
+                                        <div style="text-align: center; font-size: large; color: #000">救護車&nbsp;</div>
+                                    </td>
+                                    <td style="background-color: #ffffcc; width: 20%">
+                                        <div style="text-align: center; font-size: large; color: #000">
+                                            1200~1600元/單趟<br />
+                                            （含隨車人員）&nbsp;
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="background-color: #ffffff;" colspan="4">
+                                        <p>1.單人隔離房平日不使用，若需使用時即按元住房收費標準收費 </p>
+                                        <p>2.另外收費項目有：管灌特殊配方、護理耗材、就醫費用、掛號費、體檢費、日常用品耗材（全包3000元）…等</p>
+                                        <p>3.每月基本費及照護費須於月初預繳，消耗品月結，於次月繳交 </p>
+                                        <div style="color: #3333cc">匯款：郵局代號700&nbsp;&nbsp;  帳號：0101523 0098245 邱美玲</div>
                                     </td>
                                 </tr>
                             </tbody>
@@ -210,7 +199,7 @@
                 <tr>
                     <td>床號:</td>
                     <td>出生日期:</td>
-                    <td>評估者:<br/>
+                    <td>評估者:<br />
                         日期:</td>
                 </tr>
             </table>
@@ -362,14 +351,14 @@
                 </tr>
                 <tr>
                     <td>分級標準</td>
-                    <td colspan="3">一個C以上,照護費為 3000 元<br/>
-                        三個B以上無C項者照護費為1500元<br/>
+                    <td colspan="3">一個C以上,照護費為 3000 元<br />
+                        三個B以上無C項者照護費為1500元<br />
                         二個B以下照護費為0元</td>
                 </tr>
                 <tr>
-                    <td colspan="4">失智者CDR表評估為：<br/>
-                        1分輕度(30000元)<br/>
-                        2分中度(35000元)<br/>
+                    <td colspan="4">失智者CDR表評估為：<br />
+                        1分輕度(30000元)<br />
+                        2分中度(35000元)<br />
                         3分重度(40000元)</td>
                 </tr>
             </table>

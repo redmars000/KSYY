@@ -4,3 +4,9 @@ C:\Users\Cct\Desktop\backStage_WebForm\backStage_WebForm\bin\backStage_WebForm.p
 C:\Users\Cct\Desktop\backStage_WebForm\backStage_WebForm\obj\Debug\backStage_WebForm.dll
 C:\Users\Cct\Desktop\backStage_WebForm\backStage_WebForm\obj\Debug\backStage_WebForm.pdb
 C:\Users\Cct\Desktop\backStage_WebForm\backStage_WebForm\obj\Debug\backStage_WebForm.csprojResolveAssemblyReference.cache
+C:\Users\shawn\Desktop\GITHUB\KSYY\backStage_WebForm\backStage_WebForm\bin\backStage_WebForm.dll.config
+C:\Users\shawn\Desktop\GITHUB\KSYY\backStage_WebForm\backStage_WebForm\bin\backStage_WebForm.dll
+C:\Users\shawn\Desktop\GITHUB\KSYY\backStage_WebForm\backStage_WebForm\bin\backStage_WebForm.pdb
+C:\Users\shawn\Desktop\GITHUB\KSYY\backStage_WebForm\backStage_WebForm\obj\Debug\backStage_WebForm.csprojResolveAssemblyReference.cache
+C:\Users\shawn\Desktop\GITHUB\KSYY\backStage_WebForm\backStage_WebForm\obj\Debug\backStage_WebForm.dll
+C:\Users\shawn\Desktop\GITHUB\KSYY\backStage_WebForm\backStage_WebForm\obj\Debug\backStage_WebForm.pdb

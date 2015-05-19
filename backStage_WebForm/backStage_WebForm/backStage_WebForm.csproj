@@ -72,6 +72,7 @@
     <Content Include="Content\bootstrap-theme.css.map" />
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Main.aspx" />
+    <Content Include="活動剪影後台.aspx" />
     <None Include="Scripts\jquery-1.9.1.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -97,6 +98,13 @@
     </Compile>
     <Compile Include="Main.aspx.designer.cs">
       <DependentUpon>Main.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="活動剪影後台.aspx.cs">
+      <DependentUpon>活動剪影後台.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="活動剪影後台.aspx.designer.cs">
+      <DependentUpon>活動剪影後台.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

@@ -12,9 +12,24 @@
     <asp:FileUpload ID="FileUpload1" runat="server"  AllowMultiple="true"/>    
     <asp:RequiredFieldValidator ID="val_要有檔案" runat="server" ControlToValidate="FileUpload1" Display="Dynamic" ErrorMessage="您尚未選擇檔案" style="color: #FF0000; font-weight: 700"></asp:RequiredFieldValidator>
     <br />
-    <asp:Button ID="Button1" runat="server" Text="上傳" OnClick="Btn_上傳_外觀" />
+    <asp:Button ID="Btn_上傳_外觀" runat="server" Text="上傳至外觀" OnClick="Btn_上傳_外觀_Click" />
 
-    <br/> <br/>
+    <br/> 
+    <asp:Button ID="Btn_上傳_內部" runat="server" Text="上傳至內部" OnClick="Btn_上傳_內部_Click" />
+
+    <br />
+    <asp:Button ID="Btn_上傳_慶生" runat="server" Text="上傳至慶生" OnClick="Btn_上傳_慶生_Click" />
+
+    <br />
+    <asp:Button ID="Btn_上傳_泡腳" runat="server" Text="上傳至泡腳" OnClick="Btn_上傳_泡腳_Click" />
+
+    <br />
+    <asp:Button ID="Btn_上傳_復健" runat="server" Text="上傳至復健" OnClick="Btn_上傳_復健_Click" />
+
+    <br />
+    <asp:Button ID="Btn_上傳_義剪" runat="server" Text="上傳至義剪" OnClick="Btn_上傳_義剪_Click" />
+
+    <br/>
     <h2>刪除</h2><br/>
 圖片選擇往址:    http://rvera.github.io/image-picker/
     <br/><br/>

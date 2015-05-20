@@ -5,6 +5,8 @@
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="BodyContent" runat="server">
 
+    <form id="form1" runat="server">
+
     <div class="container">
         <h3>康欣 - 收費標準</h3>
         <hr style="background-color: blue; height: 1px" />
@@ -164,207 +166,20 @@
         </div>
         <hr />
     </div>
-    <style type="text/css">
-        .money-table1 {
-            width: 100%;
-        }
-
-        .money-table2 {
-            height: 19px;
-        }
-
-        .money-table3 {
-            height: 23px;
-        }
-
-        .money-table4 {
-            font-size: medium;
-        }
-
-        .money-table5 {
-            height: 19px;
-            font-size: medium;
-        }
-    </style>
+    
     <div class="container">
         <h4>日常照護收費評估表</h4>
         <div>
-            <p>康欣老人長期照顧中心 住民日常照護收費評估表</p>
-            <table class="money-table1 table-striped table-bordered table-hover">
-                <tr>
-                    <td>病史:</td>
-                    <td>姓名:</td>
-                    <td>性別:</td>
-                </tr>
-                <tr>
-                    <td>床號:</td>
-                    <td>出生日期:</td>
-                    <td>評估者:<br />
-                        日期:</td>
-                </tr>
-            </table>
+            <span>康欣老人長期照顧中心 住民日常照護收費評估表</span>
+            <a href="./AssessFile/assess.doc"><img title="下載住民日常照護收費評估表.doc" src="./AssessFile/word.png" width="80"/></a>
 
-            <table class="money-table1 table-striped table-bordered table-hover">
-                <tr>
-                    <td class="money-table3">項目</td>
-                    <td class="money-table3">自我照顧能力程度</td>
-                    <td class="money-table3"></td>
-                    <td class="money-table3"></td>
-                </tr>
-                <tr>
-                    <td>1)進食</td>
-                    <td>可自行進食</td>
-                    <td class="money-table4">A</td>
-                    <td>&nbsp;</td>
-                </tr>
-                <tr>
-                    <td>&nbsp;</td>
-                    <td>需協助進食</td>
-                    <td class="money-table4">B</td>
-                    <td>&nbsp;</td>
-                </tr>
-                <tr>
-                    <td>&nbsp;</td>
-                    <td>完全需餵食或管灌</td>
-                    <td class="money-table4">C</td>
-                    <td>&nbsp;</td>
-                </tr>
-                <tr>
-                    <td>2)個人清潔</td>
-                    <td>能自行獨立完成梳洗</td>
-                    <td class="money-table4">A</td>
-                    <td>&nbsp;</td>
-                </tr>
-                <tr>
-                    <td>&nbsp;</td>
-                    <td>需部分協助</td>
-                    <td class="money-table4">B</td>
-                    <td>&nbsp;</td>
-                </tr>
-                <tr>
-                    <td>&nbsp;</td>
-                    <td>完全依賴</td>
-                    <td class="money-table4">C</td>
-                    <td>&nbsp;</td>
-                </tr>
-                <tr>
-                    <td>3)穿脫衣服</td>
-                    <td>可自行穿脫衣服、鞋子、輔具</td>
-                    <td class="money-table4">A</td>
-                    <td>&nbsp;</td>
-                </tr>
-                <tr>
-                    <td>&nbsp;</td>
-                    <td>需部分協助</td>
-                    <td class="money-table4">B</td>
-                    <td>&nbsp;</td>
-                </tr>
-                <tr>
-                    <td>&nbsp;</td>
-                    <td>完全依賴</td>
-                    <td class="money-table4">C</td>
-                    <td>&nbsp;</td>
-                </tr>
-                <tr>
-                    <td>4)上廁所,如廁</td>
-                    <td>可自行進出廁所、完成如廁</td>
-                    <td class="money-table4">A</td>
-                    <td>&nbsp;</td>
-                </tr>
-                <tr>
-                    <td>&nbsp;</td>
-                    <td>需協助倒尿壺、便盆、並清洗</td>
-                    <td class="money-table4">B</td>
-                    <td>&nbsp;</td>
-                </tr>
-                <tr>
-                    <td>&nbsp;</td>
-                    <td>失禁換尿布或協助帶至廁所</td>
-                    <td class="money-table4">C</td>
-                    <td>&nbsp;</td>
-                </tr>
-                <tr>
-                    <td>5)洗澡</td>
-                    <td>可自行脫衣服、洗澡</td>
-                    <td class="money-table4">A</td>
-                    <td>&nbsp;</td>
-                </tr>
-                <tr>
-                    <td>&nbsp;</td>
-                    <td></span>部分協助、參與洗澡</td>
-                    <td class="money-table4">B</td>
-                    <td>&nbsp;</td>
-                </tr>
-                <tr>
-                    <td>&nbsp;</td>
-                    <td>完全依賴</td>
-                    <td class="money-table4">C</td>
-                    <td>&nbsp;</td>
-                </tr>
-                <tr>
-                    <td class="money-table2">6)移位,上下床,輪椅</td>
-                    <td class="money-table2">獨立上下床及輪椅</td>
-                    <td class="money-table5">A</td>
-                    <td class="money-table2"></td>
-                </tr>
-                <tr>
-                    <td>&nbsp;</td>
-                    <td>需注意與部分協助</td>
-                    <td class="money-table4">B</td>
-                    <td>&nbsp;</td>
-                </tr>
-                <tr>
-                    <td>&nbsp;</td>
-                    <td>完全依賴</td>
-                    <td class="money-table4">C</td>
-                    <td>&nbsp;</td>
-                </tr>
-                <tr>
-                    <td>7)行走</td>
-                    <td>可獨立行走</td>
-                    <td class="money-table4">A</td>
-                    <td>&nbsp;</td>
-                </tr>
-                <tr>
-                    <td>&nbsp;</td>
-                    <td>部分需協助</td>
-                    <td class="money-table4">B</td>
-                    <td>&nbsp;</td>
-                </tr>
-                <tr>
-                    <td>&nbsp;</td>
-                    <td>完全依賴、行走全程配陪伴</td>
-                    <td class="money-table4">C</td>
-                    <td>&nbsp;</td>
-                </tr>
-                <tr>
-                    <td>8)翻身</td>
-                    <td>可自行翻身</td>
-                    <td class="money-table4">A</td>
-                    <td>&nbsp;</td>
-                </tr>
-                <tr>
-                    <td>&nbsp;</td>
-                    <td>需協助翻身</td>
-                    <td class="money-table4">C</td>
-                    <td>&nbsp;</td>
-                </tr>
-                <tr>
-                    <td>分級標準</td>
-                    <td colspan="3">一個C以上,照護費為 3000 元<br />
-                        三個B以上無C項者照護費為1500元<br />
-                        二個B以下照護費為0元</td>
-                </tr>
-                <tr>
-                    <td colspan="4">失智者CDR表評估為：<br />
-                        1分輕度(30000元)<br />
-                        2分中度(35000元)<br />
-                        3分重度(40000元)</td>
-                </tr>
-            </table>
-
+            <asp:GridView ID="GridView1" runat="server" CssClass="table table-bordered table-hover table-striped" ShowHeader="False">
+            </asp:GridView>
+            
         </div>
         <hr />
     </div>
+
+    </form>
 
 </asp:Content>

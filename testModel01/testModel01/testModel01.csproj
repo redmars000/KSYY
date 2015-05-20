@@ -57,6 +57,9 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="AssessFile\word.png" />
+    <Content Include="bin\testModel01.dll" />
+    <Content Include="bin\testModel01.pdb" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
@@ -81,6 +84,9 @@
     <Content Include="loginImg\3.jpg" />
     <Content Include="loginImg\4.jpg" />
     <Content Include="loginImg\5.jpg" />
+    <Content Include="obj\Debug\testModel01.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Debug\testModel01.dll" />
+    <Content Include="obj\Debug\testModel01.pdb" />
     <Content Include="packages.config" />
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
@@ -177,6 +183,11 @@
     <Content Include="聯絡我們.aspx" />
     <Content Include="關於康欣.aspx" />
     <Content Include="TempFolder\床位.aspx" />
+    <Content Include="AssessFile\123.xlsx" />
+    <Content Include="AssessFile\assess.doc" />
+    <Content Include="bin\testModel01.dll.config" />
+    <Content Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <Content Include="obj\Debug\testModel01.csprojResolveAssemblyReference.cache" />
     <None Include="Scripts\jquery-1.9.1.intellisense.js" />
     <Content Include="pic\ADD.png" />
     <Content Include="pic\empty.png" />
@@ -198,6 +209,9 @@
     <Compile Include="Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Site.Master.cs">
       <DependentUpon>Site.Master</DependentUpon>
@@ -281,6 +295,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="contentPage\" />
+    <Folder Include="obj\Debug\TempPE\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

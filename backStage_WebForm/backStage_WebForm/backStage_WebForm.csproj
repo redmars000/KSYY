@@ -71,8 +71,8 @@
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="Content\bootstrap-theme.css.map" />
     <Content Include="Content\bootstrap.css.map" />
-    <Content Include="Main.aspx" />
-    <Content Include="活動剪影後台.aspx" />
+    <Content Include="BS_Main.aspx" />
+    <Content Include="BS_活動剪影後台.aspx" />
     <None Include="Scripts\jquery-1.9.1.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -81,30 +81,30 @@
     <Content Include="Scripts\npm.js" />
     <Content Include="Web.config" />
     <Content Include="Scripts\jquery-1.9.1.min.map" />
-    <Content Include="Site.Master" />
+    <Content Include="BS_Site.Master" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Site.Master.cs">
-      <DependentUpon>Site.Master</DependentUpon>
+    <Compile Include="BS_Site.Master.cs">
+      <DependentUpon>BS_Site.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Site.Master.designer.cs">
-      <DependentUpon>Site.Master</DependentUpon>
+    <Compile Include="BS_Site.Master.designer.cs">
+      <DependentUpon>BS_Site.Master</DependentUpon>
     </Compile>
-    <Compile Include="Main.aspx.cs">
-      <DependentUpon>Main.aspx</DependentUpon>
+    <Compile Include="BS_Main.aspx.cs">
+      <DependentUpon>BS_Main.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Main.aspx.designer.cs">
-      <DependentUpon>Main.aspx</DependentUpon>
+    <Compile Include="BS_Main.aspx.designer.cs">
+      <DependentUpon>BS_Main.aspx</DependentUpon>
     </Compile>
-    <Compile Include="活動剪影後台.aspx.cs">
-      <DependentUpon>活動剪影後台.aspx</DependentUpon>
+    <Compile Include="BS_活動剪影後台.aspx.cs">
+      <DependentUpon>BS_活動剪影後台.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="活動剪影後台.aspx.designer.cs">
-      <DependentUpon>活動剪影後台.aspx</DependentUpon>
+    <Compile Include="BS_活動剪影後台.aspx.designer.cs">
+      <DependentUpon>BS_活動剪影後台.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

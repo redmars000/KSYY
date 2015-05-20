@@ -1,4 +1,4 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="backStage_WebForm.Site" %>
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="BS_Site.Master.cs" Inherits="backStage_WebForm.Site" %>
 
 <!DOCTYPE html>
 
@@ -37,7 +37,7 @@
                         </a>
                     </li>
                     <li>
-                        <a runat="server" href="~/活動剪影後台.aspx">
+                        <a runat="server" href="~/BS_活動剪影後台.aspx">
                             <span class="glyphicon glyphicon-headphones" aria-hidden="true"></span>活動剪影管理
                         </a>
                     </li>

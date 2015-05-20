@@ -60,6 +60,8 @@
     <Content Include="AssessFile\word.png" />
     <Content Include="bin\testModel01.dll" />
     <Content Include="bin\testModel01.pdb" />
+    <Content Include="BS_Main.aspx" />
+    <Content Include="BS_活動剪影後台.aspx" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
@@ -70,6 +72,7 @@
     <Content Include="Content\loginUI01.css" />
     <Content Include="Content\loginUI02.css" />
     <Content Include="Content\screen.css" />
+    <Content Include="Content\sidebar.css" />
     <Content Include="Content\Site.css" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="headImg\1.jpg" />
@@ -188,6 +191,7 @@
     <Content Include="bin\testModel01.dll.config" />
     <Content Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
     <Content Include="obj\Debug\testModel01.csprojResolveAssemblyReference.cache" />
+    <Content Include="BS_Site.Master" />
     <None Include="Scripts\jquery-1.9.1.intellisense.js" />
     <Content Include="pic\ADD.png" />
     <Content Include="pic\empty.png" />
@@ -202,6 +206,27 @@
     <Content Include="Scripts\jquery-1.9.1.min.map" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BS_Main.aspx.cs">
+      <DependentUpon>BS_Main.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BS_Main.aspx.designer.cs">
+      <DependentUpon>BS_Main.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BS_Site.Master.cs">
+      <DependentUpon>BS_Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BS_Site.Master.designer.cs">
+      <DependentUpon>BS_Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="BS_活動剪影後台.aspx.cs">
+      <DependentUpon>BS_活動剪影後台.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BS_活動剪影後台.aspx.designer.cs">
+      <DependentUpon>BS_活動剪影後台.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -294,7 +319,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="contentPage\" />
     <Folder Include="obj\Debug\TempPE\" />
   </ItemGroup>
   <PropertyGroup>

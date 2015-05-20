@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
@@ -9,105 +10,90 @@ namespace testModel01
 {
     public partial class WebForm10 : System.Web.UI.Page
     {
-        string relativePath = @"Uploads\";
-        string absolutePath;
+
+        SqlConnectionStringBuilder Scsb;
+        string Str_Date = string.Format("{0}", DateTime.Now.Year) + "-" + string.Format("{0}", DateTime.Now.Month) + "-" + string.Format("{0}", DateTime.Now.Day);
+        string str_datasoure { get; set; }
+        string str_InitialCatalog { get; set; }
 
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            UnobtrusiveValidationMode = UnobtrusiveValidationMode.None;
+            //資策會
+            //  str_datasoure = @"CR4-17\MSSQLSERVER2013"; //加上@ 忽略反斜線的字元
+            //家3
+            str_datasoure = @"SHAWN-PC"; //加上@ 忽略反斜線的字元
+            str_InitialCatalog = "ks_pics";//資料庫名稱*/
         }
 
-        protected void Button1_Click(object sender, EventArgs e)
+        protected void Btn_上傳_外觀(object sender, EventArgs e)
         {
-            /* string path = Server.MapPath("./pics");
-       DirectoryInfo dir = new DirectoryInfo(path);
-       int count = 0;
-       foreach (FileInfo f in dir.GetFiles())
-       {*/
-            absolutePath = Server.MapPath("~/" + relativePath);
-            HttpPostedFile f;
-            for (int i = 0; FileUpload1.HasFiles; i++)
+            //建立一個新的連線類別
+            c_loadPhoto c_loadpic = new c_loadPhoto(str_datasoure, str_InitialCatalog,
+              "f庭院照片_l", "f庭院照片_s");
+            foreach (HttpPostedFile postedFile in FileUpload1.PostedFiles)
             {
-
+                //執行圖片上傳與DB資料寫入  
+                c_loadpic.Loadpic(postedFile);
+                //postedFile.SaveAs(Server.MapPath(@"pic\康欣_照片\外觀\" + postedFile.FileName));
             }
-            // Specify the path to save the uploaded file to.
-            string savePath = "c:\\temp\\uploads\\";
-
-            // Get the name of the file to upload.
-            string fileName = FileUpload1.FileName;
-
-            // Create the path and file name to check for duplicates.
-            string pathToCheck = savePath + fileName;
-
-            // Create a temporary file name to use for checking duplicates.
-            string tempfileName = "";
-
-            if (System.IO.File.Exists(pathToCheck))
-            {
-                int counter = 2;
-                while (System.IO.File.Exists(pathToCheck))
-                {
-                    // if a file with this name already exists,
-                    // prefix the filename with a number.
-                    tempfileName = counter.ToString() + fileName;
-                    pathToCheck = savePath + tempfileName;
-                    counter++;
-                }
-
-                fileName = tempfileName;
-
-                // Notify the user that the file name was changed.
-                /*     UploadStatusLabel.Text = "A file with the same name already exists." +
-                         "<br />Your file was saved as " + fileName;*/
-            }
-            // Append the name of the file to upload to the path.
-            savePath += fileName;
-
-            // Call the SaveAs method to save the uploaded
-            // file to the specified directory.
-            FileUpload1.SaveAs(savePath);
-
-
         }
 
-        private string NewFileName(string absolutePath, string displayFileName)
+
+
+    }
+
+
+    class c_loadPhoto
+    {
+        SqlConnectionStringBuilder Scsb;
+        string Str_Date = string.Format("{0}", DateTime.Now.Year) + "-" + string.Format("{0}", DateTime.Now.Month) + "-" + string.Format("{0}", DateTime.Now.Day);
+        string str_datasoure { get; set; }
+        string str_InitialCatalog { get; set; }
+        HttpPostedFile postedFile { get; set; }
+        string str_大欄位名稱 { get; set; }
+        string str_大欄位名稱_temp { get; set; }
+        string str_小欄位名稱 { get; set; }
+        public c_loadPhoto(string str_datasoure, string str_InitialCatalog,
+            string str_大欄位名稱, string str_小欄位名稱)
         {
-            throw new NotImplementedException();
+            this.str_datasoure = str_datasoure;
+            this.str_InitialCatalog = str_InitialCatalog;
+            this.str_大欄位名稱 = str_大欄位名稱;
+            this.str_小欄位名稱 = str_小欄位名稱;
+            str_大欄位名稱_temp = str_大欄位名稱;
         }
 
-
-        protected void FormView1_ItemInserting(object sender, FormViewInsertEventArgs e)
+        public void Loadpic(HttpPostedFile postedFile)
         {
-            // Get the name of the file to upload.
+            this.postedFile = postedFile;
+            string str_檔案名稱;
+            Scsb = new SqlConnectionStringBuilder();
+            Scsb.DataSource = str_datasoure;
+            Scsb.InitialCatalog = str_InitialCatalog;
+            Scsb.IntegratedSecurity = true;
+            SqlConnection con = new SqlConnection(Scsb.ToString());
 
-            string fileName;
-            fileName = FileUpload1.FileName;
+            str_檔案名稱 = postedFile.FileName;
+            string str_檔案名稱_temp = str_檔案名稱;
+            con.Open();
+            string sql =
+                 "if not exists(Select * from T康欣_活動剪影 where @大欄位名稱=@判斷欄位)" +
+             "Insert into T康欣_活動剪影("+str_小欄位名稱+","+str_大欄位名稱_temp+
+             ")  values(@小欄位值,@大欄位值)";
+            SqlCommand cmd4 = new SqlCommand(
+             sql, con);
+            cmd4.Parameters.AddWithValue("@大欄位名稱", str_大欄位名稱);
+            cmd4.Parameters.AddWithValue("@判斷欄位", str_檔案名稱);
+           // cmd4.Parameters.AddWithValue("@小欄位", str_小欄位名稱);
+            //cmd4.Parameters.AddWithValue("@大欄位", str_大欄位名稱_temp);
+            cmd4.Parameters.AddWithValue("@小欄位值", @"pic\康欣_照片\外觀\" + str_檔案名稱_temp);
+            cmd4.Parameters.AddWithValue("@大欄位值", str_檔案名稱_temp);
 
-            string photo =/* Guid.NewGuid().ToString()*/fileName + ".jpg";
-            e.Values["fPath"] = "~/pics/" + photo;
-            e.Values[""] = "";
-            FileUpload1.SaveAs(Server.MapPath("./pics/" + photo));
-
-            // Specify the path to save the uploaded file to.
-            string savePath = "c:\\temp\\uploads\\";
-
-
-
-            // Create the path and file name to check for duplicates.
-            string pathToCheck = savePath + fileName;
-
-            // Create a temporary file name to use for checking duplicates.
-            string tempfileName = "";
-
-            while (FileUpload1.HasFiles)
-            {
-                savePath = "~\\";
-                fileName = FileUpload1.FileName;
-                pathToCheck = savePath + fileName;
-
-
-            }
-
+            cmd4.ExecuteNonQuery();
+            con.Close();
         }
+
+
     }
 }

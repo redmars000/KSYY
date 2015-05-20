@@ -26,3 +26,9 @@ D:\GitHub\KSYY\testModel01\testModel01\bin\testModel01.dll
 D:\GitHub\KSYY\testModel01\testModel01\bin\testModel01.pdb
 D:\GitHub\KSYY\testModel01\testModel01\obj\Debug\testModel01.dll
 D:\GitHub\KSYY\testModel01\testModel01\obj\Debug\testModel01.pdb
+C:\Users\shawn\Desktop\GITHUB\KSYY\testModel01\testModel01\bin\testModel01.dll.config
+C:\Users\shawn\Desktop\GITHUB\KSYY\testModel01\testModel01\bin\testModel01.dll
+C:\Users\shawn\Desktop\GITHUB\KSYY\testModel01\testModel01\bin\testModel01.pdb
+C:\Users\shawn\Desktop\GITHUB\KSYY\testModel01\testModel01\obj\Debug\testModel01.csprojResolveAssemblyReference.cache
+C:\Users\shawn\Desktop\GITHUB\KSYY\testModel01\testModel01\obj\Debug\testModel01.dll
+C:\Users\shawn\Desktop\GITHUB\KSYY\testModel01\testModel01\obj\Debug\testModel01.pdb

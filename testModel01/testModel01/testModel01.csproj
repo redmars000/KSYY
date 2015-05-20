@@ -60,8 +60,6 @@
     <Content Include="AssessFile\word.png" />
     <Content Include="bin\testModel01.dll" />
     <Content Include="bin\testModel01.pdb" />
-    <Content Include="BS_Main.aspx" />
-    <Content Include="BS_活動剪影後台.aspx" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
@@ -179,6 +177,8 @@
     <Content Include="Scripts\lightbox.js" />
     <Content Include="Scripts\lightbox.min.js" />
     <Content Include="TempFolder\collapse.aspx" />
+    <Content Include="BS_Main.aspx" />
+    <Content Include="BS_活動剪影後台.aspx" />
     <Content Include="最新消息.aspx" />
     <Content Include="收費標準.aspx" />
     <Content Include="環境介紹.aspx" />
@@ -206,26 +206,12 @@
     <Content Include="Scripts\jquery-1.9.1.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BS_Main.aspx.cs">
-      <DependentUpon>BS_Main.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="BS_Main.aspx.designer.cs">
-      <DependentUpon>BS_Main.aspx</DependentUpon>
-    </Compile>
     <Compile Include="BS_Site.Master.cs">
       <DependentUpon>BS_Site.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="BS_Site.Master.designer.cs">
       <DependentUpon>BS_Site.Master</DependentUpon>
-    </Compile>
-    <Compile Include="BS_活動剪影後台.aspx.cs">
-      <DependentUpon>BS_活動剪影後台.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="BS_活動剪影後台.aspx.designer.cs">
-      <DependentUpon>BS_活動剪影後台.aspx</DependentUpon>
     </Compile>
     <Compile Include="Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
@@ -258,6 +244,20 @@
     </Compile>
     <Compile Include="TempFolder\collapse.aspx.designer.cs">
       <DependentUpon>collapse.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BS_Main.aspx.cs">
+      <DependentUpon>BS_Main.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BS_Main.aspx.designer.cs">
+      <DependentUpon>BS_Main.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BS_活動剪影後台.aspx.cs">
+      <DependentUpon>BS_活動剪影後台.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BS_活動剪影後台.aspx.designer.cs">
+      <DependentUpon>BS_活動剪影後台.aspx</DependentUpon>
     </Compile>
     <Compile Include="最新消息.aspx.cs">
       <DependentUpon>最新消息.aspx</DependentUpon>

@@ -1,10 +1,9 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/BS_Site.Master" AutoEventWireup="true" CodeBehind="BS_活動剪影後台.aspx.cs" Inherits="backStage_WebForm.WebForm2" %>
-<asp:Content ID="Content1" ContentPlaceHolderID="HeadContent" runat="server">
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/BS_Site.Master" AutoEventWireup="true" CodeBehind="BS_活動剪影後台.aspx.cs" Inherits="testModel01.WebForm10" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="BS_HeadContent" runat="server">
 </asp:Content>
-<asp:Content ID="Content2" ContentPlaceHolderID="BodyContent" runat="server">
+<asp:Content ID="Content2" ContentPlaceHolderID="BS_BodyContent" runat="server">
 
-    
-    <h1 align="center">相簿編輯</h1>
+    <h1 style="text-align:center">相簿編輯</h1>
     <br/>   <br/> 
     <asp:ScriptManager ID="ScriptManager1" runat="server">
     </asp:ScriptManager>

@@ -1,4 +1,4 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="BS_Site.Master.cs" Inherits="backStage_WebForm.Site" %>
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="BS_Site.master.cs" Inherits="testModel01.BS_Site" %>
 
 <!DOCTYPE html>
 
@@ -76,9 +76,9 @@
                                 <span class="sr-only">工具列</span>
                                 <span class="glyphicon glyphicon-transfer" aria-hidden="true"></span>
                             </a>
-                            <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+                            <asp:ContentPlaceHolder ID="BS_HeadContent" runat="server">
                             </asp:ContentPlaceHolder>
-                            <asp:ContentPlaceHolder ID="BodyContent" runat="server">
+                            <asp:ContentPlaceHolder ID="BS_BodyContent" runat="server">
                             </asp:ContentPlaceHolder>
                         </div>
                     </div>

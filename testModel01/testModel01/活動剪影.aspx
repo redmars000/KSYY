@@ -4,8 +4,11 @@
 </asp:Content>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="BodyContent" runat="server">
-
-
+        
+    <link href="Content/lightbox.css" rel="stylesheet" />
+    <link href="Content/screen.css" rel="stylesheet" />
+    <script src="Scripts/lightbox.js"></script>
+    
     <div class="container">
         <h3>康欣 - 活動剪影</h3>
         <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>

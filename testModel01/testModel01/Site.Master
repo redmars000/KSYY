@@ -10,13 +10,11 @@
     <link href="Content/bootstrap.css" rel="stylesheet" />
     <link href="Content/Site.css" rel="stylesheet" />
     <link href="Content/dhCaretUp.css" rel="stylesheet" />
-    <link href="Content/lightbox.css" rel="stylesheet" />
-    <link href="Content/screen.css" rel="stylesheet" />
 
     <script src="Scripts/jquery-1.9.1.js"></script>
     <script src="Scripts/bootstrap.js"></script>
     <script src="Scripts/dhCaretUp.js"></script>
-    <script src="Scripts/lightbox.js"></script>
+    
 </head>
 <body>
     <nav runat="server">

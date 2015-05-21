@@ -100,6 +100,47 @@
                                 </tr>
                                 <tr>
                                     <td style="background-color: #ffffff;" colspan="4">
+                                        <p>&nbsp;</p>
+                                        <p>
+                                            <asp:GridView ID="GridView2" runat="server" AutoGenerateColumns="False" CellPadding="4" CssClass="table" DataKeyNames="room" DataSourceID="SqlDataSource1" ForeColor="#333333" GridLines="None" Height="302px" Width="952px">
+                                                <AlternatingRowStyle BackColor="White" />
+                                                <Columns>
+                                                    <asp:BoundField DataField="room" HeaderText="住  房" ReadOnly="True" SortExpression="room" />
+                                                    <asp:BoundField DataField="price" HeaderText="基本月費（含住房費、水電費、洗衣費、一般伙食費）" SortExpression="price" />
+                                                    <asp:BoundField DataField="care" HeaderText="特殊照護費" SortExpression="care" />
+                                                    <asp:BoundField DataField="careprice" HeaderText="費用" SortExpression="careprice" />
+                                                </Columns>
+                                                <EditRowStyle BackColor="#2461BF" />
+                                                <FooterStyle BackColor="#507CD1" Font-Bold="True" ForeColor="White" />
+                                                <HeaderStyle BackColor="#507CD1" Font-Bold="True" ForeColor="White" />
+                                                <PagerStyle BackColor="#2461BF" ForeColor="White" HorizontalAlign="Center" />
+                                                <RowStyle BackColor="#EFF3FB" />
+                                                <SelectedRowStyle BackColor="#D1DDF1" Font-Bold="True" ForeColor="#333333" />
+                                                <SortedAscendingCellStyle BackColor="#F5F7FB" />
+                                                <SortedAscendingHeaderStyle BackColor="#6D95E1" />
+                                                <SortedDescendingCellStyle BackColor="#E9EBEF" />
+                                                <SortedDescendingHeaderStyle BackColor="#4870BE" />
+                                            </asp:GridView>
+                                        </p>
+                                        <p>
+                                            <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:KSYY %>" DeleteCommand="DELETE FROM [Fees_table_1] WHERE [room] = @room" InsertCommand="INSERT INTO [Fees_table_1] ([room], [price], [care], [careprice]) VALUES (@room, @price, @care, @careprice)" SelectCommand="SELECT * FROM [Fees_table_1]" UpdateCommand="UPDATE [Fees_table_1] SET [price] = @price, [care] = @care, [careprice] = @careprice WHERE [room] = @room">
+                                                <DeleteParameters>
+                                                    <asp:Parameter Name="room" Type="String" />
+                                                </DeleteParameters>
+                                                <InsertParameters>
+                                                    <asp:Parameter Name="room" Type="String" />
+                                                    <asp:Parameter Name="price" Type="String" />
+                                                    <asp:Parameter Name="care" Type="String" />
+                                                    <asp:Parameter Name="careprice" Type="String" />
+                                                </InsertParameters>
+                                                <UpdateParameters>
+                                                    <asp:Parameter Name="price" Type="String" />
+                                                    <asp:Parameter Name="care" Type="String" />
+                                                    <asp:Parameter Name="careprice" Type="String" />
+                                                    <asp:Parameter Name="room" Type="String" />
+                                                </UpdateParameters>
+                                            </asp:SqlDataSource>
+                                        </p>
                                         <p>1.單人隔離房平日不使用，若需使用時即按元住房收費標準收費 </p>
                                         <p>2.另外收費項目有：管灌特殊配方、護理耗材、就醫費用、掛號費、體檢費、日常用品耗材（全包3000元）…等</p>
                                         <p>3.每月基本費及照護費須於月初預繳，消耗品月結，於次月繳交 </p>

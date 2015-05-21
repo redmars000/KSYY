@@ -27,8 +27,8 @@
                         </a>
                     </li>
                     <li>
-                        <a runat="server" href="#">
-                            <span class="glyphicon glyphicon-phone" aria-hidden="true"></span>list02
+                        <a runat="server" href="~/BS_收費標準.aspx">
+                            <span class="glyphicon glyphicon-phone" aria-hidden="true"></span>收費標準表
                         </a>
                     </li>
                     <li>

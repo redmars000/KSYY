@@ -1,15 +1,7 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="BS_NewsList.aspx.cs" Inherits="BS_NewsList" %>
-
-<!DOCTYPE html>
-
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <link href="Content/bootstrap.min.css" rel="stylesheet" />
-    <title></title>
-</head>
-<body>
-    <form id="form1" runat="server">
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/BS_Site.Master" AutoEventWireup="true" CodeBehind="BS_NewsList.aspx.cs" Inherits="testModel01.WebForm13" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="BS_HeadContent" runat="server">
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="BS_BodyContent" runat="server">
     <div class="container">
         
         <br />
@@ -58,7 +50,5 @@
         </asp:SqlDataSource>
         <br />
         
-    </div>
-    </form>
-</body>
-</html>
+    </div>    
+</asp:Content>

@@ -6,7 +6,7 @@
 <asp:Content ID="BodyContent" ContentPlaceHolderID="BodyContent" runat="server">
         
     <link href="Content/lightbox.css" rel="stylesheet" />
-    <link href="Content/screen.css" rel="stylesheet" />
+    <%--<link href="Content/screen.css" rel="stylesheet" />--%>
     <script src="Scripts/lightbox.js"></script>
     
     <form id="form1" runat="server">

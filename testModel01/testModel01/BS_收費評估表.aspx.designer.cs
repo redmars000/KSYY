@@ -10,24 +10,24 @@
 namespace testModel01 {
     
     
-    public partial class Site {
+    public partial class WebForm11 {
         
         /// <summary>
-        /// HeadContent 控制項。
+        /// FileUpload_收費評估表 控制項。
         /// </summary>
         /// <remarks>
         /// 自動產生的欄位。
         /// 將移動欄位宣告從設計檔案修改為程式碼後置檔案。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder HeadContent;
+        protected global::System.Web.UI.WebControls.FileUpload FileUpload_收費評估表;
         
         /// <summary>
-        /// BodyContent 控制項。
+        /// btn上傳收費評估表 控制項。
         /// </summary>
         /// <remarks>
         /// 自動產生的欄位。
         /// 將移動欄位宣告從設計檔案修改為程式碼後置檔案。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder BodyContent;
+        protected global::System.Web.UI.WebControls.Button btn上傳收費評估表;
     }
 }

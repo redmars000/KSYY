@@ -179,6 +179,7 @@
     <Content Include="TempFolder\collapse.aspx" />
     <Content Include="BS_Main.aspx" />
     <Content Include="BS_活動剪影後台.aspx" />
+    <Content Include="BS_收費評估表.aspx" />
     <Content Include="最新消息.aspx" />
     <Content Include="收費標準.aspx" />
     <Content Include="環境介紹.aspx" />
@@ -258,6 +259,13 @@
     </Compile>
     <Compile Include="BS_活動剪影後台.aspx.designer.cs">
       <DependentUpon>BS_活動剪影後台.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BS_收費評估表.aspx.cs">
+      <DependentUpon>BS_收費評估表.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BS_收費評估表.aspx.designer.cs">
+      <DependentUpon>BS_收費評估表.aspx</DependentUpon>
     </Compile>
     <Compile Include="最新消息.aspx.cs">
       <DependentUpon>最新消息.aspx</DependentUpon>

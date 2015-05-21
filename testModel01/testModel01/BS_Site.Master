@@ -32,8 +32,8 @@
                         </a>
                     </li>
                     <li>
-                        <a runat="server" href="#">
-                            <span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>list03
+                        <a runat="server" href="~/BS_收費評估表.aspx">
+                            <span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>收費評估表
                         </a>
                     </li>
                     <li>

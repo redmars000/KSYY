@@ -22,8 +22,8 @@
                         <a class="text-muted">item select</a>
                     </li>
                     <li>
-                        <a runat="server" href="#">
-                            <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>list01
+                        <a runat="server" href="~/BS_NewsList.aspx">
+                            <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>最新消息管理
                         </a>
                     </li>
                     <li>

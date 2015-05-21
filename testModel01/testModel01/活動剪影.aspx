@@ -13,12 +13,20 @@
     <div class="container">
         <h3>康欣 - 活動剪影</h3>
         <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
-        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:連結_家3 %>" ProviderName="<%$ ConnectionStrings:連結_家3.ProviderName %>" SelectCommand="SELECT [fid], [f庭院照片_s], [f庭院照片_l] FROM [T康欣_活動剪影] WHERE ([f庭院照片_l] IS NOT NULL)"></asp:SqlDataSource>
-        <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:連結_家3 %>" ProviderName="<%$ ConnectionStrings:連結_家3.ProviderName %>" SelectCommand="SELECT [fid], [f內部照片_s], [f內部照片_l] FROM [T康欣_活動剪影] WHERE ([f內部照片_l] IS NOT NULL)"></asp:SqlDataSource>
-    <asp:SqlDataSource ID="SqlDataSource3" runat="server" ConnectionString="<%$ ConnectionStrings:連結_家3 %>" ProviderName="<%$ ConnectionStrings:連結_家3.ProviderName %>" SelectCommand="SELECT [fid], [f慶生照片_s], [f慶生照片_l] FROM [T康欣_活動剪影] WHERE ([f慶生照片_l] IS NOT NULL)"></asp:SqlDataSource>
-      <asp:SqlDataSource ID="SqlDataSource4" runat="server" ConnectionString="<%$ ConnectionStrings:連結_家3 %>" ProviderName="<%$ ConnectionStrings:連結_家3.ProviderName %>" SelectCommand="SELECT [fid], [f泡腳照片_s], [f泡腳照片_l] FROM [T康欣_活動剪影] WHERE ([f泡腳照片_l] IS NOT NULL)"></asp:SqlDataSource>
-    <asp:SqlDataSource ID="SqlDataSource5" runat="server" ConnectionString="<%$ ConnectionStrings:連結_家3 %>" ProviderName="<%$ ConnectionStrings:連結_家3.ProviderName %>" SelectCommand="SELECT [fid], [f復健照片_s], [f復健照片_l] FROM [T康欣_活動剪影] WHERE ([f復健照片_l] IS NOT NULL)"></asp:SqlDataSource>
-     <asp:SqlDataSource ID="SqlDataSource6" runat="server" ConnectionString="<% $ ConnectionStrings:連結_家3 %>" ProviderName="<%$ ConnectionStrings:連結_家3.ProviderName %>" SelectCommand="SELECT [fid], [f義剪照片_s], [f義剪照片_l] FROM [T康欣_活動剪影] WHERE ([f義剪照片_l] IS NOT NULL)"></asp:SqlDataSource>
+         <!--家<asp:SqlDataSource ID="SqlDataSource11" runat="server" ConnectionString="< %$ ConnectionStrings:連結_家3 %>" ProviderName="< % $ ConnectionStrings:連結_家3.ProviderName %>" SelectCommand="SELECT [fid], [f庭院照片_s], [f庭院照片_l] FROM [T康欣_活動剪影] WHERE ([f庭院照片_l] IS NOT NULL)"></asp:SqlDataSource>
+        <asp:SqlDataSource ID="SqlDataSource21" runat="server" ConnectionString="< %$ ConnectionStrings:連結_家3 %>" ProviderName="< %$ ConnectionStrings:連結_家3.ProviderName %>" SelectCommand="SELECT [fid], [f內部照片_s], [f內部照片_l] FROM [T康欣_活動剪影] WHERE ([f內部照片_l] IS NOT NULL)"></asp:SqlDataSource>
+    <asp:SqlDataSource ID="SqlDataSource31" runat="server" ConnectionString="< %$ ConnectionStrings:連結_家3 %>" ProviderName="< %$ ConnectionStrings:連結_家3.ProviderName %>" SelectCommand="SELECT [fid], [f慶生照片_s], [f慶生照片_l] FROM [T康欣_活動剪影] WHERE ([f慶生照片_l] IS NOT NULL)"></asp:SqlDataSource>
+      <asp:SqlDataSource ID="SqlDataSource41" runat="server" ConnectionString="< %$ ConnectionStrings:連結_家3 %>" ProviderName="< %$ ConnectionStrings:連結_家3.ProviderName %>" SelectCommand="SELECT [fid], [f泡腳照片_s], [f泡腳照片_l] FROM [T康欣_活動剪影] WHERE ([f泡腳照片_l] IS NOT NULL)"></asp:SqlDataSource>
+    <asp:SqlDataSource ID="SqlDataSource51" runat="server" ConnectionString="< %$ ConnectionStrings:連結_家3 %>" ProviderName="< %$ ConnectionStrings:連結_家3.ProviderName %>" SelectCommand="SELECT [fid], [f復健照片_s], [f復健照片_l] FROM [T康欣_活動剪影] WHERE ([f復健照片_l] IS NOT NULL)"></asp:SqlDataSource>
+     <asp:SqlDataSource ID="SqlDataSource61" runat="server" ConnectionString="< % $ ConnectionStrings:連結_家3 %>" ProviderName="< %$ ConnectionStrings:連結_家3.ProviderName %>" SelectCommand="SELECT [fid], [f義剪照片_s], [f義剪照片_l] FROM [T康欣_活動剪影] WHERE ([f義剪照片_l] IS NOT NULL)"></asp:SqlDataSource>
+    -->
+
+        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:活動圖片_資策會 %>" SelectCommand="SELECT [fid], [f庭院照片_l], [f庭院照片_s] FROM [T康欣_活動剪影] WHERE ([f庭院照片_l] IS NOT NULL)"></asp:SqlDataSource>
+        <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:活動圖片_資策會 %>" SelectCommand="SELECT [fid], [f內部照片_s], [f內部照片_l] FROM [T康欣_活動剪影] WHERE ([f內部照片_l] IS NOT NULL)" ProviderName="System.Data.SqlClient"></asp:SqlDataSource>
+    <asp:SqlDataSource ID="SqlDataSource3" runat="server" ConnectionString="<%$ ConnectionStrings:活動圖片_資策會 %>" SelectCommand="SELECT [fid], [f慶生照片_s], [f慶生照片_l] FROM [T康欣_活動剪影] WHERE ([f慶生照片_l] IS NOT NULL)"  ProviderName="System.Data.SqlClient"></asp:SqlDataSource>
+      <asp:SqlDataSource ID="SqlDataSource4" runat="server" ConnectionString="<%$ ConnectionStrings:活動圖片_資策會 %>"  SelectCommand="SELECT [fid], [f泡腳照片_s], [f泡腳照片_l] FROM [T康欣_活動剪影] WHERE ([f泡腳照片_l] IS NOT NULL)"  ProviderName="System.Data.SqlClient"></asp:SqlDataSource>
+    <asp:SqlDataSource ID="SqlDataSource5" runat="server" ConnectionString="<%$ ConnectionStrings:活動圖片_資策會 %>"  SelectCommand="SELECT [fid], [f復健照片_s], [f復健照片_l] FROM [T康欣_活動剪影] WHERE ([f復健照片_l] IS NOT NULL)"  ProviderName="System.Data.SqlClient"></asp:SqlDataSource>
+     <asp:SqlDataSource ID="SqlDataSource6" runat="server" ConnectionString="<% $ ConnectionStrings:活動圖片_資策會 %>"  SelectCommand="SELECT [fid], [f義剪照片_s], [f義剪照片_l] FROM [T康欣_活動剪影] WHERE ([f義剪照片_l] IS NOT NULL)"  ProviderName="System.Data.SqlClient"></asp:SqlDataSource>
     
          <hr style="background-color:blue; height:1px"/>
     </div>

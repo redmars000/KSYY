@@ -28,7 +28,6 @@ D:\GitHub\KSYY\testModel01\testModel01\obj\Debug\testModel01.pdb
 C:\Users\shawn\Desktop\GITHUB\KSYY\testModel01\testModel01\bin\testModel01.dll.config
 C:\Users\shawn\Desktop\GITHUB\KSYY\testModel01\testModel01\bin\testModel01.dll
 C:\Users\shawn\Desktop\GITHUB\KSYY\testModel01\testModel01\bin\testModel01.pdb
-C:\Users\shawn\Desktop\GITHUB\KSYY\testModel01\testModel01\obj\Debug\testModel01.csprojResolveAssemblyReference.cache
 C:\Users\shawn\Desktop\GITHUB\KSYY\testModel01\testModel01\obj\Debug\testModel01.dll
 C:\Users\shawn\Desktop\GITHUB\KSYY\testModel01\testModel01\obj\Debug\testModel01.pdb
 C:\Users\iii\Desktop\下載\KSYY-master\KSYY-master\testModel01\testModel01\bin\testModel01.dll
@@ -40,3 +39,4 @@ C:\Users\iii\Desktop\github\KSYY\testModel01\testModel01\bin\testModel01.dll
 C:\Users\iii\Desktop\github\KSYY\testModel01\testModel01\bin\testModel01.pdb
 C:\Users\iii\Desktop\github\KSYY\testModel01\testModel01\obj\Debug\testModel01.dll
 C:\Users\iii\Desktop\github\KSYY\testModel01\testModel01\obj\Debug\testModel01.pdb
+C:\Users\shawn\Desktop\GITHUB\KSYY\testModel01\testModel01\obj\Debug\testModel01.csprojResolveAssemblyReference.cache

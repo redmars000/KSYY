@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Data.SqlClient;
+using System.IO;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
@@ -24,9 +26,9 @@ namespace testModel01
             //家3
             str_datasoure = @"SHAWN-PC"; //加上@ 忽略反斜線的字元
             str_InitialCatalog = "ks_pics";//資料庫名稱*/
+
+            laod("f庭院照片_s", "f庭院照片_l");
         }
-
-
         protected void Btn_上傳_外觀_Click(object sender, EventArgs e)
         {
             //建立一個新的連線類別
@@ -51,7 +53,6 @@ namespace testModel01
                 //postedFile.SaveAs(Server.MapPath(@"pic\康欣_照片\內部\" + postedFile.FileName));
             }
         }
-
         protected void Btn_上傳_慶生_Click(object sender, EventArgs e)
         {
             //建立一個新的連線類別
@@ -64,7 +65,6 @@ namespace testModel01
                 //postedFile.SaveAs(Server.MapPath(@"pic\康欣_照片\慶生\" + postedFile.FileName));
             }
         }
-
         protected void Btn_上傳_泡腳_Click(object sender, EventArgs e)
         {
             //建立一個新的連線類別
@@ -77,7 +77,6 @@ namespace testModel01
                 //postedFile.SaveAs(Server.MapPath(@"pic\康欣_照片\泡腳\" + postedFile.FileName));
             }
         }
-
         protected void Btn_上傳_復健_Click(object sender, EventArgs e)
         {
             //建立一個新的連線類別
@@ -90,7 +89,6 @@ namespace testModel01
                 //postedFile.SaveAs(Server.MapPath(@"pic\康欣_照片\復健\" + postedFile.FileName));
             }
         }
-
         protected void Btn_上傳_義剪_Click(object sender, EventArgs e)
         {
             //建立一個新的連線類別
@@ -103,8 +101,32 @@ namespace testModel01
                 //postedFile.SaveAs(Server.MapPath(@"pic\康欣_照片\復健\" + postedFile.FileName));
             }
         }
-
         
+        private void laod(string str_小欄位名稱, string str_大欄位名稱)
+        {
+            
+
+            SqlDataSource sds = new SqlDataSource();
+          // sds.ConnectionString = @"Data Source=CR4-17\MSSQLSERVER2013;Initial Catalog=ks_pics;Integrated Security=True";
+           sds.ConnectionString = @"Data Source=SHAWN-PC;Integrated Security=SSPI;Initial Catalog=ks_pics";
+        
+            sds.SelectCommand = "SELECT fid,f庭院照片_s,f庭院照片_l from  T康欣_活動剪影 WHERE f庭院照片_s IS NOT NULL";
+    
+            ListView1.DataSource = sds.Select(DataSourceSelectArguments.Empty);
+            ListView1.DataBind();       
+        }
+
+        protected void Btn_delete_Click(object sender, EventArgs e)
+        {
+            //建立一個新的連線類別
+        }
+
+        protected void Button2_Click(object sender, EventArgs e)
+        {
+            if (System.IO.File.Exists(@"D:\未命名.png"))
+                System.IO.File.Delete(@"D:\未命名.png");
+            
+        }
 
 
 

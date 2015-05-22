@@ -1,0 +1,6 @@
+C:\Users\iii\Desktop\更改文字樣式範例\更改文字樣式範例\bin\更改文字樣式範例.dll
+C:\Users\iii\Desktop\更改文字樣式範例\更改文字樣式範例\bin\更改文字樣式範例.pdb
+C:\Users\iii\Desktop\更改文字樣式範例\更改文字樣式範例\bin\CKEditor.NET.dll
+C:\Users\iii\Desktop\更改文字樣式範例\更改文字樣式範例\bin\CKEditor.NET.pdb
+C:\Users\iii\Desktop\更改文字樣式範例\更改文字樣式範例\obj\Debug\更改文字樣式範例.dll
+C:\Users\iii\Desktop\更改文字樣式範例\更改文字樣式範例\obj\Debug\更改文字樣式範例.pdb

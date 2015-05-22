@@ -191,6 +191,7 @@
     <Content Include="BS_收費評估表.aspx" />
     <Content Include="BS_收費標準.aspx" />
     <Content Include="BS_NewsList.aspx" />
+    <Content Include="最新消息內容.aspx" />
     <Content Include="最新消息.aspx" />
     <Content Include="收費標準.aspx" />
     <Content Include="環境介紹.aspx" />
@@ -295,6 +296,13 @@
     </Compile>
     <Compile Include="BS_NewsList.aspx.designer.cs">
       <DependentUpon>BS_NewsList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="最新消息內容.aspx.cs">
+      <DependentUpon>最新消息內容.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="最新消息內容.aspx.designer.cs">
+      <DependentUpon>最新消息內容.aspx</DependentUpon>
     </Compile>
     <Compile Include="最新消息.aspx.cs">
       <DependentUpon>最新消息.aspx</DependentUpon>

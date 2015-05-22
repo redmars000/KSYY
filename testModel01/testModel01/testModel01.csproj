@@ -57,6 +57,14 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\KSYY.mdf" />
+    <Content Include="App_Data\KSYY_log.ldf">
+      <DependentUpon>KSYY.mdf</DependentUpon>
+    </Content>
+    <Content Include="App_Data\dbKYSS.mdf" />
+    <Content Include="App_Data\dbKYSS_log.ldf">
+      <DependentUpon>dbKYSS.mdf</DependentUpon>
+    </Content>
     <Content Include="AssessFile\word.png" />
     <Content Include="bin\testModel01.dll" />
     <Content Include="bin\testModel01.pdb" />

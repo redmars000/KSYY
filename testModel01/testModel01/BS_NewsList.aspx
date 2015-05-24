@@ -2,7 +2,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="BS_HeadContent" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="BS_BodyContent" runat="server">
-    <div class="container">
+    <div class="">
         
         <br />
         

@@ -80,7 +80,9 @@
     <Content Include="Content\loginUI01.css" />
     <Content Include="Content\loginUI02.css" />
     <Content Include="Content\screen.css" />
-    <Content Include="Content\sidebar.css" />
+    <Content Include="Content\Sidebar.css" />
+    <Content Include="Scripts\Sidebar.js" />
+    <Content Include="TempFolder\sidebar.css" />
     <Content Include="Content\Site.css" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="headImg\1.jpg" />
@@ -192,6 +194,7 @@
     <Content Include="BS_收費評估表.aspx" />
     <Content Include="BS_收費標準.aspx" />
     <Content Include="BS_NewsList.aspx" />
+    <Content Include="TempFolder\sidebar.js" />
     <Content Include="最新消息內容.aspx" />
     <Content Include="最新消息.aspx" />
     <Content Include="收費標準.aspx" />

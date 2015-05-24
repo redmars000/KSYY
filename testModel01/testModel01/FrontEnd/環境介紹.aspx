@@ -1,4 +1,4 @@
-﻿<%@ Page Title="環境介紹" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="環境介紹.aspx.cs" Inherits="testModel01.WebForm5" %>
+﻿<%@ Page Title="環境介紹" Language="C#" MasterPageFile="~/FrontEnd/Site.Master" AutoEventWireup="true" CodeBehind="環境介紹.aspx.cs" Inherits="testModel01.WebForm5" %>
 
 <asp:Content ID="HeadContent" ContentPlaceHolderID="HeadContent" runat="server">
 </asp:Content>

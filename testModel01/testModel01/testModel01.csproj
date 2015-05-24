@@ -68,8 +68,8 @@
     <Content Include="AssessFile\word.png" />
     <Content Include="bin\testModel01.dll" />
     <Content Include="bin\testModel01.pdb" />
-    <Content Include="BS_NewsContent.aspx" />
-    <Content Include="BS_活動剪影後台.aspx" />
+    <Content Include="BackEnd\BS_NewsContent.aspx" />
+    <Content Include="BackEnd\BS_活動剪影後台.aspx" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
@@ -107,7 +107,7 @@
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="Content\bootstrap-theme.css.map" />
     <Content Include="Content\bootstrap.css.map" />
-    <Content Include="Main.aspx" />
+    <Content Include="FrontEnd\Main.aspx" />
     <Content Include="pic\康欣_照片\內部\inside_L %281%29.jpg" />
     <Content Include="pic\康欣_照片\內部\inside_L %282%29.jpg" />
     <Content Include="pic\康欣_照片\內部\inside_L %283%29.jpg" />
@@ -190,27 +190,27 @@
     <Content Include="Scripts\lightbox.min.js" />
     <Content Include="Scripts\測試物件.js" />
     <Content Include="TempFolder\collapse.aspx" />
-    <Content Include="BS_Main.aspx" />
-    <Content Include="BS_收費評估表.aspx" />
-    <Content Include="BS_收費標準.aspx" />
-    <Content Include="BS_NewsList.aspx" />
+    <Content Include="BackEnd\BS_Main.aspx" />
+    <Content Include="BackEnd\BS_收費評估表.aspx" />
+    <Content Include="BackEnd\BS_收費標準.aspx" />
+    <Content Include="BackEnd\BS_NewsList.aspx" />
     <Content Include="TempFolder\sidebar.js" />
-    <Content Include="最新消息內容.aspx" />
-    <Content Include="最新消息.aspx" />
-    <Content Include="收費標準.aspx" />
-    <Content Include="活動剪影.aspx" />
-    <Content Include="環境介紹.aspx" />
-    <Content Include="聯絡我們.aspx" />
+    <Content Include="FrontEnd\最新消息內容.aspx" />
+    <Content Include="FrontEnd\最新消息.aspx" />
+    <Content Include="FrontEnd\收費標準.aspx" />
+    <Content Include="FrontEnd\活動剪影.aspx" />
+    <Content Include="FrontEnd\環境介紹.aspx" />
+    <Content Include="FrontEnd\聯絡我們.aspx" />
     <Content Include="自訂\WC1_html.ascx" />
     <Content Include="自訂\WC2_default.ascx" />
-    <Content Include="關於康欣.aspx" />
+    <Content Include="FrontEnd\關於康欣.aspx" />
     <Content Include="TempFolder\床位.aspx" />
     <Content Include="AssessFile\123.xlsx" />
     <Content Include="AssessFile\assess.doc" />
     <Content Include="bin\testModel01.dll.config" />
     <Content Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
     <Content Include="obj\Debug\testModel01.csprojResolveAssemblyReference.cache" />
-    <Content Include="BS_Site.Master" />
+    <Content Include="BackEnd\BS_Site.Master" />
     <None Include="Scripts\jquery-1.9.1.intellisense.js" />
     <Content Include="pic\ADD.png" />
     <Content Include="pic\empty.png" />
@@ -225,22 +225,22 @@
     <Content Include="Scripts\jquery-1.9.1.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BS_NewsContent.aspx.cs">
+    <Compile Include="BackEnd\BS_NewsContent.aspx.cs">
       <DependentUpon>BS_NewsContent.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="BS_Site.Master.cs">
+    <Compile Include="BackEnd\BS_Site.Master.cs">
       <DependentUpon>BS_Site.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="BS_Site.Master.designer.cs">
+    <Compile Include="BackEnd\BS_Site.Master.designer.cs">
       <DependentUpon>BS_Site.Master</DependentUpon>
     </Compile>
-    <Compile Include="BS_活動剪影後台.aspx.cs">
+    <Compile Include="BackEnd\BS_活動剪影後台.aspx.cs">
       <DependentUpon>BS_活動剪影後台.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="BS_活動剪影後台.aspx.designer.cs">
+    <Compile Include="BackEnd\BS_活動剪影後台.aspx.designer.cs">
       <DependentUpon>BS_活動剪影後台.aspx</DependentUpon>
     </Compile>
     <Compile Include="Login.aspx.cs">
@@ -254,18 +254,18 @@
     <Compile Include="obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
     <Compile Include="obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Site.Master.cs">
+    <Compile Include="FrontEnd\Site.Master.cs">
       <DependentUpon>Site.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Site.Master.designer.cs">
+    <Compile Include="FrontEnd\Site.Master.designer.cs">
       <DependentUpon>Site.Master</DependentUpon>
     </Compile>
-    <Compile Include="Main.aspx.cs">
+    <Compile Include="FrontEnd\Main.aspx.cs">
       <DependentUpon>Main.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Main.aspx.designer.cs">
+    <Compile Include="FrontEnd\Main.aspx.designer.cs">
       <DependentUpon>Main.aspx</DependentUpon>
     </Compile>
     <Compile Include="TempFolder\collapse.aspx.cs">
@@ -275,74 +275,74 @@
     <Compile Include="TempFolder\collapse.aspx.designer.cs">
       <DependentUpon>collapse.aspx</DependentUpon>
     </Compile>
-    <Compile Include="BS_Main.aspx.cs">
+    <Compile Include="BackEnd\BS_Main.aspx.cs">
       <DependentUpon>BS_Main.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="BS_Main.aspx.designer.cs">
+    <Compile Include="BackEnd\BS_Main.aspx.designer.cs">
       <DependentUpon>BS_Main.aspx</DependentUpon>
     </Compile>
-    <Compile Include="BS_收費評估表.aspx.cs">
+    <Compile Include="BackEnd\BS_收費評估表.aspx.cs">
       <DependentUpon>BS_收費評估表.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="BS_收費評估表.aspx.designer.cs">
+    <Compile Include="BackEnd\BS_收費評估表.aspx.designer.cs">
       <DependentUpon>BS_收費評估表.aspx</DependentUpon>
     </Compile>
-    <Compile Include="BS_收費標準.aspx.cs">
+    <Compile Include="BackEnd\BS_收費標準.aspx.cs">
       <DependentUpon>BS_收費標準.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="BS_收費標準.aspx.designer.cs">
+    <Compile Include="BackEnd\BS_收費標準.aspx.designer.cs">
       <DependentUpon>BS_收費標準.aspx</DependentUpon>
     </Compile>
-    <Compile Include="BS_NewsList.aspx.cs">
+    <Compile Include="BackEnd\BS_NewsList.aspx.cs">
       <DependentUpon>BS_NewsList.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="BS_NewsList.aspx.designer.cs">
+    <Compile Include="BackEnd\BS_NewsList.aspx.designer.cs">
       <DependentUpon>BS_NewsList.aspx</DependentUpon>
     </Compile>
-    <Compile Include="最新消息內容.aspx.cs">
+    <Compile Include="FrontEnd\最新消息內容.aspx.cs">
       <DependentUpon>最新消息內容.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="最新消息內容.aspx.designer.cs">
+    <Compile Include="FrontEnd\最新消息內容.aspx.designer.cs">
       <DependentUpon>最新消息內容.aspx</DependentUpon>
     </Compile>
-    <Compile Include="最新消息.aspx.cs">
+    <Compile Include="FrontEnd\最新消息.aspx.cs">
       <DependentUpon>最新消息.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="最新消息.aspx.designer.cs">
+    <Compile Include="FrontEnd\最新消息.aspx.designer.cs">
       <DependentUpon>最新消息.aspx</DependentUpon>
     </Compile>
-    <Compile Include="收費標準.aspx.cs">
+    <Compile Include="FrontEnd\收費標準.aspx.cs">
       <DependentUpon>收費標準.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="收費標準.aspx.designer.cs">
+    <Compile Include="FrontEnd\收費標準.aspx.designer.cs">
       <DependentUpon>收費標準.aspx</DependentUpon>
     </Compile>
-    <Compile Include="活動剪影.aspx.cs">
+    <Compile Include="FrontEnd\活動剪影.aspx.cs">
       <DependentUpon>活動剪影.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="活動剪影.aspx.designer.cs">
+    <Compile Include="FrontEnd\活動剪影.aspx.designer.cs">
       <DependentUpon>活動剪影.aspx</DependentUpon>
     </Compile>
-    <Compile Include="環境介紹.aspx.cs">
+    <Compile Include="FrontEnd\環境介紹.aspx.cs">
       <DependentUpon>環境介紹.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="環境介紹.aspx.designer.cs">
+    <Compile Include="FrontEnd\環境介紹.aspx.designer.cs">
       <DependentUpon>環境介紹.aspx</DependentUpon>
     </Compile>
-    <Compile Include="聯絡我們.aspx.cs">
+    <Compile Include="FrontEnd\聯絡我們.aspx.cs">
       <DependentUpon>聯絡我們.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="聯絡我們.aspx.designer.cs">
+    <Compile Include="FrontEnd\聯絡我們.aspx.designer.cs">
       <DependentUpon>聯絡我們.aspx</DependentUpon>
     </Compile>
     <Compile Include="自訂\WC1_html.ascx.cs">
@@ -359,11 +359,11 @@
     <Compile Include="自訂\WC2_default.ascx.designer.cs">
       <DependentUpon>WC2_default.ascx</DependentUpon>
     </Compile>
-    <Compile Include="關於康欣.aspx.cs">
+    <Compile Include="FrontEnd\關於康欣.aspx.cs">
       <DependentUpon>關於康欣.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="關於康欣.aspx.designer.cs">
+    <Compile Include="FrontEnd\關於康欣.aspx.designer.cs">
       <DependentUpon>關於康欣.aspx</DependentUpon>
     </Compile>
     <Compile Include="TempFolder\床位.aspx.cs">
@@ -375,7 +375,7 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Site.Master" />
+    <Content Include="FrontEnd\Site.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

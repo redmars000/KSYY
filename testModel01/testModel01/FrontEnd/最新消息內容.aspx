@@ -1,10 +1,10 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="最新消息內容.aspx.cs" Inherits="testModel01.WebForm14" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/FrontEnd/Site.Master" AutoEventWireup="true" CodeBehind="最新消息內容.aspx.cs" Inherits="testModel01.WebForm14" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="HeadContent" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="BodyContent" runat="server">
     <form id="form1" runat="server">
-        <div class=" container">
+        <div class="container">
             <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT * FROM [tNews] WHERE ([fId] = @fId)">
                 <SelectParameters>
                     <asp:QueryStringParameter Name="fId" QueryStringField="fid" Type="Int32" />

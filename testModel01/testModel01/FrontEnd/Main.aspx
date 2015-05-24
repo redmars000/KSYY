@@ -1,4 +1,4 @@
-﻿<%@ Page Title="首頁" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Main.aspx.cs" Inherits="testModel01.WebForm1" %>
+﻿<%@ Page Title="首頁" Language="C#" MasterPageFile="~/FrontEnd/Site.Master" AutoEventWireup="true" CodeBehind="Main.aspx.cs" Inherits="testModel01.WebForm1" %>
 
 <asp:Content ID="HeadContent" ContentPlaceHolderID="HeadContent" runat="server">
 </asp:Content>
@@ -32,9 +32,9 @@
             </asp:GridView>
 
         </div>
-        <div align="right">
+        <div class="pull-right">
             <a href="最新消息.aspx">
-                <img src="pic/更多內容.gif" /></a>
+                <img src="../pic/更多內容.gif" /></a>
         </div>
         <hr />
     </div>
@@ -44,7 +44,7 @@
     </div>
     <div class="container">
         <a href="Main.aspx">
-            <img src="pic/康欣老人長期照顧中心.jpg" /></a>
+            <img src="../pic/康欣老人長期照顧中心.jpg" /></a>
         <hr />
     </div>
 

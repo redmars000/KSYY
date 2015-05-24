@@ -9,13 +9,13 @@
 
     <title><%: Page.Title %> - testModel01</title>
 
-    <link href="Content/bootstrap.css" rel="stylesheet" />
-    <link href="Content/Site.css" rel="stylesheet" />
-    <link href="Content/dhCaretUp.css" rel="stylesheet" />
+    <link href="../Content/bootstrap.css" rel="stylesheet" />
+    <link href="../Content/Site.css" rel="stylesheet" />
+    <link href="../Content/dhCaretUp.css" rel="stylesheet" />
 
-    <script src="Scripts/jquery-1.9.1.js"></script>
-    <script src="Scripts/bootstrap.js"></script>
-    <script src="Scripts/dhCaretUp.js"></script>
+    <script src="../Scripts/jquery-1.9.1.js"></script>
+    <script src="../Scripts/bootstrap.js"></script>
+    <script src="../Scripts/dhCaretUp.js"></script>
     
 </head>
 <body>
@@ -28,62 +28,62 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" runat="server" href="~/Main.aspx">
+                    <a class="navbar-brand" runat="server" href="~/FrontEnd/Main.aspx">
                         <span class="glyphicon glyphicon-home" aria-hidden="true"></span>&nbsp;testModel01
                     </a>
                 </div>
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
-                        <li><a runat="server" href="~/Main.aspx">首頁</a></li>
-                        <li><a runat="server" href="~/最新消息.aspx">最新消息</a></li>
+                        <li><a runat="server" href="~/FrontEnd/Main.aspx">首頁</a></li>
+                        <li><a runat="server" href="~/FrontEnd/最新消息.aspx">最新消息</a></li>
                         <li class="dropdown">
                             <a class="dropdown-toggle" id="dLabel02" role="button" data-toggle="dropdown" data-target="#" href="/page.html">關於康欣<b class="caret"></b></a>
                             <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
-                                <li><a runat="server" href="~/關於康欣.aspx">關於我們</a></li>
+                                <li><a runat="server" href="~/FrontEnd/關於康欣.aspx">關於我們</a></li>
                                 <li class="divider"></li>
-                                <li><a runat="server" href="~/關於康欣.aspx">位置圖</a></li>
+                                <li><a runat="server" href="~/FrontEnd/關於康欣.aspx">位置圖</a></li>
                             </ul>
                         </li>
                         <li class="dropdown">
                             <a class="dropdown-toggle" id="dLabel03" role="button" data-toggle="dropdown" data-target="#" href="/page.html">收費標準<b class="caret"></b></a>
                             <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
-                                <li><a runat="server" href="~/收費標準.aspx">收費標準表</a></li>
+                                <li><a runat="server" href="~/FrontEnd/收費標準.aspx">收費標準表</a></li>
                                 <li class="divider"></li>
-                                <li><a runat="server" href="~/收費標準.aspx">入住注意事項</a></li>
+                                <li><a runat="server" href="~/FrontEnd/收費標準.aspx">入住注意事項</a></li>
                                 <li class="divider"></li>
-                                <li><a runat="server" href="~/收費標準.aspx">日常照護收費評估表</a></li>
+                                <li><a runat="server" href="~/FrontEnd/收費標準.aspx">日常照護收費評估表</a></li>
                             </ul>
                         </li>
-                        <li><a runat="server" href="~/環境介紹.aspx">環境介紹</a></li>
+                        <li><a runat="server" href="~/FrontEnd/環境介紹.aspx">環境介紹</a></li>
                         <li class="dropdown">
                             <a class="dropdown-toggle" id="dLabel05" role="button" data-toggle="dropdown" data-target="#" href="/page.html">活動剪影<b class="caret"></b></a>
                             <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
 
-                                <li><a runat="server" href="~/活動剪影.aspx#outlook">庭院環境</a></li>
+                                <li><a runat="server" href="~/FrontEnd/活動剪影.aspx#outlook">庭院環境</a></li>
                                 <li class="divider"></li>
-                                <li><a runat="server" href="~/活動剪影.aspx#inside">內部設施</a></li>
+                                <li><a runat="server" href="~/FrontEnd/活動剪影.aspx#inside">內部設施</a></li>
                                 <li class="divider"></li>
-                                <li><a runat="server" href="~/活動剪影.aspx#birthday">慶生剪影</a></li>
+                                <li><a runat="server" href="~/FrontEnd/活動剪影.aspx#birthday">慶生剪影</a></li>
                                 <li class="divider"></li>
-                                <li><a runat="server" href="~/活動剪影.aspx#washfoot">泡腳</a></li>
+                                <li><a runat="server" href="~/FrontEnd/活動剪影.aspx#washfoot">泡腳</a></li>
                                 <li class="divider"></li>
-                                <li><a runat="server" href="~/活動剪影.aspx#rehab">復健</a></li>
+                                <li><a runat="server" href="~/FrontEnd/活動剪影.aspx#rehab">復健</a></li>
                                 <li class="divider"></li>
-                                <li><a runat="server" href="~/活動剪影.aspx#haircut">義剪</a></li>
+                                <li><a runat="server" href="~/FrontEnd/活動剪影.aspx#haircut">義剪</a></li>
                             </ul>
                         </li>
-                        <li><a runat="server" href="~/聯絡我們.aspx">聯絡我們</a></li>
+                        <li><a runat="server" href="~/FrontEnd/聯絡我們.aspx">聯絡我們</a></li>
                     </ul>
                     <%--<asp:LoginView runat="server" ViewStateMode="Disabled">
                         <AnonymousTemplate>
                             <ul class="nav navbar-nav navbar-right">
                                 <li>
-                                    <a runat="server" href="~/Login.aspx">
+                                    <a runat="server" href="~/FrontEnd/Login.aspx">
                                         <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span>&nbsp;登入
                                     </a>
                                 </li>
                                 <li>
-                                    <a runat="server" href="~/Main.aspx">
+                                    <a runat="server" href="~/FrontEnd/Main.aspx">
                                         <span class="glyphicon glyphicon-registration-mark" aria-hidden="true"></span>&nbsp;註冊
                                     </a>
                                 </li>
@@ -91,7 +91,7 @@
                         </AnonymousTemplate>
                         <LoggedInTemplate>
                             <ul class="nav navbar-nav navbar-right">
-                                <li><a runat="server" href="~/Main.aspx" title="Manage your account">Hello!</a></li>
+                                <li><a runat="server" href="~/FrontEnd/Main.aspx" title="Manage your account">Hello!</a></li>
                                 <li>
                                     <span class="glyphicon glyphicon-log-out" aria-hidden="true"></span>&nbsp;
                                     <asp:LoginStatus runat="server" LogoutAction="Redirect" LogoutText="登出" LogoutPageUrl="~/Main.aspx" />
@@ -123,35 +123,35 @@
             </ol>--%>
             <div class="carousel-inner" role="listbox">
                 <div class="item active">
-                    <img src="headImg/1.jpg" alt="First slide"><div class="container">
+                    <img src="../headImg/1.jpg" alt="First slide"><div class="container">
                         <div class="carousel-caption">
                             <%--<h1>test1</h1>--%>
                         </div>
                     </div>
                 </div>
                 <div class="item">
-                    <img src="headImg/2.jpg" alt="Second slide"><div class="container">
+                    <img src="../headImg/2.jpg" alt="Second slide"><div class="container">
                         <div class="carousel-caption">
                             <%--<h1>test2</h1>--%>
                         </div>
                     </div>
                 </div>
                 <div class="item">
-                    <img src="headImg/3.jpg" alt="Third slide"><div class="container">
+                    <img src="../headImg/3.jpg" alt="Third slide"><div class="container">
                         <div class="carousel-caption">
                             <%--<h1>test3</h1>--%>
                         </div>
                     </div>
                 </div>
                 <div class="item">
-                    <img src="headImg/4.jpg" alt="fourth slide"><div class="container">
+                    <img src="../headImg/4.jpg" alt="fourth slide"><div class="container">
                         <div class="carousel-caption">
                             <%--<h1>test4</h1>--%>
                         </div>
                     </div>
                 </div>
                 <div class="item">
-                    <img src="headImg/5.jpg" alt="fifth slide"><div class="container">
+                    <img src="../headImg/5.jpg" alt="fifth slide"><div class="container">
                         <div class="carousel-caption">
                             <%--<h1>test5</h1>--%>
                         </div>

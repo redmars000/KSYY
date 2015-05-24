@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/BS_Site.Master" AutoEventWireup="true" CodeBehind="BS_收費標準.aspx.cs" Inherits="testModel01.WebForm12" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/BackEnd/BS_Site.Master" AutoEventWireup="true" CodeBehind="BS_收費標準.aspx.cs" Inherits="testModel01.WebForm12" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="BS_HeadContent" runat="server">
     <p style="color: #0000CC; font-size: xx-large">
     <strong>收費標準表</strong></p>

@@ -1,4 +1,4 @@
-﻿<%@ Page Title="收費標準" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="收費標準.aspx.cs" Inherits="testModel01.WebForm4" %>
+﻿<%@ Page Title="收費標準" Language="C#" MasterPageFile="~/FrontEnd/Site.Master" AutoEventWireup="true" CodeBehind="收費標準.aspx.cs" Inherits="testModel01.WebForm4" %>
 
 <asp:Content ID="HeadContent" ContentPlaceHolderID="HeadContent" runat="server">
 </asp:Content>
@@ -212,7 +212,7 @@
         <h4>日常照護收費評估表</h4>
         <div>
             <span>康欣老人長期照顧中心 住民日常照護收費評估表</span>
-            <a href="./AssessFile/assess.doc"><img title="下載住民日常照護收費評估表.doc" src="./AssessFile/word.png" width="80"/></a>
+            <a href="../AssessFile/assess.doc"><img title="下載住民日常照護收費評估表.doc" src="../AssessFile/word.png" width="80"/></a>
 
             <asp:GridView ID="GridView1" runat="server" CssClass="table table-bordered table-hover table-striped" ShowHeader="False">
             </asp:GridView>

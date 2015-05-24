@@ -1,9 +1,9 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/BS_Site.Master" AutoEventWireup="true" CodeBehind="BS_活動剪影後台.aspx.cs" Inherits="testModel01.WebForm10" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/BackEnd/BS_Site.Master" AutoEventWireup="true" CodeBehind="BS_活動剪影後台.aspx.cs" Inherits="testModel01.WebForm10" %>
 
-<%@ Register Src="~/自訂/WC1_html.ascx" TagPrefix="uc1" TagName="WC1_html" %>
+<%@ Register Src="../自訂/WC1_html.ascx" TagPrefix="uc1" TagName="WC1_html" %>
 
 
-<%@ Register src="自訂/WC2_default.ascx" tagname="WC2_default" tagprefix="uc2" %>
+<%@ Register src="../自訂/WC2_default.ascx" tagname="WC2_default" tagprefix="uc2" %>
 
 
 <asp:Content ID="Content1" ContentPlaceHolderID="BS_HeadContent" runat="server">

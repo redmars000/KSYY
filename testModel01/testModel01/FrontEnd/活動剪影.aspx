@@ -4,7 +4,7 @@
 </asp:Content>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="BodyContent" runat="server">
-        
+    <link href="../Content/mystyle.css" rel="stylesheet" />
     <link href="../Content/lightbox.css" rel="stylesheet" />
     <link href="../Content/bootstrap.css" rel="stylesheet" />
 
@@ -23,11 +23,11 @@
             <ContentTemplate>
                 <asp:ListView ID="ListView_outlook" runat="server" DataKeyNames="fid" >
                 <ItemTemplate>
-                      <div class="col-md-3 col-xs-6" align="center">
+                      <div class=" col-xd-my20 img-thumbnail" align="center">
                         <a href='<%# Eval("f庭院照片_s") %>'
                             data-lightbox='<%# Eval("f庭院照片_l") %>'
                             data-title='<%# Eval("f庭院照片_l") %>'>
-                            <img src='<%# Eval("f庭院照片_s") %>' height="120"/>
+                            <img src='<%# Eval("f庭院照片_s") %>' height="120" class="img-thumbnail"/>
                            </a>               
                            </div>    
                     </ItemTemplate>
@@ -72,11 +72,11 @@
                   <ContentTemplate>
                 <asp:ListView ID="ListView_inside" runat="server" DataKeyNames="fid" >
                 <ItemTemplate>
-                      <div class="col-md-3 col-xs-6" align="center">
+                      <div class=" col-xd-my20 img-thumbnail" align="center">
                         <a href='<%# Eval("f內部照片_s") %>'
                             data-lightbox='<%# Eval("f內部照片_l") %>'
                             data-title='<%# Eval("f內部照片_l") %>'>
-                            <img src='<%# Eval("f內部照片_s") %>' height="120"/>
+                            <img src='<%# Eval("f內部照片_s") %>' height="120" class="img-thumbnail"/>
                            </a>               
                            </div>    
                     </ItemTemplate>
@@ -122,11 +122,11 @@
                   <ContentTemplate>
                 <asp:ListView ID="ListView_birthday" runat="server" DataKeyNames="fid" >
                 <ItemTemplate>
-                      <div class="col-md-3 col-xs-6" align="center">
+                      <div class=" col-xd-my20 img-thumbnail" align="center">
                         <a href='<%# Eval("f慶生照片_s") %>'
                             data-lightbox='<%# Eval("f慶生照片_l") %>'
                             data-title='<%# Eval("f慶生照片_l") %>'>
-                            <img src='<%# Eval("f慶生照片_s") %>' height="120"/>
+                            <img src='<%# Eval("f慶生照片_s") %>' height="120" class="img-thumbnail"/>
                            </a>               
                            </div>    
                     </ItemTemplate>
@@ -171,11 +171,11 @@
                  <ContentTemplate>
                 <asp:ListView ID="ListView_washfoot" runat="server" DataKeyNames="fid" >
                 <ItemTemplate>
-                      <div class="col-md-3 col-xs-6" align="center">
+                      <div class=" col-xd-my20 img-thumbnail" align="center">
                         <a href='<%# Eval("f泡腳照片_s") %>'
                             data-lightbox='<%# Eval("f泡腳照片_l") %>'
                             data-title='<%# Eval("f泡腳照片_l") %>'>
-                            <img src='<%# Eval("f泡腳照片_s") %>' height="120"/>
+                            <img src='<%# Eval("f泡腳照片_s") %>' height="120" class="img-thumbnail"/>
                            </a>               
                            </div>    
                     </ItemTemplate>
@@ -220,11 +220,11 @@
                      <ContentTemplate>
                 <asp:ListView ID="ListView_rehab" runat="server" DataKeyNames="fid" >
                 <ItemTemplate>
-                      <div class="col-md-3 col-xs-6" align="center">
+                      <div class=" col-xd-my20 img-thumbnail" align="center">
                         <a href='<%# Eval("f復健照片_s") %>'
                             data-lightbox='<%# Eval("f復健照片_l") %>'
                             data-title='<%# Eval("f復健照片_l") %>'>
-                            <img src='<%# Eval("f復健照片_s") %>' height="120"/>
+                            <img src='<%# Eval("f復健照片_s") %>' height="120" class="img-thumbnail"/>
                            </a>               
                            </div>    
                     </ItemTemplate>
@@ -270,11 +270,11 @@
                   <ContentTemplate>
                 <asp:ListView ID="ListView_cuthair" runat="server" DataKeyNames="fid" >
                 <ItemTemplate>
-                      <div class="col-md-3 col-xs-6" align="center">
+                      <div class=" col-xd-my20 img-thumbnail" align="center">
                         <a href='<%# Eval("f義剪照片_s") %>'
                             data-lightbox='<%# Eval("f義剪照片_l") %>'
                             data-title='<%# Eval("f義剪照片_l") %>'>
-                            <img src='<%# Eval("f義剪照片_s") %>' height="120"/>
+                            <img src='<%# Eval("f義剪照片_s") %>' height="120" class="img-thumbnail"/>
                            </a>               
                            </div>    
                     </ItemTemplate>

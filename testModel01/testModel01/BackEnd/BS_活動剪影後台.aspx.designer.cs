@@ -22,78 +22,6 @@ namespace testModel01 {
         protected global::System.Web.UI.ScriptManager ScriptManager1;
         
         /// <summary>
-        /// FileUpload1 控制項。
-        /// </summary>
-        /// <remarks>
-        /// 自動產生的欄位。
-        /// 將移動欄位宣告從設計檔案修改為程式碼後置檔案。
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.FileUpload FileUpload1;
-        
-        /// <summary>
-        /// val_要有檔案 控制項。
-        /// </summary>
-        /// <remarks>
-        /// 自動產生的欄位。
-        /// 將移動欄位宣告從設計檔案修改為程式碼後置檔案。
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator val_要有檔案;
-        
-        /// <summary>
-        /// Btn_上傳_外觀 控制項。
-        /// </summary>
-        /// <remarks>
-        /// 自動產生的欄位。
-        /// 將移動欄位宣告從設計檔案修改為程式碼後置檔案。
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Btn_上傳_外觀;
-        
-        /// <summary>
-        /// Btn_上傳_內部 控制項。
-        /// </summary>
-        /// <remarks>
-        /// 自動產生的欄位。
-        /// 將移動欄位宣告從設計檔案修改為程式碼後置檔案。
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Btn_上傳_內部;
-        
-        /// <summary>
-        /// Btn_上傳_慶生 控制項。
-        /// </summary>
-        /// <remarks>
-        /// 自動產生的欄位。
-        /// 將移動欄位宣告從設計檔案修改為程式碼後置檔案。
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Btn_上傳_慶生;
-        
-        /// <summary>
-        /// Btn_上傳_泡腳 控制項。
-        /// </summary>
-        /// <remarks>
-        /// 自動產生的欄位。
-        /// 將移動欄位宣告從設計檔案修改為程式碼後置檔案。
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Btn_上傳_泡腳;
-        
-        /// <summary>
-        /// Btn_上傳_復健 控制項。
-        /// </summary>
-        /// <remarks>
-        /// 自動產生的欄位。
-        /// 將移動欄位宣告從設計檔案修改為程式碼後置檔案。
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Btn_上傳_復健;
-        
-        /// <summary>
-        /// Btn_上傳_義剪 控制項。
-        /// </summary>
-        /// <remarks>
-        /// 自動產生的欄位。
-        /// 將移動欄位宣告從設計檔案修改為程式碼後置檔案。
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Btn_上傳_義剪;
-        
-        /// <summary>
         /// Button2 控制項。
         /// </summary>
         /// <remarks>
@@ -103,22 +31,49 @@ namespace testModel01 {
         protected global::System.Web.UI.WebControls.Button Button2;
         
         /// <summary>
-        /// SqlDataSource1 控制項。
+        /// UpdatePanel_outlook 控制項。
         /// </summary>
         /// <remarks>
         /// 自動產生的欄位。
         /// 將移動欄位宣告從設計檔案修改為程式碼後置檔案。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSource1;
+        protected global::System.Web.UI.UpdatePanel UpdatePanel_outlook;
         
         /// <summary>
-        /// UpdatePanel1 控制項。
+        /// ListView_outlook 控制項。
         /// </summary>
         /// <remarks>
         /// 自動產生的欄位。
         /// 將移動欄位宣告從設計檔案修改為程式碼後置檔案。
         /// </remarks>
-        protected global::System.Web.UI.UpdatePanel UpdatePanel1;
+        protected global::System.Web.UI.WebControls.ListView ListView_outlook;
+        
+        /// <summary>
+        /// ListView4 控制項。
+        /// </summary>
+        /// <remarks>
+        /// 自動產生的欄位。
+        /// 將移動欄位宣告從設計檔案修改為程式碼後置檔案。
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.ListView ListView4;
+        
+        /// <summary>
+        /// ListView3 控制項。
+        /// </summary>
+        /// <remarks>
+        /// 自動產生的欄位。
+        /// 將移動欄位宣告從設計檔案修改為程式碼後置檔案。
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.ListView ListView3;
+        
+        /// <summary>
+        /// ListView2 控制項。
+        /// </summary>
+        /// <remarks>
+        /// 自動產生的欄位。
+        /// 將移動欄位宣告從設計檔案修改為程式碼後置檔案。
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.ListView ListView2;
         
         /// <summary>
         /// ListView1 控制項。
@@ -128,5 +83,23 @@ namespace testModel01 {
         /// 將移動欄位宣告從設計檔案修改為程式碼後置檔案。
         /// </remarks>
         protected global::System.Web.UI.WebControls.ListView ListView1;
+        
+        /// <summary>
+        /// FileUpload1 控制項。
+        /// </summary>
+        /// <remarks>
+        /// 自動產生的欄位。
+        /// 將移動欄位宣告從設計檔案修改為程式碼後置檔案。
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.FileUpload FileUpload1;
+        
+        /// <summary>
+        /// Btn_上傳_外觀 控制項。
+        /// </summary>
+        /// <remarks>
+        /// 自動產生的欄位。
+        /// 將移動欄位宣告從設計檔案修改為程式碼後置檔案。
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button Btn_上傳_外觀;
     }
 }

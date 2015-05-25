@@ -75,12 +75,15 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\dhCaretUp.css" />
+    <Content Include="Content\font-awesome.css" />
+    <Content Include="Content\font-awesome.min.css" />
     <Content Include="Content\lightbox.css" />
     <Content Include="Content\loginBackground.css" />
     <Content Include="Content\loginUI01.css" />
     <Content Include="Content\loginUI02.css" />
     <Content Include="Content\screen.css" />
     <Content Include="Content\Sidebar.css" />
+    <Content Include="fonts\fontawesome-webfont.svg" />
     <Content Include="Scripts\Sidebar.js" />
     <Content Include="TempFolder\sidebar.css" />
     <Content Include="Content\Site.css" />
@@ -211,6 +214,10 @@
     <Content Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
     <Content Include="obj\Debug\testModel01.csprojResolveAssemblyReference.cache" />
     <Content Include="BackEnd\BS_Site.Master" />
+    <Content Include="fonts\fontawesome-webfont.woff" />
+    <Content Include="fonts\fontawesome-webfont.ttf" />
+    <Content Include="fonts\fontawesome-webfont.eot" />
+    <Content Include="fonts\FontAwesome.otf" />
     <None Include="Scripts\jquery-1.9.1.intellisense.js" />
     <Content Include="pic\ADD.png" />
     <Content Include="pic\empty.png" />

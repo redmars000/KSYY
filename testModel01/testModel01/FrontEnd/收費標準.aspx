@@ -4,15 +4,14 @@
 </asp:Content>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="BodyContent" runat="server">
-
+    <%--<meta http-equiv="refresh" content="5"/>--%>
     <form id="form1" runat="server">
-    <meta http-equiv="refresh" content="5"/>
+    
     <div class="container">
         <h3>康欣 - 收費標準</h3>
         <hr style="background-color: blue; height: 1px" />
     </div>
     <div class="container">
-        <h4>收費標準表</h4>
         <table style="border: 0; width: 98%;">
 
             <tr>
@@ -177,7 +176,7 @@
         }
     </style>
     <div class="container">
-        <h4>入住注意事項</h4>
+        <h2 style="color: #ff6600;"><strong>入住注意事項</strong></h2>
         <div>
             <p>1.個案入住前由家屬自行評估「<span class="attention-item1">日常照護評估表</span>」，以利護理人員照護及收費。</p>
             <p>2.評估後家屬自行備妥資料及物品後帶至機構入住或由救護車載來機構，其接送費用家屬自費。</p>
@@ -209,7 +208,7 @@
     </div>
     
     <div class="container">
-        <h4>日常照護收費評估表</h4>
+        <h2 style="color: #ff6600;"><strong>日常照護收費評估表</strong></h2>
         <div>
             <span>康欣老人長期照顧中心 住民日常照護收費評估表</span>
             <a href="../AssessFile/assess.doc"><img title="下載住民日常照護收費評估表.doc" src="../AssessFile/word.png" width="80"/></a>

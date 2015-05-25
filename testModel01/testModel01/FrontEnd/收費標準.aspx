@@ -6,7 +6,7 @@
 <asp:Content ID="BodyContent" ContentPlaceHolderID="BodyContent" runat="server">
 
     <form id="form1" runat="server">
-
+    <meta http-equiv="refresh" content="5"/>
     <div class="container">
         <h3>康欣 - 收費標準</h3>
         <hr style="background-color: blue; height: 1px" />
@@ -214,7 +214,7 @@
             <span>康欣老人長期照顧中心 住民日常照護收費評估表</span>
             <a href="../AssessFile/assess.doc"><img title="下載住民日常照護收費評估表.doc" src="../AssessFile/word.png" width="80"/></a>
 
-            <asp:GridView ID="GridView1" runat="server" CssClass="table table-bordered table-hover table-striped" ShowHeader="False">
+            <asp:GridView ID="GridView1" runat="server" CssClass="table table-bordered table-hover table-striped" ShowHeader="False" Width="100%">
             </asp:GridView>
             
         </div>

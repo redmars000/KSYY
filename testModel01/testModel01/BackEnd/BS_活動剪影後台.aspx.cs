@@ -73,9 +73,11 @@ namespace testModel01
             HashSet<string> hst = (HashSet<string>)Session["hs"];
 
             int temp1 = hst.Count ;
-
             if (temp1< 1)
                 return;
+
+
+
 
             if (System.IO.File.Exists(@"D:\未命名.png"))
                 System.IO.File.Delete(@"D:\未命名.png");
@@ -123,11 +125,7 @@ namespace testModel01
         protected void Btn_上傳_外觀_Click(object sender, EventArgs e)
         {
             //建立一個新的連線類別
-
-            Path.GetExtension(filename);
-            MessageBox.Show("資料根目錄:" + Path.GetPathRoot(filename));
-
-
+            
             switch (str_witchpage)
             {
                 case "外觀":
@@ -137,14 +135,8 @@ namespace testModel01
             foreach (HttpPostedFile postedFile in FileUpload1.PostedFiles)
             {
                 //執行圖片上傳與DB資料寫入  
-
-           if (".jpg".Equals(postedFile.FileName.Substring(postedFile.FileName.LastIndexOf(".") + 1).ToLower()) ||
-                    ".png".Equals(postedFile.FileName.Substring(postedFile.FileName.LastIndexOf(".") + 1).ToLower()) ||
-                    ".bmp".Equals(postedFile.FileName.Substring(postedFile.FileName.LastIndexOf(".") + 1).ToLower()) ||
-                    ".gif".Equals(postedFile.FileName.Substring(postedFile.FileName.LastIndexOf(".") + 1).ToLower()))
-           {c_loadpic.Loadpic(postedFile);
+                c_loadpic.Loadpic(postedFile);
                 postedFile.SaveAs(Server.MapPath(@"~\pic\康欣_照片\外觀\" + postedFile.FileName));
-           }
             }
 
                     break;
@@ -250,27 +242,16 @@ namespace testModel01
             string sql =
                  "if not exists(Select * from T康欣_活動剪影 where @大欄位名稱=@判斷欄位)" +
              "Insert into T康欣_活動剪影("+str_小欄位名稱+","+str_大欄位名稱_temp+
-             ")  values(@小欄位值,@大欄位值)  else"+
-            "Insert into T康欣_活動剪影(" + str_小欄位名稱 + "," + str_大欄位名稱_temp +
-             ")  values(@新小欄位值,@新大欄位值)  ";
-
+             ")  values(@小欄位值,@大欄位值)";
             SqlCommand cmd4 = new SqlCommand(
              sql, con);
             cmd4.Parameters.AddWithValue("@大欄位名稱", str_大欄位名稱);
             cmd4.Parameters.AddWithValue("@判斷欄位", str_檔案名稱);
             cmd4.Parameters.AddWithValue("@小欄位值", @"~\pic\康欣_照片\"+str_資料夾+"\\" + str_檔案名稱_temp);
             cmd4.Parameters.AddWithValue("@大欄位值", str_檔案名稱_temp);
-            cmd4.Parameters.AddWithValue("@新小欄位值", str_檔案名稱_temp);
-            cmd4.Parameters.AddWithValue("@新大欄位值", str_檔案名稱_temp);
+
             cmd4.ExecuteNonQuery();
             con.Close();
-        }
-
-
-        public void Deletepic(HttpPostedFile postedFile)
-        { 
-        
-        
         }
 
 

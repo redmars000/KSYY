@@ -192,10 +192,13 @@
                 <asp:ListView ID="ListView1" runat="server" >
                 <ItemTemplate>
                     <div class="  img-thumbnail col-xd-my20 " align="center">
-                        <div style="text-align:left; color:rgba(255, 255, 255, 0)">
-                        <asp:CheckBox ID="CheckBox1" runat="server"  Text='<%# Eval("f庭院照片_l")  %>'  />
-                       </div> 
-                        <img src='<%# Eval("f庭院照片_l")  %>'    height="120"/>
+                           <asp:ImageButton 
+                               runat="server"
+                                  ImageUrl='<%# Eval("f庭院照片_l")  %>' 
+                                OnClick="Imgebutton_Click"
+                                OnLoad="Imgebutton_Load"
+                                CssClass="img-thumbnail"
+                               />
                        </div>    
                     </ItemTemplate>
                     <LayoutTemplate>

@@ -1,4 +1,5 @@
-﻿<%@ Page Title="首頁" Language="C#" MasterPageFile="~/FrontEnd/Site.Master" AutoEventWireup="true" CodeBehind="Main.aspx.cs" Inherits="testModel01.WebForm1" %>
+﻿<%@ Page Title="首頁" Language="C#" MasterPageFile="~/FrontEnd/Site.Master"
+     AutoEventWireup="true" CodeBehind="Main.aspx.cs" Inherits="testModel01.WebForm1" %>
 
 <asp:Content ID="HeadContent" ContentPlaceHolderID="HeadContent" runat="server">
 </asp:Content>

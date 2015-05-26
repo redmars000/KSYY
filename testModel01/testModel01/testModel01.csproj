@@ -83,7 +83,6 @@
     <Content Include="Content\loginUI02.css" />
     <Content Include="Content\screen.css" />
     <Content Include="Content\Sidebar.css" />
-    <Content Include="Content\mystyle.css" />
     <Content Include="fonts\fontawesome-webfont.svg" />
     <Content Include="Scripts\Sidebar.js" />
     <Content Include="TempFolder\sidebar.css" />

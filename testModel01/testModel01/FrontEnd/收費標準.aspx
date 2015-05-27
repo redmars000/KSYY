@@ -178,30 +178,23 @@
     <div class="container">
         <h2 style="color: #ff6600;"><strong>入住注意事項</strong></h2>
         <div>
-            <p>1.個案入住前由家屬自行評估「<span class="attention-item1">日常照護評估表</span>」，以利護理人員照護及收費。</p>
-            <p>2.評估後家屬自行備妥資料及物品後帶至機構入住或由救護車載來機構，其接送費用家屬自費。</p>
-            <p>3.入住機構前向醫院申請病歷摘要(住院者須提供)，居家入住者須配合機構安排體檢其費用需自費，體檢報告內容需包含血液、尿液、生化檢查、胸部X光、寄生蟲、桿菌性痢疾、阿米巴痢疾…等。</p>
-            <p>4.請攜帶住民健保卡、榮民證、身心障礙手冊方便住民就醫及委託人、緊急連絡人、住民之身分證及印章簽立委託照護契約。</p>
-            <p>5.入住住民不得放現金或貴重物品(例：戒指、珠寶…等)，物品若遺失機構一概不負責。 </p>
-            <p>6.機構內嚴禁寵物進入。</p>
-            <p>7.家屬攜帶食物請交由護理站處理，並請家屬攜帶安全且當餐可吃完分量之食物，請勿提供給其他住民食用，若家屬同意可由工作人員分配。</p>
-            <p>
-                8.<span class="attention-item2">請家屬配合機構訪客時間，以免打擾生活作息。</span><br class="attention-item2" />
-                <span class="attention-item2">早上9:00 ~11:00 下午14:00 ~ 20:00  </span>
-            </p>
+            <asp:SqlDataSource ID="sqlAttention" runat="server" ConnectionString="<%$ ConnectionStrings:dbKSYYConnectionString %>" SelectCommand="SELECT [fNo], [fContent] FROM [tAttention]"></asp:SqlDataSource>
+            <asp:GridView ID="gvAttention" runat="server" AutoGenerateColumns="False" DataSourceID="sqlAttention" CssClass="table table-bordered " ShowHeader="False">
+                <Columns>
+                    <asp:BoundField DataField="fNo" HeaderText="fNo" SortExpression="fNo" />
+                    <asp:BoundField DataField="fContent" HeaderText="fContent" SortExpression="fContent" />
+                </Columns>
+            </asp:GridView>
         </div>
         <div style="background-color: #FFFFCC">
             <h4 class="attention-item4">◆入住必備日用品清單◆</h4>
-            <p>
-                1.盥洗用具：毛巾5條、浴巾1條、牙刷、漱口杯、牙膏、漱口水、潔牙棒<br />
-                2.沐浴用品：清潔手套、臉盆、沐浴球2個（一個洗澡用一個洗腳用）<br />
-                3.清潔用品：衛生紙、紙尿褲、小尿片、看護墊、濕紙巾、尿套、尿套固定帶<br />
-                4.換洗及保暖衣物：睡衣或外出服6套、外套、襪子、止滑鞋子（包鞋及拖鞋）<br />
-                5.餐具：茶杯（有刻度）、個人餐具、筷子、湯匙(依個人需求)<br />
-                6.保養品：梳子、鏡子、電動刮鬍刀、指甲刀、乳液、凡士林、面霜<br />
-                7.護理耗材：抽痰管、紗布、棉棒<br />
-                8.其他：輪椅、助行器 、特殊藥品<br />
-            </p>
+            <asp:SqlDataSource ID="sqlCommodity" runat="server" ConnectionString="<%$ ConnectionStrings:dbKSYYConnectionString %>" SelectCommand="SELECT [fNo], [fContent] FROM [tCommodity]"></asp:SqlDataSource>
+            <asp:GridView ID="gvCommdoity" runat="server" AutoGenerateColumns="False" DataSourceID="sqlCommodity" CssClass="table table-bordered " ShowHeader="False">
+                <Columns>
+                    <asp:BoundField DataField="fNo" HeaderText="fNo" SortExpression="fNo" />
+                    <asp:BoundField DataField="fContent" HeaderText="fContent" SortExpression="fContent" />
+                </Columns>
+            </asp:GridView>
             <p class="attention-item4">以上用品依長輩之個別需要準備，請您於入住時即備妥並<span class="attention-item5"><strong>"寫上姓名"</strong></span>或由本機構代購，以方面作業！</p>
         </div>
         <hr />

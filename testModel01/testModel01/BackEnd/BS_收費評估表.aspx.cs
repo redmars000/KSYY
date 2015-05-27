@@ -16,7 +16,7 @@ namespace testModel01
 
         protected void btn上傳收費評估表_Click(object sender, EventArgs e)
         {
-            string path = Server.MapPath(".");
+            string path = Server.MapPath("..");
             FileUpload_收費評估表.SaveAs(path + @"\AssessFile\123.xlsx");
         }
     }

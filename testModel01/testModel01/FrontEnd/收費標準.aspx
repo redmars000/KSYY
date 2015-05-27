@@ -154,27 +154,8 @@
         </table>
         <hr />
     </div>
-    <style type="text/css">
-        .attention-item1 {
-            color: #0066FF;
-        }
-
-        .attention-item2 {
-            color: #CC33FF;
-        }
-
-        .attention-item3 {
-            color: #CC66FF;
-        }
-
-        .attention-item4 {
-            color: #990000;
-        }
-
-        .attention-item5 {
-            color: #FF0000;
-        }
-    </style>
+    
+   
     <div class="container">
         <h2 style="color: #ff6600;"><strong>入住注意事項</strong></h2>
         <div>
@@ -205,10 +186,16 @@
         <div>
             <span>康欣老人長期照顧中心 住民日常照護收費評估表</span>
             <a href="../AssessFile/assess.doc"><img title="下載住民日常照護收費評估表.doc" src="../AssessFile/word.png" width="80"/></a>
-
-            <asp:GridView ID="GridView1" runat="server" CssClass="table table-bordered table-hover table-striped" ShowHeader="False" Width="100%">
-            </asp:GridView>
+            <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
             
+            <asp:UpdatePanel ID="UpdatePanel1" runat="server">
+                <ContentTemplate>
+                    <asp:GridView ID="GridView1" runat="server" CssClass="table table-bordered table-hover table-striped" ShowHeader="False" Width="100%"></asp:GridView>
+                    <asp:Timer ID="Timer1" runat="server" OnTick="Timer1_Tick" Interval="1000"></asp:Timer>
+                </ContentTemplate>
+            </asp:UpdatePanel>
+
+
         </div>
         <hr />
     </div>

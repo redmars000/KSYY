@@ -14,6 +14,11 @@ namespace testModel01
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            Assess_Load();
+        }
+
+        protected void Assess_Load()
+        {
             string path = Server.MapPath("..");
             path += @"\AssessFile\123.xlsx";
             string con = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" + path + ";Extended Properties='Excel 12.0;HDR=YES;IMEX=1'";
@@ -40,6 +45,11 @@ namespace testModel01
 
             if (ToolTipString == "True")
                 e.Row.Cells[1].ForeColor = Color.Red;
+        }
+
+        protected void Timer1_Tick(object sender, EventArgs e)
+        {
+            Assess_Load();
         }
 
     }

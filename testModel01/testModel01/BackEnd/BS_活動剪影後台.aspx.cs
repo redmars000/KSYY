@@ -17,48 +17,74 @@ namespace testModel01
         string Str_Date = string.Format("{0}", DateTime.Now.Year) + "-" + string.Format("{0}", DateTime.Now.Month) + "-" + string.Format("{0}", DateTime.Now.Day);
         string str_datasoure { get; set; }
         string str_InitialCatalog { get; set; }
-
+        
+        string pageId;
         string str_witchpage = "";
-        string str_ConnectionString="";
-        string str_SelectCommand="";
-        HashSet<string> HS =new HashSet<string>();
+        string str_ConnectionString = "";
+        string[] str_schema = {"f庭院照片_", "f內部照片_","f慶生照片_","f泡腳照片_",
+                            "f復健照片_","f義剪照片_"};
 
 
         protected void Page_Load(object sender, EventArgs e)
         {
             UnobtrusiveValidationMode = UnobtrusiveValidationMode.None;
-            //資策會
-            //  str_datasoure = @"CR4-17\MSSQLSERVER2013"; //加上@ 忽略反斜線的字元
-            //家3
-            str_datasoure = @"SHAWN-PC"; //加上@ 忽略反斜線的字元
-            str_InitialCatalog = "ks_pics";//資料庫名稱*/
-            
-            // str_ConnectionString = @"Data Source=CR4-17\MSSQLSERVER2013;Initial Catalog=dbKSYY;Integrated Security=True";
-            str_ConnectionString = @"Data Source=SHAWN-PC;Integrated Security=SSPI;Initial Catalog=dbKSYY";
+    
+            str_ConnectionString = @"Data Source=CR4-17\MSSQLSERVER2013;Initial Catalog=dbKSYY;Integrated Security=True";
+         //   str_ConnectionString = @"Data Source=SHAWN-PC;Integrated Security=SSPI;Initial Catalog=dbKSYY";
              m_initial();
-         if (!IsPostBack)
-             {
-                 HS.Clear();
-                 Session["hs"] = HS;
-             }
+
+             if (Session["test"] != null)
+                 Label1.Text = (string)Session["test"] +(int)Session["num"];
+
+             if (Session["num"] != null)
+             Label1.Text += (int)Session["num"];
         }
+
+
+
+        protected void Button4_Click(object sender, EventArgs e)
+        {
+            string sql = "delete  T康欣_活動剪影  where 1=0";
+            int a = sql.Length;
+            string str_小欄位名稱 = str_schema[Convert.ToInt32(pageId)] + "s";
+            int b = 0;
+            foreach (Control c in Panel_outlook.Controls)
+            {
+                Session["num"] = b++;
+                if (c.GetType() == typeof(CheckBox))
+                {
+                    CheckBox t = (CheckBox)c;
+
+                    if (Session["test"] != null)
+                    {
+                        Session["test"] = (string)Session["test"] +
+                            System.IO.Directory.GetCurrentDirectory()+t.Text;
+                    }
+                    else
+                        Session["test"] = t.Text;
+
+                    /* if (System.IO.File.Exists(t.Text))
+                         System.IO.File.Delete(t.Text);
+                     sql+=(" or " + str_小欄位名稱 + " = " + t.Text);*/
+                }
+            }
+        }
+
 
         private void m_initial()
         {
             SqlDataSource sds = new SqlDataSource();
              sds.ConnectionString = str_ConnectionString;
-
-
-             switch (str_witchpage)
+             switch (pageId)
              { 
-                 case "外觀":
+                 case "0":
                  default:
-            sds.SelectCommand = "SELECT fid,'~/pic/康欣_照片/外觀/'+f庭院照片_l as 'f庭院照片_l' from  T康欣_活動剪影 WHERE f庭院照片_l IS NOT NULL";
+            sds.SelectCommand = "SELECT fid,f庭院照片_s from  T康欣_活動剪影 WHERE f庭院照片_s IS NOT NULL";
             ListView_outlook.DataSource = sds.Select(DataSourceSelectArguments.Empty);
             ListView_outlook.DataBind();
             break;
 
-                 case "內部":
+                 case "1":
 
             break;
 
@@ -70,53 +96,29 @@ namespace testModel01
 
         protected void Button2_Click(object sender, EventArgs e)
         {
-            HashSet<string> hst = (HashSet<string>)Session["hs"];
+            string sql = "delete  T康欣_活動剪影  where 1=0";
+            int a = sql.Length;
+            string str_小欄位名稱 = str_schema[Convert.ToInt32(pageId)] + "s";
 
-            int temp1 = hst.Count ;
-            if (temp1< 1)
-                return;
-
-
-
-
-            if (System.IO.File.Exists(@"D:\未命名.png"))
-                System.IO.File.Delete(@"D:\未命名.png");
-        }
-
-        protected void Imgebutton_Click(object sender, ImageClickEventArgs e)
-        {
-            ImageButton ib = (ImageButton)sender;
-            string name = ib.ImageUrl.ToString();
-            HashSet<string> hst= (HashSet<string>)Session["hs"];
-            if (hst.Contains(name))
+            foreach (Control c in Panel_outlook.Controls)
             {
-                hst.Remove(name);
-                Session["hs"] = hst;
-                ib.Height = 100;
-            }
-            else
-            {
-                hst.Add(name);
-                Session["hs"] = hst;
-                ib.Height = 140;
-            }
+                if (c.GetType() == typeof(CheckBox))
+                {
+                    CheckBox t = (CheckBox)c;
 
-     //       Response.AddHeader("Refresh", "0");
-        }
+                    if (
+                    Session["test"] != null)
+                    {
+                        Session["test"] = (string)Session["test"] +
+                            System.IO.Directory.GetCurrentDirectory();
+                    }
+                    else
+                        Session["test"] = t.Text;
 
-        protected void Imgebutton_Load(object sender, EventArgs e)
-        {
-            ImageButton ib = (ImageButton)sender;
-            string name = ib.ImageUrl.ToString();
-
-            HashSet<string> hst = (HashSet<string>)Session["hs"];
-            if (hst.Contains(name))
-            {
-                    ib.Height = 140;
-            }
-            else
-            {
-                ib.Height = 100;
+                    /* if (System.IO.File.Exists(t.Text))
+                         System.IO.File.Delete(t.Text);
+                     sql+=(" or " + str_小欄位名稱 + " = " + t.Text);*/
+                }
             }
         }
 
@@ -125,19 +127,29 @@ namespace testModel01
         protected void Btn_上傳_外觀_Click(object sender, EventArgs e)
         {
             //建立一個新的連線類別
-            
+
             switch (str_witchpage)
             {
                 case "外觀":
                 default:
-                   c_loadPhoto c_loadpic = new c_loadPhoto(str_datasoure, str_InitialCatalog,
-              "f庭院照片_l", "f庭院照片_s","外觀");
-            foreach (HttpPostedFile postedFile in FileUpload1.PostedFiles)
-            {
-                //執行圖片上傳與DB資料寫入  
-                c_loadpic.Loadpic(postedFile);
-                postedFile.SaveAs(Server.MapPath(@"~\pic\康欣_照片\外觀\" + postedFile.FileName));
-            }
+                    c_loadPhoto c_loadpic = new c_loadPhoto(str_datasoure, str_InitialCatalog,
+               "f庭院照片_l", "f庭院照片_s", "外觀");
+
+                    foreach (HttpPostedFile postedFile in FileUpload1.PostedFiles)
+                    {
+                        //執行圖片上傳與DB資料寫入  
+
+                        if (".jpg".Equals(postedFile.FileName.Substring(postedFile.FileName.LastIndexOf(".") + 1).ToLower()) ||
+                                 ".png".Equals(postedFile.FileName.Substring(postedFile.FileName.LastIndexOf(".") + 1).ToLower()) ||
+                                 ".bmp".Equals(postedFile.FileName.Substring(postedFile.FileName.LastIndexOf(".") + 1).ToLower()) ||
+                                 ".gif".Equals(postedFile.FileName.Substring(postedFile.FileName.LastIndexOf(".") + 1).ToLower()))
+                        {
+                            c_loadpic.Loadpic(postedFile);
+                            postedFile.SaveAs(Server.MapPath(@"\..\pic\康欣_照片\外觀\" + postedFile.FileName));
+                        }
+                    }
+
+
 
                     break;
 
@@ -197,6 +209,8 @@ namespace testModel01
 
         }
 
+
+        
         
    
 
@@ -254,6 +268,27 @@ namespace testModel01
             con.Close();
         }
 
+
+        public void delete_pic(string deletesql)
+        {
+
+            string str_檔案名稱;
+            Scsb = new SqlConnectionStringBuilder();
+            Scsb.DataSource = str_datasoure;
+            Scsb.InitialCatalog = str_InitialCatalog;
+            Scsb.IntegratedSecurity = true;
+            SqlConnection con = new SqlConnection(Scsb.ToString());
+
+            string str_deletepath = deletesql;
+            con.Open();
+
+            SqlCommand cmd4 = new SqlCommand(
+             deletesql, con);
+
+            cmd4.ExecuteNonQuery();
+
+            con.Close();
+        }
 
     }
 }

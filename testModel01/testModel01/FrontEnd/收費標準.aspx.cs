@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Data;
 using System.Data.OleDb;
+using System.Drawing;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
@@ -24,5 +25,22 @@ namespace testModel01
             this.GridView1.DataSource = myDataSet.Tables["a"].DefaultView;
             this.GridView1.DataBind();
         }
+
+        protected void gvAttention_RowDataBound(object sender, GridViewRowEventArgs e)
+        {
+            string ToolTipString = Convert.ToString(DataBinder.Eval(e.Row.DataItem, "fColor"));
+
+            if (ToolTipString == "True")
+                e.Row.Cells[1].ForeColor = Color.Red;
+        }
+
+        protected void gvCommdoity_RowDataBound(object sender, GridViewRowEventArgs e)
+        {
+            string ToolTipString = Convert.ToString(DataBinder.Eval(e.Row.DataItem, "fColor"));
+
+            if (ToolTipString == "True")
+                e.Row.Cells[1].ForeColor = Color.Red;
+        }
+
     }
 }

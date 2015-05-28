@@ -7,7 +7,13 @@
     <link href="../Content/mystyle.css" rel="stylesheet" />
     <link href="../Content/lightbox.css" rel="stylesheet" />
     <link href="../Content/bootstrap.css" rel="stylesheet" />
-
+    <style type="text/css">
+        .col-xd-my20 {
+                    width:20%;
+        padding-left:15px;
+        padding-right:15px;
+        }
+    </style>
     <script src="../Scripts/lightbox.js"></script> 
 
     <form id="form1" runat="server">
@@ -21,15 +27,15 @@
         <h4>庭院環境</h4>
         <asp:UpdatePanel ID="UpdatePanel1" runat="server">
             <ContentTemplate>
-                <asp:ListView ID="ListView_outlook" runat="server" DataKeyNames="fid" >
+                <asp:ListView ID="ListView_outlook" runat="server" DataKeyNames="fid" >                   
                 <ItemTemplate>
                       <div class=" col-xd-my20 img-thumbnail" align="center">
                         <a href='<%# Eval("f庭院照片_s") %>'
                             data-lightbox='<%# Eval("f庭院照片_l") %>'
                             data-title='<%# Eval("f庭院照片_l") %>'>
-                            <img src='<%# Eval("f庭院照片_s") %>' height="120" class="img-thumbnail"/>
+                            <img src='<%# Eval("f庭院照片_s") %>' height="120" />
                            </a>               
-                           </div>    
+                           </div> 
                     </ItemTemplate>
                     <LayoutTemplate>
                         <table runat="server">
@@ -57,13 +63,14 @@
                                     </asp:DataPager>
                                 </td>
                             </tr>
+
                         </table>
                     </LayoutTemplate>
                 
                 </asp:ListView>
             </ContentTemplate>
 
-        </asp:UpdatePanel>      
+        </asp:UpdatePanel>
         <hr />
     </div>
     <div class="container"  id="inside">
@@ -76,9 +83,11 @@
                         <a href='<%# Eval("f內部照片_s") %>'
                             data-lightbox='<%# Eval("f內部照片_l") %>'
                             data-title='<%# Eval("f內部照片_l") %>'>
-                            <img src='<%# Eval("f內部照片_s") %>' height="120" class="img-thumbnail"/>
-                           </a>               
+                            <img src='<%# Eval("f內部照片_s") %>'  class="img-thumbnail" height="120"/>
+                           </a>     
+                              
                            </div>    
+               
                     </ItemTemplate>
                     <LayoutTemplate>
                         <table runat="server">

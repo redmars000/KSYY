@@ -81,7 +81,7 @@
         <h2 style="color: #ff6600;"><strong>入住注意事項</strong></h2>
         <div>
             <asp:SqlDataSource ID="sqlAttention" runat="server" ConnectionString="<%$ ConnectionStrings:dbKSYYConnectionString %>" SelectCommand="SELECT * FROM [tAttention]"></asp:SqlDataSource>
-            <asp:GridView ID="gvAttention" runat="server" AutoGenerateColumns="False" DataSourceID="sqlAttention" CssClass="table table-bordered " ShowHeader="False" DataKeyNames="fId" OnRowDataBound="gvAttention_RowDataBound">
+            <asp:GridView ID="gvAttention" runat="server" AutoGenerateColumns="False" DataSourceID="sqlAttention" CssClass="table " ShowHeader="False" DataKeyNames="fId" OnRowDataBound="gvAttention_RowDataBound" GridLines="None">
                 <Columns>
                     <asp:BoundField DataField="fNo" HeaderText="fNo" SortExpression="fNo" />
                     <asp:BoundField DataField="fContent" HeaderText="fContent" SortExpression="fContent" />
@@ -91,7 +91,7 @@
         <div style="background-color: #FFFFCC">
             <h4 class="attention-item4">◆入住必備日用品清單◆</h4>
             <asp:SqlDataSource ID="sqlCommodity" runat="server" ConnectionString="<%$ ConnectionStrings:dbKSYYConnectionString %>" SelectCommand="SELECT * FROM [tCommodity]"></asp:SqlDataSource>
-            <asp:GridView ID="gvCommdoity" runat="server" AutoGenerateColumns="False" DataSourceID="sqlCommodity" CssClass="table table-bordered " ShowHeader="False" DataKeyNames="fId" OnRowDataBound="gvCommdoity_RowDataBound">
+            <asp:GridView ID="gvCommdoity" runat="server" AutoGenerateColumns="False" DataSourceID="sqlCommodity" CssClass="table " ShowHeader="False" DataKeyNames="fId" OnRowDataBound="gvCommdoity_RowDataBound" GridLines="None">
                 <Columns>
                     <asp:BoundField DataField="fNo" HeaderText="fNo" SortExpression="fNo" />
                     <asp:BoundField DataField="fContent" HeaderText="fContent" SortExpression="fContent" />

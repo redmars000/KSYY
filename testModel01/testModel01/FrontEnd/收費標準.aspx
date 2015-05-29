@@ -17,89 +17,29 @@
             <tr>
                 <td style="width: 100%">
                     <div id="text">
-                        <h2 style="color: #ff6600;"><strong>收費標準表</strong></h2>
+                        <h2 style="color: #ff6600;"><strong>收費標準表</strong><asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString2 %>" DeleteCommand="DELETE FROM [Fees_table_1] WHERE [room] = @room" InsertCommand="INSERT INTO [Fees_table_1] ([room], [price], [care], [careprice]) VALUES (@room, @price, @care, @careprice)" SelectCommand="SELECT * FROM [Fees_table_1]" UpdateCommand="UPDATE [Fees_table_1] SET [price] = @price, [care] = @care, [careprice] = @careprice WHERE [room] = @room">
+                                                <DeleteParameters>
+                                                    <asp:Parameter Name="room" Type="String" />
+                                                </DeleteParameters>
+                                                <InsertParameters>
+                                                    <asp:Parameter Name="room" Type="String" />
+                                                    <asp:Parameter Name="price" Type="String" />
+                                                    <asp:Parameter Name="care" Type="String" />
+                                                    <asp:Parameter Name="careprice" Type="String" />
+                                                </InsertParameters>
+                                                <UpdateParameters>
+                                                    <asp:Parameter Name="price" Type="String" />
+                                                    <asp:Parameter Name="care" Type="String" />
+                                                    <asp:Parameter Name="careprice" Type="String" />
+                                                    <asp:Parameter Name="room" Type="String" />
+                                                </UpdateParameters>
+                                            </asp:SqlDataSource>
+                                        </h2>
 
                         <table style="background-color: #ff9933; border: 0; width: 99%;">
                             <tbody>
-                                <tr style="background-color: #ff9900;">
-                                    <td style="width: 17%;">
-                                        <div style="text-align: center; font-size: large; color: #000">住&nbsp; 房 </div>
-                                    </td>
-                                    <td style="width: 36%">
-                                        <div style="text-align: center; font-size: large; color: #000">
-                                            基本月費<br />
-                                            （含住房費、水電費、洗衣費、一般伙食費）
-                                        </div>
-                                    </td>
-                                    <td style="width: 22%">
-                                        <div style="text-align: center; font-size: large; color: #000">特殊照護費</div>
-                                    </td>
-                                    <td style="width: 20%">
-                                        <div style="text-align: center; font-size: large; color: #000">費用</div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td style="background-color: #ffffff; width: 22%">
-                                        <div style="text-align: center; font-size: large; color: #000">五人房</div>
-                                    </td>
-                                    <td style="background-color: #ffffff; width: 36%">
-                                        <div style="text-align: center; font-size: large; color: #000">25000元</div>
-                                    </td>
-                                    <td style="background-color: #ffffff; width: 22%">
-                                        <div style="text-align: center; font-size: large; color: #000">鼻胃管護理</div>
-                                    </td>
-                                    <td style="background-color: #ffffff; width: 20%">
-                                        <div style="text-align: center; font-size: large; color: #000">1000元</div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td style="background-color: #ffffcc; width: 17%">
-                                        <div style="text-align: center; font-size: large; color: #000">四人房</div>
-                                    </td>
-                                    <td style="background-color: #ffffcc; width: 36%">
-                                        <div style="text-align: center; font-size: large; color: #000">26500元</div>
-                                    </td>
-                                    <td style="background-color: #ffffcc; width: 22%">
-                                        <div style="text-align: center; font-size: large; color: #000">導尿管護理</div>
-                                    </td>
-                                    <td style="background-color: #ffffcc; width: 20%">
-                                        <div style="text-align: center; font-size: large; color: #000">1000元</div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td style="background-color: #ffffff; width: 17%">
-                                        <div style="text-align: center; font-size: large; color: #000">二人房</div>
-                                    </td>
-                                    <td style="background-color: #ffffff; width: 36%">
-                                        <div style="text-align: center; font-size: large; color: #000">32000元</div>
-                                    </td>
-                                    <td style="background-color: #ffffff; width: 22%">
-                                        <div style="text-align: center; font-size: large; color: #000">機構內復健</div>
-                                    </td>
-                                    <td style="background-color: #ffffff; width: 20%">
-                                        <div style="text-align: center; font-size: large; color: #000">1500元</div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td style="background-color: #ffffcc; width: 17%">
-                                        <div style="text-align: center; font-size: large; color: #000">保證金</div>
-                                    </td>
-                                    <td style="background-color: #ffffcc; width: 36%">
-                                        <div style="text-align: center; font-size: large; color: #000">30000元</div>
-                                    </td>
-                                    <td style="background-color: #ffffcc; width: 22%">
-                                        <div style="text-align: center; font-size: large; color: #000">救護車&nbsp;</div>
-                                    </td>
-                                    <td style="background-color: #ffffcc; width: 20%">
-                                        <div style="text-align: center; font-size: large; color: #000">
-                                            1200~1600元/單趟<br />
-                                            （含隨車人員）&nbsp;
-                                        </div>
-                                    </td>
-                                </tr>
                                 <tr>
                                     <td style="background-color: #ffffff;" colspan="4">
-                                        <p>&nbsp;</p>
                                         <p>
                                             <asp:GridView ID="GridView2" runat="server" AutoGenerateColumns="False" CellPadding="4" CssClass="table" DataKeyNames="room" DataSourceID="SqlDataSource1" ForeColor="#333333" GridLines="None" Height="302px" Width="952px">
                                                 <AlternatingRowStyle BackColor="White" />
@@ -120,27 +60,8 @@
                                                 <SortedDescendingCellStyle BackColor="#E9EBEF" />
                                                 <SortedDescendingHeaderStyle BackColor="#4870BE" />
                                             </asp:GridView>
+                                            1.單人隔離房平日不使用，若需使用時即按元住房收費標準收費 
                                         </p>
-                                        <p>
-                                            <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString2 %>" DeleteCommand="DELETE FROM [Fees_table_1] WHERE [room] = @room" InsertCommand="INSERT INTO [Fees_table_1] ([room], [price], [care], [careprice]) VALUES (@room, @price, @care, @careprice)" SelectCommand="SELECT * FROM [Fees_table_1]" UpdateCommand="UPDATE [Fees_table_1] SET [price] = @price, [care] = @care, [careprice] = @careprice WHERE [room] = @room">
-                                                <DeleteParameters>
-                                                    <asp:Parameter Name="room" Type="String" />
-                                                </DeleteParameters>
-                                                <InsertParameters>
-                                                    <asp:Parameter Name="room" Type="String" />
-                                                    <asp:Parameter Name="price" Type="String" />
-                                                    <asp:Parameter Name="care" Type="String" />
-                                                    <asp:Parameter Name="careprice" Type="String" />
-                                                </InsertParameters>
-                                                <UpdateParameters>
-                                                    <asp:Parameter Name="price" Type="String" />
-                                                    <asp:Parameter Name="care" Type="String" />
-                                                    <asp:Parameter Name="careprice" Type="String" />
-                                                    <asp:Parameter Name="room" Type="String" />
-                                                </UpdateParameters>
-                                            </asp:SqlDataSource>
-                                        </p>
-                                        <p>1.單人隔離房平日不使用，若需使用時即按元住房收費標準收費 </p>
                                         <p>2.另外收費項目有：管灌特殊配方、護理耗材、就醫費用、掛號費、體檢費、日常用品耗材（全包3000元）…等</p>
                                         <p>3.每月基本費及照護費須於月初預繳，消耗品月結，於次月繳交 </p>
                                         <div style="color: #3333cc">匯款：郵局代號700&nbsp;&nbsp;  帳號：0101523 0098245 邱美玲</div>

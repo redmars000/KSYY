@@ -32,7 +32,12 @@
                     </li>
                     <li>
                         <a runat="server" href="~/BackEnd/BS_收費標準.aspx">
-                            <span class="glyphicon glyphicon-phone" aria-hidden="true"></span> 收費標準表<span class="icon"></span>
+                            <span class="glyphicon glyphicon-phone" aria-hidden="true"></span> 收費標準表修改<span class="icon"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a runat="server" href="~/BackEnd/BS_入住事項.aspx">
+                            <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span> 入住事項修改<span class="icon"></span>
                         </a>
                     </li>
                     <li>

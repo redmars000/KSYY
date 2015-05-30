@@ -29,9 +29,11 @@ namespace testModel01
         {
             UnobtrusiveValidationMode = UnobtrusiveValidationMode.None;
     
-            str_ConnectionString = @"Data Source=CR4-17\MSSQLSERVER2013;Initial Catalog=dbKSYY;Integrated Security=True";
-         //   str_ConnectionString = @"Data Source=SHAWN-PC;Integrated Security=SSPI;Initial Catalog=dbKSYY";
-             m_initial();
+         //   str_ConnectionString = @"Data Source=CR4-17\MSSQLSERVER2013;Initial Catalog=dbKSYY;Integrated Security=True";
+           // str_ConnectionString = @"Data Source=SHAWN-PC;Integrated Security=SSPI;Initial Catalog=dbKSYY";
+            str_ConnectionString = @"  Data Source=WIN-R56ALTBAKPC\SQLEXPRESS;Initial Catalog=dbKSYY;Integrated Security=True";
+           
+            m_initial();
 
              if (Session["test"] != null)
                  Label1.Text = (string)Session["test"] +(int)Session["num"];

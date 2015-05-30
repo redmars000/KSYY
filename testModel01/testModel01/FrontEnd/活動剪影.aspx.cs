@@ -9,8 +9,9 @@ namespace testModel01
 {
     public partial class WebForm6 : System.Web.UI.Page
     {
-        string str_Data_Source = @"CR4-17\MSSQLSERVER2013";//資策
+       // string str_Data_Source = @"CR4-17\MSSQLSERVER2013";//資策
       //  string str_Data_Source = @"SHAWN-PC";//家3
+        string str_Data_Source = @"WIN-R56ALTBAKPC\SQLEXPRESS";//家2
 
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -36,7 +37,13 @@ namespace testModel01
             sds_birthday.SelectCommand = "SELECT fid,f慶生照片_s,f慶生照片_l from  T康欣_活動剪影 WHERE f慶生照片_s IS NOT NULL";
             ListView_birthday.DataSource = sds_birthday.Select(DataSourceSelectArguments.Empty);
             ListView_birthday.DataBind();
-            
+
+            SqlDataSource sds_washfoot = new SqlDataSource();
+            sds_washfoot.ConnectionString = "Data Source=" + str_Data_Source + ";Initial Catalog=dbKSYY;Integrated Security=True";
+            sds_washfoot.SelectCommand = "SELECT fid,f泡腳照片_s,f泡腳照片_l from  T康欣_活動剪影 WHERE f泡腳照片_s IS NOT NULL";
+            ListView_washfoot.DataSource = sds_washfoot.Select(DataSourceSelectArguments.Empty);
+            ListView_washfoot.DataBind();
+
             SqlDataSource sds_rehab = new SqlDataSource();
             sds_rehab.ConnectionString = "Data Source=" + str_Data_Source + ";Initial Catalog=dbKSYY;Integrated Security=True";
             sds_rehab.SelectCommand = "SELECT fid,f復健照片_s,f復健照片_l from  T康欣_活動剪影 WHERE f復健照片_s IS NOT NULL";
@@ -45,7 +52,7 @@ namespace testModel01
 
             SqlDataSource sds_cuthair = new SqlDataSource();
             sds_cuthair.ConnectionString = "Data Source=" + str_Data_Source + ";Initial Catalog=dbKSYY;Integrated Security=True";
-            sds_cuthair.SelectCommand = "SELECT fid,f義剪照片_s,f義剪照片_l from  T康欣_活動剪影 WHERE f義剪照片_l IS NOT NULL";
+            sds_cuthair.SelectCommand = "SELECT fid,f義剪照片_s,f義剪照片_l from  T康欣_活動剪影 WHERE f義剪照片_s IS NOT NULL";
             ListView_cuthair.DataSource = sds_cuthair.Select(DataSourceSelectArguments.Empty);
             ListView_cuthair.DataBind();
 

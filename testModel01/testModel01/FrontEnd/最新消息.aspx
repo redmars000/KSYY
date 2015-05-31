@@ -8,7 +8,7 @@
     <form id="form1" runat="server">
 
     <div class="container">
-        <h3>最新消息</h3>
+        <h3 style="font-family: 微軟正黑體">最新消息</h3>
         <hr style="background-color:blue; height:1px"/>
     </div>
     <div class="container ">

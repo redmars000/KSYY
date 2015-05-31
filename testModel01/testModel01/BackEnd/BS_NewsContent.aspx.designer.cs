@@ -10,7 +10,7 @@
 namespace testModel01 {
     
     
-    public partial class WebForm14 {
+    public partial class BS_NewsContent {
         
         /// <summary>
         /// form1 控制項。

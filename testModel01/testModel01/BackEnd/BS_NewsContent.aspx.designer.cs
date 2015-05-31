@@ -10,7 +10,16 @@
 namespace testModel01.BackEnd {
     
     
-    public partial class WebForm1 {
+    public partial class BS_NewsContent {
+        
+        /// <summary>
+        /// form1 控制項。
+        /// </summary>
+        /// <remarks>
+        /// 自動產生的欄位。
+        /// 將移動欄位宣告從設計檔案修改為程式碼後置檔案。
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
         
         /// <summary>
         /// SqlDataSource2 控制項。

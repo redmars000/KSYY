@@ -1,10 +1,10 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/BackEnd/BS_Site.Master" AutoEventWireup="true" CodeBehind="BS_收費標準.aspx.cs" Inherits="testModel01.WebForm12" %>
-<asp:Content ID="Content1" ContentPlaceHolderID="BS_HeadContent" runat="server">
-    <p style="color: #0000CC; font-size: xx-large">
-    <strong>收費標準表</strong></p>
+<asp:Content ID="Content1" ContentPlaceHolderID="BS_HeadContent" runat="server">    
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="BS_BodyContent" runat="server">
-    <asp:GridView ID="GridView1" runat="server" CellPadding="4" Height="344px" Width="727px" AutoGenerateColumns="False" CssClass="table" DataKeyNames="room" DataSourceID="SqlDataSource1" AllowSorting="True" BackColor="White" BorderColor="#3366CC" BorderStyle="None" BorderWidth="1px">
+    <h2 style="color: #0000CC"><strong>收費標準</strong></h2>
+
+    <asp:GridView ID="GridView1" runat="server" CellPadding="4" AutoGenerateColumns="False" CssClass="table" DataKeyNames="room" DataSourceID="SqlDataSource1" AllowSorting="True" BackColor="White" BorderColor="#3366CC" BorderStyle="None" BorderWidth="1px">
         <Columns>
             <asp:BoundField DataField="room" HeaderText="住  房" ReadOnly="True" SortExpression="room">
             <FooterStyle Font-Size="Medium" Width="40px" />

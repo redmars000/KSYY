@@ -66,10 +66,12 @@
       <DependentUpon>dbKYSS.mdf</DependentUpon>
     </Content>
     <Content Include="AssessFile\word.png" />
+    <Content Include="BackEndImg\BackEndImg01.jpg" />
     <Content Include="bin\testModel01.dll" />
     <Content Include="bin\testModel01.pdb" />
     <Content Include="BackEnd\BS_NewsContent.aspx" />
     <Content Include="BackEnd\BS_活動剪影後台.aspx" />
+    <Content Include="Content\BackEndUI.css" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
@@ -84,6 +86,8 @@
     <Content Include="Content\screen.css" />
     <Content Include="Content\Sidebar.css" />
     <Content Include="fonts\fontawesome-webfont.svg" />
+    <Content Include="loginImg\1.jpg" />
+    <Content Include="Scripts\BackEndUI.js" />
     <Content Include="Scripts\Sidebar.js" />
     <Content Include="TempFolder\sidebar.css" />
     <Content Include="Content\Site.css" />
@@ -95,7 +99,6 @@
     <Content Include="headImg\5.jpg" />
     <Content Include="Icon.png" />
     <Content Include="Login.aspx" />
-    <Content Include="loginImg\1.jpg" />
     <Content Include="loginImg\2.jpg" />
     <Content Include="loginImg\3.jpg" />
     <Content Include="loginImg\4.jpg" />

@@ -47,4 +47,3 @@ S:\WorkSpace\GitHub\KSYY\testModel01\testModel01\bin\testModel01.pdb
 S:\WorkSpace\GitHub\KSYY\testModel01\testModel01\obj\Debug\testModel01.csprojResolveAssemblyReference.cache
 S:\WorkSpace\GitHub\KSYY\testModel01\testModel01\obj\Debug\testModel01.dll
 S:\WorkSpace\GitHub\KSYY\testModel01\testModel01\obj\Debug\testModel01.pdb
-D:\GitHub\KSYY\testModel01\testModel01\obj\Debug\testModel01.csprojResolveAssemblyReference.cache

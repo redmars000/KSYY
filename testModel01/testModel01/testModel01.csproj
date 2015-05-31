@@ -67,9 +67,10 @@
     </Content>
     <Content Include="AssessFile\word.png" />
     <Content Include="BackEndImg\BackEndImg01.jpg" />
+    <Content Include="BackEnd\BS_NewsContent.aspx" />
+    <Content Include="BackEnd\WebForm2.aspx" />
     <Content Include="bin\testModel01.dll" />
     <Content Include="bin\testModel01.pdb" />
-    <Content Include="BackEnd\BS_NewsContent.aspx" />
     <Content Include="BackEnd\BS_活動剪影後台.aspx" />
     <Content Include="Content\BackEndUI.css" />
     <Content Include="Content\bootstrap-theme.css" />
@@ -87,6 +88,8 @@
     <Content Include="Content\Sidebar.css" />
     <Content Include="fonts\fontawesome-webfont.svg" />
     <Content Include="loginImg\1.jpg" />
+    <Content Include="pic\delete32x32.png" />
+    <Content Include="pic\reverse32x32.png" />
     <Content Include="Scripts\BackEndUI.js" />
     <Content Include="Scripts\Sidebar.js" />
     <Content Include="TempFolder\sidebar.css" />
@@ -255,6 +258,13 @@
     </Compile>
     <Compile Include="BackEnd\BS_活動剪影後台.aspx.designer.cs">
       <DependentUpon>BS_活動剪影後台.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BackEnd\WebForm2.aspx.cs">
+      <DependentUpon>WebForm2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackEnd\WebForm2.aspx.designer.cs">
+      <DependentUpon>WebForm2.aspx</DependentUpon>
     </Compile>
     <Compile Include="Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>

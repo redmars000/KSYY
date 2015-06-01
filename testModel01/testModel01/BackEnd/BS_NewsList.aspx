@@ -22,6 +22,13 @@
                     <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl='<%# Eval("fid", "BS_NewsContent.aspx?fid={0}") %>' Text='<%# Eval("fSubject") %>' ImageUrl="~/pic/reverse32x32.png" ToolTip="點我編輯" data-toggle="modal" data-target="#myModal"></asp:HyperLink>
                 </ItemTemplate>
             </asp:TemplateField>
+            <asp:TemplateField HeaderText="刪除">
+                <HeaderStyle CssClass="info text-center" Font-Bold="True" Font-Size="Larger" />
+                <ItemStyle CssClass="text-center" Font-Size="Medium" />
+                <ItemTemplate>
+                    <asp:ImageButton ID="ImageButton1" runat="server" CommandName="Delete" ImageUrl="~/pic/delete32x32.png" OnClientClick="return confirm('確定要刪除?')" ToolTip="點我刪除" />
+                </ItemTemplate>
+            </asp:TemplateField>
         </Columns>
     </asp:GridView>
 

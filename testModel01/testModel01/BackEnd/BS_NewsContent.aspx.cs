@@ -18,6 +18,7 @@ namespace testModel01.BackEnd
         {
             DataList1.EditItemIndex = e.Item.ItemIndex;
             DataList1.DataBind();
+            Response.Redirect("BS_NewsList.aspx");
         }
 
         protected void DataList1_UpdateCommand(object source, DataListCommandEventArgs e)
@@ -35,12 +36,14 @@ namespace testModel01.BackEnd
 
             DataList1.EditItemIndex = -1;
             DataList1.DataBind();
+            Response.Redirect("BS_NewsList.aspx");
         }
 
         protected void DataList1_CancelCommand(object source, DataListCommandEventArgs e)
         {
             DataList1.EditItemIndex = -1;
             DataList1.DataBind();
+            Response.Redirect("BS_NewsList.aspx");
         }
     }
 }

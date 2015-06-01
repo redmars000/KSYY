@@ -41,31 +41,36 @@
                                 <tr>
                                     <td style="background-color: #ffffff;" colspan="4">
                                         <p>
-                                            <asp:GridView ID="GridView2" runat="server" AutoGenerateColumns="False" CellPadding="4" CssClass="table" DataKeyNames="room" DataSourceID="SqlDataSource1" ForeColor="#333333" GridLines="None" Height="302px" Width="952px">
-                                                <AlternatingRowStyle BackColor="White" />
+                                            <asp:GridView ID="GridView2" runat="server" AutoGenerateColumns="False" CssClass="table table-bordered table-hover" DataKeyNames="room" DataSourceID="SqlDataSource1" Width="100%">
                                                 <Columns>
-                                                    <asp:BoundField DataField="room" HeaderText="住  房" ReadOnly="True" SortExpression="room" />
-                                                    <asp:BoundField DataField="price" HeaderText="基本月費（含住房費、水電費、洗衣費、一般伙食費）" SortExpression="price" />
-                                                    <asp:BoundField DataField="care" HeaderText="特殊照護費" SortExpression="care" />
-                                                    <asp:BoundField DataField="careprice" HeaderText="費用" SortExpression="careprice" />
-                                                </Columns>
-                                                <EditRowStyle BackColor="#2461BF" />
-                                                <FooterStyle BackColor="#507CD1" Font-Bold="True" ForeColor="White" />
-                                                <HeaderStyle BackColor="#507CD1" Font-Bold="True" ForeColor="White" />
-                                                <PagerStyle BackColor="#2461BF" ForeColor="White" HorizontalAlign="Center" />
-                                                <RowStyle BackColor="#EFF3FB" />
-                                                <SelectedRowStyle BackColor="#D1DDF1" Font-Bold="True" ForeColor="#333333" />
-                                                <SortedAscendingCellStyle BackColor="#F5F7FB" />
-                                                <SortedAscendingHeaderStyle BackColor="#6D95E1" />
-                                                <SortedDescendingCellStyle BackColor="#E9EBEF" />
-                                                <SortedDescendingHeaderStyle BackColor="#4870BE" />
-                                            </asp:GridView>
-                                            <asp:GridView ID="GridView3" runat="server" AutoGenerateColumns="False" DataKeyNames="Id" DataSourceID="SqlDataSource2">
-                                                <Columns>
-                                                    <asp:BoundField DataField="Id" HeaderText="Id" InsertVisible="False" ReadOnly="True" SortExpression="Id" />
-                                                    <asp:BoundField DataField="content" HeaderText="content" HtmlEncode="False" SortExpression="content" />
+                                                    <asp:BoundField DataField="room" HeaderText="住  房" ReadOnly="True" SortExpression="room" >
+                                                    <HeaderStyle CssClass="info text-center" />
+                                                    <ItemStyle CssClass="text-center" />
+                                                    </asp:BoundField>
+                                                    <asp:BoundField DataField="price" HeaderText="基本月費（含住房費、水電費、洗衣費、一般伙食費）" SortExpression="price" >
+                                                    <HeaderStyle CssClass="info text-center" />
+                                                    <ItemStyle CssClass="text-center" />
+                                                    </asp:BoundField>
+                                                    <asp:BoundField DataField="care" HeaderText="特殊照護費" SortExpression="care" >
+                                                    <HeaderStyle CssClass="info text-center" />
+                                                    <ItemStyle CssClass="text-center" />
+                                                    </asp:BoundField>
+                                                    <asp:BoundField DataField="careprice" HeaderText="費用" SortExpression="careprice" >
+                                                    <HeaderStyle CssClass="info text-center" />
+                                                    <ItemStyle CssClass="text-center" />
+                                                    </asp:BoundField>
                                                 </Columns>
                                             </asp:GridView>
+                                            <asp:GridView ID="GridView3" runat="server" CssClass="table table-bordered" AutoGenerateColumns="False" DataKeyNames="Id" DataSourceID="SqlDataSource2" Width="100%">
+                                                <Columns>
+                                                    <asp:BoundField DataField="Id" HeaderText="Id" InsertVisible="False" ReadOnly="True" SortExpression="Id" Visible="False" />
+                                                    <asp:BoundField DataField="content" HeaderText="備註" HtmlEncode="False" SortExpression="content" >
+                                                    <HeaderStyle CssClass="info text-center" />
+                                                    </asp:BoundField>
+                                                </Columns>
+                                            </asp:GridView>
+                                        </p>
+                                        <p>
                                             <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString2 %>" SelectCommand="SELECT * FROM [note]"></asp:SqlDataSource>
                                         </p>
                                     </td>

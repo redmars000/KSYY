@@ -22,7 +22,7 @@ namespace testModel01
 
         protected void GridView2_RowEditing(object sender, GridViewEditEventArgs e)
         {
-            CKEditorControl2.Text = GridView2.Rows[e.NewEditIndex].Cells[2].Text.ToString();
+            //CKEditorControl2.Text = GridView2.Rows[e.NewEditIndex].Cells[2].Text.ToString();
             
             
 
@@ -39,7 +39,7 @@ namespace testModel01
         {
             //row = GridView2.Rows[e.RowIndex];
             //a = Convert.ToInt32( GridView2.Rows[e.RowIndex].ToString());
-            GridView1.Rows[3].Cells[1].Text = CKEditorControl2.Text;
+            //GridView1.Rows[3].Cells[1].Text = CKEditorControl2.Text;
 
            
         }
@@ -51,12 +51,12 @@ namespace testModel01
 
         protected void GridView1_RowUpdating(object sender, GridViewUpdateEventArgs e)
         {
-            GridView1.Rows[3].Cells[1].Text = CKEditorControl2.Text;
+            //GridView1.Rows[3].Cells[1].Text = CKEditorControl2.Text;
         }
 
         protected void GridView1_RowEditing(object sender, GridViewEditEventArgs e)
         {
-            CKEditorControl2.Text = GridView1.Rows[e.NewEditIndex].Cells[1].Text.ToString();
+            //CKEditorControl2.Text = GridView1.Rows[e.NewEditIndex].Cells[1].Text.ToString();
         }
 
        

@@ -68,6 +68,7 @@
     <Content Include="AssessFile\word.png" />
     <Content Include="BackEndImg\BackEndImg01.jpg" />
     <Content Include="BackEnd\BS_NewsContent.aspx" />
+    <Content Include="BackEnd\BS_入住事項.aspx" />
     <Content Include="bin\testModel01.dll" />
     <Content Include="bin\testModel01.pdb" />
     <Content Include="BackEnd\BS_活動剪影後台.aspx" />
@@ -257,6 +258,13 @@
     </Compile>
     <Compile Include="BackEnd\BS_活動剪影後台.aspx.designer.cs">
       <DependentUpon>BS_活動剪影後台.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BackEnd\BS_入住事項.aspx.cs">
+      <DependentUpon>BS_入住事項.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackEnd\BS_入住事項.aspx.designer.cs">
+      <DependentUpon>BS_入住事項.aspx</DependentUpon>
     </Compile>
     <Compile Include="Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>

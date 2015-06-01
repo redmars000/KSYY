@@ -60,11 +60,14 @@
                                                 <SortedDescendingCellStyle BackColor="#E9EBEF" />
                                                 <SortedDescendingHeaderStyle BackColor="#4870BE" />
                                             </asp:GridView>
-                                            1.單人隔離房平日不使用，若需使用時即按元住房收費標準收費 
+                                            <asp:GridView ID="GridView3" runat="server" AutoGenerateColumns="False" DataKeyNames="Id" DataSourceID="SqlDataSource2">
+                                                <Columns>
+                                                    <asp:BoundField DataField="Id" HeaderText="Id" InsertVisible="False" ReadOnly="True" SortExpression="Id" />
+                                                    <asp:BoundField DataField="content" HeaderText="content" HtmlEncode="False" SortExpression="content" />
+                                                </Columns>
+                                            </asp:GridView>
+                                            <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString2 %>" SelectCommand="SELECT * FROM [note]"></asp:SqlDataSource>
                                         </p>
-                                        <p>2.另外收費項目有：管灌特殊配方、護理耗材、就醫費用、掛號費、體檢費、日常用品耗材（全包3000元）…等</p>
-                                        <p>3.每月基本費及照護費須於月初預繳，消耗品月結，於次月繳交 </p>
-                                        <div style="color: #3333cc">匯款：郵局代號700&nbsp;&nbsp;  帳號：0101523 0098245 邱美玲</div>
                                     </td>
                                 </tr>
                             </tbody>
@@ -75,7 +78,6 @@
         </table>
         <hr />
     </div>
-    
    
     <div class="container">
         <h2 style="color: #ff6600;"><strong>入住注意事項</strong></h2>

@@ -1,10 +1,11 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/BackEnd/BS_Site.Master" AutoEventWireup="true" CodeBehind="BS_收費標準.aspx.cs" Inherits="testModel01.WebForm12" %>
-<asp:Content ID="Content1" ContentPlaceHolderID="BS_HeadContent" runat="server">    
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/BackEnd/BS_Site.Master" AutoEventWireup="true" CodeBehind="BS_收費標準.aspx.cs" Inherits="testModel01.WebForm12" validateRequest=false%>
+<%@ Register assembly="CKEditor.NET" namespace="CKEditor.NET" tagprefix="CKEditor" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="BS_HeadContent" runat="server">
+    <p style="color: #0000CC; font-size: xx-large">
+    <strong>收費標準表</strong></p>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="BS_BodyContent" runat="server">
-    <h2 style="color: #0000CC"><strong>收費標準</strong></h2>
-
-    <asp:GridView ID="GridView1" runat="server" CellPadding="4" AutoGenerateColumns="False" CssClass="table" DataKeyNames="room" DataSourceID="SqlDataSource1" AllowSorting="True" BackColor="White" BorderColor="#3366CC" BorderStyle="None" BorderWidth="1px">
+    <asp:GridView ID="GridView1" runat="server" CellPadding="4" Height="344px" Width="727px" AutoGenerateColumns="False" CssClass="table" DataKeyNames="room" DataSourceID="SqlDataSource1" AllowSorting="True" BackColor="White" BorderColor="#3366CC" BorderStyle="None" BorderWidth="1px" OnRowEditing="GridView1_RowEditing" OnRowUpdating="GridView1_RowUpdating">
         <Columns>
             <asp:BoundField DataField="room" HeaderText="住  房" ReadOnly="True" SortExpression="room">
             <FooterStyle Font-Size="Medium" Width="40px" />
@@ -47,4 +48,31 @@
         <asp:Parameter Name="room" Type="String" />
     </UpdateParameters>
 </asp:SqlDataSource>
+    <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString2 %>" DeleteCommand="DELETE FROM [note] WHERE [Id] = @Id" InsertCommand="INSERT INTO [note] ([content]) VALUES (@content)" SelectCommand="SELECT * FROM [note]" UpdateCommand="UPDATE [note] SET [content] = @content WHERE [Id] = @Id">
+        <DeleteParameters>
+            <asp:Parameter Name="Id" Type="Int32" />
+        </DeleteParameters>
+        <InsertParameters>
+            <asp:ControlParameter ControlID="CKEditorControl2" Name="content" PropertyName="Text" Type="String" />
+        </InsertParameters>
+        <UpdateParameters>
+            <asp:Parameter Name="content" Type="String" />
+            <asp:Parameter Name="Id" Type="Int32" />
+        </UpdateParameters>
+    </asp:SqlDataSource>
+    <CKEditor:CKEditorControl ID="CKEditorControl2" runat="server">
+    </CKEditor:CKEditorControl>
+    <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Button" />
+    <br />
+    <asp:GridView ID="GridView2" runat="server" AutoGenerateColumns="False" CssClass="table table-bordered" DataKeyNames="Id" DataSourceID="SqlDataSource2" OnRowEditing="GridView2_RowEditing" OnRowUpdated="GridView2_RowUpdated" OnRowUpdating="GridView2_RowUpdating">
+        <Columns>
+            <asp:CommandField ShowEditButton="True" />
+            <asp:BoundField DataField="Id" HeaderText="Id" InsertVisible="False" ReadOnly="True" SortExpression="Id" />
+            <asp:BoundField DataField="content" HeaderText="備註" HtmlEncode="False" SortExpression="content" HtmlEncodeFormatString="False">
+            <HeaderStyle CssClass="info text-center" />
+            </asp:BoundField>
+        </Columns>
+    </asp:GridView>
+    <br />
+    <br />
 </asp:Content>

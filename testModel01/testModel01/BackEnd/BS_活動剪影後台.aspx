@@ -2,12 +2,11 @@
 
 
 <asp:Content ID="Content1" ContentPlaceHolderID="BS_HeadContent" runat="server">
-    <style type="text/css">
+   <style type="text/css">
         .mydiv_1 {
-                    width:20%; margin-bottom:30px;
-        padding-left:15px; padding-right:15px;
 
-             display: inline-block;
+        padding-left:5px; padding-right:5px;
+             display:  inline-block;
   background-color: rgba(100%, 100%, 100%, 0);
         }
         .myimag_1 {
@@ -16,8 +15,8 @@
             border-width:6px;
             border-style:ridge;
 
-            max-width:180px;
-             max-height:80px;
+            max-width:150px;
+             max-height:100px;
               	-moz-box-shadow: 3px 6px 30px -4px #152f5c;
 	-webkit-box-shadow: 3px 6px 30px -4px #152f5c;
         }
@@ -48,83 +47,140 @@
 	text-decoration:none;
 }
     </style>
+
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="BS_BodyContent" runat="server">
-      
+        <h1 style="text-align: center">相簿編輯</h1>
+    <br />
+    <br />
 
-    <h1 style="text-align:center">相簿編輯</h1>
-    <br/>   <br/> 
     <asp:ScriptManager ID="ScriptManager1" runat="server">
     </asp:ScriptManager>
-    
-    <br/> 
-    <div align="center">
-    <h2>刪除相片<asp:Button ID="Button4" runat="server" OnClick="Button4_Click" Text="Button" CssClass="myButton" />
-        </h2></div>
-    
-      <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
-        <br />
-   
-      <asp:Button ID="Button3" runat="server" Text="Button" />
-   
-    <asp:Button ID="Button2" runat="server" Text="刪除" 
-        OnClientClick="if (confirm('確定要刪除嗎？')==false) {return false;}" OnClick="Button2_Click" CssClass="myButton"          />
-    <br/>
-     <asp:UpdatePanel ID="UpdatePanel_outlook" runat="server">
+    <!----------------------------------------------------------------------------------->
+    <br />
 
-            <ContentTemplate>
+    <h2>刪除相片</h2>
+    <hr />
+    <br />
+    <br />
+    <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
+    <asp:Button ID="Button2" runat="server" Text="刪除"
+        OnClientClick="if (confirm('確定要刪除嗎？')==false) {return false;}" 
+        OnClick="btn_delete_click" />
+    <br />
+    <br />
+    <br />
+    <asp:Panel ID="Panel1" runat="server">
+        <asp:ListView ID="ListView_outlook" runat="server">
+            <ItemTemplate>
+                <div class=" mydiv_1" align="center">
+                    <div align="left">
+                        <asp:CheckBox ID="CheckBox1" runat="server"
+                            Text='<%# Eval("f庭院照片_s")  %>'/>
+                    </div>
+                    <div align="center">
+                        <a href='<%# Eval("f庭院照片_s") %>'
+                            data-lightbox='<%# Eval("f庭院照片_l") %>'
+                            data-title='<%# Eval("f庭院照片_l") %>'>
+                            <img src='<%# Eval("f庭院照片_s") %>'  class="myimag_1" />
+                        </a>
+                    </div>
+                </div>
+            </ItemTemplate>
 
-                
-            <asp:Panel ID="Panel_outlook" runat="server">
-  
-                <asp:ListView ID="ListView_outlook" runat="server" >
-                <ItemTemplate>
-              
-                      <div class=" mydiv_1 " align="center">
-                    <div align="left" >
-                        <asp:CheckBox ID="CheckBox1" runat="server" Text='<%# Eval("f庭院照片_s")  %>'  />
-                    <div align="center" >
-                        <img src='<%# Eval("f庭院照片_s")  %>'  class="myimag_1" />
-                    </div>   
-                    
-                    </div>    </div>  
-                    </ItemTemplate>
-                    <LayoutTemplate>
-                        <table id="Table1" runat="server">
-                            <tr id="Tr1" runat="server">
-                                <td id="Td1" runat="server">
-                                    <table id="itemPlaceholderContainer" runat="server" border="0" style="">
-                                        <tr id="itemPlaceholder" runat="server">
-                                        </tr>
-                                    </table>
-                                </td>
-                            </tr>
-                            <tr id="Tr3" runat="server">
-                                <td id="Td2" runat="server" style="">
-                                    <asp:DataPager ID="DataPager1" runat="server">
-                                        <Fields>
-                                            <asp:NextPreviousPagerField ButtonType="Button" ShowFirstPageButton="True" ShowNextPageButton="False" ShowPreviousPageButton="False" ButtonCssClass="myButton"  />
-                                            <asp:NumericPagerField />
-                                            <asp:NextPreviousPagerField ButtonType="Button" ShowLastPageButton="True" ShowNextPageButton="False" ShowPreviousPageButton="False"  ButtonCssClass="myButton" />
-                                        </Fields>
-                                    </asp:DataPager>
-                                </td>
+            <LayoutTemplate>
+                <table id="Table1" runat="server">
+                    <tr id="Tr1" runat="server">
+                        <td id="Td1" runat="server">
+                            <table id="itemPlaceholderContainer" runat="server" border="0" style="">
+                                <tr id="itemPlaceholder" runat="server">
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr id="Tr3" runat="server">
+                        <td id="Td2" runat="server" style="">
+                            <asp:DataPager ID="DataPager1" runat="server">
+                                <Fields>
+                                    <asp:NextPreviousPagerField ButtonType="Button" ShowFirstPageButton="True" ShowNextPageButton="False" ShowPreviousPageButton="False" />
+                                    <asp:NumericPagerField />
+                                    <asp:NextPreviousPagerField ButtonType="Button" ShowLastPageButton="True" ShowNextPageButton="False" ShowPreviousPageButton="False" />
+                                </Fields>
+                            </asp:DataPager>
+                        </td>
+                    </tr>
+                </table>
+            </LayoutTemplate>
+        </asp:ListView>
+
+        <asp:ListView ID="ListView_inside" runat="server">
+        <ItemTemplate>
+
+
+
+            <div class="  img-thumbnail col-xd-my20 " align="center">
+                <div align="left">
+                    <asp:CheckBox runat="server" Text='<%# Eval("f內部照片_s")  %>' />
+                </div>
+                <div align="center">
+                    <a href='<%# Eval("f內部照片_s") %>'
+                        data-lightbox='<%# Eval("f內部照片_l") %>'
+                        data-title='<%# Eval("f內部照片_l") %>'>
+                        <img src='<%# Eval("f內部照片_s") %>' height="120" />
+                    </a>
+                </div>
+            </div>
+    </ItemTemplate>
+        <LayoutTemplate>
+            <table id="Table1" runat="server">
+                <tr id="Tr1" runat="server">
+                    <td id="Td1" runat="server">
+                        <table id="itemPlaceholderContainer" runat="server" border="0" style="">
+                            <tr id="itemPlaceholder" runat="server">
                             </tr>
                         </table>
-                    </LayoutTemplate>
-                
-                </asp:ListView>
-                  </asp:Panel>
-                
-            </ContentTemplate>
+                    </td>
+                </tr>
+                <tr id="Tr3" runat="server">
+                    <td id="Td2" runat="server" style="">
+                        <asp:DataPager ID="DataPager1" runat="server">
+                            <Fields>
+                                <asp:NextPreviousPagerField ButtonType="Button" ShowFirstPageButton="True" ShowNextPageButton="False" ShowPreviousPageButton="False" />
+                                <asp:NumericPagerField />
+                                <asp:NextPreviousPagerField ButtonType="Button" ShowLastPageButton="True" ShowNextPageButton="False" ShowPreviousPageButton="False" />
+                            </Fields>
+                        </asp:DataPager>
+                    </td>
+                </tr>
+            </table>
+        </LayoutTemplate>
+    </asp:ListView>
 
-        </asp:UpdatePanel> 
-      
+
+    </asp:Panel>
+
+    
 
 
 
-    <asp:FileUpload ID="FileUpload1" runat="server"  AllowMultiple="true"  CssClass=" myButton"/>    
+
+    
+
+    <!----------------------------------------------------------------------------------->
     <br />
-    <asp:Button ID="Btn_上傳_外觀" runat="server" Text="上傳至外觀" OnClick="Btn_上傳_外觀_Click" CssClass="myButton" />
+    <br />
+    &nbsp;&nbsp;&nbsp; 
+    <div align="center">
+        <h2>新增相片</h2>
+    </div>
+
+    <br />
+
+
+
+
+    <asp:FileUpload ID="FileUpload1" runat="server" AllowMultiple="true" />
+    <br />
+    <asp:Button ID="Btn_上傳_外觀" runat="server" Text="上傳至外觀" OnClick="Btn_上傳_外觀_Click" />
 
 </asp:Content>

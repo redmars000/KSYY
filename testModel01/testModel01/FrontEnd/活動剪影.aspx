@@ -62,7 +62,7 @@
 
          <hr style="background-color:blue; height:1px"/>
     </div>
-    
+        <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
         <asp:UpdatePanel ID="UpdatePanel1" runat="server">
             <ContentTemplate>
                  <h4>庭院環境</h4>

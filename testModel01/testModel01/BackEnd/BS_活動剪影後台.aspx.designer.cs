@@ -22,15 +22,6 @@ namespace testModel01 {
         protected global::System.Web.UI.ScriptManager ScriptManager1;
         
         /// <summary>
-        /// Button4 控制項。
-        /// </summary>
-        /// <remarks>
-        /// 自動產生的欄位。
-        /// 將移動欄位宣告從設計檔案修改為程式碼後置檔案。
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Button4;
-        
-        /// <summary>
         /// Label1 控制項。
         /// </summary>
         /// <remarks>
@@ -38,15 +29,6 @@ namespace testModel01 {
         /// 將移動欄位宣告從設計檔案修改為程式碼後置檔案。
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label Label1;
-        
-        /// <summary>
-        /// Button3 控制項。
-        /// </summary>
-        /// <remarks>
-        /// 自動產生的欄位。
-        /// 將移動欄位宣告從設計檔案修改為程式碼後置檔案。
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Button3;
         
         /// <summary>
         /// Button2 控制項。
@@ -58,22 +40,13 @@ namespace testModel01 {
         protected global::System.Web.UI.WebControls.Button Button2;
         
         /// <summary>
-        /// UpdatePanel_outlook 控制項。
+        /// Panel1 控制項。
         /// </summary>
         /// <remarks>
         /// 自動產生的欄位。
         /// 將移動欄位宣告從設計檔案修改為程式碼後置檔案。
         /// </remarks>
-        protected global::System.Web.UI.UpdatePanel UpdatePanel_outlook;
-        
-        /// <summary>
-        /// Panel_outlook 控制項。
-        /// </summary>
-        /// <remarks>
-        /// 自動產生的欄位。
-        /// 將移動欄位宣告從設計檔案修改為程式碼後置檔案。
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Panel Panel_outlook;
+        protected global::System.Web.UI.WebControls.Panel Panel1;
         
         /// <summary>
         /// ListView_outlook 控制項。
@@ -83,6 +56,15 @@ namespace testModel01 {
         /// 將移動欄位宣告從設計檔案修改為程式碼後置檔案。
         /// </remarks>
         protected global::System.Web.UI.WebControls.ListView ListView_outlook;
+        
+        /// <summary>
+        /// ListView_inside 控制項。
+        /// </summary>
+        /// <remarks>
+        /// 自動產生的欄位。
+        /// 將移動欄位宣告從設計檔案修改為程式碼後置檔案。
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.ListView ListView_inside;
         
         /// <summary>
         /// FileUpload1 控制項。

@@ -444,6 +444,7 @@
     <Content Include="loginImg\1.jpg" />
     <Content Include="pic\Cancel32x32.png" />
     <Content Include="pic\delete32x32.png" />
+    <Content Include="pic\insert32x32.png" />
     <Content Include="pic\reverse32x32.png" />
     <Content Include="pic\save32x32.png" />
     <Content Include="Scripts\BackEndUI.js" />

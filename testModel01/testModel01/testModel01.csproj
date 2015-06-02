@@ -612,7 +612,6 @@
     </Compile>
     <Compile Include="BackEnd\BS_NewsList.aspx.cs">
       <DependentUpon>BS_NewsList.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="BackEnd\BS_NewsList.aspx.designer.cs">
       <DependentUpon>BS_NewsList.aspx</DependentUpon>

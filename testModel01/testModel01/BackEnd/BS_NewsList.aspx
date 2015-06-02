@@ -1,5 +1,7 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/BackEnd/BS_Site.Master" AutoEventWireup="true" CodeBehind="BS_NewsList.aspx.cs" Inherits="testModel01.WebForm13" %>
 
+<%@ Register assembly="CKEditor.NET" namespace="CKEditor.NET" tagprefix="CKEditor" %>
+
 <asp:Content ID="Content1" ContentPlaceHolderID="BS_HeadContent" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="BS_BodyContent" runat="server">
@@ -41,7 +43,7 @@
     <br />
     <asp:Label ID="Label2" runat="server" Style="font-family: 微軟正黑體; font-size: large" Text="3.內文"></asp:Label>
     <br />
-    <asp:TextBox ID="txtContent" runat="server" Rows="10" TextMode="MultiLine" CssClass="form-control" Font-Names="微軟正黑體" Font-Size="Medium"></asp:TextBox>
+    <CKEditor:CKEditorControl ID="CKEditorControl1" runat="server"></CKEditor:CKEditorControl>
     <br />
     <asp:Button ID="btnInsert" runat="server" CssClass="btn btn-primary btn-lg" OnClick="btnInsert_Click" Text="新增消息公告" OnClientClick="return confirm('確定要新增消息嗎?')" />
 
@@ -52,7 +54,7 @@
         <InsertParameters>
             <asp:ControlParameter ControlID="txtDate" Name="fDate" PropertyName="Text" Type="String" />
             <asp:ControlParameter ControlID="txtSubject" Name="fSubject" PropertyName="Text" Type="String" />
-            <asp:ControlParameter ControlID="txtContent" Name="fContent" PropertyName="Text" Type="String" />
+            <asp:ControlParameter ControlID="CKEditorControl1" Name="fContent" PropertyName="Text" Type="String" />
         </InsertParameters>
         <UpdateParameters>
             <asp:Parameter Name="fDate" Type="String" />

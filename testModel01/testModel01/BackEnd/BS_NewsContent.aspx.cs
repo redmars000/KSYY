@@ -11,39 +11,30 @@ namespace testModel01.BackEnd
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            TextBox fContentEditor = (TextBox)FormView1.FindControl("fContentTextBox");
+            Literal fContentJS = (Literal)FormView1.FindControl("fContentTextBoxJavascript");
+            UpdateEditorJS(fContentEditor, fContentJS);
         }
 
-        protected void DataList1_EditCommand(object source, DataListCommandEventArgs e)
+        protected void UpdateEditorJS(TextBox TextBoxCtl, Literal LiteralCtl)
         {
-            DataList1.EditItemIndex = e.Item.ItemIndex;
-            DataList1.DataBind();
+            LiteralCtl.Text = "<script type='Text/javascript'>";
+            LiteralCtl.Text += "CKEDITOR.replace('";
+            LiteralCtl.Text += TextBoxCtl.ClientID;
+            LiteralCtl.Text += "');</script>";
+        }
+
+        protected void FormView1_ItemUpdated(object sender, FormViewUpdatedEventArgs e)
+        {
             Response.Redirect("BS_NewsList.aspx");
         }
 
-        protected void DataList1_UpdateCommand(object source, DataListCommandEventArgs e)
+        protected void FormView1_ItemCommand(object sender, FormViewCommandEventArgs e)
         {
-            String id = DataList1.DataKeys[e.Item.ItemIndex].ToString();
-            String date = ((TextBox)e.Item.FindControl("txtDate")).Text;
-            String subject = ((TextBox)e.Item.FindControl("txtSubject")).Text;
-            String content = ((TextBox)e.Item.FindControl("txtContent")).Text;
-
-            SqlDataSource2.UpdateParameters["fID"].DefaultValue = id;
-            SqlDataSource2.UpdateParameters["fDate"].DefaultValue = date;
-            SqlDataSource2.UpdateParameters["fSubject"].DefaultValue = subject;
-            SqlDataSource2.UpdateParameters["fContent"].DefaultValue = content;
-            SqlDataSource2.Update();
-
-            DataList1.EditItemIndex = -1;
-            DataList1.DataBind();
-            Response.Redirect("BS_NewsList.aspx");
-        }
-
-        protected void DataList1_CancelCommand(object source, DataListCommandEventArgs e)
-        {
-            DataList1.EditItemIndex = -1;
-            DataList1.DataBind();
-            Response.Redirect("BS_NewsList.aspx");
+            if (e.CommandName == "Cancel")
+            {
+                Response.Redirect("BS_NewsList.aspx");
+            }
         }
     }
 }

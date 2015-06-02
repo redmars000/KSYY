@@ -600,7 +600,6 @@
   <ItemGroup>
     <Compile Include="BackEnd\BS_NewsContent.aspx.cs">
       <DependentUpon>BS_NewsContent.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="BackEnd\BS_NewsContent.aspx.designer.cs">
       <DependentUpon>BS_NewsContent.aspx</DependentUpon>

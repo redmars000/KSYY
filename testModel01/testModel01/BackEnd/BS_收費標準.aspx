@@ -7,9 +7,8 @@
     </p>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="BS_BodyContent" runat="server">
-    <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" CssClass="table table-bordered table-hover" DataKeyNames="room" DataSourceID="SqlDataSource1" OnRowEditing="GridView1_RowEditing" OnRowUpdating="GridView1_RowUpdating" >
+    <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" CssClass="table table-bordered table-hover table-striped" DataKeyNames="room" DataSourceID="SqlDataSource1" OnRowEditing="GridView1_RowEditing" OnRowUpdating="GridView1_RowUpdating" Width="100%" ToolTip="點我修改" >
         <Columns>
-            <asp:CommandField ShowEditButton="True" />
             <asp:BoundField DataField="room" HeaderText="住  房" ReadOnly="True" SortExpression="room">
             <HeaderStyle CssClass="info text-center" Font-Size="Medium" />
             <ItemStyle CssClass="text-center" />
@@ -26,6 +25,34 @@
             <HeaderStyle CssClass="info text-center" Font-Size="Medium" />
             <ItemStyle CssClass="text-center" />
             </asp:BoundField>
+            <asp:TemplateField HeaderText="修改">
+                <ItemTemplate>
+                    <asp:ImageButton ID="ImageButton2" runat="server" CommandName="Edit" ImageUrl="~/pic/reverse32x32.png" ToolTip="點我修改" />
+                </ItemTemplate>
+                <HeaderStyle CssClass="info text-center" Font-Size="Medium" />
+                <ItemStyle CssClass="text-center" Font-Size="Medium" />
+            </asp:TemplateField>
+            <asp:TemplateField HeaderText="儲存">
+                <ItemTemplate>
+                    <asp:ImageButton ID="ImageButton3" runat="server" CommandName="Update" ImageUrl="~/pic/save32x32.png" ToolTip="點我儲存" />
+                </ItemTemplate>
+                <HeaderStyle CssClass="info text-center" Font-Size="Medium" />
+                <ItemStyle CssClass="text-center" Font-Size="Medium" />
+            </asp:TemplateField>
+            <asp:TemplateField HeaderText="取消">
+                <ItemTemplate>
+                    <asp:ImageButton ID="ImageButton4" runat="server" CommandName="Cancel" ImageUrl="~/pic/Cancel32x32.png" ToolTip="點我取消" />
+                </ItemTemplate>
+                <HeaderStyle CssClass="info text-center" Font-Size="Medium" />
+                <ItemStyle CssClass="text-center" Font-Size="Medium" />
+            </asp:TemplateField>
+            <asp:TemplateField HeaderText="刪除">
+                <ItemTemplate>
+                    <asp:ImageButton ID="ImageButton1" runat="server" CommandName="Delete" ImageUrl="~/pic/delete32x32.png" OnClientClick="return confirm('確定要刪除?')" ToolTip="點我刪除" />
+                </ItemTemplate>
+                <HeaderStyle CssClass="info text-center" Font-Size="Medium" />
+                <ItemStyle CssClass="text-center" />
+            </asp:TemplateField>
         </Columns>
     </asp:GridView>
     <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString2 %>" SelectCommand="SELECT * FROM [Fees_table_1]" DeleteCommand="DELETE FROM [Fees_table_1] WHERE [room] = @room" InsertCommand="INSERT INTO [Fees_table_1] ([room], [price], [care], [careprice]) VALUES (@room, @price, @care, @careprice)" UpdateCommand="UPDATE [Fees_table_1] SET [price] = @price, [care] = @care, [careprice] = @careprice WHERE [room] = @room">
@@ -57,15 +84,9 @@
             <asp:Parameter Name="Id" Type="Int32" />
         </UpdateParameters>
     </asp:SqlDataSource>
-    
-    <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="儲存送出" />
-    <br />
-    <asp:GridView ID="GridView2" runat="server" AutoGenerateColumns="False" CssClass="table table-bordered" DataKeyNames="Id" DataSourceID="SqlDataSource2" OnRowEditing="GridView2_RowEditing" OnRowUpdated="GridView2_RowUpdated" OnRowUpdating="GridView2_RowUpdating">
+    <asp:GridView ID="GridView2" runat="server" AutoGenerateColumns="False" CssClass="table table-bordered table-hover table-striped" DataKeyNames="Id" DataSourceID="SqlDataSource2" OnRowEditing="GridView2_RowEditing" OnRowUpdated="GridView2_RowUpdated" OnRowUpdating="GridView2_RowUpdating" Width="100%" ToolTip="點我修改">
         <Columns>
-            <asp:CommandField ShowEditButton="True" >
-            <ControlStyle CssClass="btn btn-primary"  />
-            </asp:CommandField>
-            <asp:TemplateField>
+            <asp:TemplateField HeaderText="備註">
                 <ItemTemplate>
                     <asp:Label ID="lb1" runat="server"  Text='<%#Bind("content") %>'></asp:Label>               
                          </ItemTemplate>
@@ -74,12 +95,43 @@
                     <CKEditor:CKEditorControl ID="description" runat="server" Text='<%#Bind("content") %>'>'</CKEditor:CKEditorControl>
                 </EditItemTemplate>
                 
+                <FooterStyle BackColor="#D7EBF7" />
+                <HeaderStyle Font-Size="Medium" CssClass="info text-center" />
+                
+                <ItemStyle CssClass="text-center" Font-Size="Medium" />
+                
+            </asp:TemplateField>
+
+            <asp:TemplateField HeaderText="修改">
+                <ItemTemplate>
+                    <asp:ImageButton ID="ImageButton5" runat="server" CommandName="Edit" ImageUrl="~/pic/reverse32x32.png" ToolTip="點我修改" />
+                </ItemTemplate>
+                <HeaderStyle CssClass="info text-center" Font-Size="Medium" />
+                <ItemStyle CssClass="text-center" Font-Size="Medium" />
+            </asp:TemplateField>
+            <asp:TemplateField HeaderText="儲存">
+                <ItemTemplate>
+                    <asp:ImageButton ID="ImageButton6" runat="server" CommandName="Update" ImageUrl="~/pic/save32x32.png" ToolTip="點我儲存" />
+                </ItemTemplate>
+                <HeaderStyle CssClass="info text-center" Font-Size="Medium" />
+                <ItemStyle CssClass="text-center" Font-Size="Medium" />
+            </asp:TemplateField>
+            <asp:TemplateField HeaderText="取消">
+                <ItemTemplate>
+                    <asp:ImageButton ID="ImageButton7" runat="server" CommandName="Cancel" ImageUrl="~/pic/Cancel32x32.png" ToolTip="點我取消" />
+                </ItemTemplate>
+                <HeaderStyle CssClass="info text-center" Font-Size="Medium" />
+                <ItemStyle CssClass="text-center" Font-Size="Medium" />
+            </asp:TemplateField>
+            <asp:TemplateField HeaderText="刪除">
+                <ItemTemplate>
+                    <asp:ImageButton ID="ImageButton8" runat="server" CommandName="Delete" ImageUrl="~/pic/delete32x32.png" ToolTip="點我刪除" />
+                </ItemTemplate>
+                <HeaderStyle CssClass="info text-center" Font-Size="Medium" />
+                <ItemStyle CssClass="text-center" Font-Size="Medium" />
             </asp:TemplateField>
 
         </Columns>
         
     </asp:GridView>
-    
-    <br />
-    <br />
 </asp:Content>

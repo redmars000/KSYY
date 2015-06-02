@@ -442,8 +442,10 @@
     <Content Include="Content\Sidebar.css" />
     <Content Include="fonts\fontawesome-webfont.svg" />
     <Content Include="loginImg\1.jpg" />
+    <Content Include="pic\Cancel32x32.png" />
     <Content Include="pic\delete32x32.png" />
     <Content Include="pic\reverse32x32.png" />
+    <Content Include="pic\save32x32.png" />
     <Content Include="Scripts\BackEndUI.js" />
     <Content Include="Scripts\Sidebar.js" />
     <Content Include="TempFolder\sidebar.css" />
@@ -602,6 +604,7 @@
   <ItemGroup>
     <Compile Include="BackEnd\BS_NewsContent.aspx.cs">
       <DependentUpon>BS_NewsContent.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="BackEnd\BS_NewsContent.aspx.designer.cs">
       <DependentUpon>BS_NewsContent.aspx</DependentUpon>
@@ -622,12 +625,14 @@
     </Compile>
     <Compile Include="BackEnd\BS_入住事項editAttention.aspx.cs">
       <DependentUpon>BS_入住事項editAttention.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="BackEnd\BS_入住事項editAttention.aspx.designer.cs">
       <DependentUpon>BS_入住事項editAttention.aspx</DependentUpon>
     </Compile>
     <Compile Include="BackEnd\BS_入住事項editCommodity.aspx.cs">
       <DependentUpon>BS_入住事項editCommodity.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="BackEnd\BS_入住事項editCommodity.aspx.designer.cs">
       <DependentUpon>BS_入住事項editCommodity.aspx</DependentUpon>

@@ -31,6 +31,15 @@ namespace testModel01 {
         protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSource1;
         
         /// <summary>
+        /// SqlDataSource2 控制項。
+        /// </summary>
+        /// <remarks>
+        /// 自動產生的欄位。
+        /// 將移動欄位宣告從設計檔案修改為程式碼後置檔案。
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSource2;
+        
+        /// <summary>
         /// GridView2 控制項。
         /// </summary>
         /// <remarks>
@@ -47,15 +56,6 @@ namespace testModel01 {
         /// 將移動欄位宣告從設計檔案修改為程式碼後置檔案。
         /// </remarks>
         protected global::System.Web.UI.WebControls.GridView GridView3;
-        
-        /// <summary>
-        /// SqlDataSource2 控制項。
-        /// </summary>
-        /// <remarks>
-        /// 自動產生的欄位。
-        /// 將移動欄位宣告從設計檔案修改為程式碼後置檔案。
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSource2;
         
         /// <summary>
         /// sqlAttention 控制項。

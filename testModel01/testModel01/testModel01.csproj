@@ -76,6 +76,7 @@
     <Content Include="BackEnd\BS_入住事項.aspx" />
     <Content Include="BackEnd\BS_入住事項editAttention.aspx" />
     <Content Include="BackEnd\BS_入住事項editCommodity.aspx" />
+    <Content Include="BackEnd\BS_關於康欣.aspx" />
     <Content Include="bin\testModel01.dll" />
     <Content Include="bin\testModel01.pdb" />
     <Content Include="BackEnd\BS_活動剪影後台.aspx" />
@@ -612,6 +613,7 @@
     </Compile>
     <Compile Include="BackEnd\BS_NewsList.aspx.cs">
       <DependentUpon>BS_NewsList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="BackEnd\BS_NewsList.aspx.designer.cs">
       <DependentUpon>BS_NewsList.aspx</DependentUpon>
@@ -650,6 +652,13 @@
     </Compile>
     <Compile Include="BackEnd\BS_入住事項.aspx.designer.cs">
       <DependentUpon>BS_入住事項.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BackEnd\BS_關於康欣.aspx.cs">
+      <DependentUpon>BS_關於康欣.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackEnd\BS_關於康欣.aspx.designer.cs">
+      <DependentUpon>BS_關於康欣.aspx</DependentUpon>
     </Compile>
     <Compile Include="Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>

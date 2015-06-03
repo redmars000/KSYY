@@ -76,20 +76,20 @@
             <h2 style="color: #ff6600;"><strong>入住注意事項</strong></h2>
             <div>
                 <asp:SqlDataSource ID="sqlAttention" runat="server" ConnectionString="<%$ ConnectionStrings:dbKSYYConnectionString %>" SelectCommand="SELECT * FROM [tAttention]"></asp:SqlDataSource>
-                <asp:GridView ID="gvAttention" runat="server" AutoGenerateColumns="False" DataSourceID="sqlAttention" CssClass="table " ShowHeader="False" DataKeyNames="fId" OnRowDataBound="gvAttention_RowDataBound" GridLines="None">
+                <asp:GridView ID="gvAttention" runat="server" AutoGenerateColumns="False" DataSourceID="sqlAttention" CssClass="table " ShowHeader="False" DataKeyNames="fId" GridLines="None">
                     <Columns>
                         <asp:BoundField DataField="fNo" HeaderText="fNo" SortExpression="fNo" />
-                        <asp:BoundField DataField="fContent" HeaderText="fContent" SortExpression="fContent" />
+                        <asp:BoundField DataField="fContent" HeaderText="fContent" SortExpression="fContent" HtmlEncode="False" />
                     </Columns>
                 </asp:GridView>
             </div>
             <div style="background-color: #FFFFCC">
                 <h4 class="attention-item4">◆入住必備日用品清單◆</h4>
                 <asp:SqlDataSource ID="sqlCommodity" runat="server" ConnectionString="<%$ ConnectionStrings:dbKSYYConnectionString %>" SelectCommand="SELECT * FROM [tCommodity]"></asp:SqlDataSource>
-                <asp:GridView ID="gvCommdoity" runat="server" AutoGenerateColumns="False" DataSourceID="sqlCommodity" CssClass="table " ShowHeader="False" DataKeyNames="fId" OnRowDataBound="gvCommdoity_RowDataBound" GridLines="None">
+                <asp:GridView ID="gvCommdoity" runat="server" AutoGenerateColumns="False" DataSourceID="sqlCommodity" CssClass="table " ShowHeader="False" DataKeyNames="fId" GridLines="None">
                     <Columns>
                         <asp:BoundField DataField="fNo" HeaderText="fNo" SortExpression="fNo" />
-                        <asp:BoundField DataField="fContent" HeaderText="fContent" SortExpression="fContent" />
+                        <asp:BoundField DataField="fContent" HeaderText="fContent" SortExpression="fContent" HtmlEncode="False" />
                     </Columns>
                 </asp:GridView>
                 <p class="attention-item4">以上用品依長輩之個別需要準備，請您於入住時即備妥並<span class="attention-item5"><strong>"寫上姓名"</strong></span>或由本機構代購，以方面作業！</p>

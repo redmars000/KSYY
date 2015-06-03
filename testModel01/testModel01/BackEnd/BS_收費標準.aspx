@@ -79,9 +79,9 @@
                 </EditItemTemplate>
                 
                 <FooterStyle BackColor="#D7EBF7" />
-                <HeaderStyle Font-Size="Medium" CssClass="info text-center" />
+                <HeaderStyle Font-Size="Medium" CssClass="info" />
                 
-                <ItemStyle CssClass="text-center" Font-Size="Medium" />
+                <ItemStyle CssClass="text" Font-Size="Medium" />
                 
             </asp:TemplateField>
 

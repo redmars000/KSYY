@@ -30,8 +30,8 @@
                         <CKEditor:CKEditorControl ID="CKEditorControl1" runat="server" Text='<%#Bind("article") %>'></CKEditor:CKEditorControl>
                    
                     </EditItemTemplate>
-                    <HeaderStyle CssClass="info text-center" Font-Size="Medium" />
-                    <ItemStyle CssClass="text-center" Font-Size="Medium" />
+                    <HeaderStyle CssClass="info" Font-Size="Medium" />
+                    <ItemStyle CssClass="text" Font-Size="Medium" />
                 </asp:TemplateField>
                 <asp:CommandField ButtonType="Image" CancelImageUrl="~/pic/Cancel32x32.png" EditImageUrl="~/pic/reverse32x32.png" EditText="修改" HeaderText="修改" ShowEditButton="True" UpdateImageUrl="~/pic/save32x32.png" UpdateText="儲存">
                 <HeaderStyle CssClass="info text-center" Font-Size="Medium" />

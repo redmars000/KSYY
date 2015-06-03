@@ -62,7 +62,13 @@
         </div>
     </div>
 
-
+    <a href="BS_入住事項insertAttention.aspx" role="button" class="btn btn-primary" data-toggle="modal" data-target="#myModalinsert">新增</a>
+    <div class="modal fade" id="myModalinsert" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+            </div>
+        </div>
+    </div>
     <div>
         <h2 style="color: #FF6600">日用品清單修改</h2>
         <asp:SqlDataSource ID="sqlCommodity" runat="server" ConnectionString="<%$ ConnectionStrings:dbKSYYConnectionString %>" DeleteCommand="DELETE FROM [tCommodity] WHERE [fId] = @fId" InsertCommand="INSERT INTO [tCommodity] ([fNo], [fContent], [fColor]) VALUES (@fNo, @fContent, @fColor)" SelectCommand="SELECT * FROM [tCommodity]" UpdateCommand="UPDATE [tCommodity] SET [fNo] = @fNo, [fContent] = @fContent, [fColor] = @fColor WHERE [fId] = @fId">
@@ -115,10 +121,18 @@
         </asp:GridView>
 
         <div class="modal fade" id="myModa2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                </div>
             </div>
         </div>
-    </div>
+
+        <a href="BS_入住事項insertCommodity.aspx" role="button" class="btn btn-primary" data-toggle="modal" data-target="#myModalinsert2">新增</a>
+        <div class="modal fade" id="myModalinsert2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                </div>
+            </div>
+        </div>
     </div>
 </asp:Content>

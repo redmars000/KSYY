@@ -7,7 +7,7 @@
     </p>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="BS_BodyContent" runat="server">
-    <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" CssClass="table table-bordered table-hover table-striped" DataKeyNames="room" DataSourceID="SqlDataSource1" OnRowEditing="GridView1_RowEditing" OnRowUpdating="GridView1_RowUpdating" Width="100%" >
+    <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" CssClass="table table-bordered table-hover" DataKeyNames="room" DataSourceID="SqlDataSource1" OnRowEditing="GridView1_RowEditing" OnRowUpdating="GridView1_RowUpdating" Width="100%" >
         <Columns>
             <asp:BoundField DataField="room" HeaderText="住  房" ReadOnly="True" SortExpression="room">
             <HeaderStyle CssClass="info text-center" Font-Size="Medium" />
@@ -67,7 +67,7 @@
             <asp:Parameter Name="Id" Type="Int32" />
         </UpdateParameters>
     </asp:SqlDataSource>
-    <asp:GridView ID="GridView2" runat="server" AutoGenerateColumns="False" CssClass="table table-bordered table-hover table-striped" DataKeyNames="Id" DataSourceID="SqlDataSource2" OnRowEditing="GridView2_RowEditing" OnRowUpdated="GridView2_RowUpdated" OnRowUpdating="GridView2_RowUpdating" Width="100%">
+    <asp:GridView ID="GridView2" runat="server" AutoGenerateColumns="False" CssClass="table table-bordered table-hover" DataKeyNames="Id" DataSourceID="SqlDataSource2" OnRowEditing="GridView2_RowEditing" OnRowUpdated="GridView2_RowUpdated" OnRowUpdating="GridView2_RowUpdating" Width="100%">
         <Columns>
             <asp:TemplateField HeaderText="備註">
                 <ItemTemplate>
@@ -79,9 +79,9 @@
                 </EditItemTemplate>
                 
                 <FooterStyle BackColor="#D7EBF7" />
-                <HeaderStyle Font-Size="Medium" CssClass="info" />
+                <HeaderStyle Font-Size="Medium" CssClass="info text-center" />
                 
-                <ItemStyle CssClass="text" Font-Size="Medium" />
+                <ItemStyle Font-Size="Medium" />
                 
             </asp:TemplateField>
 

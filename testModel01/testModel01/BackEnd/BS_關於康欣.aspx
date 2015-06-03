@@ -20,7 +20,7 @@
                 <asp:Parameter Name="Id" Type="Int32" />
             </UpdateParameters>
         </asp:SqlDataSource>
-        <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="Id" DataSourceID="SqlDataSource1" Width="100%" CssClass="table table-bordered table-hover table-striped">
+        <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="Id" DataSourceID="SqlDataSource1" Width="100%" CssClass="table table-bordered table-hover">
             <Columns>
                 <asp:TemplateField HeaderText="關於我們">
                     <ItemTemplate>
@@ -30,8 +30,8 @@
                         <CKEditor:CKEditorControl ID="CKEditorControl1" runat="server" Text='<%#Bind("article") %>'></CKEditor:CKEditorControl>
                    
                     </EditItemTemplate>
-                    <HeaderStyle CssClass="info" Font-Size="Medium" />
-                    <ItemStyle CssClass="text" Font-Size="Medium" />
+                    <HeaderStyle CssClass="info text-center" Font-Size="Medium" />
+                    <ItemStyle Font-Size="Medium" />
                 </asp:TemplateField>
                 <asp:CommandField ButtonType="Image" CancelImageUrl="~/pic/Cancel32x32.png" EditImageUrl="~/pic/reverse32x32.png" EditText="修改" HeaderText="修改" ShowEditButton="True" UpdateImageUrl="~/pic/save32x32.png" UpdateText="儲存">
                 <HeaderStyle CssClass="info text-center" Font-Size="Medium" />

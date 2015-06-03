@@ -36,7 +36,7 @@
                     <tbody>
                         <tr>
                             <td style="background-color: #ffffff;" colspan="4">
-                                <asp:GridView ID="GridView2" runat="server" AutoGenerateColumns="False" CssClass="table table-bordered table-hover table-striped" DataKeyNames="room" DataSourceID="SqlDataSource1" Width="100%">
+                                <asp:GridView ID="GridView2" runat="server" AutoGenerateColumns="False" CssClass="table table-bordered table-hover" DataKeyNames="room" DataSourceID="SqlDataSource1" Width="100%">
                                     <Columns>
                                         <asp:BoundField DataField="room" HeaderText="住  房" ReadOnly="True" SortExpression="room">
                                             <HeaderStyle CssClass="info text-center" />
@@ -56,7 +56,7 @@
                                         </asp:BoundField>
                                     </Columns>
                                 </asp:GridView>
-                                <asp:GridView ID="GridView3" runat="server" CssClass="table table-bordered table-hover table-striped" AutoGenerateColumns="False" DataKeyNames="Id" DataSourceID="SqlDataSource2" Width="100%">
+                                <asp:GridView ID="GridView3" runat="server" CssClass="table table-bordered table-hover" AutoGenerateColumns="False" DataKeyNames="Id" DataSourceID="SqlDataSource2" Width="100%">
                                     <Columns>
                                         <asp:BoundField DataField="Id" HeaderText="Id" InsertVisible="False" ReadOnly="True" SortExpression="Id" Visible="False" />
                                         <asp:BoundField DataField="content" HeaderText="備註" HtmlEncode="False" SortExpression="content">

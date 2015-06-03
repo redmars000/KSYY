@@ -32,7 +32,7 @@
                             </asp:SqlDataSource>
                         </p>
                         <p class="auto-style4">
-                            <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" CssClass="table table-bordered table-hover table-striped" DataKeyNames="Id" DataSourceID="SqlDataSource1" Width="100%">
+                            <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" CssClass="table table-bordered table-hover" DataKeyNames="Id" DataSourceID="SqlDataSource1" Width="100%">
                                 <Columns>
                                     <asp:BoundField DataField="Id" HeaderText="Id" ReadOnly="True" SortExpression="Id" Visible="False" />
                                     <asp:BoundField DataField="article" HeaderText="關於我們" HtmlEncode="False" SortExpression="article">

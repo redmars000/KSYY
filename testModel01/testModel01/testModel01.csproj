@@ -448,6 +448,7 @@
     <Content Include="pic\Cancel32x32.png" />
     <Content Include="pic\delete32x32.png" />
     <Content Include="pic\insert32x32.png" />
+    <Content Include="BackEndImg\ks.png" />
     <Content Include="pic\reverse32x32.png" />
     <Content Include="pic\save32x32.png" />
     <Content Include="Scripts\BackEndUI.js" />
@@ -561,7 +562,7 @@
     <Content Include="TempFolder\collapse.aspx" />
     <Content Include="BackEnd\BS_Main.aspx" />
     <Content Include="BackEnd\BS_收費評估表.aspx" />
-    <Content Include="BackEnd\BS_收費標準.aspx" />
+    <Content Include="BackEnd\BS_收費標準表.aspx" />
     <Content Include="TempFolder\sidebar.js" />
     <Content Include="FrontEnd\最新消息內容.aspx" />
     <Content Include="FrontEnd\最新消息.aspx" />
@@ -722,12 +723,12 @@
     <Compile Include="BackEnd\BS_收費評估表.aspx.designer.cs">
       <DependentUpon>BS_收費評估表.aspx</DependentUpon>
     </Compile>
-    <Compile Include="BackEnd\BS_收費標準.aspx.cs">
-      <DependentUpon>BS_收費標準.aspx</DependentUpon>
+    <Compile Include="BackEnd\BS_收費標準表.aspx.cs">
+      <DependentUpon>BS_收費標準表.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="BackEnd\BS_收費標準.aspx.designer.cs">
-      <DependentUpon>BS_收費標準.aspx</DependentUpon>
+    <Compile Include="BackEnd\BS_收費標準表.aspx.designer.cs">
+      <DependentUpon>BS_收費標準表.aspx</DependentUpon>
     </Compile>
     <Compile Include="FrontEnd\最新消息內容.aspx.cs">
       <DependentUpon>最新消息內容.aspx</DependentUpon>

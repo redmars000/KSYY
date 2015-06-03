@@ -26,28 +26,29 @@
             <div class="overlay"></div>
             <nav class="navbar navbar-inverse navbar-fixed-top" id="sidebar-wrapper" role="navigation">
                 <ul class="nav sidebar-nav main-menu">
-                    <li class="sidebar-brand">
-                        <a href="#">Brand
-                        </a>
+                    <li class="sidebar-brand" style="height: 150px">
+                        <div style="margin-top: 30px; text-align:center">
+                            <img src="../BackEndImg/ks.png" />
+                        </div>
                     </li>
                     <li>
                         <a runat="server" href="~/BackEnd/BS_NewsList.aspx">
-                            <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span> 最新消息管理<span class="icon"></span>
+                            <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span> 最新消息<span class="icon"></span>
                         </a>
                     </li>
                     <li>
-                        <a id="A1" runat="server" href="~/BackEnd/BS_關於康欣.aspx">
-                            <span class="glyphicon glyphicon-phone" aria-hidden="true"></span> 修改關於康欣<span class="icon"></span>
+                        <a runat="server" href="~/BackEnd/BS_關於康欣.aspx">
+                            <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> 關於康欣<span class="icon"></span>
                         </a>
                     </li>
                     <li>
-                        <a runat="server" href="~/BackEnd/BS_收費標準.aspx">
-                            <span class="glyphicon glyphicon-phone" aria-hidden="true"></span> 修改收費標準表<span class="icon"></span>
+                        <a runat="server" href="~/BackEnd/BS_收費標準表.aspx">
+                            <span class="glyphicon glyphicon-phone" aria-hidden="true"></span> 收費標準表<span class="icon"></span>
                         </a>
                     </li>
                     <li>
                         <a runat="server" href="~/BackEnd/BS_入住事項.aspx">
-                            <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span> 修改入住事項<span class="icon"></span>
+                            <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span> 入住注意事項<span class="icon"></span>
                         </a>
                     </li>
                     <li>
@@ -56,7 +57,7 @@
                         </a>
                     </li>
                     <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-headphones" aria-hidden="true"></span> 活動剪影管理<span class="caret"></span></a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-headphones" aria-hidden="true"></span> 活動剪影<span class="caret"></span></a>
                         <ul class="dropdown-menu" role="menu">
                             <li class="dropdown-header divider""></li>
                             <li><a runat="server" href="~/BackEnd/BS_活動剪影後台.aspx">p1<span class="icon"></span></a></li>
@@ -67,17 +68,12 @@
                             <li><a runat="server" href="~/BackEnd/BS_活動剪影後台.aspx">p6<span class="icon"></span></a></li>
                             <li class="dropdown-header divider"></li>
                         </ul>
-                    </li>
-                    <li>
-                        <a runat="server" href="~/BackEnd/BS_Main.aspx">
-                            <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> list05<span class="icon"></span>
-                        </a>
-                    </li>
+                    </li>                    
                 </ul>
                 <footer class="footer">
                     <div>
                         <p class="text-muted">
-                            &copy; <%: DateTime.Now.Year %> - 後台管理系統<br />
+                            &copy; <%: DateTime.Now.Year %> - KSYY<br />
                             <a runat="server" href="~/BackEnd/BS_Main.aspx">回首頁</a>
                         </p>
                     </div>

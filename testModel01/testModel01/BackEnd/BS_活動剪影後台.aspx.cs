@@ -17,23 +17,23 @@ namespace testModel01
         string str_InitialCatalog;
         int int_witchphoto;
         int int_pageId;
-        string str_ConnectionString ;
-        string[] str_schema = {"f庭院照片_", "f內部照片_","f慶生照片_","f泡腳照片_",
-                            "f復健照片_","f義剪照片_"};
-        string[] str_folder = {"外觀", "內部","慶生","泡腳","復健","義剪"};
+        string str_ConnectionString;
+        string[] str_schema = { "f庭院照片_", "f內部照片_", "f慶生照片_", "f泡腳照片_", "f復健照片_", "f義剪照片_" };
+        string[] str_folder = { "外觀", "內部", "慶生", "泡腳", "復健", "義剪" };
         List<string> list;
+        //準備與讀取
         protected void Page_Load(object sender, EventArgs e)
         {
             UnobtrusiveValidationMode = UnobtrusiveValidationMode.None;
-            str_ConnectionString = @"Data Source=CR4-17\MSSQLSERVER2013;Initial Catalog=dbKSYY;Integrated Security=True";
+            //str_ConnectionString = @"Data Source=CR4-17\MSSQLSERVER2013;Initial Catalog=dbKSYY;Integrated Security=True";
             //str_ConnectionString = @"Data Source=SHAWN-PC;Integrated Security=SSPI;Initial Catalog=dbKSYY";
-            //str_ConnectionString = @" Data Source=WIN-R56ALTBAKPC\SQLEXPRESS;Initial Catalog=dbKSYY;Integrated Security=True";
-            //str_datasoure = @"WIN-R56ALTBAKPC\SQLEXPRESS";
-            str_datasoure = @"CR4-17\MSSQLSERVER2013";            
+            str_ConnectionString = @" Data Source=WIN-R56ALTBAKPC\SQLEXPRESS;Initial Catalog=dbKSYY;Integrated Security=True";
+            str_datasoure = @"WIN-R56ALTBAKPC\SQLEXPRESS";
+            //     str_datasoure = @"CR4-17\MSSQLSERVER2013";            
             str_InitialCatalog = "dbKSYY";
 
-            int_witchphoto =Convert.ToInt32( Request.QueryString["witchphoto"]);
-            Label1.Text = int_witchphoto + "";
+            int_witchphoto = Convert.ToInt32(Request.QueryString["witchphoto"]);
+
             if (!IsPostBack)
             {
                 m_initial();
@@ -51,9 +51,86 @@ namespace testModel01
                 PlaceHolder1.Controls.Add(btn1);
                 int_itemmount = int_itemmount - 10;
             }
-        
-       
+
+
         }
+        private void m_initial()
+        {
+            try
+            {
+                switch (int_witchphoto)
+                {
+                    default:
+                    case 0:
+                        int_witchphoto = 0;
+                        ListView_outlook.DataSource = m_getview(int_witchphoto, int_pageId);
+                        ListView_outlook.DataBind();
+                        break;
+                    case 1:
+                        ListView_inside.DataSource = m_getview(int_witchphoto, int_pageId);
+                        ListView_inside.DataBind();
+                        break;
+                    case 2:
+                        ListView_birthday.DataSource = m_getview(int_witchphoto, int_pageId);
+                        ListView_birthday.DataBind();
+                        break;
+                    case 3:
+                        ListView_washfoot.DataSource = m_getview(int_witchphoto, int_pageId);
+                        ListView_washfoot.DataBind();
+                        break;
+                    case 4:
+                        ListView_rehab.DataSource = m_getview(int_witchphoto, int_pageId);
+                        ListView_rehab.DataBind();
+                        break;
+                    case 5:
+                        ListView_cuthair.DataSource = m_getview(int_witchphoto, int_pageId);
+                        ListView_cuthair.DataBind();
+                        break;
+                }
+            }
+            catch (Exception eed)
+            {
+                Session["data"] = null;
+                m_initial();
+            }
+            btn_上傳.Text = "上傳至" + str_folder[int_witchphoto];
+        }
+        private DataView m_getview(int num, int page)
+        {
+            DataView d;
+            if (Session["data"] == null)
+            {
+                SqlDataSource sds = new SqlDataSource();
+                sds.ConnectionString = str_ConnectionString;
+                string str_大欄位 = str_schema[num] + "l";
+                string str_小欄位 = str_schema[num] + "s";
+                sds.SelectCommand =
+               "SELECT fid," + str_小欄位 + "," + str_大欄位 + " from  T康欣_活動剪影 WHERE " + str_小欄位 + " IS NOT NULL order by fid";
+                d = (DataView)sds.Select(DataSourceSelectArguments.Empty);
+                Session["data"] = d;
+            }
+            else
+                d = (DataView)Session["data"];
+            DataTable dt = new DataTable();
+            dt = d.Table.Copy();
+            DataView d2 = new DataView(dt);
+            int int_min = (page) == 0 ? 0 : page * 10 - 1;
+            int int_max = (page * 10 + 10) > d.Count ? d.Count - 1 : page * 10 + 9;
+            d2.RowFilter = " fid >= " + d[int_min]["fid"].ToString() + " and fid <= " + d[int_max]["fid"].ToString();
+            return d2;
+            /*● DIV的排序*/
+        }
+        protected void Btn_pageclick(object sender, EventArgs e)
+        {
+            Button btn = ((Button)sender);
+            int_pageId = (btn.ID == "Button_firstpage") ? 0 :
+                                 (btn.ID == "Button_lastpage") ? (((DataView)Session["data"]).Count / 10) :
+            (Convert.ToInt32(btn.Text) - 1);
+            m_initial();
+        }
+        
+
+        //刪除
         public void m_FindControlRecursive(Control root, Type type)
         {
             if (root.GetType() == type)
@@ -69,9 +146,9 @@ namespace testModel01
         }
         protected void btn_delete_click(object sender, EventArgs e)
         {
-          if(list!=null)
+            if (list != null)
                 list.Clear();
-          else
+            else
                 list = new List<string>();
 
             m_FindControlRecursive(Panel1, typeof(CheckBox));
@@ -80,157 +157,49 @@ namespace testModel01
             string str_temp;
             int a = sql.Length;
             string str_小欄位名稱 = str_schema[int_witchphoto] + "s";
-            string str_1 = System.Web.Hosting.HostingEnvironment.MapPath("~"); 
+            string str_1 = System.Web.Hosting.HostingEnvironment.MapPath("~");
             foreach (string s in list)
-            {  
-              str_temp=str_1+s.Substring(4,s.Length-4);
-              if (System.IO.File.Exists(str_temp))
-                  System.IO.File.Delete(str_temp);
-                sql += " or " + str_小欄位名稱 + "='" + s+"' ";
-                Label1.Text = sql;
+            {
+                str_temp = str_1 + s.Substring(4, s.Length - 4);
+                if (System.IO.File.Exists(str_temp))
+                    System.IO.File.Delete(str_temp);
+                sql += " or " + str_小欄位名稱 + "='" + s + "' ";
+
             }
             if (a < sql.Length)
             {
                 new c_loadPhoto(str_ConnectionString).delete_pic(sql);
-               }
+            Session["data"] = null;
+            }
             m_initial();
 
         }
-        private void m_initial()
+   //上傳
+        protected void Btn_上傳_Click(object sender, EventArgs e)
         {
-            switch (int_witchphoto)
-            {
-                default:
-                case 0:
-             int_witchphoto = 0;
-             ListView_outlook.DataSource = m_getview(int_witchphoto, int_pageId);
-            ListView_outlook.DataBind();
-                    break;
-                case 1:
-                   ListView_inside.DataSource = m_getview(int_witchphoto, int_pageId);
-                    ListView_inside.DataBind();
-                    break;
-            }
-            btn_上傳.Text = "上傳至" + str_folder[int_witchphoto];
-        }
-
-        private DataView m_getview(int num,int page)
-        {
-            DataView d;              
-            if (Session["data"] == null)
-            {
-                SqlDataSource sds = new SqlDataSource();
-                sds.ConnectionString = str_ConnectionString;
-                string str_大欄位 = str_schema[num] + "l";
-                string str_小欄位 = str_schema[num] + "s";
-                sds.SelectCommand =
-               "SELECT fid," + str_小欄位 + "," + str_大欄位 + " from  T康欣_活動剪影 WHERE " + str_小欄位 + " IS NOT NULL order by fid";
-                d = (DataView)sds.Select(DataSourceSelectArguments.Empty);
-                Session["data"] = d;
-            }
-            else
-            d = (DataView)Session["data"];
-           DataTable dt = new DataTable();
-            dt = d.Table.Copy();
-            DataView d2 = new DataView(dt);
-            int int_min = (page) == 0 ? 0 : page * 10 - 1;
-            int int_max = (page * 10 + 10) > d.Count ? d.Count-1 : page* 10 + 9;
-            d2.RowFilter = " fid >= " + d[int_min]["fid"].ToString() + " and fid <= " + d[int_max]["fid"].ToString();
-            return d2;
-            
-        }
-
-        protected void Btn_pageclick(object sender, EventArgs e)
-        {
-            Label1.Text += "test";
-                Button btn=((Button)sender);
-            int_pageId=(btn.ID=="Button_firstpage")?0:
-                                 (btn.ID == "Button_lastpage") ? (((DataView)Session["data"]).Count / 10) :
-            (Convert.ToInt32(btn.Text)-1);           
-  m_initial();
-        }
-
-        protected void Btn_上傳_外觀_Click(object sender, EventArgs e)
-        {
-            //建立一個新的連線類別
-
-            switch (int_witchphoto)
-            {
-                case 0:
-                default:
-                    c_loadPhoto c_loadpic = new c_loadPhoto(str_datasoure, str_InitialCatalog,
-               "f庭院照片_l", "f庭院照片_s", "外觀");
-                    foreach (HttpPostedFile postedFile in FileUpload1.PostedFiles)
-                    {
-                        //執行圖片上傳與DB資料寫入  
-
-                        if (".jpg".Equals(postedFile.FileName.Substring(postedFile.FileName.LastIndexOf(".") + 1).ToLower()) ||
-                                 ".png".Equals(postedFile.FileName.Substring(postedFile.FileName.LastIndexOf(".") + 1).ToLower()) ||
-                                 ".bmp".Equals(postedFile.FileName.Substring(postedFile.FileName.LastIndexOf(".") + 1).ToLower()) ||
-                                 ".gif".Equals(postedFile.FileName.Substring(postedFile.FileName.LastIndexOf(".") + 1).ToLower()))
-                        {
-                            c_loadpic.Loadpic(postedFile);
-                            postedFile.SaveAs(Server.MapPath(@"\..\pic\康欣_照片\外觀\" + postedFile.FileName));
-                        }
-                    }
-                    break;
-
-                case 1:
-                    /*
-                    //建立一個新的連線類別
-                    c_loadPhoto c_loadpic = new c_loadPhoto(str_datasoure, str_InitialCatalog,
-                      "f內部照片_l", "f內部照片_s", "內部");
-                    foreach (HttpPostedFile postedFile in FileUpload1.PostedFiles)
-                    {
-                        //執行圖片上傳與DB資料寫入  
-                        c_loadpic.Loadpic(postedFile);
-                        //postedFile.SaveAs(Server.MapPath(@"pic\康欣_照片\內部\" + postedFile.FileName));
-                    }  //建立一個新的連線類別
             c_loadPhoto c_loadpic = new c_loadPhoto(str_datasoure, str_InitialCatalog,
-              "f慶生照片_l", "f慶生照片_s", "慶生");
+       str_schema[int_witchphoto] + "l", str_schema[int_witchphoto] + "s", str_folder[int_witchphoto]);
+ 
             foreach (HttpPostedFile postedFile in FileUpload1.PostedFiles)
             {
-                //執行圖片上傳與DB資料寫入  
-                c_loadpic.Loadpic(postedFile);
-                //postedFile.SaveAs(Server.MapPath(@"pic\康欣_照片\慶生\" + postedFile.FileName));
+                         //執行圖片上傳與DB資料寫入  
+                if ("jpg".Equals(postedFile.FileName.Substring(postedFile.FileName.LastIndexOf(".") + 1).ToLower()) ||
+                         "png".Equals(postedFile.FileName.Substring(postedFile.FileName.LastIndexOf(".") + 1).ToLower()) ||
+                         "bmp".Equals(postedFile.FileName.Substring(postedFile.FileName.LastIndexOf(".") + 1).ToLower()) ||
+                         "gif".Equals(postedFile.FileName.Substring(postedFile.FileName.LastIndexOf(".") + 1).ToLower()))
+                {
+                    c_loadpic.Loadpic(postedFile);
+                    postedFile.SaveAs(Server.MapPath(@"~\pic\康欣_照片\" + str_folder[int_witchphoto] + "\\" + postedFile.FileName));
+                }
             }
-            //建立一個新的連線類別
-            c_loadPhoto c_loadpic = new c_loadPhoto(str_datasoure, str_InitialCatalog,
-              "f泡腳照片_l", "f泡腳照片_s", "泡腳");
-            foreach (HttpPostedFile postedFile in FileUpload1.PostedFiles)
-            {
-                //執行圖片上傳與DB資料寫入  
-                c_loadpic.Loadpic(postedFile);
-                //postedFile.SaveAs(Server.MapPath(@"pic\康欣_照片\泡腳\" + postedFile.FileName));
-            }
-            //建立一個新的連線類別
-            c_loadPhoto c_loadpic = new c_loadPhoto(str_datasoure, str_InitialCatalog,
-              "f復健照片_l", "f復健照片_s", "復健");
-            foreach (HttpPostedFile postedFile in FileUpload1.PostedFiles)
-            {
-                //執行圖片上傳與DB資料寫入  
-                c_loadpic.Loadpic(postedFile);
-                //postedFile.SaveAs(Server.MapPath(@"pic\康欣_照片\復健\" + postedFile.FileName));
-            }
-            //建立一個新的連線類別
-            c_loadPhoto c_loadpic = new c_loadPhoto(str_datasoure, str_InitialCatalog,
-              "f義剪照片_l", "f義剪照片_s", "義剪");
-            foreach (HttpPostedFile postedFile in FileUpload1.PostedFiles)
-            {
-                //執行圖片上傳與DB資料寫入  
-                c_loadpic.Loadpic(postedFile);
-                //postedFile.SaveAs(Server.MapPath(@"pic\康欣_照片\復健\" + postedFile.FileName));
-            }
-                    */
-                    break;
 
-            }
+            Session["data"] = null;
+            m_initial();
+            Response.Redirect(Request.Url.ToString());
         }
 
-     
+
     }
-
-
 
     class c_loadPhoto
     {
@@ -245,7 +214,7 @@ namespace testModel01
         string str_資料夾;
         public c_loadPhoto(string str_datasoure, string str_InitialCatalog,
             string str_大欄位名稱, string str_小欄位名稱, string str_資料夾)
-        {
+        {// 建構子  給上傳用
             this.str_datasoure = str_datasoure;
             this.str_InitialCatalog = str_InitialCatalog;
             this.str_大欄位名稱 = str_大欄位名稱;
@@ -254,7 +223,7 @@ namespace testModel01
             str_大欄位名稱_temp = str_大欄位名稱;
         }
         public c_loadPhoto(string str_ConnectionString)
-        {
+        {//建構子 給刪除檔案用
             this.str_ConnectionString = str_ConnectionString;
         }
 

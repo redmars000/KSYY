@@ -60,12 +60,12 @@
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-headphones" aria-hidden="true"></span> 活動剪影<span class="caret"></span></a>
                         <ul class="dropdown-menu" role="menu">
                             <li class="dropdown-header divider""></li>
-                            <li><a runat="server" href="~/BackEnd/BS_活動剪影後台.aspx">p1<span class="icon"></span></a></li>
-                            <li><a runat="server" href="~/BackEnd/BS_活動剪影後台.aspx">p2<span class="icon"></span></a></li>
-                            <li><a runat="server" href="~/BackEnd/BS_活動剪影後台.aspx">p3<span class="icon"></span></a></li>
-                            <li><a runat="server" href="~/BackEnd/BS_活動剪影後台.aspx">p4<span class="icon"></span></a></li>
-                            <li><a runat="server" href="~/BackEnd/BS_活動剪影後台.aspx">p5<span class="icon"></span></a></li>
-                            <li><a runat="server" href="~/BackEnd/BS_活動剪影後台.aspx">p6<span class="icon"></span></a></li>
+                           <li><a runat="server" href="~/BackEnd/BS_活動剪影後台.aspx?witchphoto=0">環境照片<span class="icon"></span></a></li>
+                            <li><a runat="server" href="~/BackEnd/BS_活動剪影後台.aspx?witchphoto=1">內部照片<span class="icon"></span></a></li>
+                            <li><a runat="server" href="~/BackEnd/BS_活動剪影後台.aspx?witchphoto=2">慶生照片<span class="icon"></span></a></li>
+                            <li><a runat="server" href="~/BackEnd/BS_活動剪影後台.aspx?witchphoto=3">泡腳照片<span class="icon"></span></a></li>
+                            <li><a runat="server" href="~/BackEnd/BS_活動剪影後台.aspx?witchphoto=4">復健照片<span class="icon"></span></a></li>
+                            <li><a runat="server" href="~/BackEnd/BS_活動剪影後台.aspx?witchphoto=5">義剪照片<span class="icon"></span></a></li>
                             <li class="dropdown-header divider"></li>
                         </ul>
                     </li>                    

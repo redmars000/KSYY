@@ -48,7 +48,7 @@
                 </table>
             </div>
             <div class="modal-footer">
-                <asp:LinkButton ID="InsertButton" runat="server" CssClass="btn btn-primary" OnClick="InsertButton_Click" Text="更新" OnClientClick="return confirm('確定要新增?')" />
+                <asp:LinkButton ID="InsertButton" runat="server" CssClass="btn btn-primary" OnClick="InsertButton_Click" Text="新增" OnClientClick="return confirm('確定要新增?')" />
                 <asp:LinkButton ID="InsertCancelButton" runat="server" CssClass="btn btn-primary" OnClick="InsertCancelButton_Click" Text="取消" />
             </div>
 

@@ -76,6 +76,8 @@
     <Content Include="BackEnd\BS_入住事項.aspx" />
     <Content Include="BackEnd\BS_入住事項editAttention.aspx" />
     <Content Include="BackEnd\BS_入住事項editCommodity.aspx" />
+    <Content Include="BackEnd\BS_入住事項insertAttention.aspx" />
+    <Content Include="BackEnd\BS_入住事項insertCommodity.aspx" />
     <Content Include="BackEnd\BS_關於康欣.aspx" />
     <Content Include="bin\testModel01.dll" />
     <Content Include="bin\testModel01.pdb" />
@@ -638,6 +640,20 @@
     </Compile>
     <Compile Include="BackEnd\BS_入住事項editCommodity.aspx.designer.cs">
       <DependentUpon>BS_入住事項editCommodity.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BackEnd\BS_入住事項insertAttention.aspx.cs">
+      <DependentUpon>BS_入住事項insertAttention.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackEnd\BS_入住事項insertAttention.aspx.designer.cs">
+      <DependentUpon>BS_入住事項insertAttention.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BackEnd\BS_入住事項insertCommodity.aspx.cs">
+      <DependentUpon>BS_入住事項insertCommodity.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackEnd\BS_入住事項insertCommodity.aspx.designer.cs">
+      <DependentUpon>BS_入住事項insertCommodity.aspx</DependentUpon>
     </Compile>
     <Compile Include="BackEnd\BS_活動剪影後台.aspx.cs">
       <DependentUpon>BS_活動剪影後台.aspx</DependentUpon>

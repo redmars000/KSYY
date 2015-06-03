@@ -25,20 +25,15 @@
             <Columns>
                 <asp:BoundField DataField="fId" HeaderText="fId" InsertVisible="False" ReadOnly="True" SortExpression="fId" Visible="false" />
 
-                <asp:BoundField DataField="fNo" HeaderText="編號" SortExpression="fNo">
+                <asp:BoundField DataField="fNo" HeaderText="編號" SortExpression="fNo" HtmlEncode="False">
                     <HeaderStyle CssClass="info text-center" Font-Bold="True" Font-Size="Large" />
                     <ItemStyle CssClass="text-left" Font-Size="Medium" />
                 </asp:BoundField>
 
-                <asp:BoundField DataField="fContent" HeaderText="內容" SortExpression="fContent">
+                <asp:BoundField DataField="fContent" HeaderText="內容" SortExpression="fContent" HtmlEncode="False">
                     <HeaderStyle CssClass="info text-center" Font-Bold="True" Font-Size="Large" />
                     <ItemStyle CssClass="text-left" Font-Size="Medium" />
                 </asp:BoundField>
-
-                <asp:CheckBoxField DataField="fColor" HeaderText="顏色" SortExpression="fColor">
-                    <HeaderStyle CssClass="info text-center" Font-Bold="True" Font-Size="Large" />
-                    <ItemStyle CssClass="text-center" Font-Size="Medium" />
-                </asp:CheckBoxField>
 
                 <asp:TemplateField HeaderText="編輯">
                     <HeaderStyle CssClass="info text-center" Font-Bold="True" Font-Size="Larger" />
@@ -90,20 +85,15 @@
         <asp:GridView ID="gvCommodity" runat="server" AutoGenerateColumns="False" DataKeyNames="fId" CssClass="table table-bordered table-hover" DataSourceID="sqlCommodity" Font-Names="微軟正黑體" Width="100%">
             <Columns>
                 <asp:BoundField DataField="fId" HeaderText="fId" InsertVisible="False" ReadOnly="True" SortExpression="fId" Visible="false" />
-                <asp:BoundField DataField="fNo" HeaderText="編號" SortExpression="fNo">
+                <asp:BoundField DataField="fNo" HeaderText="編號" SortExpression="fNo" HtmlEncode="False">
                     <HeaderStyle CssClass="info text-center" Font-Bold="True" Font-Size="Large" />
                     <ItemStyle CssClass="text-left" Font-Size="Medium" />
                 </asp:BoundField>
 
-                <asp:BoundField DataField="fContent" HeaderText="內容" SortExpression="fContent">
+                <asp:BoundField DataField="fContent" HeaderText="內容" SortExpression="fContent" HtmlEncode="False">
                     <HeaderStyle CssClass="info text-center" Font-Bold="True" Font-Size="Large" />
                     <ItemStyle CssClass="text-left" Font-Size="Medium" />
                 </asp:BoundField>
-
-                <asp:CheckBoxField DataField="fColor" HeaderText="顏色" SortExpression="fColor">
-                    <HeaderStyle CssClass="info text-center" Font-Bold="True" Font-Size="Large" />
-                    <ItemStyle CssClass="text-center" Font-Size="Medium" />
-                </asp:CheckBoxField>
 
                 <asp:TemplateField HeaderText="編輯">
                     <HeaderStyle CssClass="info text-center" Font-Bold="True" Font-Size="Larger" />

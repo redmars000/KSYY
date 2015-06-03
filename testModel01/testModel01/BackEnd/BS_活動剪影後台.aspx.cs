@@ -12,36 +12,48 @@ namespace testModel01
 {
     public partial class WebForm10 : System.Web.UI.Page
     {
-
         string Str_Date = string.Format("{0}", DateTime.Now.Year) + "-" + string.Format("{0}", DateTime.Now.Month) + "-" + string.Format("{0}", DateTime.Now.Day);
         string str_datasoure;
         string str_InitialCatalog;
-        string str_witchphoto;
-        string str_pageId;
+        int int_witchphoto;
+        int int_pageId;
         string str_ConnectionString ;
         string[] str_schema = {"f庭院照片_", "f內部照片_","f慶生照片_","f泡腳照片_",
                             "f復健照片_","f義剪照片_"};
+        string[] str_folder = {"外觀", "內部","慶生","泡腳","復健","義剪"};
         List<string> list;
-
-        string str_p1 = System.Web.Hosting.HostingEnvironment.MapPath("~");
-
         protected void Page_Load(object sender, EventArgs e)
         {
             UnobtrusiveValidationMode = UnobtrusiveValidationMode.None;
-            //str_ConnectionString = @"Data Source=CR4-17\MSSQLSERVER2013;Initial Catalog=dbKSYY;Integrated Security=True";
+            str_ConnectionString = @"Data Source=CR4-17\MSSQLSERVER2013;Initial Catalog=dbKSYY;Integrated Security=True";
             //str_ConnectionString = @"Data Source=SHAWN-PC;Integrated Security=SSPI;Initial Catalog=dbKSYY";
-            str_ConnectionString = @" Data Source=WIN-R56ALTBAKPC\SQLEXPRESS;Initial Catalog=dbKSYY;Integrated Security=True";
-            str_datasoure = @"WIN-R56ALTBAKPC\SQLEXPRESS";
-            
+            //str_ConnectionString = @" Data Source=WIN-R56ALTBAKPC\SQLEXPRESS;Initial Catalog=dbKSYY;Integrated Security=True";
+            //str_datasoure = @"WIN-R56ALTBAKPC\SQLEXPRESS";
+            str_datasoure = @"CR4-17\MSSQLSERVER2013";            
             str_InitialCatalog = "dbKSYY";
 
-            str_witchphoto = (string)Request.QueryString["witchphoto"];
-            str_pageId = (string)Request.QueryString["pageId"];
-            if(!IsPostBack)
-            m_initial();
+            int_witchphoto =Convert.ToInt32( Request.QueryString["witchphoto"]);
+            Label1.Text = int_witchphoto + "";
+            if (!IsPostBack)
+            {
+                m_initial();
+            }
 
+            int int_itemmount = ((DataView)Session["data"]).Count;
+            int num = 1;
+            while (int_itemmount > 0)
+            {
+                Button btn1 = new Button();
+                btn1.CssClass = ((int_pageId + 1) != num) ? "myButton" : "myButton";
+                btn1.ID = "btn_page_" + num;
+                btn1.Text = "" + num++;
+                btn1.Click += new EventHandler(Btn_pageclick);
+                PlaceHolder1.Controls.Add(btn1);
+                int_itemmount = int_itemmount - 10;
+            }
+        
+       
         }
-
         public void m_FindControlRecursive(Control root, Type type)
         {
             if (root.GetType() == type)
@@ -57,7 +69,6 @@ namespace testModel01
         }
         protected void btn_delete_click(object sender, EventArgs e)
         {
-
           if(list!=null)
                 list.Clear();
           else
@@ -68,79 +79,87 @@ namespace testModel01
             string sql = "delete  T康欣_活動剪影  where 1=0 ";
             string str_temp;
             int a = sql.Length;
-            string str_小欄位名稱 = str_schema[Convert.ToInt32(str_witchphoto)] + "s";
+            string str_小欄位名稱 = str_schema[int_witchphoto] + "s";
             string str_1 = System.Web.Hosting.HostingEnvironment.MapPath("~"); 
             foreach (string s in list)
             {  
               str_temp=str_1+s.Substring(4,s.Length-4);
               if (System.IO.File.Exists(str_temp))
                   System.IO.File.Delete(str_temp);
-
                 sql += " or " + str_小欄位名稱 + "='" + s+"' ";
                 Label1.Text = sql;
             }
             if (a < sql.Length)
             {
                 new c_loadPhoto(str_ConnectionString).delete_pic(sql);
-                m_initial();
-            }
+               }
+            m_initial();
 
         }
-
-
         private void m_initial()
         {
-           SqlDataSource sds = new SqlDataSource();
-            sds.ConnectionString = str_ConnectionString;
-            switch (str_witchphoto)
+            switch (int_witchphoto)
             {
                 default:
-                case "0":
-                    str_witchphoto = "0";                    
-                    sds.SelectCommand = "SELECT fid,f庭院照片_s,f庭院照片_l from  T康欣_活動剪影 WHERE f庭院照片_s IS NOT NULL";
-                    
-                    DataView d = new DataView();
-                    d = (DataView)sds.Select(DataSourceSelectArguments.Empty);
-                    DataView d2 = new DataView();
-                    d2[1]["f庭院照片_s"] = d[1]["f庭院照片_s"];
-                    Label1.Text = d2[1]["f庭院照片_s"].ToString();
-                    ListView_outlook.DataSource =d;
-                     ListView_outlook.DataBind();
+                case 0:
+             int_witchphoto = 0;
+             ListView_outlook.DataSource = m_getview(int_witchphoto, int_pageId);
+            ListView_outlook.DataBind();
                     break;
-
-         /*       case "1":
-                    sds.SelectCommand = "SELECT fid,f內部照片_s,f內部照片_l from  T康欣_活動剪影 WHERE f內部照片_s IS NOT NULL";
-                    ListView_inside.DataSource = sds.Select(DataSourceSelectArguments.Empty);
+                case 1:
+                   ListView_inside.DataSource = m_getview(int_witchphoto, int_pageId);
                     ListView_inside.DataBind();
                     break;
-
-                case "2":
-                    sds.SelectCommand = "SELECT fid,f慶生照片_s,,f慶生照片_l from  T康欣_活動剪影 WHERE f慶生照片_s IS NOT NULL";
-                    ListView_outlook.DataSource = sds.Select(DataSourceSelectArguments.Empty);
-                    ListView_outlook.DataBind();
-                    break;
-                    */
-                case "3":
-                    break;
-
-                case "4":
-                    break;
-                case "5":
-                    break;
             }
-
+            btn_上傳.Text = "上傳至" + str_folder[int_witchphoto];
         }
+
+        private DataView m_getview(int num,int page)
+        {
+            DataView d;              
+            if (Session["data"] == null)
+            {
+                SqlDataSource sds = new SqlDataSource();
+                sds.ConnectionString = str_ConnectionString;
+                string str_大欄位 = str_schema[num] + "l";
+                string str_小欄位 = str_schema[num] + "s";
+                sds.SelectCommand =
+               "SELECT fid," + str_小欄位 + "," + str_大欄位 + " from  T康欣_活動剪影 WHERE " + str_小欄位 + " IS NOT NULL order by fid";
+                d = (DataView)sds.Select(DataSourceSelectArguments.Empty);
+                Session["data"] = d;
+            }
+            else
+            d = (DataView)Session["data"];
+           DataTable dt = new DataTable();
+            dt = d.Table.Copy();
+            DataView d2 = new DataView(dt);
+            int int_min = (page) == 0 ? 0 : page * 10 - 1;
+            int int_max = (page * 10 + 10) > d.Count ? d.Count-1 : page* 10 + 9;
+            d2.RowFilter = " fid >= " + d[int_min]["fid"].ToString() + " and fid <= " + d[int_max]["fid"].ToString();
+            return d2;
+            
+        }
+
+        protected void Btn_pageclick(object sender, EventArgs e)
+        {
+            Label1.Text += "test";
+                Button btn=((Button)sender);
+            int_pageId=(btn.ID=="Button_firstpage")?0:
+                                 (btn.ID == "Button_lastpage") ? (((DataView)Session["data"]).Count / 10) :
+            (Convert.ToInt32(btn.Text)-1);           
+  m_initial();
+        }
+
         protected void Btn_上傳_外觀_Click(object sender, EventArgs e)
         {
             //建立一個新的連線類別
 
-            switch (str_witchphoto)
+            switch (int_witchphoto)
             {
-                case "0":
+                case 0:
                 default:
                     c_loadPhoto c_loadpic = new c_loadPhoto(str_datasoure, str_InitialCatalog,
                "f庭院照片_l", "f庭院照片_s", "外觀");
-
                     foreach (HttpPostedFile postedFile in FileUpload1.PostedFiles)
                     {
                         //執行圖片上傳與DB資料寫入  
@@ -156,7 +175,7 @@ namespace testModel01
                     }
                     break;
 
-                case "1":
+                case 1:
                     /*
                     //建立一個新的連線類別
                     c_loadPhoto c_loadpic = new c_loadPhoto(str_datasoure, str_InitialCatalog,
@@ -207,7 +226,10 @@ namespace testModel01
 
             }
         }
+
+     
     }
+
 
 
     class c_loadPhoto

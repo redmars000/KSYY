@@ -79,6 +79,7 @@
     <Content Include="BackEnd\BS_入住事項insertAttention.aspx" />
     <Content Include="BackEnd\BS_入住事項insertCommodity.aspx" />
     <Content Include="BackEnd\BS_關於康欣.aspx" />
+    <Content Include="BackEnd\BS_床位顯示_地圖.aspx" />
     <Content Include="bin\testModel01.dll" />
     <Content Include="bin\testModel01.pdb" />
     <Content Include="BackEnd\BS_活動剪影後台.aspx" />
@@ -451,6 +452,7 @@
     <Content Include="BackEndImg\ks.png" />
     <Content Include="pic\reverse32x32.png" />
     <Content Include="pic\save32x32.png" />
+    <Content Include="pic\圖-20趴-床位放大.jpg" />
     <Content Include="Scripts\BackEndUI.js" />
     <Content Include="Scripts\Sidebar.js" />
     <Content Include="TempFolder\sidebar.css" />
@@ -676,6 +678,13 @@
     </Compile>
     <Compile Include="BackEnd\BS_關於康欣.aspx.designer.cs">
       <DependentUpon>BS_關於康欣.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BackEnd\BS_床位顯示_地圖.aspx.cs">
+      <DependentUpon>BS_床位顯示_地圖.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackEnd\BS_床位顯示_地圖.aspx.designer.cs">
+      <DependentUpon>BS_床位顯示_地圖.aspx</DependentUpon>
     </Compile>
     <Compile Include="Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>

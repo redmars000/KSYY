@@ -88,7 +88,7 @@
                 </button>
                 <div class="container-BackEnd">
                     <div class="row">
-                        <div class="col-lg-8 col-lg-offset-2">
+                        <div style="padding: 0 15px 20px 15px"> <%--class="col-lg-8 col-lg-offset-2"--%>
                             <asp:ContentPlaceHolder ID="BS_HeadContent" runat="server">
                             </asp:ContentPlaceHolder>
                             <asp:ContentPlaceHolder ID="BS_BodyContent" runat="server">

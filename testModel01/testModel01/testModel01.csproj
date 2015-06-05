@@ -78,6 +78,8 @@
     <Content Include="BackEnd\BS_入住事項editCommodity.aspx" />
     <Content Include="BackEnd\BS_入住事項insertAttention.aspx" />
     <Content Include="BackEnd\BS_入住事項insertCommodity.aspx" />
+    <Content Include="BackEnd\BS_收費標準表.aspx" />
+    <Content Include="BackEnd\BS_收費標準表Content.aspx" />
     <Content Include="BackEnd\BS_關於康欣.aspx" />
     <Content Include="BackEnd\BS_床位顯示_地圖.aspx" />
     <Content Include="bin\testModel01.dll" />
@@ -564,7 +566,6 @@
     <Content Include="TempFolder\collapse.aspx" />
     <Content Include="BackEnd\BS_Main.aspx" />
     <Content Include="BackEnd\BS_收費評估表.aspx" />
-    <Content Include="BackEnd\BS_收費標準表.aspx" />
     <Content Include="TempFolder\sidebar.js" />
     <Content Include="FrontEnd\最新消息內容.aspx" />
     <Content Include="FrontEnd\最新消息.aspx" />
@@ -658,6 +659,18 @@
     <Compile Include="BackEnd\BS_入住事項insertCommodity.aspx.designer.cs">
       <DependentUpon>BS_入住事項insertCommodity.aspx</DependentUpon>
     </Compile>
+    <Compile Include="BackEnd\BS_收費標準表.aspx.cs">
+      <DependentUpon>BS_收費標準表.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BackEnd\BS_收費標準表.aspx.designer.cs">
+      <DependentUpon>BS_收費標準表.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BackEnd\BS_收費標準表Content.aspx.cs">
+      <DependentUpon>BS_收費標準表Content.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BackEnd\BS_收費標準表Content.aspx.designer.cs">
+      <DependentUpon>BS_收費標準表Content.aspx</DependentUpon>
+    </Compile>
     <Compile Include="BackEnd\BS_活動剪影後台.aspx.cs">
       <DependentUpon>BS_活動剪影後台.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -731,13 +744,6 @@
     </Compile>
     <Compile Include="BackEnd\BS_收費評估表.aspx.designer.cs">
       <DependentUpon>BS_收費評估表.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="BackEnd\BS_收費標準表.aspx.cs">
-      <DependentUpon>BS_收費標準表.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="BackEnd\BS_收費標準表.aspx.designer.cs">
-      <DependentUpon>BS_收費標準表.aspx</DependentUpon>
     </Compile>
     <Compile Include="FrontEnd\最新消息內容.aspx.cs">
       <DependentUpon>最新消息內容.aspx</DependentUpon>

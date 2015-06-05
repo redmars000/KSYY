@@ -50,4 +50,4 @@ C:\Users\iii\Documents\GitHub\KSYY\testModel01\testModel01\bin\CKEditor.NET.pdb
 S:\WorkSpace\GitHub\KSYY\testModel01\testModel01\bin\CKEditor.NET.pdb
 D:\GitHub\KSYY\testModel01\testModel01\bin\CKEditor.NET.pdb
 D:\GitHub\KSYY\testModel01\testModel01\obj\Debug\testModel01.csprojResolveAssemblyReference.cache
-C:\Users\iii\Documents\GitHub\KSYY\testModel01\testModel01\bin\testModel01.dll.config
+C:\Users\iii\Documents\GitHub\KSYY\testModel01\testModel01\bin\CKEditor.NET.dll

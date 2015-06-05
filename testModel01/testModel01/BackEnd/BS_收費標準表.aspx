@@ -3,8 +3,7 @@
 <%@ Register Assembly="CKEditor.NET" Namespace="CKEditor.NET" TagPrefix="CKEditor" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="BS_HeadContent" runat="server">
     <p style="color: #0000CC; font-size: xx-large">
-        <strong>收費標準表</strong>
-    </p>
+        <strong>收費標準表</strong></p>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="BS_BodyContent" runat="server">
     <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" CssClass="table table-bordered table-hover" DataKeyNames="id" DataSourceID="SqlDataSource1" OnRowEditing="GridView1_RowEditing" OnRowUpdating="GridView1_RowUpdating" Width="100%" >
@@ -29,16 +28,16 @@
             
 
             <asp:TemplateField HeaderText="修改">
-                    <HeaderStyle CssClass="info text-center" Font-Bold="True" Font-Size="Larger" />
+                    <HeaderStyle CssClass="info text-center" Font-Bold="True" Font-Size="Medium" />
                     <ItemStyle CssClass="text-center" Font-Size="Medium" />
                     <ItemTemplate>
-                        <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl='<%# Eval("room", "BS_收費標準表Content.aspx?room={0}") %>' Text='<%# Eval("room") %>' ImageUrl="~/pic/reverse32x32.png" ToolTip="點我修改" data-toggle="modal" data-target="#myModal"></asp:HyperLink>
+       <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl='<%# Eval("id", "BS_收費標準表Edit.aspx?id={0}") %>' ImageUrl="~/pic/reverse32x32.png" ToolTip="點我修改" data-toggle="modal" data-target="#myModal"></asp:HyperLink>
                     </ItemTemplate>
                 </asp:TemplateField>
 
             <asp:TemplateField HeaderText="刪除">
                 <ItemTemplate>
-                    <asp:ImageButton ID="ImageButton1" runat="server" CommandName="Delete" OnClientClick="return confirm('確認刪除？')" ImageUrl="~/pic/delete32x32.png"  ToolTip="點我刪除" />
+                    <asp:ImageButton ID="ImageButton1" runat="server" CommandName="Delete" OnClientClick="return confirm('確定要刪除？')" ImageUrl="~/pic/delete32x32.png"  ToolTip="點我刪除"/>
                 </ItemTemplate>
                 <HeaderStyle CssClass="info text-center" Font-Size="Medium" />
                 <ItemStyle CssClass="text-center" />
@@ -110,4 +109,10 @@
         </Columns>
         
     </asp:GridView>
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+            </div>
+        </div>
+    </div>
 </asp:Content>

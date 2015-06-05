@@ -80,6 +80,7 @@
     <Content Include="BackEnd\BS_入住事項insertCommodity.aspx" />
     <Content Include="BackEnd\BS_收費標準表.aspx" />
     <Content Include="BackEnd\BS_收費標準表Content.aspx" />
+    <Content Include="BackEnd\BS_收費標準表Edit.aspx" />
     <Content Include="BackEnd\BS_關於康欣.aspx" />
     <Content Include="BackEnd\BS_床位顯示_地圖.aspx" />
     <Content Include="bin\testModel01.dll" />
@@ -661,15 +662,24 @@
     </Compile>
     <Compile Include="BackEnd\BS_收費標準表.aspx.cs">
       <DependentUpon>BS_收費標準表.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="BackEnd\BS_收費標準表.aspx.designer.cs">
       <DependentUpon>BS_收費標準表.aspx</DependentUpon>
     </Compile>
     <Compile Include="BackEnd\BS_收費標準表Content.aspx.cs">
       <DependentUpon>BS_收費標準表Content.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="BackEnd\BS_收費標準表Content.aspx.designer.cs">
       <DependentUpon>BS_收費標準表Content.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BackEnd\BS_收費標準表Edit.aspx.cs">
+      <DependentUpon>BS_收費標準表Edit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackEnd\BS_收費標準表Edit.aspx.designer.cs">
+      <DependentUpon>BS_收費標準表Edit.aspx</DependentUpon>
     </Compile>
     <Compile Include="BackEnd\BS_活動剪影後台.aspx.cs">
       <DependentUpon>BS_活動剪影後台.aspx</DependentUpon>

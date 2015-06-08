@@ -441,6 +441,30 @@
     <Content Include="Content\dhCaretUp.css" />
     <Content Include="Content\font-awesome.css" />
     <Content Include="Content\font-awesome.min.css" />
+    <Content Include="Content\FrontEndCSS\animate.css" />
+    <Content Include="Content\FrontEndCSS\colors\beige.css" />
+    <Content Include="Content\FrontEndCSS\colors\blue.css" />
+    <Content Include="Content\FrontEndCSS\colors\cyan.css" />
+    <Content Include="Content\FrontEndCSS\colors\green.css" />
+    <Content Include="Content\FrontEndCSS\colors\jade.css" />
+    <Content Include="Content\FrontEndCSS\colors\orange.css" />
+    <Content Include="Content\FrontEndCSS\colors\peach.css" />
+    <Content Include="Content\FrontEndCSS\colors\pink.css" />
+    <Content Include="Content\FrontEndCSS\colors\purple.css" />
+    <Content Include="Content\FrontEndCSS\colors\red.css" />
+    <Content Include="Content\FrontEndCSS\colors\sky-blue.css" />
+    <Content Include="Content\FrontEndCSS\colors\yellow.css" />
+    <Content Include="Content\FrontEndCSS\css\bootstrap-theme.css" />
+    <Content Include="Content\FrontEndCSS\css\bootstrap-theme.min.css" />
+    <Content Include="Content\FrontEndCSS\css\bootstrap.css" />
+    <Content Include="Content\FrontEndCSS\css\bootstrap.min.css" />
+    <Content Include="Content\FrontEndCSS\font-awesome.css" />
+    <Content Include="Content\FrontEndCSS\font-awesome.min.css" />
+    <Content Include="Content\FrontEndCSS\responsive.css" />
+    <Content Include="Content\FrontEndCSS\style.css" />
+    <Content Include="Content\FrontEndPicsCSS\bootstrap.css" />
+    <Content Include="Content\FrontEndPicsCSS\style.css" />
+    <Content Include="Content\FrontEndPicsCSS\touchTouch.css" />
     <Content Include="Content\lightbox.css" />
     <Content Include="Content\loginBackground.css" />
     <Content Include="Content\loginUI01.css" />
@@ -448,6 +472,39 @@
     <Content Include="Content\screen.css" />
     <Content Include="Content\Sidebar.css" />
     <Content Include="fonts\fontawesome-webfont.svg" />
+    <Content Include="FrontEnd\Main.aspx" />
+    <Content Include="FrontEnd\收費標準.aspx" />
+    <Content Include="FrontEnd\最新消息.aspx" />
+    <Content Include="FrontEnd\最新消息內容.aspx" />
+    <Content Include="FrontEnd\活動剪影.aspx" />
+    <Content Include="FrontEnd\聯絡我們.aspx" />
+    <Content Include="FrontEnd\關於康欣.aspx" />
+    <Content Include="images\banner.jpg" />
+    <Content Include="images\c1.png" />
+    <Content Include="images\c2.png" />
+    <Content Include="images\c3.png" />
+    <Content Include="images\c4.png" />
+    <Content Include="images\c5.png" />
+    <Content Include="images\c6.png" />
+    <Content Include="images\c7.png" />
+    <Content Include="images\c8.png" />
+    <Content Include="images\patterns\1.png" />
+    <Content Include="images\patterns\10.png" />
+    <Content Include="images\patterns\11.png" />
+    <Content Include="images\patterns\12.png" />
+    <Content Include="images\patterns\13.png" />
+    <Content Include="images\patterns\14.png" />
+    <Content Include="images\patterns\2.png" />
+    <Content Include="images\patterns\3.png" />
+    <Content Include="images\patterns\4.png" />
+    <Content Include="images\patterns\5.png" />
+    <Content Include="images\patterns\6.png" />
+    <Content Include="images\patterns\7.png" />
+    <Content Include="images\patterns\8.png" />
+    <Content Include="images\patterns\9.png" />
+    <Content Include="images\slider\bg1.jpg" />
+    <Content Include="images\slider\bg2.jpg" />
+    <Content Include="images\slider\bg3.jpg" />
     <Content Include="loginImg\1.jpg" />
     <Content Include="pic\Cancel32x32.png" />
     <Content Include="pic\delete32x32.png" />
@@ -457,6 +514,46 @@
     <Content Include="pic\save32x32.png" />
     <Content Include="pic\圖-20趴-床位放大.jpg" />
     <Content Include="Scripts\BackEndUI.js" />
+    <Content Include="Scripts\FrontEndJS\contact.js" />
+    <Content Include="Scripts\FrontEndJS\count-to.js" />
+    <Content Include="Scripts\FrontEndJS\jquery-2.1.1.js" />
+    <Content Include="Scripts\FrontEndJS\jquery-2.1.1.min.js" />
+    <Content Include="Scripts\FrontEndJS\jquery-migrate-1.2.1.min.js" />
+    <Content Include="Scripts\FrontEndJS\jquery.appear.js" />
+    <Content Include="Scripts\FrontEndJS\jquery.easypiechart.js" />
+    <Content Include="Scripts\FrontEndJS\jquery.easypiechart.min.js" />
+    <Content Include="Scripts\FrontEndJS\jquery.fitvids.js" />
+    <Content Include="Scripts\FrontEndJS\jquery.isotope.js" />
+    <Content Include="Scripts\FrontEndJS\jquery.isotope.min.js" />
+    <Content Include="Scripts\FrontEndJS\jquery.lettering.js" />
+    <Content Include="Scripts\FrontEndJS\jquery.migrate.js" />
+    <Content Include="Scripts\FrontEndJS\jquery.nicescroll.js" />
+    <Content Include="Scripts\FrontEndJS\jquery.nicescroll.min.js" />
+    <Content Include="Scripts\FrontEndJS\jquery.parallax.js" />
+    <Content Include="Scripts\FrontEndJS\jquery.textillate.js" />
+    <Content Include="Scripts\FrontEndJS\js\bootstrap.js" />
+    <Content Include="Scripts\FrontEndJS\js\bootstrap.min.js" />
+    <Content Include="Scripts\FrontEndJS\mediaelement-and-player.js" />
+    <Content Include="Scripts\FrontEndJS\modernizrr.js" />
+    <Content Include="Scripts\FrontEndJS\nivo-lightbox.js" />
+    <Content Include="Scripts\FrontEndJS\nivo-lightbox.min.js" />
+    <Content Include="Scripts\FrontEndJS\owl.carousel.js" />
+    <Content Include="Scripts\FrontEndJS\owl.carousel.min.js" />
+    <Content Include="Scripts\FrontEndJS\script.js" />
+    <Content Include="Scripts\FrontEndPicsJS\bootstrap.min.js" />
+    <Content Include="Scripts\FrontEndPicsJS\html5shiv.js" />
+    <Content Include="Scripts\FrontEndPicsJS\jquery-migrate-1.2.1.js" />
+    <Content Include="Scripts\FrontEndPicsJS\jquery.easing.1.3.js" />
+    <Content Include="Scripts\FrontEndPicsJS\jquery.equalheights.js" />
+    <Content Include="Scripts\FrontEndPicsJS\jquery.isotope.min.js" />
+    <Content Include="Scripts\FrontEndPicsJS\jquery.js" />
+    <Content Include="Scripts\FrontEndPicsJS\jquery.mobilemenu.js" />
+    <Content Include="Scripts\FrontEndPicsJS\jquery.touchSwipe.min.js" />
+    <Content Include="Scripts\FrontEndPicsJS\jquery.ui.totop.js" />
+    <Content Include="Scripts\FrontEndPicsJS\respond.min.js" />
+    <Content Include="Scripts\FrontEndPicsJS\superfish.js" />
+    <Content Include="Scripts\FrontEndPicsJS\tm-scripts.js" />
+    <Content Include="Scripts\FrontEndPicsJS\touchTouch.jquery.js" />
     <Content Include="Scripts\Sidebar.js" />
     <Content Include="TempFolder\sidebar.css" />
     <Content Include="Content\Site.css" />
@@ -482,7 +579,6 @@
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="Content\bootstrap-theme.css.map" />
     <Content Include="Content\bootstrap.css.map" />
-    <Content Include="FrontEnd\Main.aspx" />
     <Content Include="pic\康欣_照片\內部\inside_L %281%29.jpg" />
     <Content Include="pic\康欣_照片\內部\inside_L %282%29.jpg" />
     <Content Include="pic\康欣_照片\內部\inside_L %283%29.jpg" />
@@ -568,15 +664,8 @@
     <Content Include="BackEnd\BS_Main.aspx" />
     <Content Include="BackEnd\BS_收費評估表.aspx" />
     <Content Include="TempFolder\sidebar.js" />
-    <Content Include="FrontEnd\最新消息內容.aspx" />
-    <Content Include="FrontEnd\最新消息.aspx" />
-    <Content Include="FrontEnd\收費標準.aspx" />
-    <Content Include="FrontEnd\活動剪影.aspx" />
-    <Content Include="FrontEnd\環境介紹.aspx" />
-    <Content Include="FrontEnd\聯絡我們.aspx" />
     <Content Include="自訂\WC1_html.ascx" />
     <Content Include="自訂\WC2_default.ascx" />
-    <Content Include="FrontEnd\關於康欣.aspx" />
     <Content Include="TempFolder\床位.aspx" />
     <Content Include="AssessFile\123.xlsx" />
     <Content Include="AssessFile\assess.doc" />
@@ -597,6 +686,9 @@
     <Content Include="ckeditor\README.md" />
     <Content Include="ckeditor\samples\plugins\htmlwriter\assets\outputforflash\outputforflash.fla" />
     <Content Include="ckeditor\skins\moono\readme.md" />
+    <Content Include="Content\FrontEndCSS\css\bootstrap-theme.css.map" />
+    <Content Include="Content\FrontEndCSS\css\bootstrap.css.map" />
+    <Content Include="FrontEnd\Site.Master" />
     <None Include="Scripts\jquery-1.9.1.intellisense.js" />
     <Content Include="pic\ADD.png" />
     <Content Include="pic\empty.png" />
@@ -709,6 +801,62 @@
     <Compile Include="BackEnd\BS_床位顯示_地圖.aspx.designer.cs">
       <DependentUpon>BS_床位顯示_地圖.aspx</DependentUpon>
     </Compile>
+    <Compile Include="FrontEnd\Main.aspx.cs">
+      <DependentUpon>Main.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrontEnd\Main.aspx.designer.cs">
+      <DependentUpon>Main.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrontEnd\Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrontEnd\Site.Master.designer.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="FrontEnd\收費標準.aspx.cs">
+      <DependentUpon>收費標準.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrontEnd\收費標準.aspx.designer.cs">
+      <DependentUpon>收費標準.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrontEnd\最新消息.aspx.cs">
+      <DependentUpon>最新消息.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrontEnd\最新消息.aspx.designer.cs">
+      <DependentUpon>最新消息.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrontEnd\最新消息內容.aspx.cs">
+      <DependentUpon>最新消息內容.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrontEnd\最新消息內容.aspx.designer.cs">
+      <DependentUpon>最新消息內容.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrontEnd\活動剪影.aspx.cs">
+      <DependentUpon>活動剪影.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrontEnd\活動剪影.aspx.designer.cs">
+      <DependentUpon>活動剪影.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrontEnd\聯絡我們.aspx.cs">
+      <DependentUpon>聯絡我們.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrontEnd\聯絡我們.aspx.designer.cs">
+      <DependentUpon>聯絡我們.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrontEnd\關於康欣.aspx.cs">
+      <DependentUpon>關於康欣.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrontEnd\關於康欣.aspx.designer.cs">
+      <DependentUpon>關於康欣.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -720,20 +868,6 @@
     <Compile Include="obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
     <Compile Include="obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="FrontEnd\Site.Master.cs">
-      <DependentUpon>Site.Master</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="FrontEnd\Site.Master.designer.cs">
-      <DependentUpon>Site.Master</DependentUpon>
-    </Compile>
-    <Compile Include="FrontEnd\Main.aspx.cs">
-      <DependentUpon>Main.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="FrontEnd\Main.aspx.designer.cs">
-      <DependentUpon>Main.aspx</DependentUpon>
-    </Compile>
     <Compile Include="TempFolder\collapse.aspx.cs">
       <DependentUpon>collapse.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -755,48 +889,6 @@
     <Compile Include="BackEnd\BS_收費評估表.aspx.designer.cs">
       <DependentUpon>BS_收費評估表.aspx</DependentUpon>
     </Compile>
-    <Compile Include="FrontEnd\最新消息內容.aspx.cs">
-      <DependentUpon>最新消息內容.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="FrontEnd\最新消息內容.aspx.designer.cs">
-      <DependentUpon>最新消息內容.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="FrontEnd\最新消息.aspx.cs">
-      <DependentUpon>最新消息.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="FrontEnd\最新消息.aspx.designer.cs">
-      <DependentUpon>最新消息.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="FrontEnd\收費標準.aspx.cs">
-      <DependentUpon>收費標準.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="FrontEnd\收費標準.aspx.designer.cs">
-      <DependentUpon>收費標準.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="FrontEnd\活動剪影.aspx.cs">
-      <DependentUpon>活動剪影.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="FrontEnd\活動剪影.aspx.designer.cs">
-      <DependentUpon>活動剪影.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="FrontEnd\環境介紹.aspx.cs">
-      <DependentUpon>環境介紹.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="FrontEnd\環境介紹.aspx.designer.cs">
-      <DependentUpon>環境介紹.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="FrontEnd\聯絡我們.aspx.cs">
-      <DependentUpon>聯絡我們.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="FrontEnd\聯絡我們.aspx.designer.cs">
-      <DependentUpon>聯絡我們.aspx</DependentUpon>
-    </Compile>
     <Compile Include="自訂\WC1_html.ascx.cs">
       <DependentUpon>WC1_html.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -811,13 +903,6 @@
     <Compile Include="自訂\WC2_default.ascx.designer.cs">
       <DependentUpon>WC2_default.ascx</DependentUpon>
     </Compile>
-    <Compile Include="FrontEnd\關於康欣.aspx.cs">
-      <DependentUpon>關於康欣.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="FrontEnd\關於康欣.aspx.designer.cs">
-      <DependentUpon>關於康欣.aspx</DependentUpon>
-    </Compile>
     <Compile Include="TempFolder\床位.aspx.cs">
       <DependentUpon>床位.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -827,7 +912,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="FrontEnd\Site.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

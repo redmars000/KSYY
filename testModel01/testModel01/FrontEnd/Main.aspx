@@ -1,56 +1,77 @@
 ﻿<%@ Page Title="首頁" Language="C#" MasterPageFile="~/FrontEnd/Site.Master"
-     AutoEventWireup="true" CodeBehind="Main.aspx.cs" Inherits="testModel01.WebForm1" %>
+    AutoEventWireup="true" CodeBehind="Main.aspx.cs" Inherits="testModel01.WebForm1" %>
 
 <asp:Content ID="HeadContent" ContentPlaceHolderID="HeadContent" runat="server">
+    <section id="home">
+        <div id="main-slide" class="carousel slide" data-ride="carousel">
+            <%--<ol class="carousel-indicators">
+                    <li data-target="#main-slide" data-slide-to="0" class="active"></li>
+                    <li data-target="#main-slide" data-slide-to="1"></li>
+                    <li data-target="#main-slide" data-slide-to="2"></li>
+                </ol>--%>
+            <div class="carousel-inner">
+                <div class="item active">
+                    <img class="img-responsive" src="../headImg/2.jpg" alt="slider">
+                    <div class="slider-content">
+                        <div class="col-md-12 text-center">
+                            <h3 class="animated2 white">
+                                <span><strong>康欣</strong>老人長期照顧中心【養護型】</span>
+                            </h3>
+                            <br />
+                            <h4 class="animated3">
+                                <span>關心．安心．放心</span>
+                            </h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img class="img-responsive" src="../headImg/4.jpg" alt="slider">
+                    <div class="slider-content">
+                        <div class="col-md-12 text-center">
+                            <h3 class="animated4 white">
+                                <span><strong>康欣</strong>老人長期照顧中心【養護型】</span>
+                            </h3>
+                            <br />
+                            <h4 class="animated5">
+                                <span>鬧中取靜的世外桃源</span>
+                            </h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img class="img-responsive" src="../headImg/5.jpg" alt="slider">
+                    <div class="slider-content">
+                        <div class="col-md-12 text-center">
+                            <h3 class="animated7 white">
+                                <span><strong>康欣</strong>老人長期照顧中心【養護型】</span>
+                            </h3>
+                            <br />
+                            <h4 class="animated8 white">
+                                <span>六星級庭院花園別墅</span>
+                            </h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="left carousel-control" href="#main-slide" data-slide="prev">
+                <span><i class="fa fa-angle-left"></i></span>
+            </a>
+            <a class="right carousel-control" href="#main-slide" data-slide="next">
+                <span><i class="fa fa-angle-right"></i></span>
+            </a>
+        </div>
+    </section>
 </asp:Content>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="BodyContent" runat="server">
-
     <form id="form1" runat="server">
+        <asp:SqlDataSource ID="SqlDataSourceNews" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT * FROM [tNews] order by fId desc" DataSourceMode="DataReader"></asp:SqlDataSource>
 
-    <div class="container">
-        <h3 style="font-family: 微軟正黑體">最新消息</h3>
-        <hr style="background-color: blue; height: 1px" />
-    </div>
-    <div class="container ">
-        <div>
-
-            <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT top(3) * FROM [tNews]"></asp:SqlDataSource>
-            <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="fId" DataSourceID="SqlDataSource1" CssClass="table table-bordered table-hover" Width="100%">
-                <Columns>
-                    <asp:BoundField DataField="fId" HeaderText="fId" InsertVisible="False" ReadOnly="True" SortExpression="fId" Visible="False" />
-                    <asp:BoundField DataField="fDate" HeaderText="發布日期" SortExpression="fDate" >
-                    <HeaderStyle CssClass="info text-center" Font-Bold="True" Font-Names="微軟正黑體" Font-Size="Large" />
-                    <ItemStyle CssClass="text-center" Font-Names="微軟正黑體" Font-Size="Medium" />
-                    </asp:BoundField>
-                    <asp:BoundField DataField="fSubject" HeaderText="fSubject" SortExpression="fSubject" Visible="False" />
-                    <asp:BoundField DataField="fContent" HeaderText="fContent" SortExpression="fContent" Visible="False" />
-                    <asp:HyperLinkField DataNavigateUrlFields="fid" DataTextField="fSubject" HeaderText="檢視內文" DataNavigateUrlFormatString="最新消息內容.aspx?fid={0}" >
-                    <HeaderStyle CssClass="info text-center" Font-Bold="True" Font-Names="微軟正黑體" Font-Size="Large" />
-                    <ItemStyle CssClass="text-center" Font-Names="微軟正黑體" Font-Size="Medium" />
-                    </asp:HyperLinkField>
-                </Columns>
-            </asp:GridView>
-
+        <div class="latest-posts">
+            <h4 class="classic-title"><span>最新消息</span></h4>
+            <div class="latest-posts-classic custom-carousel touch-carousel" data-appeared-items="3">
+                <asp:Literal ID="ltlLatestNews" runat="server"></asp:Literal>
+            </div>
         </div>
-        <div class="pull-right">
-            <a href="最新消息.aspx">
-                <img src="../pic/更多內容.gif" /></a>
-        </div>
-        <hr />
-    </div>
-    <div class="container">
-        <h3>康欣老人長期照顧中心</h3>
-        <hr style="background-color: blue; height: 1px" />
-    </div>
-    <div class="container">
-        <a href="Main.aspx">
-            <img src="../pic/康欣老人長期照顧中心.jpg" /></a>
-        <hr />
-    </div>
-
-
     </form>
-
-
 </asp:Content>

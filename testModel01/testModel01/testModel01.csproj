@@ -465,6 +465,7 @@
     <Content Include="Content\FrontEndPicsCSS\bootstrap.css" />
     <Content Include="Content\FrontEndPicsCSS\style.css" />
     <Content Include="Content\FrontEndPicsCSS\touchTouch.css" />
+    <Content Include="Content\jasny-bootstrap.min.css" />
     <Content Include="Content\lightbox.css" />
     <Content Include="Content\loginBackground.css" />
     <Content Include="Content\loginUI01.css" />
@@ -554,6 +555,7 @@
     <Content Include="Scripts\FrontEndPicsJS\superfish.js" />
     <Content Include="Scripts\FrontEndPicsJS\tm-scripts.js" />
     <Content Include="Scripts\FrontEndPicsJS\touchTouch.jquery.js" />
+    <Content Include="Scripts\jasny-bootstrap.min.js" />
     <Content Include="Scripts\Sidebar.js" />
     <Content Include="TempFolder\sidebar.css" />
     <Content Include="Content\Site.css" />

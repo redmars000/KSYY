@@ -9,7 +9,8 @@ namespace testModel01
 {
     public partial class WebForm6 : System.Web.UI.Page
     {
-        string str_Data_Source = @"CCT-PC\SQLEXPRESS";//資策
+        // string str_Data_Source = @"CCT-PC\SQLEXPRESS";
+        string str_Data_Source = @"CR4-06\MSSQLSERVER2013";
         // string str_Data_Source = @"CR4-17\MSSQLSERVER2013";//資策
         // string str_Data_Source = @"SHAWN-PC";//家3
         // string str_Data_Source = @"WIN-R56ALTBAKPC\SQLEXPRESS";//家2               

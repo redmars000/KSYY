@@ -78,6 +78,7 @@
     <Content Include="BackEnd\BS_入住事項editCommodity.aspx" />
     <Content Include="BackEnd\BS_入住事項insertAttention.aspx" />
     <Content Include="BackEnd\BS_入住事項insertCommodity.aspx" />
+    <Content Include="BackEnd\BS_床位編輯.aspx" />
     <Content Include="BackEnd\BS_收費標準表.aspx" />
     <Content Include="BackEnd\BS_收費標準表Content.aspx" />
     <Content Include="BackEnd\BS_收費標準表Edit.aspx" />
@@ -514,6 +515,12 @@
     <Content Include="pic\reverse32x32.png" />
     <Content Include="pic\save32x32.png" />
     <Content Include="pic\圖-20趴-床位放大.jpg" />
+    <Content Include="pic\床位1 -白.jpg" />
+    <Content Include="pic\床位1 -綠.jpg" />
+    <Content Include="pic\床位1 -藍.jpg" />
+    <Content Include="pic\床位_地圖.jpg" />
+    <Content Include="pic\床位_地圖85趴.jpg" />
+    <Content Include="pic\床位_地圖85趴1.jpg" />
     <Content Include="Scripts\BackEndUI.js" />
     <Content Include="Scripts\FrontEndJS\contact.js" />
     <Content Include="Scripts\FrontEndJS\count-to.js" />
@@ -753,6 +760,13 @@
     </Compile>
     <Compile Include="BackEnd\BS_入住事項insertCommodity.aspx.designer.cs">
       <DependentUpon>BS_入住事項insertCommodity.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BackEnd\BS_床位編輯.aspx.cs">
+      <DependentUpon>BS_床位編輯.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackEnd\BS_床位編輯.aspx.designer.cs">
+      <DependentUpon>BS_床位編輯.aspx</DependentUpon>
     </Compile>
     <Compile Include="BackEnd\BS_收費標準表.aspx.cs">
       <DependentUpon>BS_收費標準表.aspx</DependentUpon>

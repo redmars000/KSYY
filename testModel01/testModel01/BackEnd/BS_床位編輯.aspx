@@ -58,7 +58,10 @@
             <asp:SqlDataSource ID="SqlDataSource1" runat="server"
                 ConnectionString='<%$ ConnectionStrings:t1 %>'
                 SelectCommand="SELECT * FROM [T床位系統] WHERE ([f床號] = @f床號)"
-                OldValuesParameterFormatString="original_{0}" DeleteCommand="DELETE FROM [T床位系統] WHERE [f床號] = @original_f床號" InsertCommand="INSERT INTO [T床位系統] ([f床號], [f入住日期], [f姓名], [f身份證字號], [f生日], [f住址], [f家電], [f聯絡人], [f聯絡人家電], [f聯絡人手機], [f指定醫院], [f是否住院中], [f鼻胃管], [f導尿管], [f其他管路], [f耗材], [f其他], [f備註]) VALUES (@f床號, @f入住日期, @f姓名, @f身份證字號, @f生日, @f住址, @f家電, @f聯絡人, @f聯絡人家電, @f聯絡人手機, @f指定醫院, @f是否住院中, @f鼻胃管, @f導尿管, @f其他管路, @f耗材, @f其他, @f備註)" UpdateCommand="UPDATE [T床位系統] SET [f入住日期] = @f入住日期, [f姓名] = @f姓名, [f身份證字號] = @f身份證字號, [f生日] = @f生日, [f住址] = @f住址, [f家電] = @f家電, [f聯絡人] = @f聯絡人, [f聯絡人家電] = @f聯絡人家電, [f聯絡人手機] = @f聯絡人手機, [f指定醫院] = @f指定醫院, [f是否住院中] = @f是否住院中, [f鼻胃管] = @f鼻胃管, [f導尿管] = @f導尿管, [f其他管路] = @f其他管路, [f耗材] = @f耗材, [f其他] = @f其他, [f備註] = @f備註 WHERE [f床號] = @original_f床號">
+                OldValuesParameterFormatString="original_{0}" 
+                DeleteCommand="DELETE FROM [T床位系統] WHERE [f床號] = @original_f床號"
+                 InsertCommand="INSERT INTO [T床位系統] ([f床號], [f入住日期], [f姓名], [f身份證字號], [f生日], [f住址], [f家電], [f聯絡人], [f聯絡人家電], [f聯絡人手機], [f指定醫院], [f是否住院中], [f鼻胃管], [f導尿管], [f其他管路], [f耗材], [f其他], [f備註]) VALUES (@f床號, @f入住日期, @f姓名, @f身份證字號, @f生日, @f住址, @f家電, @f聯絡人, @f聯絡人家電, @f聯絡人手機, @f指定醫院, @f是否住院中, @f鼻胃管, @f導尿管, @f其他管路, @f耗材, @f其他, @f備註)" 
+                UpdateCommand="UPDATE [T床位系統] SET [f入住日期] = @f入住日期, [f姓名] = @f姓名, [f身份證字號] = @f身份證字號, [f生日] = @f生日, [f住址] = @f住址, [f家電] = @f家電, [f聯絡人] = @f聯絡人, [f聯絡人家電] = @f聯絡人家電, [f聯絡人手機] = @f聯絡人手機, [f指定醫院] = @f指定醫院, [f是否住院中] = @f是否住院中, [f鼻胃管] = @f鼻胃管, [f導尿管] = @f導尿管, [f其他管路] = @f其他管路, [f耗材] = @f耗材, [f其他] = @f其他, [f備註] = @f備註 WHERE [f床號] = @original_f床號">
                 <DeleteParameters>
                     <asp:Parameter Name="original_f床號" Type="String"></asp:Parameter>
                 </DeleteParameters>
@@ -107,8 +110,12 @@
                 </UpdateParameters>
             </asp:SqlDataSource>
             <br />
-            <asp:FormView ID="FormView1" runat="server" 
-                 DataSourceID="SqlDataSource1" DefaultMode="Edit" Width="100%"
+            <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
+
+            <asp:UpdatePanel ID="UpdatePanel1" runat="server">
+                <ContentTemplate>
+                        <asp:FormView ID="FormView1" runat="server" 
+                 DataSourceID="SqlDataSource1" DefaultMode="Edit" Width="100%" OnItemCommand="FormView1_ItemCommand" OnItemUpdated="FormView1_ItemUpdated"
                >
                 <EditItemTemplate>
                     <table class="table table table-bordered table-condensed " style="width:100%;align-items:center; font-size:x-large;">
@@ -331,6 +338,10 @@
                     &nbsp;<asp:LinkButton ID="NewButton" runat="server" CausesValidation="False" CommandName="New" Text="新增" />
                 </ItemTemplate>
             </asp:FormView>
+
+                </ContentTemplate>
+            </asp:UpdatePanel>
+        
         </div>
     </form>
 </body>

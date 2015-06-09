@@ -24,5 +24,18 @@ namespace testModel01.BackEnd
        
             
         }
+
+        protected void FormView1_ItemCommand(object sender, FormViewCommandEventArgs e)
+        {
+            if (e.CommandName == "Cancel")
+            {
+                Response.Redirect("BS_床位顯示_地圖.aspx");
+            }
+        }
+
+        protected void FormView1_ItemUpdated(object sender, FormViewUpdatedEventArgs e)
+        {
+            Response.Redirect("BS_床位顯示_地圖.aspx");
+        }
     }
 }

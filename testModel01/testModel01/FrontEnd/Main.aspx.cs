@@ -11,7 +11,7 @@ namespace testModel01
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            Literal ltlLatestNews = (Literal)form1.FindControl("ltlLatestNews");
+            Literal ltlLatestNews = (Literal)formMainNews.FindControl("ltlLatestNews");
             String strLatestNewsSub = "";
 
             System.Data.SqlClient.SqlDataReader sdrLatestNews = (System.Data.SqlClient.SqlDataReader)SqlDataSourceNews.Select(DataSourceSelectArguments.Empty);
@@ -28,7 +28,7 @@ namespace testModel01
                     strLatestNewsSub += sdrLatestNews["fSubject"].ToString() + "</a></h3>";
                     strLatestNewsSub += "<div class='post-content'>";
                     strLatestNewsSub += "<p>";
-                    strLatestNewsSub += sdrLatestNews["fContent"].ToString() + "<a class='read-more' href='#'>Read More...</a>";
+                    strLatestNewsSub += sdrLatestNews["fContent"].ToString() + "<a class='read-more' href='最新消息內容.aspx?fid=" + sdrLatestNews["fid"].ToString() + "'>Read More...</a>";
                     strLatestNewsSub += "</p>";
                     strLatestNewsSub += "</div>";
                     strLatestNewsSub += "<div class='hr1 margin-60'></div>";

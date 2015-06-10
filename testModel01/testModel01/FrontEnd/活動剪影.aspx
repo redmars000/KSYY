@@ -22,7 +22,8 @@
     <form id="formpicts" runat="server">
         <div class="row_6">
             <div class="containerpics">
-                <h4 class="classic-title"><span>康欣剪影</span></h4>
+                <div class="hr1 margin-60"></div>
+                <h4 class="classic-title" id="康欣剪影"><span>康欣剪影</span></h4>
                 <div class="row">
                     <div class="col-lg-12 col-md-12 col-sm-12">
                         <div id="options" class="clearfix">

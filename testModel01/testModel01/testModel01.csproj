@@ -477,7 +477,7 @@
     <Content Include="fonts\fontawesome-webfont.svg" />
     <Content Include="FrontEnd\Main.aspx" />
     <Content Include="FrontEnd\收費標準.aspx" />
-    <Content Include="FrontEnd\最新消息.aspx" />
+    <Content Include="最新消息.aspx" />
     <Content Include="FrontEnd\最新消息內容.aspx" />
     <Content Include="FrontEnd\活動剪影.aspx" />
     <Content Include="FrontEnd\聯絡我們.aspx" />
@@ -844,11 +844,11 @@
     <Compile Include="FrontEnd\收費標準.aspx.designer.cs">
       <DependentUpon>收費標準.aspx</DependentUpon>
     </Compile>
-    <Compile Include="FrontEnd\最新消息.aspx.cs">
+    <Compile Include="最新消息.aspx.cs">
       <DependentUpon>最新消息.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="FrontEnd\最新消息.aspx.designer.cs">
+    <Compile Include="最新消息.aspx.designer.cs">
       <DependentUpon>最新消息.aspx</DependentUpon>
     </Compile>
     <Compile Include="FrontEnd\最新消息內容.aspx.cs">

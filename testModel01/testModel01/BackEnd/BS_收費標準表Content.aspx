@@ -16,7 +16,7 @@
     <script src="../ckeditor/ckeditor.js"></script>
 </head>
 <body>
-    <form id="form4" runat="server">
+    <form id="form99" runat="server">
         <div class="container-NewsEdit">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>

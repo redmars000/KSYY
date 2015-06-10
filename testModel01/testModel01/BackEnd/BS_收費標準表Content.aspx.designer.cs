@@ -22,13 +22,13 @@ namespace testModel01.BackEnd {
         protected global::System.Web.UI.HtmlControls.HtmlHead Head1;
         
         /// <summary>
-        /// form4 控制項。
+        /// form99 控制項。
         /// </summary>
         /// <remarks>
         /// 自動產生的欄位。
         /// 將移動欄位宣告從設計檔案修改為程式碼後置檔案。
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm form4;
+        protected global::System.Web.UI.HtmlControls.HtmlForm form99;
         
         /// <summary>
         /// table2 控制項。

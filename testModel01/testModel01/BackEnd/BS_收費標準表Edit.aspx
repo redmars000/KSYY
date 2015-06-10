@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="BS_收費標準表Edit.aspx.cs" Inherits="testModel01.BackEnd.BS_收費標準表Edit" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="BS_收費標準表Edit.aspx.cs" Inherits="testModel01.BackEnd.BS_收費標準表Edit" ValidateRequest="false" %>
 
 <!DOCTYPE html>
 
@@ -37,7 +37,7 @@
                     <asp:Parameter Name="id" Type="Int32" />
                 </UpdateParameters>
             </asp:SqlDataSource>
-            <asp:FormView ID="FormView1" runat="server" AutoGenerateColumns="False" DataKeyNames="id" DataSourceID="SqlDataSource1" DefaultMode="Edit" OnItemCommand="FormView1_ItemCommand" OnItemUpdated="FormView1_ItemUpdated">
+            <asp:FormView ID="FormView1" runat="server" AutoGenerateColumns="False" DataKeyNames="id" DataSourceID="SqlDataSource1" DefaultMode="Edit" OnItemCommand="FormView1_ItemCommand" OnItemUpdated="FormView1_ItemUpdated" Width="100%">
                 <EditItemTemplate>
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>

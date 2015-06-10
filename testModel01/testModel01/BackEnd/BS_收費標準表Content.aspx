@@ -14,6 +14,20 @@
     <script src="../Scripts/bootstrap.js"></script>
 
     <script src="../ckeditor/ckeditor.js"></script>
+    <style type="text/css">
+        .新增樣式1 {
+            font-family: 微軟正黑體;
+        }
+        .新增樣式2 {
+            font-family: 微軟正黑體;
+        }
+        .新增樣式3 {
+            font-family: 微軟正黑體;
+        }
+        .新增樣式4 {
+            font-family: 微軟正黑體;
+        }
+    </style>
 </head>
 <body>
     <form id="form99" runat="server">
@@ -26,7 +40,7 @@
                 <table class="table table table-bordered table-condensed" style="width: 100%" runat="server" id="table2">
                     <tr>
                         <td class="info text-center h4">
-                            <asp:Label ID="Label1" runat="server" Style="font-family: 微軟正黑體; font-size: large" Text="住  房"></asp:Label>
+                            <asp:Label ID="Label1" runat="server" Style="font-family: 微軟正黑體; font-size: large; font-weight: 700;" Text="住  房" CssClass="新增樣式1"></asp:Label>
                         </td>
                     </tr>
                     <tr>
@@ -36,7 +50,7 @@
                     </tr>
                     <tr>
                         <td class="info text-center h4">
-                            <asp:Label ID="Label2" runat="server" Style="font-family: 微軟正黑體; font-size: large" Text="基本月費（含住房費、水電費、洗衣費、一般伙食費）"></asp:Label>
+                            <asp:Label ID="Label2" runat="server" Style="font-family: 微軟正黑體; font-size: large; font-weight: 700;" Text="基本月費（含住房費、水電費、洗衣費、一般伙食費）" CssClass="新增樣式2"></asp:Label>
                         </td>
                     </tr>
                     <tr>
@@ -46,7 +60,7 @@
                     </tr>
                     <tr>
                         <td class="info text-center h4">
-                            <asp:Label ID="Label3" runat="server" Style="font-family: 微軟正黑體; font-size: large" Text="特殊照護費"></asp:Label>
+                            <asp:Label ID="Label3" runat="server" Style="font-family: 微軟正黑體; font-size: large; font-weight: 700;" Text="特殊照護費" CssClass="新增樣式3"></asp:Label>
                         </td>
                     </tr>
                     <tr>
@@ -56,7 +70,7 @@
                     </tr>
                     <tr>
                         <td class="info text-center h4">
-                            <asp:Label ID="Label4" runat="server" Style="font-family: 微軟正黑體; font-size: large" Text="費  用"></asp:Label>
+                            <asp:Label ID="Label4" runat="server" Style="font-family: 微軟正黑體; font-size: large; font-weight: 700;" Text="費  用" CssClass="新增樣式4"></asp:Label>
                         </td>
                     </tr>
                     <tr>

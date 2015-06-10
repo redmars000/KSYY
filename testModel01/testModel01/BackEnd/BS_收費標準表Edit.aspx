@@ -88,7 +88,7 @@
                          </table>
                     </div>
                     <div class="modal-footer">
-                        <asp:LinkButton ID="UpdateButton" runat="server" CssClass="btn btn-primary" CausesValidation="True" CommandName="Update" Text="儲存" />
+                        <asp:LinkButton ID="UpdateButton" runat="server" CssClass="btn btn-primary" CausesValidation="True" CommandName="Update" Text="儲存" OnClientClick="return confirm('確定要儲存？')" />
                         <asp:LinkButton ID="UpdateCancelButton" runat="server" CssClass="btn btn-primary" CausesValidation="False" CommandName="Cancel" Text="取消" />
                     </div>
                     

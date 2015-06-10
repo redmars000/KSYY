@@ -511,11 +511,10 @@
     <Content Include="loginImg\1.jpg" />
     <Content Include="pic\Cancel32x32.png" />
     <Content Include="pic\delete32x32.png" />
-    <Content Include="pic\insert32x32.png" />
     <Content Include="BackEndImg\ks.png" />
+    <Content Include="pic\new32x32.png" />
     <Content Include="pic\reverse32x32.png" />
     <Content Include="pic\save32x32.png" />
-    <Content Include="pic\圖-20趴-床位放大.jpg" />
     <Content Include="pic\床位1 -白.jpg" />
     <Content Include="pic\床位1 -綠.jpg" />
     <Content Include="pic\床位1 -藍.jpg" />

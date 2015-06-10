@@ -45,7 +45,7 @@
         </Columns>
     </asp:GridView>
 
-    <a href="BS_收費標準表Content.aspx" role="button" class="btn btn-primary" data-toggle="modal" data-target="#myModalinsert">新增</a>
+    <a href="BS_收費標準表Content.aspx" title="點我新增" role="button" data-toggle="modal" data-target="#myModalinsert"><img src="../pic/new32x32.png" /></a> 
     <div class="modal fade" id="myModalinsert" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -101,10 +101,17 @@
                 
             </asp:TemplateField>
 
-            <asp:CommandField ButtonType="Image" CancelImageUrl="~/pic/Cancel32x32.png" EditImageUrl="~/pic/reverse32x32.png" EditText="修改" HeaderText="修改" ShowEditButton="True" UpdateImageUrl="~/pic/save32x32.png" UpdateText="儲存">
-            <HeaderStyle CssClass="info text-center" Font-Size="Medium" />
-            <ItemStyle CssClass="text-center" Font-Size="Medium" />
-            </asp:CommandField>
+            <asp:TemplateField HeaderText="修改" ShowHeader="False">
+                <EditItemTemplate>
+                    <asp:ImageButton ID="ImageButton1" runat="server" CausesValidation="True" CommandName="Update" ImageUrl="~/pic/save32x32.png" OnClientClick="return confirm('確定要儲存？')" Text="儲存" ToolTip="點我儲存" />
+                    &nbsp;<asp:ImageButton ID="ImageButton2" runat="server" CausesValidation="False" CommandName="Cancel" ImageUrl="~/pic/Cancel32x32.png" Text="取消" ToolTip="點我取消" />
+                </EditItemTemplate>
+                <ItemTemplate>
+                    <asp:ImageButton ID="ImageButton1" runat="server" CausesValidation="False" CommandName="Edit" ImageUrl="~/pic/reverse32x32.png" Text="修改" ToolTip="點我修改" />
+                </ItemTemplate>
+                <HeaderStyle CssClass="info text-center" Font-Size="Medium" />
+                <ItemStyle CssClass="text-center" Font-Size="Medium" />
+            </asp:TemplateField>
 
         </Columns>
         

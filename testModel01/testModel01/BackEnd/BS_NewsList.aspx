@@ -34,8 +34,10 @@
         </Columns>
     </asp:GridView>
 
-    <asp:Label ID="Label3" runat="server" Style="font-family: 微軟正黑體; font-size: large" Text="1.發布日期"></asp:Label>
-    <asp:TextBox ID="txtDate" runat="server" CssClass="form-control" Font-Names="微軟正黑體" Font-Size="Medium"></asp:TextBox>
+    <asp:Label ID="Label3" runat="server" Style="font-family: 微軟正黑體; font-size: large" Text="1.發布日期:"></asp:Label>
+    <asp:Label ID="lblDate" runat="server" style="font-family: 微軟正黑體; font-size: large" Text="Label"></asp:Label>
+    <br />
+    <asp:TextBox ID="txtDate" runat="server" CssClass="form-control" Font-Names="微軟正黑體" Font-Size="Medium" Visible="False"></asp:TextBox>
     <br />
     <asp:Label ID="Label1" runat="server" Style="font-family: 微軟正黑體; font-size: large" Text="2.標題"></asp:Label>
     <br />
@@ -47,22 +49,30 @@
     <br />
     <asp:Button ID="btnInsert" runat="server" CssClass="btn btn-primary btn-lg" OnClick="btnInsert_Click" Text="新增消息公告" OnClientClick="return confirm('確定要新增消息嗎?')" />
 
-    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" DeleteCommand="DELETE FROM [tNews] WHERE [fId] = @fId" InsertCommand="INSERT INTO [tNews] ([fDate], [fSubject], [fContent]) VALUES (@fDate, @fSubject, @fContent)" SelectCommand="SELECT * FROM [tNews]" UpdateCommand="UPDATE [tNews] SET [fDate] = @fDate, [fSubject] = @fSubject, [fContent] = @fContent WHERE [fId] = @fId">
+    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" DeleteCommand="DELETE FROM [tNews] WHERE [fId] = @fId" InsertCommand="INSERT INTO [tNews] ([fDate], [fSubject], [fContent], [fYear], [fMonth], [fDay]) VALUES (@fDate, @fSubject, @fContent, @fYear, @fMonth, @fDay)" SelectCommand="SELECT * FROM [tNews] ORDER BY [fId] DESC" UpdateCommand="UPDATE [tNews] SET [fDate] = @fDate, [fSubject] = @fSubject, [fContent] = @fContent, [fYear] = @fYear, [fMonth] = @fMonth, [fDay] = @fDay WHERE [fId] = @fId">
         <DeleteParameters>
             <asp:Parameter Name="fId" Type="Int32" />
         </DeleteParameters>
         <InsertParameters>
-            <asp:ControlParameter ControlID="txtDate" Name="fDate" PropertyName="Text" Type="String" />
+            <asp:ControlParameter ControlID="lblDate" Name="fDate" PropertyName="Text" Type="String" />
             <asp:ControlParameter ControlID="txtSubject" Name="fSubject" PropertyName="Text" Type="String" />
             <asp:ControlParameter ControlID="CKEditorControl1" Name="fContent" PropertyName="Text" Type="String" />
+            <asp:ControlParameter ControlID="lblYear" Name="fYear" PropertyName="Text" Type="String" />
+            <asp:ControlParameter ControlID="lblMonth" Name="fMonth" PropertyName="Text" Type="String" />
+            <asp:ControlParameter ControlID="lblDay" Name="fDay" PropertyName="Text" Type="String" />
         </InsertParameters>
         <UpdateParameters>
             <asp:Parameter Name="fDate" Type="String" />
             <asp:Parameter Name="fSubject" Type="String" />
             <asp:Parameter Name="fContent" Type="String" />
+            <asp:Parameter Name="fYear" Type="Int32" />
+            <asp:Parameter Name="fMonth" Type="Int32" />
+            <asp:Parameter Name="fDay" Type="Int32" />
             <asp:Parameter Name="fId" Type="Int32" />
         </UpdateParameters>
     </asp:SqlDataSource>
+
+    <asp:Label ID="lblYear" runat="server" Text="Label" Visible="False"></asp:Label>
 
     <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-dialog">
@@ -70,4 +80,6 @@
             </div>
         </div>
     </div>
+    <asp:Label ID="lblMonth" runat="server" Text="Label" Visible="False"></asp:Label>
+    <asp:Label ID="lblDay" runat="server" Text="Label" Visible="False"></asp:Label>
 </asp:Content>

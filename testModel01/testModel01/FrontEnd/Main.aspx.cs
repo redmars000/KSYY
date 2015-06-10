@@ -21,8 +21,8 @@ namespace testModel01
                 {
                     strLatestNewsSub += "<div class='post-row item'>";
                     strLatestNewsSub += "<div class='left-meta-post'>";
-                    strLatestNewsSub += "<div class='post-date'><span class='day'>28</span><span class='month'>Dec</span></div>";
-                    strLatestNewsSub += "<div class='post-type'><i class='fa fa-picture-o'></i></div>";
+                    strLatestNewsSub += "<div class='post-type'><i class='fa'><span  style='font-size:14px;font-weight:bold;'>" + sdrLatestNews["fYear"].ToString() + "</span></i></div>";
+                    strLatestNewsSub += "<div class='post-date' style='font-weight:bold;'><span class='month'>" + sdrLatestNews["fMonth"].ToString() + "</span><span class='month'>" + sdrLatestNews["fDay"].ToString() + "</span></div>";
                     strLatestNewsSub += "</div>";
                     strLatestNewsSub += "<h3 class='post-title'><a href='#'>";
                     strLatestNewsSub += sdrLatestNews["fSubject"].ToString() + "</a></h3>";

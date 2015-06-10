@@ -71,6 +71,7 @@
     </Content>
     <Content Include="AssessFile\word.png" />
     <Content Include="BackEndImg\BackEndImg01.jpg" />
+    <Content Include="BackEnd\BS_Main.aspx" />
     <Content Include="BackEnd\BS_NewsContent.aspx" />
     <Content Include="BackEnd\BS_NewsList.aspx" />
     <Content Include="BackEnd\BS_入住事項.aspx" />
@@ -670,7 +671,6 @@
     <Content Include="Scripts\lightbox.min.js" />
     <Content Include="Scripts\測試物件.js" />
     <Content Include="TempFolder\collapse.aspx" />
-    <Content Include="BackEnd\BS_Main.aspx" />
     <Content Include="BackEnd\BS_收費評估表.aspx" />
     <Content Include="TempFolder\sidebar.js" />
     <Content Include="自訂\WC1_html.ascx" />
@@ -712,6 +712,13 @@
     <Content Include="Scripts\jquery-1.9.1.min.map" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BackEnd\BS_Main.aspx.cs">
+      <DependentUpon>BS_Main.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackEnd\BS_Main.aspx.designer.cs">
+      <DependentUpon>BS_Main.aspx</DependentUpon>
+    </Compile>
     <Compile Include="BackEnd\BS_NewsContent.aspx.cs">
       <DependentUpon>BS_NewsContent.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -890,13 +897,6 @@
     </Compile>
     <Compile Include="TempFolder\collapse.aspx.designer.cs">
       <DependentUpon>collapse.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="BackEnd\BS_Main.aspx.cs">
-      <DependentUpon>BS_Main.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="BackEnd\BS_Main.aspx.designer.cs">
-      <DependentUpon>BS_Main.aspx</DependentUpon>
     </Compile>
     <Compile Include="BackEnd\BS_收費評估表.aspx.cs">
       <DependentUpon>BS_收費評估表.aspx</DependentUpon>

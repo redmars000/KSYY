@@ -26,6 +26,7 @@ namespace testModel01.BackEnd
 
         protected void FormView1_ItemUpdated(object sender, FormViewUpdatedEventArgs e)
         {
+            Response.Redirect("BS_NewsList.aspx");
         }
 
         protected void FormView1_ItemCommand(object sender, FormViewCommandEventArgs e)

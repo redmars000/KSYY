@@ -70,8 +70,8 @@
                         </table>
                     </div>
                     <div class="modal-footer">
-                        <asp:LinkButton ID="UpdateButton" runat="server" CssClass="btn btn-primary" CausesValidation="True" CommandName="Update" Text="更新" />
-                        <asp:LinkButton ID="UpdateCancelButton" runat="server" CssClass="btn btn-primary" CausesValidation="False" CommandName="Cancel" Text="取消" />
+                        <asp:LinkButton ID="UpdateButton" runat="server" CssClass="btn btn-primary" CausesValidation="True" CommandName="Update" Text="更新" OnClientClick="return confirm('確定要更新嗎?')" />
+                        <asp:LinkButton ID="UpdateCancelButton" runat="server" CssClass="btn btn-primary" CausesValidation="False" CommandName="Cancel" Text="取消" OnClientClick="return confirm('確定要取消嗎?')" />
                     </div>
                     <asp:Label ID="fIdLabel1" runat="server" Text='<%# Eval("fId") %>' Visible="False" />
                     <asp:TextBox ID="fDateTextBox" runat="server" Text='<%# Bind("fDate") %>' Visible="False" />

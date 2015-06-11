@@ -82,8 +82,8 @@
                 </table>
             </div>
             <div class="modal-footer">
-                <asp:LinkButton ID="InsertButton" runat="server" CssClass="btn btn-primary" OnClick="InsertButton_Click" Text="新增" OnClientClick="return confirm('確定要新增？')" />
-                <asp:LinkButton ID="InsertCancelButton" runat="server" CssClass="btn btn-primary" OnClick="InsertCancelButton_Click" Text="取消" />
+                <asp:LinkButton ID="InsertButton" runat="server" OnClick="InsertButton_Click" Text="新增" OnClientClick="return confirm('確定要新增？')" ToolTip="點我儲存"><img src="../pic/save32x32.png" /></asp:LinkButton>
+                <asp:LinkButton ID="InsertCancelButton" runat="server" OnClick="InsertCancelButton_Click" ToolTip="點我取消" ><img src="../pic/Cancel32x32.png" /></asp:LinkButton>
             </div>
 
             <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString2 %>" SelectCommand="SELECT * FROM [Fees_table_1]" DeleteCommand="DELETE FROM [Fees_table_1] WHERE [id] = @id" InsertCommand="INSERT INTO [Fees_table_1] ([room], [price], [care], [careprice]) VALUES (@room, @price, @care, @careprice)" UpdateCommand="UPDATE [Fees_table_1] SET [room] = @room, [price] = @price, [care] = @care, [careprice] = @careprice WHERE [id] = @id" >

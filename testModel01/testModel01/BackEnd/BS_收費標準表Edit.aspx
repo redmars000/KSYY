@@ -88,8 +88,8 @@
                          </table>
                     </div>
                     <div class="modal-footer">
-                        <asp:LinkButton ID="UpdateButton" runat="server" CssClass="btn btn-primary" CausesValidation="True" CommandName="Update" Text="儲存" OnClientClick="return confirm('確定要儲存？')" />
-                        <asp:LinkButton ID="UpdateCancelButton" runat="server" CssClass="btn btn-primary" CausesValidation="False" CommandName="Cancel" Text="取消" />
+                        <asp:LinkButton ID="UpdateButton" runat="server" CausesValidation="True" CommandName="Update" Text="&lt;img src=&quot;../pic/save32x32.png&quot; /&gt;" OnClientClick="return confirm('確定要儲存？')" ToolTip="點我儲存"></asp:LinkButton>
+                        <asp:LinkButton ID="UpdateCancelButton" runat="server" CausesValidation="False" CommandName="Cancel" Text="&lt;img src=&quot;../pic/Cancel32x32.png&quot; /&gt;" ToolTip="點我取消"></asp:LinkButton>
                     </div>
                     
                 </EditItemTemplate>

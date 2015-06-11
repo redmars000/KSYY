@@ -37,6 +37,9 @@
                height: 166px;
                width: 88px;
            }
+              .auto-style7 {
+               font-size: 20px;
+           }
               </style>
     
 </asp:Content>
@@ -47,8 +50,7 @@
         <div class="modal-dialog modal-content" style="width:70%">
         </div>
     </div>
-    <asp:Panel ID="Panel1" runat="server">
-        
+    <asp:Panel ID="Panel1" runat="server">        
        <div style="width: 1235px; height: 847px; margin: 0 auto 0 auto">
         <table id="talbe_map" class="nav-justified" style="background-image: url(../pic/床位_地圖85趴.jpg); width: 100%">
             <tr>
@@ -572,9 +574,23 @@
             </tr>
             <tr>
                 <td class="modal-sm" style="width: 108px; " rowspan="2"></td>
-                <td colspan="2" rowspan="2"></td>
-                <td style="width: 88px; " rowspan="2"></td>
-                <td style="width: 88px; " rowspan="2"></td>
+                <td colspan="4" rowspan="3">
+                    <asp:Image ID="Image1" runat="server" Height="30px" ImageUrl="~/pic/床位1 -白.jpg" Width="70px" />
+                    &nbsp;<span class="auto-style7">空白床位:</span>&nbsp;
+                    <asp:Label ID="lbl_W" runat="server" style="font-size: 20pt" Text="Label"></asp:Label>
+                    人<br /> 
+                    <br />
+                    <br />
+                    <asp:Image ID="Image2" runat="server" Height="30px" ImageUrl="~/pic/床位1 -綠.jpg" Width="70px" />
+                    <span class="auto-style7">有人床位:</span>&nbsp;
+                    <asp:Label ID="lbl_G" runat="server" style="font-size: 20pt" Text="Label"></asp:Label>
+                    人<br /> 
+                    <br />
+                    <br />
+                    <asp:Image ID="Image3" runat="server" Height="30px" ImageUrl="~/pic/床位1 -藍.jpg" Width="70px" />
+                    <span class="auto-style7">住院人數:</span>&nbsp;
+                    <asp:Label ID="lbl_B" runat="server" style="font-size: 20pt" Text="Label"></asp:Label>
+                    人</td>
                 <td style="width: 88px; " rowspan="2"></td>
                 <td style="width: 38px; " rowspan="2"></td>
                 <td style="width: 50px; " rowspan="2"></td>
@@ -598,9 +614,6 @@
             </tr>
             <tr>
                 <td class="modal-sm" style="width: 108px; height: 166px;"></td>
-                <td style="height: 166px;" colspan="2"></td>
-                <td style="width: 88px; height: 166px;"></td>
-                <td style="width: 88px; height: 166px;"></td>
                 <td style="width: 88px; height: 166px"></td>
                 <td style="height: 166px" colspan="2"></td>
                 <td class="auto-style6"></td>

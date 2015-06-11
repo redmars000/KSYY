@@ -13,13 +13,13 @@ namespace testModel01.BackEnd {
     public partial class WebForm6 {
         
         /// <summary>
-        /// form2 控制項。
+        /// form16 控制項。
         /// </summary>
         /// <remarks>
         /// 自動產生的欄位。
         /// 將移動欄位宣告從設計檔案修改為程式碼後置檔案。
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm form2;
+        protected global::System.Web.UI.HtmlControls.HtmlForm form16;
         
         /// <summary>
         /// SqlDataSource1 控制項。
@@ -49,12 +49,12 @@ namespace testModel01.BackEnd {
         protected global::System.Web.UI.UpdatePanel UpdatePanel1;
         
         /// <summary>
-        /// FormView1 控制項。
+        /// FormView16 控制項。
         /// </summary>
         /// <remarks>
         /// 自動產生的欄位。
         /// 將移動欄位宣告從設計檔案修改為程式碼後置檔案。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.FormView FormView1;
+        protected global::System.Web.UI.WebControls.FormView FormView16;
     }
 }

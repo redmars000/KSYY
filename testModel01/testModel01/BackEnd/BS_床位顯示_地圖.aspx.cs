@@ -12,12 +12,13 @@ namespace testModel01.BackEnd
     {
         //string str_Data_Source = @"CCT-PC\SQLEXPRESS";
        // string str_Data_Source = @"CR4-06\MSSQLSERVER2013";
-  //       string str_Data_Source = @"CR4-17\MSSQLSERVER2013";//資策
+        string str_Data_Source = @"CR4-17\MSSQLSERVER2013";//資策
         // string str_Data_Source = @"SHAWN-PC";//家3
-        string str_Data_Source = @"WIN-R56ALTBAKPC\SQLEXPRESS";//家2               
-
+       //string str_Data_Source = @"WIN-R56ALTBAKPC\SQLEXPRESS";//家2               
+        int[] intA_member = new int[3];
          public List<Button> listbtn = new List<Button>();
          string[][] stra ;
+        
         protected void Page_Load(object sender, EventArgs e)
         {
             m_initial();
@@ -25,6 +26,7 @@ namespace testModel01.BackEnd
 
         private void m_initial()
         {
+            intA_member[0] = intA_member[1] = intA_member[2] = 0;
             SqlDataSource sds = new SqlDataSource();
             sds.ConnectionString = "Data Source=" + str_Data_Source + ";Initial Catalog=dbKSYY;Integrated Security=True";
             sds.SelectCommand = "SELECT * from  T床位系統 WHERE f姓名 IS NOT NULL";
@@ -40,8 +42,11 @@ namespace testModel01.BackEnd
                 stra[1][a] = dn[a]["f姓名"].ToString();
                 stra[2][a] = dn[a]["f是否住院中"].ToString();
             }
-                m_FindControlRecursive(Panel1, typeof(Button));     
+                m_FindControlRecursive(Panel1, typeof(Button));
+                m_ShowMember();
         }
+
+       
         public void m_FindControlRecursive(Control root, Type type)
         {
             int a=0;
@@ -55,10 +60,10 @@ namespace testModel01.BackEnd
                         {
                             if (c.ToolTip.ToString() == stra[0][a].ToString())
                             {
-                                if (stra[2][a].ToLower() == "true")
-                                    m_setbtn(c, stra[1][a]);
-                                else
+                                if (stra[2][a].ToString() == "1")
                                     m_setbtnH(c, stra[1][a]);
+                                else
+                                    m_setbtn(c, stra[1][a]);
                                 break;
                             }
                         }
@@ -81,20 +86,28 @@ namespace testModel01.BackEnd
         {
             c.CssClass = "mybtnG";
             c.Text = name;
-           
+            intA_member[1]++;
         }
 
         private void m_setbtnH(Button c , string name)
         {
             c.CssClass = "mybtnB";
             c.Text = name;
+            intA_member[2]++;
         }
 
         private void m_setbtnwhite(Button c)
         {
             c.CssClass = "mybtnW";
+            intA_member[0]++;
         }
-
+        private void m_ShowMember()
+        {
+            lbl_W.Text = intA_member[0] + "";
+            lbl_G.Text = intA_member[1] + "";
+            lbl_B.Text = intA_member[2] + "";
+            
+        }
 
 
 

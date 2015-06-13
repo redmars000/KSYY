@@ -12,9 +12,9 @@ namespace testModel01.BackEnd
     {
         //string str_Data_Source = @"CCT-PC\SQLEXPRESS";
        // string str_Data_Source = @"CR4-06\MSSQLSERVER2013";
-        string str_Data_Source = @"CR4-17\MSSQLSERVER2013";//資策
+     //   string str_Data_Source = @"CR4-17\MSSQLSERVER2013";//資策
         // string str_Data_Source = @"SHAWN-PC";//家3
-       //string str_Data_Source = @"WIN-R56ALTBAKPC\SQLEXPRESS";//家2               
+       string str_Data_Source = @"WIN-R56ALTBAKPC\SQLEXPRESS";//家2               
         int[] intA_member = new int[3];
          public List<Button> listbtn = new List<Button>();
          string[][] stra ;
@@ -75,8 +75,6 @@ namespace testModel01.BackEnd
                         m_setbtnwhite(c);
                     }
                 }
-         
-            
             
             foreach (Control c in root.Controls)
                 m_FindControlRecursive(c, type);

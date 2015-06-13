@@ -3,15 +3,15 @@
 
        <style type="text/css">
            .mybtnG {
-           background-image:url("../pic/床位1 -綠.jpg" );    
-           background-size:cover;       
+               background-image: url("../pic/床位照片/床位1 -綠.jpg" );
+                   background-size:cover;
            }
                .mybtnB {
-           background-image:url("../pic/床位1 -藍.jpg" );    
+           background-image:url("../pic/床位照片/床位1 -藍.jpg" );    
            background-size:cover;       
            }
                    .mybtnW {
-           background-image:url("../pic/床位1 -白.jpg" );    
+           background-image:url("../pic/床位照片/床位1 -白.jpg" );    
            background-size:cover;       
            }
               .auto-style1 {
@@ -575,19 +575,19 @@
             <tr>
                 <td class="modal-sm" style="width: 108px; " rowspan="2"></td>
                 <td colspan="4" rowspan="3">
-                    <asp:Image ID="Image1" runat="server" Height="30px" ImageUrl="~/pic/床位1 -白.jpg" Width="70px" />
+                    <asp:Image ID="Image1" runat="server" Height="30px" ImageUrl="~/pic/床位照片/床位1 -白.jpg" Width="70px" />
                     &nbsp;<span class="auto-style7">空白床位:</span>&nbsp;
                     <asp:Label ID="lbl_W" runat="server" style="font-size: 20pt" Text="Label"></asp:Label>
                     人<br /> 
                     <br />
                     <br />
-                    <asp:Image ID="Image2" runat="server" Height="30px" ImageUrl="~/pic/床位1 -綠.jpg" Width="70px" />
+                    <asp:Image ID="Image2" runat="server" Height="30px" ImageUrl="~/pic/床位照片/床位1 -綠.jpg" Width="70px" />
                     <span class="auto-style7">有人床位:</span>&nbsp;
                     <asp:Label ID="lbl_G" runat="server" style="font-size: 20pt" Text="Label"></asp:Label>
                     人<br /> 
                     <br />
                     <br />
-                    <asp:Image ID="Image3" runat="server" Height="30px" ImageUrl="~/pic/床位1 -藍.jpg" Width="70px" />
+                    <asp:Image ID="Image3" runat="server" Height="30px" ImageUrl="~/pic/床位照片/床位1 -藍.jpg" Width="70px" />
                     <span class="auto-style7">住院人數:</span>&nbsp;
                     <asp:Label ID="lbl_B" runat="server" style="font-size: 20pt" Text="Label"></asp:Label>
                     人</td>

@@ -101,14 +101,15 @@ namespace testModel01.BackEnd
         {
             if (e.CommandName == "Cancel")
             {
-                Response.Redirect("BS_床位顯示_地圖.aspx");
+                Response.Redirect(this.Page.Request.UrlReferrer.ToString());
             }
         }
 
         protected void FormView1_ItemUpdated(object sender, FormViewUpdatedEventArgs e)
         {
-//            Response.Redirect("BS_床位顯示_地圖.aspx");
-            Response.Redirect("BS_床位編輯.aspx?f床號=110-6(E)");
+            Response.Redirect(this.Page.Request.UrlReferrer.ToString());
+            //            Response.Redirect("BS_床位顯示_地圖.aspx");
+//            Response.Redirect("BS_床位編輯.aspx?f床號=110-6(E)");
         }
 
         protected void FormView16_ItemUpdating(object sender, FormViewUpdateEventArgs e)
@@ -156,7 +157,8 @@ namespace testModel01.BackEnd
 
         protected void FormView16_ItemDeleted(object sender, FormViewDeletedEventArgs e)
         {
-            Response.Redirect("BS_床位顯示_地圖.aspx");
+            Response.Redirect(this.Page.Request.UrlReferrer.ToString());
+//            Response.Redirect("BS_床位顯示_地圖.aspx");
         }
 
         protected void FormView16_Unload(object sender, EventArgs e)

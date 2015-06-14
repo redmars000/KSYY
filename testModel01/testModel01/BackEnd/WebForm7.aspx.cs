@@ -11,39 +11,11 @@ namespace testModel01.BackEnd
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (!IsPostBack)
-                Session["test"] = null;
 
-            if (Session["test"] != null)
-                Label1.Text = Session["test"].ToString();
-        }
-        Control contrl_temp;
-
-        public void m_FindControl_Control(Control root, Type type)
-        {
-            if (root.GetType() == type)
-            {
-                contrl_temp = root;
-                return;
-            }
-            foreach (Control c in root.Controls)
-                m_FindControl_Control(c, type);
+        //   string str_path = Request.QueryString["照片"].ToString();
+           //Image1.ImageUrl = str_path;
         }
 
-        protected void Button1_Click(object sender, EventArgs e)
-        {
-            m_FindControl_Control(Panel1, typeof(FileUpload));
-            FileUpload  fupload = (FileUpload)contrl_temp;
 
-            if (fupload.HasFile)
-                if ("jpg".Equals(fupload.FileName.Substring(fupload.FileName.LastIndexOf(".") + 1).ToLower()) ||
-                    "png".Equals(fupload.FileName.Substring(fupload.FileName.LastIndexOf(".") + 1).ToLower()) ||
-                    "bmp".Equals(fupload.FileName.Substring(fupload.FileName.LastIndexOf(".") + 1).ToLower()) ||
-                    "gif".Equals(fupload.FileName.Substring(fupload.FileName.LastIndexOf(".") + 1).ToLower()))
-                {//是否符合副檔名
-
-                    Session["test"] = "ttt";
-                }
-        }
     }
 }

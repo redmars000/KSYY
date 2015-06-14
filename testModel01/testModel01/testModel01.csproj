@@ -86,6 +86,7 @@
     <Content Include="BackEnd\BS_關於康欣.aspx" />
     <Content Include="BackEnd\BS_床位顯示_地圖.aspx" />
     <Content Include="BackEnd\WebForm7.aspx" />
+    <Content Include="BackEnd\BS_床位顯示_表格.aspx" />
     <Content Include="bin\testModel01.dll" />
     <Content Include="bin\testModel01.pdb" />
     <Content Include="BackEnd\BS_活動剪影後台.aspx" />
@@ -479,6 +480,8 @@
     <Content Include="fonts\fontawesome-webfont.svg" />
     <Content Include="FrontEnd\Main.aspx" />
     <Content Include="FrontEnd\收費標準.aspx" />
+    <Content Include="pic\床位照片\add_1.png" />
+    <Content Include="pic\床位照片\add_2.png" />
     <Content Include="pic\床位照片\大頭照\defaultimg.png" />
     <Content Include="pic\床位照片\床位1 -白.jpg" />
     <Content Include="pic\床位照片\床位1 -綠.jpg" />
@@ -836,6 +839,13 @@
     </Compile>
     <Compile Include="BackEnd\WebForm7.aspx.designer.cs">
       <DependentUpon>WebForm7.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BackEnd\BS_床位顯示_表格.aspx.cs">
+      <DependentUpon>BS_床位顯示_表格.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackEnd\BS_床位顯示_表格.aspx.designer.cs">
+      <DependentUpon>BS_床位顯示_表格.aspx</DependentUpon>
     </Compile>
     <Compile Include="FrontEnd\Main.aspx.cs">
       <DependentUpon>Main.aspx</DependentUpon>

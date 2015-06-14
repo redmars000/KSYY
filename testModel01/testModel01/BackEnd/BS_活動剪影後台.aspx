@@ -3,7 +3,6 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="BS_HeadContent" runat="server">
     
-    <link href="../Content/lightbox.css" rel="stylesheet" />
    <style type="text/css">
         .mydiv_1 {
             width:23%;
@@ -75,9 +74,14 @@
 	text-decoration:none;
 }
     </style>
-    <script src="../Scripts/lightbox.min.js"></script>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="BS_BodyContent" runat="server">
+
+      <div class="modal fade" id="myModal" tabindex="-1" role="dialog" 
+         aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-content" style="width:70%">
+        </div>
+    </div>
         <h1 style="text-align: center">相簿編輯</h1>
 
     <br />
@@ -88,16 +92,6 @@
     <!----------------------------------------------------------------------------------->
     <br />
 
-       <!--
-          <a href='<%# Eval("f庭院照片_s") %>'
-                            data-lightbox='<%# Eval("f庭院照片_l") %>'
-                            data-title='<%# Eval("f庭院照片_l") %>'>
-                            <img src='<%# Eval("f庭院照片_s") %>'  class="myimag_1" />
-                           </a>                   
-
-
-
-  Large modal -->
 
 <div class="modal fade aaa "   aria-hidden="true">
   <div class="modal-dialog  modal-content">
@@ -130,9 +124,9 @@
                             Text='<%# Eval("f庭院照片_s")  %>'/>
                     </div>
                     <div align="center">
-           <a href='<%# Eval("f庭院照片_s") %>'
-                            data-lightbox='<%# Eval("f庭院照片_l") %>'
-                            data-title='<%# Eval("f庭院照片_l") %>'>
+           <a runat="server"    href= "WebForm7.aspx"+'<%#Eval("f庭院照片_s") %>'
+
+                              data-toggle="modal"   data-target="#myModal" >
                             <img src='<%# Eval("f庭院照片_s") %>'  class="myimag_1" />
                            </a>      
 

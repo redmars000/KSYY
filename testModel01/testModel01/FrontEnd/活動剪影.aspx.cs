@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using System.Web.Configuration;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
@@ -10,7 +11,7 @@ namespace testModel01
     public partial class WebForm6 : System.Web.UI.Page
     {
         // string str_Data_Source = @"CCT-PC\SQLEXPRESS";
-        string str_Data_Source = @"CR4-06\MSSQLSERVER2013";
+        string str_Data_Source = WebConfigurationManager.OpenWebConfiguration("/testModel01").ConnectionStrings.ConnectionStrings["dbKSYYConnectionString"].ConnectionString;
         // string str_Data_Source = @"CR4-17\MSSQLSERVER2013";//資策
         // string str_Data_Source = @"SHAWN-PC";//家3
         // string str_Data_Source = @"WIN-R56ALTBAKPC\SQLEXPRESS";//家2               
@@ -63,43 +64,50 @@ namespace testModel01
 
             SqlDataSource sds_outlook = new SqlDataSource();
             sds_outlook.DataSourceMode = SqlDataSourceMode.DataReader;
-            sds_outlook.ConnectionString = "Data Source=" + str_Data_Source + ";Initial Catalog=dbKSYY;Integrated Security=True";
+            //sds_outlook.ConnectionString = "Data Source=" + str_Data_Source + ";Initial Catalog=dbKSYY;Integrated Security=True";
+            sds_outlook.ConnectionString = str_Data_Source;
             sds_outlook.SelectCommand = "SELECT fid,f庭院照片_s,f庭院照片_l from  T康欣_活動剪影 WHERE f庭院照片_s IS NOT NULL";
             System.Data.SqlClient.SqlDataReader sdr庭院 = (System.Data.SqlClient.SqlDataReader)sds_outlook.Select(DataSourceSelectArguments.Empty);
 
             SqlDataSource sds_inside = new SqlDataSource();
             sds_inside.DataSourceMode = SqlDataSourceMode.DataReader;
-            sds_inside.ConnectionString = "Data Source=" + str_Data_Source + ";Initial Catalog=dbKSYY;Integrated Security=True";
+            //sds_inside.ConnectionString = "Data Source=" + str_Data_Source + ";Initial Catalog=dbKSYY;Integrated Security=True";
+            sds_inside.ConnectionString = str_Data_Source;
             sds_inside.SelectCommand = "SELECT fid,f內部照片_s,f內部照片_l from  T康欣_活動剪影 WHERE f內部照片_s IS NOT NULL";
             System.Data.SqlClient.SqlDataReader sdr內部 = (System.Data.SqlClient.SqlDataReader)sds_inside.Select(DataSourceSelectArguments.Empty);
 
             SqlDataSource sds_birthday = new SqlDataSource();
             sds_birthday.DataSourceMode = SqlDataSourceMode.DataReader;
-            sds_birthday.ConnectionString = "Data Source=" + str_Data_Source + ";Initial Catalog=dbKSYY;Integrated Security=True";
+            //sds_birthday.ConnectionString = "Data Source=" + str_Data_Source + ";Initial Catalog=dbKSYY;Integrated Security=True";
+            sds_birthday.ConnectionString = str_Data_Source;
             sds_birthday.SelectCommand = "SELECT fid,f慶生照片_s,f慶生照片_l from  T康欣_活動剪影 WHERE f慶生照片_s IS NOT NULL";
             System.Data.SqlClient.SqlDataReader sdr慶生 = (System.Data.SqlClient.SqlDataReader)sds_birthday.Select(DataSourceSelectArguments.Empty);
 
             SqlDataSource sds_washfoot = new SqlDataSource();
             sds_washfoot.DataSourceMode = SqlDataSourceMode.DataReader;
-            sds_washfoot.ConnectionString = "Data Source=" + str_Data_Source + ";Initial Catalog=dbKSYY;Integrated Security=True";
+            //sds_washfoot.ConnectionString = "Data Source=" + str_Data_Source + ";Initial Catalog=dbKSYY;Integrated Security=True";
+            sds_washfoot.ConnectionString = str_Data_Source;
             sds_washfoot.SelectCommand = "SELECT fid,f泡腳照片_s,f泡腳照片_l from  T康欣_活動剪影 WHERE f泡腳照片_s IS NOT NULL";
             System.Data.SqlClient.SqlDataReader sdr泡腳 = (System.Data.SqlClient.SqlDataReader)sds_washfoot.Select(DataSourceSelectArguments.Empty);
 
             SqlDataSource sds_rehab = new SqlDataSource();
             sds_rehab.DataSourceMode = SqlDataSourceMode.DataReader;
-            sds_rehab.ConnectionString = "Data Source=" + str_Data_Source + ";Initial Catalog=dbKSYY;Integrated Security=True";
+            //sds_rehab.ConnectionString = "Data Source=" + str_Data_Source + ";Initial Catalog=dbKSYY;Integrated Security=True";
+            sds_rehab.ConnectionString = str_Data_Source;
             sds_rehab.SelectCommand = "SELECT fid,f復健照片_s,f復健照片_l from  T康欣_活動剪影 WHERE f復健照片_s IS NOT NULL";
             System.Data.SqlClient.SqlDataReader sdr復健 = (System.Data.SqlClient.SqlDataReader)sds_rehab.Select(DataSourceSelectArguments.Empty);
 
             SqlDataSource sds_cuthair = new SqlDataSource();
             sds_cuthair.DataSourceMode = SqlDataSourceMode.DataReader;
-            sds_cuthair.ConnectionString = "Data Source=" + str_Data_Source + ";Initial Catalog=dbKSYY;Integrated Security=True";
+            //sds_cuthair.ConnectionString = "Data Source=" + str_Data_Source + ";Initial Catalog=dbKSYY;Integrated Security=True";
+            sds_cuthair.ConnectionString = str_Data_Source;
             sds_cuthair.SelectCommand = "SELECT fid,f義剪照片_s,f義剪照片_l from  T康欣_活動剪影 WHERE f義剪照片_s IS NOT NULL";
             System.Data.SqlClient.SqlDataReader sdr義剪 = (System.Data.SqlClient.SqlDataReader)sds_cuthair.Select(DataSourceSelectArguments.Empty);
 
             SqlDataSource sds_other = new SqlDataSource();
             sds_other.DataSourceMode = SqlDataSourceMode.DataReader;
-            sds_other.ConnectionString = "Data Source=" + str_Data_Source + ";Initial Catalog=dbKSYY;Integrated Security=True";
+            //sds_other.ConnectionString = "Data Source=" + str_Data_Source + ";Initial Catalog=dbKSYY;Integrated Security=True";
+            sds_other.ConnectionString = str_Data_Source;
             sds_other.SelectCommand = "SELECT fid,f其他活動_s,f其他活動_l from  T康欣_活動剪影 WHERE f其他活動_s IS NOT NULL";
             System.Data.SqlClient.SqlDataReader sdr其他 = (System.Data.SqlClient.SqlDataReader)sds_cuthair.Select(DataSourceSelectArguments.Empty);
 

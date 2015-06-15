@@ -51,7 +51,7 @@
     <form id="form16" runat="server">
         <div class="container-NewsEdit">
             <asp:SqlDataSource ID="SqlDataSource1" runat="server"
-                ConnectionString='<%$ ConnectionStrings:t1 %>'
+                ConnectionString='<%$ ConnectionStrings:dbKSYYConnectionString %>'
                 SelectCommand="SELECT * FROM [T床位系統] WHERE ([f床號] = @f床號)"
                 OldValuesParameterFormatString="original_{0}"
                 DeleteCommand="UPDATE [T床位系統] SET  [f入住日期] =NULL, [f姓名] = NULL, [f身份證字號] = NULL, [f生日] = NULL, [f住址] = NULL, [f家電] = NULL, [f聯絡人] = NULL, [f聯絡人家電] = NULL, [f聯絡人手機] = NULL, [f指定醫院] = NULL, [f是否住院中] = 0, [f鼻胃管] = NULL, [f導尿管] = NULL, [f其他管路] = NULL, [f耗材] = NULL, [f其他] = NULL, [f備註] = NULL, [f大頭照] = NULL where [f床號] = @original_f床號"

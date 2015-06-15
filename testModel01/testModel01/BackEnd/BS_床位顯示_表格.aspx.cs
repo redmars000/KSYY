@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Data;
 using System.Linq;
 using System.Web;
+using System.Web.Configuration;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
@@ -14,7 +15,7 @@ namespace testModel01.BackEnd
         // string str_Data_Source = @"CR4-06\MSSQLSERVER2013";
         //   string str_Data_Source = @"CR4-17\MSSQLSERVER2013";//資策
         // string str_Data_Source = @"SHAWN-PC";//家3
-        string str_Data_Source = @"WIN-R56ALTBAKPC\SQLEXPRESS";//家2               
+        string str_Data_Source = WebConfigurationManager.OpenWebConfiguration("/testModel01").ConnectionStrings.ConnectionStrings["dbKSYYConnectionString"].ConnectionString;//家2               
         int[] intA_member = new int[3];
         public List<Button> listbtn = new List<Button>();
         string[][] stra;
@@ -29,7 +30,8 @@ namespace testModel01.BackEnd
         {
             intA_member[0] = intA_member[1] = intA_member[2] = 0;
             SqlDataSource sds = new SqlDataSource();
-            sds.ConnectionString = "Data Source=" + str_Data_Source + ";Initial Catalog=dbKSYY;Integrated Security=True";
+            //sds.ConnectionString = "Data Source=" + str_Data_Source + ";Initial Catalog=dbKSYY;Integrated Security=True";
+            sds.ConnectionString = str_Data_Source;
             sds.SelectCommand = "SELECT * from  T床位系統 WHERE f姓名 IS NOT NULL";
 
             DataView dn = (DataView)sds.Select(DataSourceSelectArguments.Empty);

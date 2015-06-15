@@ -25,7 +25,7 @@
         </div>
         <asp:Button ID="btn第一張圖" runat="server" Text="確定上傳" OnClick="btn第一張圖_Click" CssClass="btn btn-primary" />
 
-        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString='<%$ ConnectionStrings:dbKSYYConnectionString %>' SelectCommand="SELECT * FROM [t前台輪播] WHERE ([fId] = @fId)" UpdateCommand="UPDATE [t前台輪播] SET [fPic] = @fPic, [fFirst] = @fFirst, [fSecond] = @fSecond, [fThird] = @fThird WHERE [fId] = @fId">
+        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString='<%$ ConnectionStrings:dbKSYYConnectionString %>' SelectCommand="SELECT * FROM [t前台輪播] WHERE ([fId] = @fId)" UpdateCommand="UPDATE [t前台輪播] SET [fFirst] = @fFirst, [fSecond] = @fSecond, [fThird] = @fThird WHERE [fId] = @fId">
             <SelectParameters>
                 <asp:Parameter DefaultValue="1" Name="fId" Type="Int32"></asp:Parameter>
             </SelectParameters>
@@ -87,7 +87,7 @@
         </div>
         <asp:Button ID="btn第二張圖" runat="server" Text="確定上傳" OnClick="btn第二張圖_Click" CssClass="btn btn-primary" />
 
-        <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString='<%$ ConnectionStrings:dbKSYYConnectionString %>' SelectCommand="SELECT * FROM [t前台輪播] WHERE ([fId] = @fId)" UpdateCommand="UPDATE [t前台輪播] SET [fPic] = @fPic, [fFirst] = @fFirst, [fSecond] = @fSecond, [fThird] = @fThird WHERE [fId] = @fId">
+        <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString='<%$ ConnectionStrings:dbKSYYConnectionString %>' SelectCommand="SELECT * FROM [t前台輪播] WHERE ([fId] = @fId)" UpdateCommand="UPDATE [t前台輪播] SET [fFirst] = @fFirst, [fSecond] = @fSecond, [fThird] = @fThird WHERE [fId] = @fId">
             <SelectParameters>
                 <asp:Parameter DefaultValue="2" Name="fId" Type="Int32"></asp:Parameter>
             </SelectParameters>
@@ -150,7 +150,7 @@
         </div>
         <asp:Button ID="btn第三張圖" runat="server" Text="確定上傳" OnClick="btn第三張圖_Click" CssClass="btn btn-primary" />
 
-        <asp:SqlDataSource ID="SqlDataSource3" runat="server" ConnectionString='<%$ ConnectionStrings:dbKSYYConnectionString %>' SelectCommand="SELECT * FROM [t前台輪播] WHERE ([fId] = @fId)" UpdateCommand="UPDATE [t前台輪播] SET [fPic] = @fPic, [fFirst] = @fFirst, [fSecond] = @fSecond, [fThird] = @fThird WHERE [fId] = @fId">
+        <asp:SqlDataSource ID="SqlDataSource3" runat="server" ConnectionString='<%$ ConnectionStrings:dbKSYYConnectionString %>' SelectCommand="SELECT * FROM [t前台輪播] WHERE ([fId] = @fId)" UpdateCommand="UPDATE [t前台輪播] SET [fFirst] = @fFirst, [fSecond] = @fSecond, [fThird] = @fThird WHERE [fId] = @fId">
             <SelectParameters>
                 <asp:Parameter DefaultValue="3" Name="fId" Type="Int32"></asp:Parameter>
             </SelectParameters>

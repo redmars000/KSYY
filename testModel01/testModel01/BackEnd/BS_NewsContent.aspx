@@ -17,9 +17,9 @@
 
 </head>
 <body>
-    <form id="form2" runat="server">
+    <form id="formNewsEdit" runat="server">
         <div class="container-NewsEdit">
-            <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" DeleteCommand="DELETE FROM [tNews] WHERE [fId] = @fId" InsertCommand="INSERT INTO [tNews] ([fDate], [fSubject], [fContent]) VALUES (@fDate, @fSubject, @fContent)" SelectCommand="SELECT * FROM [tNews] WHERE ([fId] = @fId)" UpdateCommand="UPDATE [tNews] SET [fDate] = @fDate, [fSubject] = @fSubject, [fContent] = @fContent WHERE [fId] = @fId">
+            <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" DeleteCommand="DELETE FROM [tNews] WHERE [fId] = @fId" InsertCommand="INSERT INTO [tNews] ([fDate], [fSubject], [fContent], [fPreview]) VALUES (@fDate, @fSubject, @fContent, @fPreview)" SelectCommand="SELECT [fId], [fDate], [fSubject], [fContent], [fPreview] FROM [tNews] WHERE ([fId] = @fId)" UpdateCommand="UPDATE [tNews] SET [fDate] = @fDate, [fSubject] = @fSubject, [fContent] = @fContent, [fPreview] = @fPreview WHERE [fId] = @fId">
                 <DeleteParameters>
                     <asp:Parameter Name="fId" Type="Int32" />
                 </DeleteParameters>
@@ -27,6 +27,7 @@
                     <asp:Parameter Name="fDate" Type="String" />
                     <asp:Parameter Name="fSubject" Type="String" />
                     <asp:Parameter Name="fContent" Type="String" />
+                    <asp:Parameter Name="fPreview" Type="String" />
                 </InsertParameters>
                 <SelectParameters>
                     <asp:QueryStringParameter Name="fId" QueryStringField="fid" Type="Int32" />
@@ -35,6 +36,7 @@
                     <asp:Parameter Name="fDate" Type="String" />
                     <asp:Parameter Name="fSubject" Type="String" />
                     <asp:Parameter Name="fContent" Type="String" />
+                    <asp:Parameter Name="fPreview" Type="String" />
                     <asp:Parameter Name="fId" Type="Int32" />
                 </UpdateParameters>
             </asp:SqlDataSource>
@@ -58,7 +60,17 @@
                             </tr>
                             <tr>
                                 <td class="info text-center h4">
-                                    <asp:Label ID="lblContent" runat="server" Text="內文" Font-Bold="True" Font-Names="微軟正黑體" Font-Size="Large"></asp:Label>
+                                    <asp:Label ID="Label1" runat="server" Text="預覽內容" Font-Bold="True" Font-Names="微軟正黑體" Font-Size="Large"></asp:Label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <asp:TextBox ID="fPreviewTextBox" runat="server" CssClass="form-control" Text='<%# Bind("fPreview") %>' Font-Names="微軟正黑體" Font-Size="Medium"></asp:TextBox>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="info text-center h4">
+                                    <asp:Label ID="lblContent" runat="server" Font-Bold="True" Font-Names="微軟正黑體" Font-Size="Large" Text="內文"></asp:Label>
                                 </td>
                             </tr>
                             <tr>

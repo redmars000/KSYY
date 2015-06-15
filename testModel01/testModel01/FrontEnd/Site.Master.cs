@@ -4,6 +4,7 @@ using System.Linq;
 using System.Security.Claims;
 using System.Security.Principal;
 using System.Web;
+using System.Web.Configuration;
 using System.Web.Security;
 using System.Web.UI;
 using System.Web.UI.WebControls;
@@ -12,6 +13,8 @@ namespace testModel01
 {
     public partial class Site : System.Web.UI.MasterPage
     {
+        string str_Data_Source = WebConfigurationManager.OpenWebConfiguration("/testModel01").ConnectionStrings.ConnectionStrings["dbKSYYConnectionString"].ConnectionString;
+
         private const string AntiXsrfTokenKey = "__AntiXsrfToken";
         private const string AntiXsrfUserNameKey = "__AntiXsrfUserName";
         private string _antiXsrfTokenValue;
@@ -69,7 +72,30 @@ namespace testModel01
 
         protected void Page_Load(object sender, EventArgs e)
         {
+            Initial_loadConnect();
+        }
 
+        private void Initial_loadConnect()
+        {
+            Literal ltlConnect = (Literal)connect.FindControl("ltlConnect");
+            String strConnect = "";
+            SqlDataSource sds_connect = new SqlDataSource();
+            sds_connect.DataSourceMode = SqlDataSourceMode.DataReader;
+            sds_connect.ConnectionString = str_Data_Source;
+            sds_connect.SelectCommand = "SELECT * from  t連結";
+            System.Data.SqlClient.SqlDataReader sdr連結 = (System.Data.SqlClient.SqlDataReader)sds_connect.Select(DataSourceSelectArguments.Empty);
+
+            if (sdr連結.HasRows)
+            {
+                while (sdr連結.Read())
+                {
+                    strConnect += "<div class='client-item item'>";
+                    strConnect += "<a href='" + sdr連結["fConnection"].ToString() + "'>";
+                    strConnect += "<img src='" + sdr連結["fPic"].ToString() + "' alt='" + sdr連結["fName"].ToString() + "'/></a></div>";
+
+                }
+            }
+            ltlConnect.Text = strConnect;
         }
 
         protected void Unnamed_LoggingOut(object sender, LoginCancelEventArgs e)

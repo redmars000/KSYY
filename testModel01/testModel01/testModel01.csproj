@@ -480,6 +480,14 @@
     <Content Include="fonts\fontawesome-webfont.svg" />
     <Content Include="FrontEnd\Main.aspx" />
     <Content Include="FrontEnd\收費標準.aspx" />
+    <Content Include="images\中華民國家庭照顧者關懷總會.jpg" />
+    <Content Include="images\中華民國老人福利推動聯盟.gif" />
+    <Content Include="images\台灣失智症協會.gif" />
+    <Content Include="images\台灣長期照顧專業協會.JPG" />
+    <Content Include="images\衛生福利部.jpg" />
+    <Content Include="images\衛生福利部_社會及家庭署.png" />
+    <Content Include="images\高雄市家庭照顧者關懷協會.png" />
+    <Content Include="images\高雄市政府社會局.png" />
     <Content Include="pic\床位照片\add_1.png" />
     <Content Include="pic\床位照片\add_2.png" />
     <Content Include="pic\床位照片\大頭照\defaultimg.png" />

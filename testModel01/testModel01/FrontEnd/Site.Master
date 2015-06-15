@@ -125,46 +125,9 @@
                     </div>
                     <div class="col-md-9">
                         <div class="our-clients">
-                            <div class="clients-carousel custom-carousel touch-carousel navigation-2" data-appeared-items="4" data-navigation="true">
-                                <div class="client-item item">
-                                    <a href="#">
-                                        <img src="../images/c1.png" alt="" />
-                                    </a>
-                                </div>
-                                <div class="client-item item">
-                                    <a href="#">
-                                        <img src="../images/c2.png" alt="" />
-                                    </a>
-                                </div>
-                                <div class="client-item item">
-                                    <a href="#">
-                                        <img src="../images/c3.png" alt="" />
-                                    </a>
-                                </div>
-                                <div class="client-item item">
-                                    <a href="#">
-                                        <img src="../images/c4.png" alt="" />
-                                    </a>
-                                </div>
-                                <div class="client-item item">
-                                    <a href="#">
-                                        <img src="../images/c5.png" alt="" />
-                                    </a>
-                                </div>
-                                <div class="client-item item">
-                                    <a href="#">
-                                        <img src="../images/c6.png" alt="" />
-                                    </a>
-                                </div>
-                                <div class="client-item item">
-                                    <a href="#">
-                                        <img src="../images/c7.png" alt="" />
-                                    </a>
-                                </div>
-                                <div class="client-item item">
-                                    <a href="#">
-                                        <img src="../images/c8.png" alt="" />
-                                    </a>
+                            <div id="connect" runat="server">
+                                <div class="clients-carousel custom-carousel touch-carousel navigation-2" data-appeared-items="4" data-navigation="true">
+                                    <asp:Literal ID="ltlConnect" runat="server"></asp:Literal>                                   
                                 </div>
                             </div>
                         </div>
@@ -181,7 +144,8 @@
                     <div class="col-md-3 row" style="width: 100%">
                         <div class="col-md-6" style="width: auto; margin-top: -20px">
                             <p>
-                                <img src="../BackEndImg/ks.png" style="max-height: 50px" /></p>
+                                <img src="../BackEndImg/ks.png" style="max-height: 50px" />
+                            </p>
                         </div>
                         <div class="col-md-6" style="width: auto">
                             <p><span>電話 :</span> (07)614-1273 ‧ 614-0367</p>

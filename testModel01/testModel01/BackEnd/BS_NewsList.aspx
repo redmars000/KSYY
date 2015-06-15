@@ -43,13 +43,16 @@
     <br />
     <asp:TextBox ID="txtSubject" runat="server" CssClass="form-control" Font-Names="微軟正黑體" Font-Size="Medium"></asp:TextBox>
     <br />
-    <asp:Label ID="Label2" runat="server" Style="font-family: 微軟正黑體; font-size: large" Text="3.內文"></asp:Label>
+    <asp:Label ID="Label4" runat="server" Style="font-family: 微軟正黑體; font-size: large" Text="3.預覽內容"></asp:Label>
+    <asp:TextBox ID="txtPreview" runat="server" CssClass="form-control" Font-Names="微軟正黑體" Font-Size="Medium"></asp:TextBox>
+    <br />
+    <asp:Label ID="Label2" runat="server" Style="font-family: 微軟正黑體; font-size: large" Text="4.內文"></asp:Label>
     <br />
     <CKEditor:CKEditorControl ID="CKEditorControl1" runat="server"></CKEditor:CKEditorControl>
     <br />
     <asp:Button ID="btnInsert" runat="server" CssClass="btn btn-primary btn-lg" OnClick="btnInsert_Click" Text="新增消息公告" OnClientClick="return confirm('確定要新增消息嗎?')" />
 
-    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" DeleteCommand="DELETE FROM [tNews] WHERE [fId] = @fId" InsertCommand="INSERT INTO [tNews] ([fDate], [fSubject], [fContent], [fYear], [fMonth], [fDay]) VALUES (@fDate, @fSubject, @fContent, @fYear, @fMonth, @fDay)" SelectCommand="SELECT * FROM [tNews] ORDER BY [fId] DESC" UpdateCommand="UPDATE [tNews] SET [fDate] = @fDate, [fSubject] = @fSubject, [fContent] = @fContent, [fYear] = @fYear, [fMonth] = @fMonth, [fDay] = @fDay WHERE [fId] = @fId">
+    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" DeleteCommand="DELETE FROM [tNews] WHERE [fId] = @fId" InsertCommand="INSERT INTO [tNews] ([fDate], [fSubject], [fContent], [fYear], [fMonth], [fDay], [fPreview]) VALUES (@fDate, @fSubject, @fContent, @fYear, @fMonth, @fDay, @fPreview)" SelectCommand="SELECT * FROM [tNews] ORDER BY [fId] DESC" UpdateCommand="UPDATE [tNews] SET [fDate] = @fDate, [fSubject] = @fSubject, [fContent] = @fContent, [fYear] = @fYear, [fMonth] = @fMonth, [fDay] = @fDay, [fPreview] = @fPreview WHERE [fId] = @fId">
         <DeleteParameters>
             <asp:Parameter Name="fId" Type="Int32" />
         </DeleteParameters>
@@ -60,14 +63,16 @@
             <asp:ControlParameter ControlID="lblYear" Name="fYear" PropertyName="Text" Type="String" />
             <asp:ControlParameter ControlID="lblMonth" Name="fMonth" PropertyName="Text" Type="String" />
             <asp:ControlParameter ControlID="lblDay" Name="fDay" PropertyName="Text" Type="String" />
+            <asp:ControlParameter ControlID="txtPreview" Name="fPreview" PropertyName="Text" Type="String" />
         </InsertParameters>
         <UpdateParameters>
             <asp:Parameter Name="fDate" Type="String" />
             <asp:Parameter Name="fSubject" Type="String" />
             <asp:Parameter Name="fContent" Type="String" />
-            <asp:Parameter Name="fYear" Type="Int32" />
-            <asp:Parameter Name="fMonth" Type="Int32" />
-            <asp:Parameter Name="fDay" Type="Int32" />
+            <asp:Parameter Name="fYear" Type="String" />
+            <asp:Parameter Name="fMonth" Type="String" />
+            <asp:Parameter Name="fDay" Type="String" />
+            <asp:Parameter Name="fPreview" Type="String" />
             <asp:Parameter Name="fId" Type="Int32" />
         </UpdateParameters>
     </asp:SqlDataSource>

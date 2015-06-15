@@ -6,7 +6,7 @@
    <style type="text/css">
    
         .mydiv_1 {
-            width:23%;
+            width:18%;
         padding-left:5px; padding-right:5px;
              display:  inline-block;
   background-color: rgba(100%, 100%, 100%, 0);
@@ -16,7 +16,7 @@
             border-color:rgba(112, 225, 233, 0.30);
             border-width:6px;
             border-style:ridge;
-
+            height:100%;
             max-width:150px;
             max-height:100px;
               	-moz-box-shadow: 3px 6px 30px -4px #152f5c;
@@ -78,11 +78,26 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="BS_BodyContent" runat="server">
 
-      <div class="modal fade" id="myModal" tabindex="-1" role="dialog" 
+  <!-- Button trigger modal -->
+<a  href="BS_床位編輯.aspx?f床號=101" runat="server"
+    data-toggle="modal" data-target="#myModal">
+  Launch demo modal
+</a>
+       <a id="A1"  runat="server"  
+                         href="BS_床位編輯.aspx?f床號=110-6(E)"
+                         data-toggle="modal"   data-target="#myModal"
+                                 >          
+                             <asp:Button runat="server" Height="30px" Width="70px"  ToolTip="110-6(E)"  />
+                       </a>
+<!-- Modal -->  
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" 
          aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-content" style="width:70%">
         </div>
     </div>
+
+
+
         <h1 style="text-align: center">相簿編輯</h1>
 
     <br />
@@ -115,9 +130,12 @@
                         <asp:CheckBox ID="CheckBox1" runat="server"
                             Text='<%# Eval("f庭院照片_s")  %>'/>
                     </div>
-                    <div align="center"  >
-        <a href='<%# Eval("f庭院照片_s") %>'>
-                        <img src='<%# Eval("f庭院照片_s") %>' class="myimag_1"  />
+                    <div  style="text-align:center"  >
+        <a  href="BS_床位編輯.aspx?f床號=101"
+                         data-toggle="modal"   data-target="#myModal" 
+            >
+
+                        <img src='<%# Eval("f庭院照片_s") %>'  class="myimag_1"  />
                     </a>
 
 

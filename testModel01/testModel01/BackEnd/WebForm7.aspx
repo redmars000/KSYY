@@ -19,9 +19,26 @@
 </head>
 <body>
     <form id="form1" runat="server">
+        
+        <asp:SqlDataSource ID="SqlDataSource1" runat="server" 
+            ConnectionString='<%$ ConnectionStrings:dbKSYYConnectionString %>' 
+            SelectCommand="SELECT * as 照片欄位 FROM [T康欣_活動剪影] WHERE (([f庭院照片_s] = @照片) or ([f庭院照片_l] = @照片)   )">
 
-        <asp:Image ID="Image1" runat="server" CssClass="myimg" ImageUrl="~/pic/康欣_照片/內部/inside_L (9).jpg" />
+            <SelectParameters>
+                <asp:QueryStringParameter QueryStringField="照片" Name="照片" Type="String"></asp:QueryStringParameter>
+                <asp:QueryStringParameter QueryStringField="欄位" Name="欄位" Type="String"></asp:QueryStringParameter>
+       
+                     </SelectParameters>
+        </asp:SqlDataSource>
 
+        <br />
+        <br />
+        <asp:FormView ID="FormView1" runat="server" DataSourceID="SqlDataSource1">
+            <ItemTemplate>
+                <asp:Label ID="Label1" runat="server" Text='<%# Eval("照片欄位") %>'></asp:Label>
+
+            </ItemTemplate>
+        </asp:FormView>
     </form>
 </body>
 </html>

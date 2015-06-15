@@ -25,15 +25,15 @@ namespace testModel01
         protected void Page_Load(object sender, EventArgs e)
         {
             UnobtrusiveValidationMode = UnobtrusiveValidationMode.None;
-            str_ConnectionString = @"Data Source=CR4-17\MSSQLSERVER2013;Initial Catalog=dbKSYY;Integrated Security=True";
+        //    str_ConnectionString = @"Data Source=CR4-17\MSSQLSERVER2013;Initial Catalog=dbKSYY;Integrated Security=True";
             //str_ConnectionString = @"Data Source=SHAWN-PC;Integrated Security=SSPI;Initial Catalog=dbKSYY";
-          //  str_ConnectionString = @" Data Source=WIN-R56ALTBAKPC\SQLEXPRESS;Initial Catalog=dbKSYY;Integrated Security=True";
-            //str_datasoure = @"WIN-R56ALTBAKPC\SQLEXPRESS";
-                 str_datasoure = @"CR4-17\MSSQLSERVER2013";            
+            str_ConnectionString = @" Data Source=WIN-R56ALTBAKPC\SQLEXPRESS;Initial Catalog=dbKSYY;Integrated Security=True";
+            str_datasoure = @"WIN-R56ALTBAKPC\SQLEXPRESS";
+          //       str_datasoure = @"CR4-17\MSSQLSERVER2013";            
             str_InitialCatalog = "dbKSYY";
 
             int_witchphoto = Convert.ToInt32(Request.QueryString["witchphoto"]);
-
+            
             if (!IsPostBack)
             {
                 m_initial();
@@ -44,14 +44,14 @@ namespace testModel01
             while (int_itemmount > 0)
             {
                 Button btn1 = new Button();
-                btn1.CssClass = ((int_pageId + 1) != num) ? "myButton" : "myButton";
+                btn1.CssClass = "myButton";
                 btn1.ID = "btn_page_" + num;
                 btn1.Text = "" + num++;
                 btn1.Click += new EventHandler(Btn_pageclick);
                 PlaceHolder1.Controls.Add(btn1);
                 int_itemmount = int_itemmount - 10;
             }
-
+            
 
         }
         private void m_initial()
@@ -114,8 +114,8 @@ namespace testModel01
             DataTable dt = new DataTable();
             dt = d.Table.Copy();
             DataView d2 = new DataView(dt);
-            int int_min = (page) == 0 ? 0 : page * 10 - 1;
-            int int_max = (page * 10 + 10) > d.Count ? d.Count - 1 : page * 10 + 9;
+            int int_min = (page) == 0 ? 0 : page * 10;
+            int int_max = (page * 10 + 10) > d.Count ? d.Count-1: page * 10 + 9;
             d2.RowFilter = " fid >= " + d[int_min]["fid"].ToString() + " and fid <= " + d[int_max]["fid"].ToString();
             return d2;
             /*● DIV的排序*/

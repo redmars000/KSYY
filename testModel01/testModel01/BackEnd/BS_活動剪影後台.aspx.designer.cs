@@ -13,6 +13,15 @@ namespace testModel01 {
     public partial class WebForm10 {
         
         /// <summary>
+        /// A1 控制項。
+        /// </summary>
+        /// <remarks>
+        /// 自動產生的欄位。
+        /// 將移動欄位宣告從設計檔案修改為程式碼後置檔案。
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlAnchor A1;
+        
+        /// <summary>
         /// ScriptManager1 控制項。
         /// </summary>
         /// <remarks>

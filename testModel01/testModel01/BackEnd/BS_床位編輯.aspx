@@ -34,8 +34,7 @@
             font-size: x-large;
         }
         .myimg {
-       max-height:190px;
-       max-width:250px;
+            height:200px;
              }
 
     </style>
@@ -111,7 +110,6 @@
             <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
 
             <br />
-            <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
             <br />
 
                     <asp:FormView ID="FormView16" runat="server" DataSourceID="SqlDataSource1" DefaultMode="Edit" Width="100%" OnItemCommand="FormView1_ItemCommand" OnItemUpdated="FormView1_ItemUpdated" DataKeyNames="f床號" OnItemUpdating="FormView16_ItemUpdating" OnItemDeleted="FormView16_ItemDeleted" OnUnload="FormView16_Unload">
@@ -132,8 +130,8 @@
                                     </td>
                                     <td class="auto-style17">大頭照:</td>
                                     <td class="auto-style15" rowspan="4">
-                                        <div align="center">
-                                        <asp:Image ID="Image1" runat="server" CssClass="myimg" />
+                                        <div align="center" style="height:200px; width:100%">
+                                        <asp:Image ID="Image1" runat="server" CssClass="myimg"  />
                                     </div>
 
                                     </td>

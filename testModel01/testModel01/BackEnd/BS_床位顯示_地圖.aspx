@@ -54,9 +54,7 @@
        <div style="width: 1235px; height: 847px; margin: 0 auto 0 auto">
         <table id="talbe_map" class="nav-justified" style="background-image: url(../pic/床位_地圖85趴.jpg); width: 100%">
             <tr>
-                <td style="height: 35px; width: 108px;">
-                    <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
-
+                <td style="height: 35px; width: 108px;">    
                 </td>
                 <td style="height: 35px; " colspan="2"></td>
                 <td style="height: 35px; width: 88px;"></td>

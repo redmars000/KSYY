@@ -69,6 +69,15 @@
                             <li class="dropdown-header divider"></li>
                         </ul>
                     </li>                    
+                     <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-bed" aria-hidden="true"></span> 床位系統<span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li class="dropdown-header divider""></li>
+                           <li><a id="A1" runat="server" href="~/BackEnd/BS_床位顯示_地圖.aspx?">地圖顯示<span class="icon"></span></a></li>
+                            <li><a id="A2" runat="server" href="~/BackEnd/BS_床位顯示_表格.aspx?">表格顯示<span class="icon"></span></a></li>
+                            <li class="dropdown-header divider"></li>
+                        </ul>
+                    </li>     
                 </ul>
                 <footer class="footer">
                     <div>

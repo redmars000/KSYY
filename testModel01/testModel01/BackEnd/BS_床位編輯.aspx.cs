@@ -11,8 +11,7 @@ namespace testModel01.BackEnd
 {
     public partial class WebForm6 : System.Web.UI.Page
     {
-        // string str_Data_Source = @"CR4-17\MSSQLSERVER2013";//資策
-        //  string str_Data_Source = @"SHAWN-PC";//家3
+
         string str_Data_Source = WebConfigurationManager.OpenWebConfiguration("/testModel01").ConnectionStrings.ConnectionStrings["dbKSYYConnectionString"].ConnectionString;//家2
 
         DropDownList ddlist;  //暫存
@@ -27,8 +26,6 @@ namespace testModel01.BackEnd
                 m_initial();
             }
 
-            if (Session["test"] != null)
-                Label1.Text=(string)Session["test"];
           }
 
         private void m_initial()
@@ -110,8 +107,6 @@ namespace testModel01.BackEnd
         protected void FormView1_ItemUpdated(object sender, FormViewUpdatedEventArgs e)
         {
             Response.Redirect(this.Page.Request.UrlReferrer.ToString());
-            //            Response.Redirect("BS_床位顯示_地圖.aspx");
-//            Response.Redirect("BS_床位編輯.aspx?f床號=110-6(E)");
         }
 
         protected void FormView16_ItemUpdating(object sender, FormViewUpdateEventArgs e)
@@ -160,7 +155,6 @@ namespace testModel01.BackEnd
         protected void FormView16_ItemDeleted(object sender, FormViewDeletedEventArgs e)
         {
             Response.Redirect(this.Page.Request.UrlReferrer.ToString());
-//            Response.Redirect("BS_床位顯示_地圖.aspx");
         }
 
         protected void FormView16_Unload(object sender, EventArgs e)

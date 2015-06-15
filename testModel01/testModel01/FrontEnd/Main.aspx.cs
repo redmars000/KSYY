@@ -27,7 +27,7 @@ namespace testModel01
             SqlDataSource sds_carousel = new SqlDataSource();
             sds_carousel.DataSourceMode = SqlDataSourceMode.DataReader;
             sds_carousel.ConnectionString = str_Data_Source;
-            sds_carousel.SelectCommand = "SELECT * from t前台輪播";
+            sds_carousel.SelectCommand = "SELECT fId, fPic, fFirst, fSecond, fThird from t前台輪播";
             System.Data.SqlClient.SqlDataReader sdr輪播 = (System.Data.SqlClient.SqlDataReader)sds_carousel.Select(DataSourceSelectArguments.Empty);
 
             if (sdr輪播.HasRows)

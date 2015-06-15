@@ -79,6 +79,7 @@
     <Content Include="BackEnd\BS_入住事項editCommodity.aspx" />
     <Content Include="BackEnd\BS_入住事項insertAttention.aspx" />
     <Content Include="BackEnd\BS_入住事項insertCommodity.aspx" />
+    <Content Include="BackEnd\BS_前台輪播編輯.aspx" />
     <Content Include="BackEnd\BS_床位編輯.aspx" />
     <Content Include="BackEnd\BS_收費標準表.aspx" />
     <Content Include="BackEnd\BS_收費標準表Content.aspx" />
@@ -784,6 +785,13 @@
     </Compile>
     <Compile Include="BackEnd\BS_入住事項insertCommodity.aspx.designer.cs">
       <DependentUpon>BS_入住事項insertCommodity.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BackEnd\BS_前台輪播編輯.aspx.cs">
+      <DependentUpon>BS_前台輪播編輯.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackEnd\BS_前台輪播編輯.aspx.designer.cs">
+      <DependentUpon>BS_前台輪播編輯.aspx</DependentUpon>
     </Compile>
     <Compile Include="BackEnd\BS_床位編輯.aspx.cs">
       <DependentUpon>BS_床位編輯.aspx</DependentUpon>

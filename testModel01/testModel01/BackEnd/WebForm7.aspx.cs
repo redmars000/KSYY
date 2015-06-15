@@ -11,9 +11,8 @@ namespace testModel01.BackEnd
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
-        //   string str_path = Request.QueryString["照片"].ToString();
-           //Image1.ImageUrl = str_path;
+           string str_path = Request.QueryString["照片"].ToString();
+           Image1.ImageUrl = str_path;
         }
 
 

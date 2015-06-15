@@ -137,7 +137,8 @@ namespace testModel01.BackEnd
                     //是否符合副檔名
                     //刪除照片
                     string str_expath = System.Web.Hosting.HostingEnvironment.MapPath("~");
-                    if (img1.ImageUrl!=@"../pic/床位照片/大頭照/defaultimg.png")
+                    if (img1.ImageUrl.Substring(img1.ImageUrl.LastIndexOf(@"/\") + 1).ToLower()
+                        !="defaultimg.png")
                     {
                         string str_temp = str_expath + img1.ImageUrl.Substring(4, img1.ImageUrl.Length - 4);
                         if (System.IO.File.Exists(str_temp))
@@ -159,6 +160,22 @@ namespace testModel01.BackEnd
 
         protected void FormView16_Unload(object sender, EventArgs e)
         {
+
+        }
+
+        protected void FormView16_ItemDeleting(object sender, FormViewDeleteEventArgs e)
+        {
+            m_FindControl_Control(FormView16, typeof(Image));
+            img1 = ((Image)contrl_temp);
+
+            if (img1.ImageUrl.Substring(img1.ImageUrl.LastIndexOf(@"/\") + 1).ToLower()
+                     != "defaultimg.png")
+            {
+                string str_expath = System.Web.Hosting.HostingEnvironment.MapPath("~");
+                string str_temp = str_expath + img1.ImageUrl.Substring(4, img1.ImageUrl.Length - 4);
+                if (System.IO.File.Exists(str_temp))
+                    System.IO.File.Delete(str_temp);
+            }
 
         }
 

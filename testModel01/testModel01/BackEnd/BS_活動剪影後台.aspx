@@ -4,6 +4,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="BS_HeadContent" runat="server">
     
    <style type="text/css">
+   
         .mydiv_1 {
             width:23%;
         padding-left:5px; padding-right:5px;
@@ -17,7 +18,7 @@
             border-style:ridge;
 
             max-width:150px;
-             max-height:100px;
+            max-height:100px;
               	-moz-box-shadow: 3px 6px 30px -4px #152f5c;
 	-webkit-box-shadow: 3px 6px 30px -4px #152f5c;
         }
@@ -93,15 +94,6 @@
     <br />
 
 
-<div class="modal fade aaa "   aria-hidden="true">
-  <div class="modal-dialog  modal-content">
-        <img src="../pic/康欣_照片/外觀/outlook_L (14).jpg" />
-  </div>
-</div>
-
-    <a  data-toggle="modal" data-target="aaa" >
-    <img src="../pic/康欣_照片/外觀/outlook_L (14).jpg"   class="myimag_1" />
-                           </a>       
     
     <h2 style="text-align: center">刪除相片</h2>
     <hr />
@@ -123,12 +115,11 @@
                         <asp:CheckBox ID="CheckBox1" runat="server"
                             Text='<%# Eval("f庭院照片_s")  %>'/>
                     </div>
-                    <div align="center">
-           <a runat="server"    href= "WebForm7.aspx"+'<%#Eval("f庭院照片_s") %>'
+                    <div align="center"  >
+        <a href='<%# Eval("f庭院照片_s") %>'>
+                        <img src='<%# Eval("f庭院照片_s") %>' class="myimag_1"  />
+                    </a>
 
-                              data-toggle="modal"   data-target="#myModal" >
-                            <img src='<%# Eval("f庭院照片_s") %>'  class="myimag_1" />
-                           </a>      
 
                     </div>
                 </div>

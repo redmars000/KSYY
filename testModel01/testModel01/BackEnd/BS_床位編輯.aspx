@@ -35,7 +35,7 @@
         }
         .myimg {
             height:200px;
-             }
+        }
 
     </style>
 
@@ -112,9 +112,9 @@
             <br />
             <br />
 
-                    <asp:FormView ID="FormView16" runat="server" DataSourceID="SqlDataSource1" DefaultMode="Edit" Width="100%" OnItemCommand="FormView1_ItemCommand" OnItemUpdated="FormView1_ItemUpdated" DataKeyNames="f床號" OnItemUpdating="FormView16_ItemUpdating" OnItemDeleted="FormView16_ItemDeleted" OnUnload="FormView16_Unload">
+                    
+                    <asp:FormView ID="FormView16" runat="server" DataSourceID="SqlDataSource1" DefaultMode="Edit" Width="100%" OnItemCommand="FormView1_ItemCommand" OnItemUpdated="FormView1_ItemUpdated" DataKeyNames="f床號" OnItemUpdating="FormView16_ItemUpdating" OnItemDeleted="FormView16_ItemDeleted" OnUnload="FormView16_Unload" OnItemDeleting="FormView16_ItemDeleting">
                         <EditItemTemplate>
-
                             <table class="table table table-bordered table-condensed " style="width: 100%; align-items: center; font-size: x-large;">
                                 <tr class="info text-center h4 active">
                                     <td class="auto-style17">&nbsp;</td>
@@ -130,7 +130,7 @@
                                     </td>
                                     <td class="auto-style17">大頭照:</td>
                                     <td class="auto-style15" rowspan="4">
-                                        <div align="center" style="height:200px; width:100%">
+                                        <div  style="height:200px; text-align:center">
                                         <asp:Image ID="Image1" runat="server" CssClass="myimg"  />
                                     </div>
 
@@ -309,6 +309,7 @@
                             &nbsp;<asp:LinkButton ID="NewButton" runat="server" CausesValidation="False" CommandName="New" Text="新增" />
                         </ItemTemplate>
                     </asp:FormView>
+          
 
         </div>
     <script>

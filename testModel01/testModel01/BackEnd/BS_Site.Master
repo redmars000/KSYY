@@ -28,7 +28,7 @@
                 <ul class="nav sidebar-nav main-menu">
                     <li class="sidebar-brand" style="height: 150px">
                         <div style="margin-top: 30px; text-align:center">
-                            <img src="../BackEndImg/ks.png" />
+                            <img src="../BackEndImg/ks.png" style="width:75px; height:75px"/>
                         </div>
                     </li>
                     <li>
@@ -53,7 +53,7 @@
                     </li>
                     <li>
                         <a runat="server" href="~/BackEnd/BS_前台輪播編輯.aspx">
-                            <span class="glyphicon glyphicon-book" aria-hidden="true"></span>前台輪播編輯<span class="icon"></span>
+                            <span class="glyphicon glyphicon-book" aria-hidden="true"></span> 前台輪播編輯<span class="icon"></span>
                         </a>
                     </li>
                     <li>

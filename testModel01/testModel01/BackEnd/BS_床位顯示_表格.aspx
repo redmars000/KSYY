@@ -59,7 +59,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="BS_BodyContent" runat="server">
 
   <div class="modal fade" id="myModal" tabindex="-1" role="dialog" 
-         aria-labelledby="myModalLabel" aria-hidden="true">
+         aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="static" data-keyboard="false">
         <div class="modal-dialog modal-content" style="width:70%">
         </div>
     </div>

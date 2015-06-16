@@ -55,7 +55,7 @@
         </asp:GridView>
     </div>
 
-    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="static" data-keyboard="false">
         <div class="modal-dialog">
             <div class="modal-content">
             </div>
@@ -63,7 +63,7 @@
     </div>
 
     <a href="BS_入住事項insertAttention.aspx" role="button" class="btn btn-primary" data-toggle="modal" data-target="#myModalinsert">新增</a>
-    <div class="modal fade" id="myModalinsert" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal fade" id="myModalinsert" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="static" data-keyboard="false">
         <div class="modal-dialog">
             <div class="modal-content">
             </div>
@@ -120,7 +120,7 @@
             </Columns>
         </asp:GridView>
 
-        <div class="modal fade" id="myModa2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal fade" id="myModa2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="static" data-keyboard="false">
             <div class="modal-dialog">
                 <div class="modal-content">
                 </div>
@@ -128,7 +128,7 @@
         </div>
 
         <a href="BS_入住事項insertCommodity.aspx" role="button" class="btn btn-primary" data-toggle="modal" data-target="#myModalinsert2">新增</a>
-        <div class="modal fade" id="myModalinsert2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal fade" id="myModalinsert2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="static" data-keyboard="false">
             <div class="modal-dialog">
                 <div class="modal-content">
                 </div>

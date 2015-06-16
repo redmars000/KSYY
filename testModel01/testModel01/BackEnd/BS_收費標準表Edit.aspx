@@ -40,7 +40,7 @@
             <asp:FormView ID="FormView1" runat="server" AutoGenerateColumns="False" DataKeyNames="id" DataSourceID="SqlDataSource1" DefaultMode="Edit" OnItemCommand="FormView1_ItemCommand" OnItemUpdated="FormView1_ItemUpdated" Width="100%">
                 <EditItemTemplate>
                     <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <%--<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>--%>
                         <h4 class="modal-title" id="myModalLabel">編輯中..</h4>
                     </div>
                     <div class="modal-body">

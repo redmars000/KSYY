@@ -497,7 +497,6 @@
     <Content Include="pic\床位照片\床位1 -藍.jpg" />
     <Content Include="Scripts\jquery-ui.js" />
     <Content Include="Scripts\jquery.ui.datepicker-zh-TW.js" />
-    <Content Include="最新消息.aspx" />
     <Content Include="FrontEnd\最新消息內容.aspx" />
     <Content Include="FrontEnd\活動剪影.aspx" />
     <Content Include="FrontEnd\聯絡我們.aspx" />
@@ -883,13 +882,6 @@
     </Compile>
     <Compile Include="FrontEnd\收費標準.aspx.designer.cs">
       <DependentUpon>收費標準.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="最新消息.aspx.cs">
-      <DependentUpon>最新消息.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="最新消息.aspx.designer.cs">
-      <DependentUpon>最新消息.aspx</DependentUpon>
     </Compile>
     <Compile Include="FrontEnd\最新消息內容.aspx.cs">
       <DependentUpon>最新消息內容.aspx</DependentUpon>

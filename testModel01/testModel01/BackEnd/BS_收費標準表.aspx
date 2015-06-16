@@ -46,7 +46,7 @@
     </asp:GridView>
 
     <a href="BS_收費標準表Content.aspx" title="點我新增" role="button" data-toggle="modal" data-target="#myModalinsert"><img src="../pic/new32x32.png" /></a> 
-    <div class="modal fade" id="myModalinsert" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal fade" id="myModalinsert" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="static" data-keyboard="false">
         <div class="modal-dialog">
             <div class="modal-content">
             </div>
@@ -116,7 +116,7 @@
         </Columns>
         
     </asp:GridView>
-    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="static" data-keyboard="false">
         <div class="modal-dialog">
             <div class="modal-content">
             </div>

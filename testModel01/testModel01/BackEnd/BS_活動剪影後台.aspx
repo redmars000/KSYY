@@ -80,16 +80,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="BS_BodyContent" runat="server">
 
   <!-- Button trigger modal -->
-<a  href="BS_床位編輯.aspx?f床號=101" runat="server"
-    data-toggle="modal" data-target="#myModal">
-  Launch demo modal
-</a>
-       <a id="A1"  runat="server"  
-                         href="BS_床位編輯.aspx?f床號=110-6(E)"
-                         data-toggle="modal"   data-target="#myModal"
-                                 >          
-                             <asp:Button runat="server" Height="30px" Width="70px"  ToolTip="110-6(E)"  />
-                       </a>
+
 <!-- Modal -->  
     <div class="modal fade" id="myModal" tabindex="-1" role="dialog" 
          aria-labelledby="myModalLabel" aria-hidden="true">
@@ -133,9 +124,7 @@
                     </div>
                     <div  style="text-align:center"  >
         <a  href="BS_床位編輯.aspx?f床號=101"
-                         data-toggle="modal"   data-target="#myModal" 
-            >
-
+                         data-toggle="modal"   data-target="#myModal" >
                         <img src='<%# Eval("f庭院照片_s") %>'  class="myimag_1"  />
                     </a>
 

@@ -12,8 +12,8 @@
     <style type="text/css">
         
         .auto-style17 {
-            width: 8%;
             text-align: left;
+            width:8%;
         }
 
         .auto-style15 {
@@ -53,9 +53,9 @@
                 ConnectionString='<%$ ConnectionStrings:dbKSYYConnectionString %>'
                 SelectCommand="SELECT * FROM [T床位系統] WHERE ([f床號] = @f床號)"
                 OldValuesParameterFormatString="original_{0}"
-                DeleteCommand="UPDATE [T床位系統] SET  [f入住日期] =NULL, [f姓名] = NULL, [f身份證字號] = NULL, [f生日] = NULL, [f住址] = NULL, [f家電] = NULL, [f聯絡人] = NULL, [f聯絡人家電] = NULL, [f聯絡人手機] = NULL, [f指定醫院] = NULL, [f是否住院中] = 0, [f鼻胃管] = NULL, [f導尿管] = NULL, [f其他管路] = NULL, [f耗材] = NULL, [f其他] = NULL, [f備註] = NULL, [f大頭照] = NULL where [f床號] = @original_f床號"
-                InsertCommand="INSERT INTO [T床位系統] ([f床號], [f入住日期], [f姓名], [f身份證字號], [f生日], [f住址], [f家電], [f聯絡人], [f聯絡人家電], [f聯絡人手機], [f指定醫院], [f是否住院中], [f鼻胃管], [f導尿管], [f其他管路], [f耗材], [f其他], [f備註], [f大頭照]) VALUES (@f床號, @f入住日期, @f姓名, @f身份證字號, @f生日, @f住址, @f家電, @f聯絡人, @f聯絡人家電, @f聯絡人手機, @f指定醫院, @f是否住院中, @f鼻胃管, @f導尿管, @f其他管路, @f耗材, @f其他, @f備註, @f大頭照)"
-                UpdateCommand="UPDATE [T床位系統] SET [f入住日期] = @f入住日期, [f姓名] = @f姓名, [f身份證字號] = @f身份證字號, [f生日] = @f生日, [f住址] = @f住址, [f家電] = @f家電, [f聯絡人] = @f聯絡人, [f聯絡人家電] = @f聯絡人家電, [f聯絡人手機] = @f聯絡人手機, [f指定醫院] = @f指定醫院, [f是否住院中] = @f是否住院中, [f鼻胃管] = @f鼻胃管, [f導尿管] = @f導尿管, [f其他管路] = @f其他管路, [f耗材] = @f耗材, [f其他] = @f其他, [f備註] = @f備註, [f大頭照] = @f大頭照 WHERE [f床號] = @original_f床號">
+                DeleteCommand="UPDATE [T床位系統] SET  [f入住日期] =NULL, [f姓名] = NULL, [f身份證字號] = NULL, [f生日] = NULL, [f住址] = NULL, [f家電] = NULL, [f聯絡人] = NULL, [f聯絡人家電] = NULL, [f聯絡人手機] = NULL, [f指定醫院] = NULL, [f是否住院中] = 0, [f鼻胃管] = NULL, [f導尿管] = NULL, [f其他管路] = NULL, [f耗材] = NULL, [f其他] = NULL, [f備註] = NULL, [f大頭照] = NULL ,f宗教=NULL where [f床號] = @original_f床號"
+                InsertCommand="INSERT INTO [T床位系統] ([f床號], [f入住日期], [f姓名], [f身份證字號], [f生日], [f住址], [f家電], [f聯絡人], [f聯絡人家電], [f聯絡人手機], [f指定醫院], [f是否住院中], [f鼻胃管], [f導尿管], [f其他管路], [f耗材], [f其他], [f備註], [f大頭照], [f宗教]) VALUES (@f床號, @f入住日期, @f姓名, @f身份證字號, @f生日, @f住址, @f家電, @f聯絡人, @f聯絡人家電, @f聯絡人手機, @f指定醫院, @f是否住院中, @f鼻胃管, @f導尿管, @f其他管路, @f耗材, @f其他, @f備註, @f大頭照, @f宗教)"
+                UpdateCommand="UPDATE [T床位系統] SET [f入住日期] = @f入住日期, [f姓名] = @f姓名, [f身份證字號] = @f身份證字號, [f生日] = @f生日, [f住址] = @f住址, [f家電] = @f家電, [f聯絡人] = @f聯絡人, [f聯絡人家電] = @f聯絡人家電, [f聯絡人手機] = @f聯絡人手機, [f指定醫院] = @f指定醫院, [f是否住院中] = @f是否住院中, [f鼻胃管] = @f鼻胃管, [f導尿管] = @f導尿管, [f其他管路] = @f其他管路, [f耗材] = @f耗材, [f其他] = @f其他, [f備註] = @f備註, [f大頭照] = @f大頭照, [f宗教] = @f宗教 WHERE [f床號] = @original_f床號">
                 <DeleteParameters>
                     <asp:Parameter Name="original_f床號" Type="String"></asp:Parameter>
                 </DeleteParameters>
@@ -79,6 +79,7 @@
                     <asp:Parameter Name="f其他" Type="String"></asp:Parameter>
                     <asp:Parameter Name="f備註" Type="String"></asp:Parameter>
                     <asp:Parameter Name="f大頭照" Type="String"></asp:Parameter>
+                    <asp:Parameter Name="f宗教" Type="String"></asp:Parameter>
                 </InsertParameters>
                 <SelectParameters>
                     <asp:QueryStringParameter QueryStringField="f床號" Name="f床號" Type="String"></asp:QueryStringParameter>
@@ -103,25 +104,28 @@
                     <asp:Parameter Name="f其他" Type="String"></asp:Parameter>
                     <asp:Parameter Name="f備註" Type="String"></asp:Parameter>
                     <asp:Parameter Name="f大頭照" Type="String"></asp:Parameter>
+                    <asp:Parameter Name="f宗教" Type="String"></asp:Parameter>
                     <asp:Parameter Name="original_f床號" Type="String"></asp:Parameter>
                 </UpdateParameters>
             </asp:SqlDataSource>
-            <br />
             <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
 
-            <br />
-            <br />
 
-                    
-                    <asp:FormView ID="FormView16" runat="server" DataSourceID="SqlDataSource1" DefaultMode="Edit" Width="100%" OnItemCommand="FormView1_ItemCommand" OnItemUpdated="FormView1_ItemUpdated" DataKeyNames="f床號" OnItemUpdating="FormView16_ItemUpdating" OnItemDeleted="FormView16_ItemDeleted" OnUnload="FormView16_Unload" OnItemDeleting="FormView16_ItemDeleting">
+            <div style="text-align:right">
+<asp:Button ID="Button1" runat="server" Text="關閉"  class=" btn-primary btn"  OnClick="Button1_Click" />
+                </div>
+            <hr/>
+                    <asp:FormView ID="FormView16" runat="server" DataSourceID="SqlDataSource1" 
+                        DefaultMode="Edit" Width="100%" OnItemCommand="FormView1_ItemCommand" 
+                        OnItemUpdated="FormView1_ItemUpdated" DataKeyNames="f床號" OnItemUpdating="FormView16_ItemUpdating"
+                        OnItemDeleted="FormView16_ItemDeleted" OnUnload="FormView16_Unload"
+                         OnItemDeleting="FormView16_ItemDeleting">
                         <EditItemTemplate>
                             <table class="table table table-bordered table-condensed " style="width: 100%; align-items: center; font-size: x-large;">
                                 <tr class="info text-center h4 active">
-                                    <td class="auto-style17">&nbsp;</td>
-                                    <td colspan="2">
+                                    <td class="auto-style17" colspan="4" style="text-align:center;">
                                         <asp:Label ID="f床號Label1" runat="server" Text='<%#"床號:     "+Eval("f床號") %>' />
                                     </td>
-                                    <td class="auto-style15">&nbsp;</td>
                                 </tr>
                                 <tr>
                                     <td class="auto-style17">姓名:</td>
@@ -129,10 +133,9 @@
                                         <asp:TextBox ID="f姓名" runat="server" Text='<%# Bind("f姓名") %>' CssClass="mytbox " />
                                     </td>
                                     <td class="auto-style17">大頭照:</td>
-                                    <td class="auto-style15" rowspan="4">
-                                        <div  style="height:200px; text-align:center">
+                                    <td class="auto-style15" rowspan="4" style="text-align:center">
                                         <asp:Image ID="Image1" runat="server" CssClass="myimg"  />
-                                    </div>
+                                   
 
                                     </td>
                                 </tr>
@@ -164,7 +167,7 @@
                                         <asp:TextBox ID="f入住日期" runat="server" CssClass="mytboxdate " Text='<%# Bind("f入住日期") %>' />
                                     </td>
                                     <td class="auto-style17">新相片:</td>
-                                    <td class="auto-style15"><asp:FileUpload ID="FileUpload1" runat="server" Width="202px" />
+                                    <td class="auto-style15"><asp:FileUpload ID="FileUpload1" runat="server" Width="201px" />
                                     </td>
                                 </tr>
                                 <tr>
@@ -215,15 +218,18 @@
                                     <td class="auto-style15">
                                         <asp:TextBox ID="f耗材TextBox" runat="server" CssClass="mytbox " Text='<%# Bind("f耗材") %>' />
                                     </td>
-                                    <td class="auto-style17">其他管路: </td>
+                                    <td class="auto-style17">宗教:</td>
                                     <td class="auto-style15">
-                                        <asp:TextBox ID="f其他管路TextBox" runat="server" Text='<%# Bind("f其他管路") %>' CssClass="mytbox " />
-                                    </td>
+                                                  <asp:TextBox ID="f宗教TextBox" runat="server" CssClass="mytbox " Text='<%# Bind("f宗教") %>' />
+                              
+
+                                       </td>
                                 </tr>
                                 <tr>
-                                    <td class="auto-style17">&nbsp;</td>
+                                    <td class="auto-style17">其他管路: </td>
                                     <td class="auto-style15">
-                                        &nbsp;</td>
+                                        <asp:TextBox ID="f其他管路TextBox" runat="server" CssClass="mytbox " Text='<%# Bind("f其他管路") %>' />
+                                    </td>
                                     <td class="auto-style17">其他: </td>
                                     <td class="auto-style15">
                                         <asp:TextBox ID="f其他TextBox" runat="server" Text='<%# Bind("f其他") %>' CssClass="mytbox " />

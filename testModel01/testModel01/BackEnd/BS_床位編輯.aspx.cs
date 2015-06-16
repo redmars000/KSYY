@@ -179,6 +179,11 @@ namespace testModel01.BackEnd
 
         }
 
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            Response.Redirect(this.Page.Request.UrlReferrer.ToString());
+        }
+
    
 
   

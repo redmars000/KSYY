@@ -37,8 +37,9 @@
             background-image:url("");
             background-color:rgba(174, 239, 173, 1);
         }
-        .myimg {
+        .myimg_bed {
         width:73px;        
+        max-height:40px;
         }
         
         .auto-style3 {
@@ -500,19 +501,19 @@
             </tr>
             <tr>
                 <td class="auto-style5">
-                   <img src="../pic/床位照片/床位1%20-白.jpg"  class="myimg" />
+                   <img src="../pic/床位照片/床位1%20-白.jpg"  class="myimg_bed_bed" />
                     空床:</td>
                 <td class="auto-style6">
                     <asp:Label ID="lbl_W" runat="server" Text="Label" CssClass="auto-style3"></asp:Label>
                     <span class="auto-style3">人</span></td>
                 <td class="auto-style5">
-                           <img src="../pic/床位照片/床位1%20-綠.jpg" class="myimg"  />
+                           <img src="../pic/床位照片/床位1%20-綠.jpg" class="myimg_bed"  />
                            有人:</td>
                 <td class="auto-style6">
                     <asp:Label ID="lbl_G" runat="server" Text="Label" CssClass="auto-style3"></asp:Label>
                     <span class="auto-style3">人</span></td>
                 <td class="auto-style5">
-                           <img src="../pic/床位照片/床位1%20-藍.jpg" class="myimg" />
+                           <img src="../pic/床位照片/床位1%20-藍.jpg" class="myimg_bed" />
                            住院:</td>
                 <td class="auto-style6">
                     <asp:Label ID="lbl_B" runat="server" Text="Label" CssClass="auto-style3"></asp:Label>

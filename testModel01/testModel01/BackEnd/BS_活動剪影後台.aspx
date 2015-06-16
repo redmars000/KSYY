@@ -16,6 +16,7 @@
             border-color:rgba(112, 225, 233, 0.30);
             border-width:6px;
             border-style:ridge;
+            
             height:100%;
             max-width:150px;
             max-height:100px;

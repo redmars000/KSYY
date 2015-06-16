@@ -192,8 +192,8 @@
 
     <div class="switcher-box">
         <a href="#" class="open-switcher show-switcher"><i class="fa fa-cog fa-2x"></i></a>
-        <h4>Style Switcher</h4>
-        <span>12 Predefined Color Skins</span>
+        <h4>樣式選擇</h4>
+        <span>顏色切換</span>
         <ul class="colors-list">
             <li><a onclick="setActiveStyleSheet('blue'); return false;" title="Blue" class="blue"></a></li>
             <li><a onclick="setActiveStyleSheet('sky-blue'); return false;" title="Sky Blue" class="sky-blue"></a></li>
@@ -208,18 +208,18 @@
             <li><a onclick="setActiveStyleSheet('peach'); return false;" title="Peach" class="peach"></a></li>
             <li><a onclick="setActiveStyleSheet('beige'); return false;" title="Biege" class="beige"></a></li>
         </ul>
-        <span>Top Bar Color</span>
+        <%--<span>Top Bar Color</span>
         <select id="topbar-style" class="topbar-style">
             <option value="1">Light (Default)</option>
             <option value="2">Dark</option>
             <option value="3">Color</option>
-        </select>
-        <span>Layout Style</span>
+        </select>--%>
+        <span>預覽模式</span>
         <select id="layout-style" class="layout-style">
-            <option value="1">Wide</option>
-            <option value="2">Boxed</option>
+            <option value="1">模式1</option>
+            <option value="2">模式2</option>
         </select>
-        <span>Patterns for Boxed Version</span>
+        <span>邊緣樣式</span>
         <ul class="bg-list">
             <li><a href="#" class="bg1"></a></li>
             <li><a href="#" class="bg2"></a></li>

@@ -39,7 +39,7 @@
                         </span>
                         <a href="#" class="input-group-addon btn btn-default fileinput-exists" data-dismiss="fileinput">Remove</a>
                     </div>
-                    <asp:Button ID="btn第二張圖" runat="server" Text="確定上傳" CssClass="btn btn-primary" OnClick="btn第二張圖_Click" Font-Names="微軟正黑體"/>
+                    <asp:Button ID="btn第二張圖" runat="server" Text="確定上傳" CssClass="btn btn-primary" OnClick="btn第二張圖_Click" Font-Names="微軟正黑體" />
                     <asp:Label ID="lbl2" runat="server" Text="Label"></asp:Label>
                 </td>
             </tr>
@@ -58,7 +58,7 @@
                         </span>
                         <a href="#" class="input-group-addon btn btn-default fileinput-exists" data-dismiss="fileinput">Remove</a>
                     </div>
-                    <asp:Button ID="btn第三張圖" runat="server" Text="確定上傳" CssClass="btn btn-primary" OnClick="btn第三張圖_Click" Font-Names="微軟正黑體"/>
+                    <asp:Button ID="btn第三張圖" runat="server" Text="確定上傳" CssClass="btn btn-primary" OnClick="btn第三張圖_Click" Font-Names="微軟正黑體" />
                     <asp:Label ID="lbl3" runat="server" Text="Label"></asp:Label>
                 </td>
                 <td>
@@ -75,7 +75,7 @@
                         </span>
                         <a href="#" class="input-group-addon btn btn-default fileinput-exists" data-dismiss="fileinput">Remove</a>
                     </div>
-                    <asp:Button ID="btn第四張圖" runat="server" Text="確定上傳" CssClass="btn btn-primary" OnClick="btn第四張圖_Click" Font-Names="微軟正黑體"/>
+                    <asp:Button ID="btn第四張圖" runat="server" Text="確定上傳" CssClass="btn btn-primary" OnClick="btn第四張圖_Click" Font-Names="微軟正黑體" />
                     <asp:Label ID="lbl4" runat="server" Text="Label"></asp:Label>
                 </td>
             </tr>
@@ -90,7 +90,7 @@
                             <asp:FileUpload ID="FileUpload5" runat="server" Width="100%" />
                         </span><a class="input-group-addon btn btn-default fileinput-exists" data-dismiss="fileinput" href="#">Remove</a>
                     </div>
-                    <asp:Button ID="btn第五張圖" runat="server" CssClass="btn btn-primary" Text="確定上傳" OnClick="btn第五張圖_Click" Font-Names="微軟正黑體"/>
+                    <asp:Button ID="btn第五張圖" runat="server" CssClass="btn btn-primary" Text="確定上傳" OnClick="btn第五張圖_Click" Font-Names="微軟正黑體" />
                     <asp:Label ID="lbl5" runat="server" Text="Label"></asp:Label>
                 </td>
                 <td>
@@ -103,7 +103,7 @@
                             <asp:FileUpload ID="FileUpload6" runat="server" Width="100%" />
                         </span><a class="input-group-addon btn btn-default fileinput-exists" data-dismiss="fileinput" href="#">Remove</a>
                     </div>
-                    <asp:Button ID="btn第六張圖" runat="server" CssClass="btn btn-primary" Text="確定上傳" OnClick="btn第六張圖_Click" Font-Names="微軟正黑體"/>
+                    <asp:Button ID="btn第六張圖" runat="server" CssClass="btn btn-primary" Text="確定上傳" OnClick="btn第六張圖_Click" Font-Names="微軟正黑體" />
                     <asp:Label ID="lbl6" runat="server" Text="Label"></asp:Label>
                 </td>
             </tr>
@@ -118,7 +118,7 @@
                             <asp:FileUpload ID="FileUpload7" runat="server" Width="100%" />
                         </span><a class="input-group-addon btn btn-default fileinput-exists" data-dismiss="fileinput" href="#">Remove</a>
                     </div>
-                    <asp:Button ID="btn第七張圖" runat="server" CssClass="btn btn-primary" Text="確定上傳" OnClick="btn第七張圖_Click" Font-Names="微軟正黑體"/>
+                    <asp:Button ID="btn第七張圖" runat="server" CssClass="btn btn-primary" Text="確定上傳" OnClick="btn第七張圖_Click" Font-Names="微軟正黑體" />
                     <asp:Label ID="lbl7" runat="server" Text="Label"></asp:Label>
                 </td>
                 <td>
@@ -131,19 +131,22 @@
                             <asp:FileUpload ID="FileUpload8" runat="server" Width="100%" />
                         </span><a class="input-group-addon btn btn-default fileinput-exists" data-dismiss="fileinput" href="#">Remove</a>
                     </div>
-                    <asp:Button ID="btn第八張圖" runat="server" CssClass="btn btn-primary" Text="確定上傳" OnClick="btn第八張圖_Click" Font-Names="微軟正黑體"/>
+                    <asp:Button ID="btn第八張圖" runat="server" CssClass="btn btn-primary" Text="確定上傳" OnClick="btn第八張圖_Click" Font-Names="微軟正黑體" />
                     <asp:Label ID="lbl8" runat="server" Text="Label"></asp:Label>
                 </td>
             </tr>
         </table>
 
 
-        
+
 
 
         <br />
-        <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" CssClass="table table-bordered table-hover" DataKeyNames="fId" DataSourceID="SqlDataSource1" Font-Names="微軟正黑體" Font-Size="Medium" Width="100%">
-            <Columns>
+        <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
+        <asp:UpdatePanel ID="UpdatePanel1" runat="server">
+            <ContentTemplate>
+            <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" CssClass="table table-bordered table-hover" DataKeyNames="fId" DataSourceID="SqlDataSource1" Font-Names="微軟正黑體" Font-Size="Medium" Width="100%">
+                <columns>
                 <asp:TemplateField ShowHeader="False">
                     <EditItemTemplate>
                         <asp:LinkButton ID="LinkButton1" runat="server" CausesValidation="True" CommandName="Update" OnClientClick="return confirm('確定要更新嗎?')" Text="更新"></asp:LinkButton>
@@ -161,25 +164,28 @@
                 <asp:BoundField DataField="fConnection" HeaderText="網址" SortExpression="fConnection">
                 <HeaderStyle CssClass="info text-center" />
                 </asp:BoundField>
-            </Columns>
-        </asp:GridView>
-        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:dbKSYYConnectionString %>" DeleteCommand="DELETE FROM [t連結] WHERE [fId] = @fId" InsertCommand="INSERT INTO [t連結] ([fName], [fConnection]) VALUES (@fName, @fConnection)" SelectCommand="SELECT [fId], [fName], [fConnection] FROM [t連結]" UpdateCommand="UPDATE [t連結] SET [fName] = @fName, [fConnection] = @fConnection WHERE [fId] = @fId">
-            <DeleteParameters>
+            </columns>
+            </asp:GridView>
+                </ContentTemplate>
+            </asp:UpdatePanel>
+
+            <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:dbKSYYConnectionString %>" DeleteCommand="DELETE FROM [t連結] WHERE [fId] = @fId" InsertCommand="INSERT INTO [t連結] ([fName], [fConnection]) VALUES (@fName, @fConnection)" SelectCommand="SELECT [fId], [fName], [fConnection] FROM [t連結]" UpdateCommand="UPDATE [t連結] SET [fName] = @fName, [fConnection] = @fConnection WHERE [fId] = @fId">
+                <deleteparameters>
                 <asp:Parameter Name="fId" Type="Int32" />
-            </DeleteParameters>
-            <InsertParameters>
+            </deleteparameters>
+                <insertparameters>
                 <asp:Parameter Name="fName" Type="String" />
                 <asp:Parameter Name="fConnection" Type="String" />
-            </InsertParameters>
-            <UpdateParameters>
+            </insertparameters>
+                <updateparameters>
                 <asp:Parameter Name="fName" Type="String" />
                 <asp:Parameter Name="fConnection" Type="String" />
                 <asp:Parameter Name="fId" Type="Int32" />
-            </UpdateParameters>
-        </asp:SqlDataSource>
-
-
+            </updateparameters>
+            </asp:SqlDataSource>
         
+
+
 
 
     </div>

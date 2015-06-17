@@ -837,7 +837,6 @@
     </Compile>
     <Compile Include="BackEnd\BS_連結.aspx.cs">
       <DependentUpon>BS_連結.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="BackEnd\BS_連結.aspx.designer.cs">
       <DependentUpon>BS_連結.aspx</DependentUpon>

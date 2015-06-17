@@ -84,6 +84,7 @@
     <Content Include="BackEnd\BS_收費標準表.aspx" />
     <Content Include="BackEnd\BS_收費標準表Content.aspx" />
     <Content Include="BackEnd\BS_收費標準表Edit.aspx" />
+    <Content Include="BackEnd\BS_連結.aspx" />
     <Content Include="BackEnd\BS_關於康欣.aspx" />
     <Content Include="BackEnd\BS_床位顯示_地圖.aspx" />
     <Content Include="BackEnd\WebForm7.aspx" />
@@ -696,7 +697,6 @@
     <Content Include="bin\testModel01.dll.config" />
     <Content Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
     <Content Include="obj\Debug\testModel01.csprojResolveAssemblyReference.cache" />
-    <Content Include="BackEnd\BS_Site.Master" />
     <Content Include="fonts\fontawesome-webfont.woff" />
     <Content Include="fonts\fontawesome-webfont.ttf" />
     <Content Include="fonts\fontawesome-webfont.eot" />
@@ -713,6 +713,7 @@
     <Content Include="Content\FrontEndCSS\css\bootstrap-theme.css.map" />
     <Content Include="Content\FrontEndCSS\css\bootstrap.css.map" />
     <Content Include="FrontEnd\Site.Master" />
+    <Content Include="BackEnd\BS_Site.Master" />
     <None Include="Scripts\jquery-1.9.1.intellisense.js" />
     <Content Include="pic\ADD.png" />
     <Content Include="pic\empty.png" />
@@ -833,6 +834,13 @@
     </Compile>
     <Compile Include="BackEnd\BS_入住事項.aspx.designer.cs">
       <DependentUpon>BS_入住事項.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BackEnd\BS_連結.aspx.cs">
+      <DependentUpon>BS_連結.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackEnd\BS_連結.aspx.designer.cs">
+      <DependentUpon>BS_連結.aspx</DependentUpon>
     </Compile>
     <Compile Include="BackEnd\BS_關於康欣.aspx.cs">
       <DependentUpon>BS_關於康欣.aspx</DependentUpon>

@@ -788,7 +788,6 @@
     </Compile>
     <Compile Include="BackEnd\BS_前台輪播編輯.aspx.cs">
       <DependentUpon>BS_前台輪播編輯.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="BackEnd\BS_前台輪播編輯.aspx.designer.cs">
       <DependentUpon>BS_前台輪播編輯.aspx</DependentUpon>

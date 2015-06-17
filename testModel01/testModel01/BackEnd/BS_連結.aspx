@@ -158,12 +158,24 @@
                     <ControlStyle Width="50px" />
                 </asp:TemplateField>
                 <asp:BoundField DataField="fId" HeaderText="fId" InsertVisible="False" ReadOnly="True" SortExpression="fId" Visible="False" />
-                <asp:BoundField DataField="fName" HeaderText="網站名稱" SortExpression="fName">
-                <HeaderStyle CssClass="info text-center" />
-                </asp:BoundField>
-                <asp:BoundField DataField="fConnection" HeaderText="網址" SortExpression="fConnection">
-                <HeaderStyle CssClass="info text-center" />
-                </asp:BoundField>
+                    <asp:TemplateField HeaderText="網站名稱" SortExpression="fName">
+                        <EditItemTemplate>
+                            <asp:TextBox ID="TextBox1" runat="server" Text='<%# Bind("fName") %>' Width="100%"></asp:TextBox>
+                        </EditItemTemplate>
+                        <ItemTemplate>
+                            <asp:Label ID="Label1" runat="server" Text='<%# Bind("fName") %>'></asp:Label>
+                        </ItemTemplate>
+                        <HeaderStyle CssClass="info text-center" />
+                    </asp:TemplateField>
+                    <asp:TemplateField HeaderText="網址" SortExpression="fConnection">
+                        <EditItemTemplate>
+                            <asp:TextBox ID="TextBox2" runat="server" Text='<%# Bind("fConnection") %>' Width="100%"></asp:TextBox>
+                        </EditItemTemplate>
+                        <ItemTemplate>
+                            <asp:Label ID="Label2" runat="server" Text='<%# Bind("fConnection") %>'></asp:Label>
+                        </ItemTemplate>
+                        <HeaderStyle CssClass="info text-center" />
+                    </asp:TemplateField>
             </columns>
             </asp:GridView>
                 </ContentTemplate>

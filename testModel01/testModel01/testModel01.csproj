@@ -61,14 +61,6 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Data\KSYY.mdf" />
-    <Content Include="App_Data\KSYY_log.ldf">
-      <DependentUpon>KSYY.mdf</DependentUpon>
-    </Content>
-    <Content Include="App_Data\dbKYSS.mdf" />
-    <Content Include="App_Data\dbKYSS_log.ldf">
-      <DependentUpon>dbKYSS.mdf</DependentUpon>
-    </Content>
     <Content Include="AssessFile\word.png" />
     <Content Include="BackEndImg\BackEndImg01.jpg" />
     <Content Include="BackEnd\BS_Main.aspx" />
@@ -788,6 +780,7 @@
     </Compile>
     <Compile Include="BackEnd\BS_前台輪播編輯.aspx.cs">
       <DependentUpon>BS_前台輪播編輯.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="BackEnd\BS_前台輪播編輯.aspx.designer.cs">
       <DependentUpon>BS_前台輪播編輯.aspx</DependentUpon>
@@ -836,6 +829,7 @@
     </Compile>
     <Compile Include="BackEnd\BS_連結.aspx.cs">
       <DependentUpon>BS_連結.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="BackEnd\BS_連結.aspx.designer.cs">
       <DependentUpon>BS_連結.aspx</DependentUpon>

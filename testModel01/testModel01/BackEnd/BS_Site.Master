@@ -90,6 +90,7 @@
                     </li>     
                 </ul>
                 <footer class="footer">
+                    <asp:Button ID="Button1" runat="server" Text="登出" OnClick="Button1_Click" OnClientClick="if (confirm('確定登出。')==false) {return false;}" />
                     <div>
                         <p class="text-muted">
                             &copy; <%: DateTime.Now.Year %> - KSYY<br />

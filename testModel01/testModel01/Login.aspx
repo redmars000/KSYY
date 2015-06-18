@@ -24,11 +24,11 @@
 </head>
 <body>
     <div id="wrap">
-        <img class="bgfade" src="loginImg/1.jpg">
-        <img class="bgfade" src="loginImg/2.jpg">
-        <img class="bgfade" src="loginImg/3.jpg">
-        <img class="bgfade" src="loginImg/4.jpg">
-        <img class="bgfade" src="loginImg/5.jpg">
+        <img class="bgfade" src="loginImg/1.jpg" />
+        <img class="bgfade" src="loginImg/2.jpg"/>
+        <img class="bgfade" src="loginImg/3.jpg"/>
+        <img class="bgfade" src="loginImg/4.jpg"/>
+        <img class="bgfade" src="loginImg/5.jpg"/>
     </div>
     <div class="container">
         <form class="form-signin" role="form" runat="server">
@@ -53,7 +53,7 @@
             </table>
               <p class="text-muted">
                             &copy; <%: DateTime.Now.Year %> - KSYY<br />
-                            <a id="A1" runat="server" href="~/BackEnd/BS_Main.aspx">回首頁</a>
+                            <a id="A1" runat="server" href="/./BackEnd/BS_Main.aspx">回首頁</a>
                         </p>
         </form>
     </div>

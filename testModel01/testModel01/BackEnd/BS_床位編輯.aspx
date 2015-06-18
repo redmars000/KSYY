@@ -6,8 +6,8 @@
 <head runat="server">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title></title>
-    <link href="../Content/bootstrap.css" rel="stylesheet" />
-    <link href="../Content/jquery-ui.css" rel="stylesheet" />
+    <link href="/./Content/bootstrap.css" rel="stylesheet" />
+    <link href="/./Content/jquery-ui.css" rel="stylesheet" />
 
     <style type="text/css">
         
@@ -49,10 +49,10 @@
 
     </style>
 
-    <script src="../Scripts/jquery-1.9.1.js"></script>
-    <script src="../Scripts/jquery-ui.js"></script>
-    <script src="../Scripts/bootstrap.js"></script>
-    <script src="../Scripts/jquery.ui.datepicker-zh-TW.js"></script>
+    <script src="/./Scripts/jquery-1.9.1.js"></script>
+    <script src="/./Scripts/jquery-ui.js"></script>
+    <script src="/./Scripts/bootstrap.js"></script>
+    <script src="/./Scripts/jquery.ui.datepicker-zh-TW.js"></script>
 
 </head>
 <body>

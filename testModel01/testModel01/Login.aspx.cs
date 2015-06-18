@@ -30,7 +30,7 @@ namespace testModel01
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-            string str_Data_Source = WebConfigurationManager.OpenWebConfiguration("/dbKSYYConnectionString").ConnectionStrings.ConnectionStrings["dbKSYYConnectionString"].ConnectionString;//家2
+            string str_Data_Source = WebConfigurationManager.OpenWebConfiguration("/testModel01").ConnectionStrings.ConnectionStrings["dbKSYYConnectionString"].ConnectionString;//家2
             DataView dn;
 
             try

@@ -1,7 +1,7 @@
 ﻿<%@ Page Title="收費標準" Language="C#" MasterPageFile="~/FrontEnd/Site.Master" AutoEventWireup="true" CodeBehind="收費標準.aspx.cs" Inherits="testModel01.WebForm4" %>
 
 <asp:Content ID="HeadContent" ContentPlaceHolderID="HeadContent" runat="server">
-    <div class="page-banner" style="padding:40px 0; background: url(../../images/banner.jpg) center #f9f9f9;">
+    <div class="page-banner" style="padding:40px 0; background: url(/./images/banner.jpg) center #f9f9f9;">
       <div class="container">
         <div class="row">
           <div class="col-md-6">
@@ -10,7 +10,7 @@
           </div>
           <div class="col-md-6">
             <ul class="breadcrumbs">
-              <li><a href="Main.aspx">首頁</a></li>
+              <li><a href="/./FrontEnd/Main.aspx">首頁</a></li>
               <li>收費標準</li>
             </ul>
           </div>
@@ -96,8 +96,8 @@
         <div class="hr1 margin-60"></div>
         <h4 class="classic-title" id="日常照護收費評估表"><span>日常照護收費評估表</span></h4>
         <div>            
-            <a href="../AssessFile/assess.doc">
-                <img title="下載住民日常照護收費評估表.doc" src="../AssessFile/word.png" width="80" />
+            <a href="/./AssessFile/assess.doc">
+                <img title="下載住民日常照護收費評估表.doc" src="/./AssessFile/word.png" width="80" />
                 <span>康欣老人長期照顧中心 日常照護收費評估表</span>
             </a>
             <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>

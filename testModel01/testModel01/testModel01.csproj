@@ -579,8 +579,6 @@
     <Content Include="headImg\1.jpg" />
     <Content Include="headImg\2.jpg" />
     <Content Include="headImg\3.jpg" />
-    <Content Include="headImg\4.jpg" />
-    <Content Include="headImg\5.jpg" />
     <Content Include="Icon.png" />
     <Content Include="Login.aspx" />
     <Content Include="loginImg\2.jpg" />

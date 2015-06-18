@@ -7,18 +7,18 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title><%: Page.Title %> - backStage_WebForm</title>
 
-    <link href="../Content/bootstrap.css" rel="stylesheet" />
-    <link href="../Content/Sidebar.css" rel="stylesheet" />
-    <link href="../Content/BackEndUI.css" rel="stylesheet" />
-    <script src="../Scripts/jquery-1.9.1.js"></script>
-    <script src="../Scripts/bootstrap.js"></script>
-    <script src="../Scripts/Sidebar.js"></script>
-    <script src="../Scripts/BackEndUI.js"></script>    
+    <link href="/./Content/bootstrap.css" rel="stylesheet" />
+    <link href="/./Content/Sidebar.css" rel="stylesheet" />
+    <link href="/./Content/BackEndUI.css" rel="stylesheet" />
+    <script src="/./Scripts/jquery-1.9.1.js"></script>
+    <script src="/./Scripts/bootstrap.js"></script>
+    <script src="/./Scripts/Sidebar.js"></script>
+    <script src="/./Scripts/BackEndUI.js"></script>    
 
 </head>
 <body>
     <div id="wrap">
-        <img class="bgfade" src="../BackEndImg/BackEndImg01.jpg">
+        <img class="bgfade" src="/./BackEndImg/BackEndImg01.jpg">
     </div>
 
     <form id="form1" runat="server">        
@@ -28,7 +28,7 @@
                 <ul class="nav sidebar-nav main-menu">
                     <li class="sidebar-brand" style="height: 150px">
                         <div style="margin-top: 30px; text-align:center">
-                            <img src="../BackEndImg/ks.png" />
+                            <img src="/./BackEndImg/ks.png" />
                         </div>
                     </li>
                     <li>

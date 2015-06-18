@@ -250,7 +250,7 @@ namespace testModel01
              sql, con);
             cmd4.Parameters.AddWithValue("@大欄位名稱", str_大欄位名稱);
             cmd4.Parameters.AddWithValue("@判斷欄位", str_檔案名稱);
-            cmd4.Parameters.AddWithValue("@小欄位值", @"\..\pic\康欣_照片\" + str_資料夾 + "\\" + str_檔案名稱_temp);
+            cmd4.Parameters.AddWithValue("@小欄位值", @"\.\pic\康欣_照片\" + str_資料夾 + "\\" + str_檔案名稱_temp);
             cmd4.Parameters.AddWithValue("@大欄位值", str_檔案名稱_temp);
             cmd4.ExecuteNonQuery();
             con.Close();

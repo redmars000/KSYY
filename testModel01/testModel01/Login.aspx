@@ -53,7 +53,7 @@
             </table>
               <p class="text-muted">
                             &copy; <%: DateTime.Now.Year %> - KSYY<br />
-                            <a id="A1" runat="server" href="/./BackEnd/BS_Main.aspx">回首頁</a>
+                            <a id="A1" runat="server" href="/./FrontEnd/Main.aspx">回首頁</a>
                         </p>
         </form>
     </div>

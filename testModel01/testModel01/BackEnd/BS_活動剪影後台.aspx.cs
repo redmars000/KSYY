@@ -5,6 +5,7 @@ using System.Data.SqlClient;
 using System.IO;
 using System.Linq;
 using System.Web;
+using System.Web.Configuration;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
@@ -26,11 +27,12 @@ namespace testModel01
         {
             UnobtrusiveValidationMode = UnobtrusiveValidationMode.None;
      //   str_ConnectionString = @"Data Source=CR4-17\MSSQLSERVER2013;Initial Catalog=dbKSYY;Integrated Security=True";
-            str_ConnectionString = @"Data Source=SHAWN-PC;Integrated Security=SSPI;Initial Catalog=dbKSYY";
+            //str_ConnectionString = @"Data Source=SHAWN-PC;Integrated Security=SSPI;Initial Catalog=dbKSYY";
+            str_ConnectionString = WebConfigurationManager.OpenWebConfiguration("/testModel01").ConnectionStrings.ConnectionStrings["dbKSYYConnectionString"].ConnectionString;
        //     str_ConnectionString = @" Data Source=WIN-R56ALTBAKPC\SQLEXPRESS;Initial Catalog=dbKSYY;Integrated Security=True";
         //    str_datasoure = @"WIN-R56ALTBAKPC\SQLEXPRESS";
  //                str_datasoure = @"CR4-17\MSSQLSERVER2013";        
-            str_datasoure = @"SHAWN-PC";
+            str_datasoure = @"tcp:jbnuza6r3k.database.windows.net,1433";
             str_InitialCatalog = "dbKSYY";
 
             int_witchphoto = Convert.ToInt32(Request.QueryString["witchphoto"]);
@@ -190,7 +192,7 @@ namespace testModel01
                          "gif".Equals(postedFile.FileName.Substring(postedFile.FileName.LastIndexOf(".") + 1).ToLower()))
                 {
                     c_loadpic.Loadpic(postedFile);
-                    postedFile.SaveAs(Server.MapPath(@"~\pic\康欣_照片\" + str_folder[int_witchphoto] + "\\" + postedFile.FileName));
+                    postedFile.SaveAs(Server.MapPath(@"\.\pic\康欣_照片\" + str_folder[int_witchphoto] + "\\" + postedFile.FileName));
                 }
             }
 

@@ -18,14 +18,16 @@ namespace testModel01
         {
             //string path = Server.MapPath("..");
             //FileUpload1.SaveAs(path + @"\AssessFile\assess.doc");
-            FileUpload1.SaveAs(@"\.\AssessFile\assess.doc");
+	        string path = Server.MapPath( @"\.\AssessFile\assess.doc");
+            FileUpload1.SaveAs(path);
         }
 
         protected void btn上傳收費評估表_Click(object sender, EventArgs e)
         {
             //string path = Server.MapPath("..");
             //FileUpload_收費評估表.SaveAs(path + @"\AssessFile\123.xlsx");
-            FileUpload_收費評估表.SaveAs(@"\.\AssessFile\123.xlsx");
+	        string path = Server.MapPath( @"\.\AssessFile\123.xlsx");
+            FileUpload_收費評估表.SaveAs(path);
         }                
     }
 }

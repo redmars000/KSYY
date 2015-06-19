@@ -21,7 +21,8 @@ namespace testModel01
         {
             //string path = Server.MapPath("..");
             //path += @"\AssessFile\123.xlsx";
-            string path = @"\.\AssessFile\123.xlsx";
+            //string path = @"\.\AssessFile\123.xlsx";
+            string path = Server.MapPath( @"\.\AssessFile\123.xlsx");
             string con = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" + path + ";Extended Properties='Excel 12.0;HDR=YES;IMEX=1'";
             OleDbConnection conn = new OleDbConnection(con);
 

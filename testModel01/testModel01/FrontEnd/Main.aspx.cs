@@ -99,7 +99,7 @@ namespace testModel01
                     strLatestNewsSub += sdrLatestNews["fSubject"].ToString() + "</a></h3>";
                     strLatestNewsSub += "<div class='post-content'>";
                     strLatestNewsSub += "<p>";
-                    strLatestNewsSub += sdrLatestNews["fPreview"].ToString() + "<br/><a class='read-more' href='最新消息內容.aspx?fid=" + sdrLatestNews["fid"].ToString() + "'>Read More...</a>";
+                    strLatestNewsSub += sdrLatestNews["fPreview"].ToString() + "<br/><a class='read-more' href='/./FrontEnd/最新消息內容.aspx?fid=" + sdrLatestNews["fid"].ToString() + "'>Read More...</a>";
                     strLatestNewsSub += "</p>";
                     strLatestNewsSub += "</div>";
                     strLatestNewsSub += "<div class='hr1 margin-60'></div>";

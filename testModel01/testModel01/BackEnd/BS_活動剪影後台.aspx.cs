@@ -14,8 +14,8 @@ namespace testModel01
     public partial class WebForm10 : System.Web.UI.Page
     {
         string Str_Date = string.Format("{0}", DateTime.Now.Year) + "-" + string.Format("{0}", DateTime.Now.Month) + "-" + string.Format("{0}", DateTime.Now.Day);
-        string str_datasoure;
-        string str_InitialCatalog;
+        //string str_datasoure;
+        //string str_InitialCatalog;
         int int_witchphoto;
         int int_pageId;
         string str_ConnectionString;
@@ -32,8 +32,8 @@ namespace testModel01
        //     str_ConnectionString = @" Data Source=WIN-R56ALTBAKPC\SQLEXPRESS;Initial Catalog=dbKSYY;Integrated Security=True";
         //    str_datasoure = @"WIN-R56ALTBAKPC\SQLEXPRESS";
  //                str_datasoure = @"CR4-17\MSSQLSERVER2013";        
-            str_datasoure = @"tcp:jbnuza6r3k.database.windows.net,1433";
-            str_InitialCatalog = "dbKSYY";
+            //str_datasoure = @"tcp:jbnuza6r3k.database.windows.net,1433";
+            //str_InitialCatalog = "dbKSYY";
 
             int_witchphoto = Convert.ToInt32(Request.QueryString["witchphoto"]);
             
@@ -180,7 +180,7 @@ namespace testModel01
    //上傳
         protected void Btn_上傳_Click(object sender, EventArgs e)
         {
-            c_loadPhoto c_loadpic = new c_loadPhoto(str_datasoure, str_InitialCatalog,
+            c_loadPhoto c_loadpic = new c_loadPhoto(str_ConnectionString,
        str_schema[int_witchphoto] + "l", str_schema[int_witchphoto] + "s", str_folder[int_witchphoto]);
  
             foreach (HttpPostedFile postedFile in FileUpload1.PostedFiles)
@@ -206,20 +206,21 @@ namespace testModel01
 
     class c_loadPhoto
     {
-        SqlConnectionStringBuilder Scsb;
-        string str_datasoure;
-        string str_InitialCatalog;
+        //SqlConnectionStringBuilder Scsb;
+        //string str_datasoure;
+        //string str_InitialCatalog;
         string str_ConnectionString;
         HttpPostedFile postedFile;
         string str_大欄位名稱;
         string str_大欄位名稱_temp;
         string str_小欄位名稱;
         string str_資料夾;
-        public c_loadPhoto(string str_datasoure, string str_InitialCatalog,
+        public c_loadPhoto(string str_ConnectionString,
             string str_大欄位名稱, string str_小欄位名稱, string str_資料夾)
         {// 建構子  給上傳用
-            this.str_datasoure = str_datasoure;
-            this.str_InitialCatalog = str_InitialCatalog;
+            //this.str_datasoure = str_datasoure;
+            //this.str_InitialCatalog = str_InitialCatalog;
+            this.str_ConnectionString = str_ConnectionString;
             this.str_大欄位名稱 = str_大欄位名稱;
             this.str_小欄位名稱 = str_小欄位名稱;
             this.str_資料夾 = str_資料夾;
@@ -234,28 +235,38 @@ namespace testModel01
         {
             this.postedFile = postedFile;
             string str_檔案名稱;
-            Scsb = new SqlConnectionStringBuilder();
-            Scsb.DataSource = str_datasoure;
-            Scsb.InitialCatalog = str_InitialCatalog;
-            Scsb.IntegratedSecurity = true;
-            SqlConnection con = new SqlConnection(Scsb.ToString());
+
+
+            SqlDataSource sds = new SqlDataSource();
+            sds.ConnectionString = str_ConnectionString;
+            
+            //Scsb = new SqlConnectionStringBuilder();
+            //Scsb.DataSource = str_datasoure;
+            //Scsb.InitialCatalog = str_InitialCatalog;
+            //Scsb.IntegratedSecurity = true;
+            //SqlConnection con = new SqlConnection(Scsb.ToString());
 
             str_檔案名稱 = postedFile.FileName;
             string str_檔案名稱_temp = str_檔案名稱;
-            con.Open();
+            //con.Open();
 
             string sql =
                  "if not exists(Select * from T康欣_活動剪影 where @大欄位名稱=@判斷欄位)" +
              "Insert into T康欣_活動剪影(" + str_小欄位名稱 + "," + str_大欄位名稱_temp +
              ")  values(@小欄位值,@大欄位值)";
-            SqlCommand cmd4 = new SqlCommand(
-             sql, con);
-            cmd4.Parameters.AddWithValue("@大欄位名稱", str_大欄位名稱);
-            cmd4.Parameters.AddWithValue("@判斷欄位", str_檔案名稱);
-            cmd4.Parameters.AddWithValue("@小欄位值", @"\.\pic\康欣_照片\" + str_資料夾 + "\\" + str_檔案名稱_temp);
-            cmd4.Parameters.AddWithValue("@大欄位值", str_檔案名稱_temp);
-            cmd4.ExecuteNonQuery();
-            con.Close();
+            //SqlCommand cmd4 = new SqlCommand(sql, con);
+            sds.SelectParameters.Add("大欄位名稱", str_大欄位名稱);
+            sds.SelectParameters.Add("判斷欄位", str_檔案名稱);
+            sds.SelectParameters.Add("小欄位值", @"\.\pic\康欣_照片\" + str_資料夾 + "\\" + str_檔案名稱_temp);
+            sds.SelectParameters.Add("大欄位值", str_檔案名稱_temp);
+            sds.SelectCommand = sql;
+            sds.Select(DataSourceSelectArguments.Empty);
+            //cmd4.Parameters.AddWithValue("@大欄位名稱", str_大欄位名稱);
+            //cmd4.Parameters.AddWithValue("@判斷欄位", str_檔案名稱);
+            //cmd4.Parameters.AddWithValue("@小欄位值", @"\.\pic\康欣_照片\" + str_資料夾 + "\\" + str_檔案名稱_temp);
+            //cmd4.Parameters.AddWithValue("@大欄位值", str_檔案名稱_temp);
+            //cmd4.ExecuteNonQuery();
+            //con.Close();
         }
 
 

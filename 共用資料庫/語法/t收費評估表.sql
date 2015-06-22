@@ -32,11 +32,11 @@ insert into t收費評估表 values
 (NULL,'完全依賴、行走全程配陪伴','C',NULL),
 ('8)翻身','可自行翻身','A',NULL),
 (NULL,'需協助翻身','B',NULL),
-(NULL,NULL,NULL,NULL),
-('失智者CDR表評估為:',NULL,NULL,NULL),  
+(NULL,NULL,NULL,NULL), 
 ('分級標準','一個C以上,照護費為 3000 元',NULL,NULL),
 (NULL,'三個B以上無C項者照護費為1500元',NULL,NULL),
 (NULL,'二個B以下照護費為0元',NULL,NULL),
+('失智者CDR表評估為:',NULL,NULL,NULL), 
 ('1分輕度(30000元)',NULL,NULL,NULL),
 ('2分中度(35000元)',NULL,NULL,NULL),
 ('3分重度(40000元)',NULL,NULL,NULL)

@@ -17,7 +17,7 @@ namespace testModel01
             if (Session["login"] != null)
             {
                 if (Session["login"].ToString() == "已登入")
-                    Response.Redirect(@"BackEnd\BS_Main.aspx");
+                    Response.Redirect(@"BackEnd\BS_關於康欣.aspx");
             }
             //cookie 記住我
 
@@ -43,7 +43,7 @@ namespace testModel01
                 {
                     Session["login"] = "已登入";
                     dn = null;
-                    Response.Redirect(@"BackEnd\BS_Main.aspx");
+                    Response.Redirect(@"BackEnd\BS_關於康欣.aspx");
                 }
                 else
                 {

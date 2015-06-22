@@ -103,7 +103,16 @@
             <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
             <asp:UpdatePanel ID="UpdatePanel1" runat="server">
                 <ContentTemplate>
-                    <asp:GridView ID="GridView1" runat="server" CssClass="table table-bordered table-hover table-striped" ShowHeader="False" Width="100%"></asp:GridView>
+                    <asp:SqlDataSource ID="SqlDataSource3" runat="server" ConnectionString='<%$ ConnectionStrings:dbKSYYConnectionString %>' SelectCommand="SELECT * FROM [t收費評估表]"></asp:SqlDataSource>
+                    <asp:GridView ID="GridView1" runat="server" CssClass="table table-bordered table-hover table-striped" ShowHeader="False" Width="100%" AutoGenerateColumns="False" DataKeyNames="f1" DataSourceID="SqlDataSource3">
+                        <Columns>
+                            <asp:BoundField DataField="f1" HeaderText="f1" ReadOnly="True" InsertVisible="False" SortExpression="f1" Visible="False"></asp:BoundField>
+                            <asp:BoundField DataField="f2" HeaderText="f2" SortExpression="f2"></asp:BoundField>
+                            <asp:BoundField DataField="f3" HeaderText="f3" SortExpression="f3"></asp:BoundField>
+                            <asp:BoundField DataField="f4" HeaderText="f4" SortExpression="f4"></asp:BoundField>
+                            <asp:BoundField DataField="f5" HeaderText="f5" SortExpression="f5"></asp:BoundField>
+                        </Columns>
+                    </asp:GridView>
                     <asp:Timer ID="Timer1" runat="server" OnTick="Timer1_Tick" Interval="1000"></asp:Timer>
                 </ContentTemplate>
             </asp:UpdatePanel>

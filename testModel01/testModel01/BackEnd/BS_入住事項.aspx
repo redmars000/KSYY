@@ -25,8 +25,8 @@
             <Columns>
                 <asp:BoundField DataField="fId" HeaderText="fId" InsertVisible="False" ReadOnly="True" SortExpression="fId" Visible="false" />
 
-                <asp:BoundField DataField="fNo" HeaderText="編號" SortExpression="fNo" HtmlEncode="False">
-                    <HeaderStyle CssClass="info text-center" Font-Bold="True" Font-Size="Large" />
+                <asp:BoundField DataField="fNo" HeaderText="編號" SortExpression="fNo" HtmlEncode="False" >
+                    <HeaderStyle CssClass="info text-center" Font-Bold="True" Font-Size="Large" Width="80px" />
                     <ItemStyle CssClass="text-left" Font-Size="Medium" />
                 </asp:BoundField>
 
@@ -44,7 +44,7 @@
                 </asp:TemplateField>
 
                 <asp:TemplateField HeaderText="刪除">
-                    <HeaderStyle CssClass="info text-center" Font-Bold="True" Font-Size="Larger" />
+                    <HeaderStyle CssClass="info text-center" Font-Bold="True" Font-Size="Larger" Width="80px"/>
                     <ItemStyle CssClass="text-center" Font-Size="Medium" />
                     <ItemTemplate>
                         <asp:ImageButton ID="ImageButton1" runat="server" CommandName="Delete" ImageUrl="~/pic/delete32x32.png" OnClientClick="return confirm('確定要刪除?')" ToolTip="點我刪除" />

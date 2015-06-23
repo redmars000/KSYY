@@ -46,15 +46,23 @@
                 <asp:Parameter Name="f1" Type="Int32" />
             </UpdateParameters>
         </asp:SqlDataSource>
-        <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" CssClass="table table-bordered table-hover" ShowHeader="False" DataKeyNames="f1" DataSourceID="SqlDataSource1">
+        <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" CssClass="table table-bordered table-hover" ShowHeader="False" DataKeyNames="f1" DataSourceID="SqlDataSource1" Font-Names="微軟正黑體">
             <Columns>
                 <asp:BoundField DataField="f1" HeaderText="f1" InsertVisible="False" ReadOnly="True" SortExpression="f1" Visible="False" />
                 <asp:BoundField DataField="f2" HeaderText="f2" SortExpression="f2" />
                 <asp:BoundField DataField="f3" HeaderText="f3" SortExpression="f3" />
-                <asp:BoundField DataField="f4" HeaderText="f4" SortExpression="f4" />
+                <asp:TemplateField HeaderText="f4" SortExpression="f4">
+                    <EditItemTemplate>
+                        <asp:TextBox runat="server" Text='<%# Bind("f4") %>' ID="TextBox2" Width="200px"></asp:TextBox>
+                    </EditItemTemplate>
+                    <ItemTemplate>
+                        <asp:Label runat="server" Text='<%# Bind("f4") %>' ID="Label2"></asp:Label>
+                    </ItemTemplate>
+                </asp:TemplateField>
+
                 <asp:TemplateField HeaderText="f5" SortExpression="f5">
                     <EditItemTemplate>
-                        <asp:TextBox ID="TextBox1" runat="server" Text='<%# Bind("f5") %>'></asp:TextBox>
+                        <asp:TextBox ID="TextBox1" runat="server" Text='<%# Bind("f5") %>' Width="200px"></asp:TextBox>
                     </EditItemTemplate>
                     <ItemTemplate>
                         <asp:Label ID="Label1" runat="server" Text='<%# Bind("f5") %>'></asp:Label>
@@ -62,12 +70,14 @@
                 </asp:TemplateField>
                 <asp:TemplateField ShowHeader="False">
                     <EditItemTemplate>
-                        <asp:LinkButton ID="LinkButton1" runat="server" CausesValidation="True" CommandName="Update" Text="更新"></asp:LinkButton>
-                        &nbsp;<asp:LinkButton ID="LinkButton2" runat="server" CausesValidation="False" CommandName="Cancel" Text="取消"></asp:LinkButton>
+                        <asp:LinkButton ID="LinkButton1" runat="server" CausesValidation="True" CommandName="Update" Text="更新" ForeColor="Red" Font-Bold="true"></asp:LinkButton>
+                        &nbsp;<asp:LinkButton ID="LinkButton2" runat="server" CausesValidation="False" CommandName="Cancel" Text="取消" ForeColor="Red" Font-Bold="true"></asp:LinkButton>
+
                     </EditItemTemplate>
                     <ItemTemplate>
-                        <asp:LinkButton ID="LinkButton1" runat="server" CausesValidation="False" CommandName="Edit" Text="編輯"></asp:LinkButton>
+                        <asp:LinkButton ID="LinkButton1" runat="server" CausesValidation="False" CommandName="Edit" Text="編輯" ></asp:LinkButton>
                         &nbsp;<asp:LinkButton ID="LinkButton2" runat="server" CausesValidation="False" CommandName="Delete" OnClientClick="return confirm('確定要刪除嗎?')" Text="刪除"></asp:LinkButton>
+
                     </ItemTemplate>
                 </asp:TemplateField>
             </Columns>

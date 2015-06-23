@@ -113,7 +113,7 @@
                             <asp:BoundField DataField="f5" HeaderText="f5" SortExpression="f5"></asp:BoundField>
                         </Columns>
                     </asp:GridView>
-                    <asp:Timer ID="Timer1" runat="server" OnTick="Timer1_Tick" Interval="1000"></asp:Timer>
+                    <asp:Timer ID="Timer1" runat="server" OnTick="Timer1_Tick" Interval="5000"></asp:Timer>
                 </ContentTemplate>
             </asp:UpdatePanel>
         </div>

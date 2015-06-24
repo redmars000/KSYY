@@ -74,3 +74,10 @@ C:\Users\redmars\Desktop\kerker\123\testModel01\testModel01\bin\CKEditor.NET.pdb
 C:\Users\redmars\Desktop\kerker\123\testModel01\testModel01\obj\Debug\testModel01.csprojResolveAssemblyReference.cache
 C:\Users\redmars\Desktop\kerker\123\testModel01\testModel01\obj\Debug\testModel01.dll
 C:\Users\redmars\Desktop\kerker\123\testModel01\testModel01\obj\Debug\testModel01.pdb
+C:\Users\redmars\Desktop\KSYY\testModel01\testModel01\bin\testModel01.dll.config
+C:\Users\redmars\Desktop\KSYY\testModel01\testModel01\bin\testModel01.dll
+C:\Users\redmars\Desktop\KSYY\testModel01\testModel01\bin\testModel01.pdb
+C:\Users\redmars\Desktop\KSYY\testModel01\testModel01\bin\CKEditor.NET.pdb
+C:\Users\redmars\Desktop\KSYY\testModel01\testModel01\obj\Debug\testModel01.csprojResolveAssemblyReference.cache
+C:\Users\redmars\Desktop\KSYY\testModel01\testModel01\obj\Debug\testModel01.dll
+C:\Users\redmars\Desktop\KSYY\testModel01\testModel01\obj\Debug\testModel01.pdb

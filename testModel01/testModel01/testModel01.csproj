@@ -73,6 +73,7 @@
     <Content Include="BackEnd\BS_入住事項insertCommodity.aspx" />
     <Content Include="BackEnd\BS_前台輪播編輯.aspx" />
     <Content Include="BackEnd\BS_床位編輯.aspx" />
+    <Content Include="BackEnd\BS_影片播放.aspx" />
     <Content Include="BackEnd\BS_收費標準表.aspx" />
     <Content Include="BackEnd\BS_收費標準表Content.aspx" />
     <Content Include="BackEnd\BS_收費標準表Edit.aspx" />
@@ -80,6 +81,7 @@
     <Content Include="BackEnd\BS_連結.aspx" />
     <Content Include="BackEnd\BS_關於康欣.aspx" />
     <Content Include="BackEnd\BS_床位顯示_地圖.aspx" />
+    <Content Include="BackEnd\BS_編輯影片.aspx" />
     <Content Include="BackEnd\WebForm7.aspx" />
     <Content Include="BackEnd\BS_床位顯示_表格.aspx" />
     <Content Include="bin\testModel01.dll" />
@@ -790,6 +792,13 @@
     <Compile Include="BackEnd\BS_床位編輯.aspx.designer.cs">
       <DependentUpon>BS_床位編輯.aspx</DependentUpon>
     </Compile>
+    <Compile Include="BackEnd\BS_影片播放.aspx.cs">
+      <DependentUpon>BS_影片播放.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackEnd\BS_影片播放.aspx.designer.cs">
+      <DependentUpon>BS_影片播放.aspx</DependentUpon>
+    </Compile>
     <Compile Include="BackEnd\BS_收費標準表.aspx.cs">
       <DependentUpon>BS_收費標準表.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -813,6 +822,7 @@
     </Compile>
     <Compile Include="BackEnd\BS_收費評估表.aspx.cs">
       <DependentUpon>BS_收費評估表.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="BackEnd\BS_收費評估表.aspx.designer.cs">
       <DependentUpon>BS_收費評估表.aspx</DependentUpon>
@@ -851,6 +861,13 @@
     </Compile>
     <Compile Include="BackEnd\BS_床位顯示_地圖.aspx.designer.cs">
       <DependentUpon>BS_床位顯示_地圖.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BackEnd\BS_編輯影片.aspx.cs">
+      <DependentUpon>BS_編輯影片.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackEnd\BS_編輯影片.aspx.designer.cs">
+      <DependentUpon>BS_編輯影片.aspx</DependentUpon>
     </Compile>
     <Compile Include="BackEnd\WebForm7.aspx.cs">
       <DependentUpon>WebForm7.aspx</DependentUpon>

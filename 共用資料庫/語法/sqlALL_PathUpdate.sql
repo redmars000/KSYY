@@ -18,6 +18,7 @@ select * from T康欣_活動剪影
 select * from T後台登入系統
 select * from t連結
 select * from t收費評估表
+select * from tUrl
 
 -----------------------------------------------------------------------------------------------------------
 
@@ -33,6 +34,7 @@ drop table T康欣_活動剪影
 drop table T後台登入系統
 drop table t連結
 drop table t收費評估表
+drop table tUrl
 
 -----------------------------------------------------------------------------------------------------------
 
@@ -445,3 +447,14 @@ insert into t收費評估表 values
 ('1分輕度(30000元)',NULL,NULL,NULL),
 ('2分中度(35000元)',NULL,NULL,NULL),
 ('3分重度(40000元)',NULL,NULL,NULL);
+
+-----------------------------------------------------------------------------------------------------------
+
+create table tUrl
+(fId int primary key identity(1,1),
+ fUrl nvarchar(max),
+ fSubject nvarchar(max),
+ f1 nvarchar(max),
+ f2 nvarchar(max),
+ f3 nvarchar(max)
+ )

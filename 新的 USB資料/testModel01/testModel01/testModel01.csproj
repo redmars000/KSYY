@@ -754,6 +754,7 @@
     </Compile>
     <Compile Include="BackEnd\BS_修改密碼.aspx.cs">
       <DependentUpon>BS_修改密碼.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="BackEnd\BS_修改密碼.aspx.designer.cs">
       <DependentUpon>BS_修改密碼.aspx</DependentUpon>
@@ -907,6 +908,7 @@
     </Compile>
     <Compile Include="FrontEnd\影片播放.aspx.cs">
       <DependentUpon>影片播放.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="FrontEnd\影片播放.aspx.designer.cs">
       <DependentUpon>影片播放.aspx</DependentUpon>

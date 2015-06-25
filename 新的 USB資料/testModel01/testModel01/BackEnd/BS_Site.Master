@@ -13,13 +13,13 @@
     <script src="/./Scripts/jquery-1.9.1.js"></script>
     <script src="/./Scripts/bootstrap.js"></script>
     <script src="/./Scripts/Sidebar.js"></script>
-    <script src="/./Scripts/BackEndUI.js"></script>    
+    <%--<script src="/./Scripts/BackEndUI.js"></script>--%>    
 
 </head>
 <body>
-    <div id="wrap">
+    <%--<div id="wrap">
         <img class="bgfade" src="/./BackEndImg/BackEndImg01.jpg">
-    </div>
+    </div>--%>
 
     <form id="form1" runat="server">        
         <div id="wrapper">
@@ -28,7 +28,7 @@
                 <ul class="nav sidebar-nav main-menu">
                     <li class="sidebar-brand" style="height: 150px">
                         <div style="margin-top: 30px; text-align:center">
-                            <img src="/./BackEndImg/ks.png" />
+                            <img src="/./BackEndImg/ks.png" style="width:75px;height:70px" />
                         </div>
                     </li>
                     <li>
@@ -58,7 +58,7 @@
                     </li>                    
                     <li>
                         <a runat="server" href="~/BackEnd/BS_前台輪播編輯.aspx">
-                            <span class="glyphicon glyphicon-book" aria-hidden="true"></span>前台輪播編輯<span class="icon"></span>
+                            <span class="glyphicon glyphicon-book" aria-hidden="true"></span> 前台輪播編輯<span class="icon"></span>
                         </a>
                     </li>
                     <li>
@@ -97,17 +97,26 @@
                             <li><a id="A2" runat="server" href="~/BackEnd/BS_床位顯示_表格.aspx?">表格顯示<span class="icon"></span></a></li>
                             <li class="dropdown-header divider"></li>
                         </ul>
-                    </li>     
-                </ul>
-                <footer class="footer">
-                    <asp:Button ID="Button1" runat="server" Text="登出" OnClick="Button1_Click" OnClientClick="if (confirm('確定登出。')==false) {return false;}" />
-                    <div>
-                        <p class="text-muted">
-                            &copy; <%: DateTime.Now.Year %> - KSYY<br />
-                            <a runat="server" href="/./FrontEnd/Main.aspx">回首頁</a>
+                    </li>
+                    <li>
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                    </li>
+                    <li>
+                        <p class="text-muted" style="text-align:center">
+                            &copy; <%: DateTime.Now.Year %> - KSYY
+                            <%--<a runat="server" href="/./FrontEnd/Main.aspx">回首頁</a>--%>
+                            <br />
+                            <asp:Button ID="ButtonBack" runat="server" CssClass="btn btn-success" Text="回首頁" OnClick="ButtonBack_Click"/>
+                            <asp:Button ID="Button1" runat="server" CssClass="btn btn-primary" Text="登出" OnClick="Button1_Click" OnClientClick="if (confirm('確定登出。')==false) {return false;}" />
                         </p>
-                    </div>
-                </footer>
+                    </li>
+                </ul>
+                <%--<footer class="footer">
+                </footer> --%>       
             </nav>
 
             <div id="page-content-wrapper">

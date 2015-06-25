@@ -38,9 +38,9 @@ namespace testModel01.FrontEnd
                     strVideoSub += "</div>";
                     strVideoSub += "<div class='portfolio-details'>";
                     strVideoSub += "<a href='#'>";
-                    strVideoSub += "<h4>test1</h4>";
-                    strVideoSub += "<span>test</span>";
-                    strVideoSub += "<span>test</span>";
+                    strVideoSub += "<h4>" + sdrVideo["fSubject"].ToString() + "</h4>";
+                    //strVideoSub += "<span>test</span>";
+                    //strVideoSub += "<span>test</span>";
                     strVideoSub += "</a>";
                     strVideoSub += "</div>";
                     strVideoSub += "</div>";

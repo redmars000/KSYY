@@ -71,28 +71,45 @@
     <div class="row">
         <div class="col-md-8">
             <h4 class="classic-title"><span>聯絡我們</span></h4>
-            <form role="form" class="contact-form" id="contact-form" method="post">
-                <div class="form-group">
-                    <div class="controls">
-                        <input type="text" placeholder="姓名" name="name">
+            <form runat="server" role="form" class="contact-form" method="post">
+                <div id="contact-form">
+                    <div class="form-group">
+                        <div class="controls">
+                            <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ErrorMessage="*請輸入信箱"
+                                ControlToValidate="YourEmail" ValidationGroup="save" ForeColor="Red" />
+                            <asp:TextBox ID="YourEmail" runat="server" type="email" class="email" placeholder="信箱" name="email" />
+                            <asp:RegularExpressionValidator runat="server" ID="RegularExpressionValidator23"
+                                SetFocusOnError="true" Text="Example: username@gmail.com" ControlToValidate="YourEmail"
+                                ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*" Display="Dynamic"
+                                ValidationGroup="save" />
+                        </div>
                     </div>
-                </div>                
-                <div class="form-group">
-                    <div class="controls">
-                        <input type="email" class="email" placeholder="信箱" name="email">
+                    <div class="form-group">
+                        <div class="controls">
+                            <asp:RequiredFieldValidator ID="RequiredFieldValidator11" runat="server" ErrorMessage="*請輸入密碼"
+                                ControlToValidate="YourPassword" ValidationGroup="save" ForeColor="Red" />
+                            <asp:TextBox ID="YourPassword" runat="server" type="text" placeholder="密碼" name="name" TextMode="Password" />
+                        </div>
                     </div>
+                    <div class="form-group">
+                        <div class="controls">
+                            <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ErrorMessage="*請輸入主旨"
+                                ControlToValidate="YourSubject" ValidationGroup="save" ForeColor="Red" />
+                            <asp:TextBox ID="YourSubject" runat="server" type="text" class="requiredField" placeholder="主旨" name="subject" />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="controls">
+                            <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ErrorMessage="*請輸入訊息"
+                                ControlToValidate="Comments" ValidationGroup="save" ForeColor="Red" />
+                            <asp:TextBox ID="Comments" runat="server" TextMode="MultiLine" Rows="10" placeholder="訊息" name="message" />
+                        </div>
+                    </div>
+                    <asp:Button ID="btnSubmit" runat="server" Text="送出" OnClick="ButtonSendMail_Click" ValidationGroup="save" CssClass="btn-system btn-large" /><div id="success" style="color: #34495e;"></div>
+                    <p>
+                        <asp:Label ID="DisplayMessage" runat="server" Visible="false" />
+                    </p>
                 </div>
-                <div class="form-group">
-                    <div class="controls">
-                        <input type="text" class="requiredField" placeholder="主旨" name="subject">
-                    </div>
-                </div>
-                <div class="form-group">
-                    <div class="controls">
-                        <textarea rows="7" placeholder="訊息" name="message"></textarea>
-                    </div>
-                </div>
-                <button type="submit" id="submit" class="btn-system btn-large">送出</button><div id="success" style="color: #34495e;"></div>
             </form>
         </div>
 

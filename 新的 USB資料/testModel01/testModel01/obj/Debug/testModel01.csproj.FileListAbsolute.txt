@@ -107,3 +107,9 @@ C:\Users\iii\Desktop\github\KSYY\新的 USB資料\testModel01\testModel01\bin\CK
 C:\Users\iii\Desktop\github\KSYY\新的 USB資料\testModel01\testModel01\obj\Debug\testModel01.csprojResolveAssemblyReference.cache
 C:\Users\iii\Desktop\github\KSYY\新的 USB資料\testModel01\testModel01\obj\Debug\testModel01.dll
 C:\Users\iii\Desktop\github\KSYY\新的 USB資料\testModel01\testModel01\obj\Debug\testModel01.pdb
+D:\GitHub\KSYY\新的 USB資料\testModel01\testModel01\bin\testModel01.dll.config
+D:\GitHub\KSYY\新的 USB資料\testModel01\testModel01\bin\testModel01.dll
+D:\GitHub\KSYY\新的 USB資料\testModel01\testModel01\bin\testModel01.pdb
+D:\GitHub\KSYY\新的 USB資料\testModel01\testModel01\obj\Debug\testModel01.csprojResolveAssemblyReference.cache
+D:\GitHub\KSYY\新的 USB資料\testModel01\testModel01\obj\Debug\testModel01.dll
+D:\GitHub\KSYY\新的 USB資料\testModel01\testModel01\obj\Debug\testModel01.pdb

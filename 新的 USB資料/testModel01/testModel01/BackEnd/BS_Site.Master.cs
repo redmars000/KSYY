@@ -21,6 +21,11 @@ namespace testModel01
         protected void Button1_Click(object sender, EventArgs e)
         {
             Session["login"] = null;
+            Response.Redirect(@"\.\Login.aspx");
+        }
+
+        protected void ButtonBack_Click(object sender, EventArgs e)
+        {
             Response.Redirect(@"\.\FrontEnd\Main.aspx");
         }
     }

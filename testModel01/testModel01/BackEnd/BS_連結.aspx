@@ -157,8 +157,11 @@
                     </ItemTemplate>
                     <ControlStyle Width="50px" />
                 </asp:TemplateField>
-                <asp:BoundField DataField="fId" HeaderText="fId" InsertVisible="False" ReadOnly="True" SortExpression="fId" Visible="False" />
-                    <asp:TemplateField HeaderText="網站名稱" SortExpression="fName">
+                <asp:BoundField DataField="fId" HeaderText="編號" InsertVisible="False" ReadOnly="True" SortExpression="fId" >
+                    <HeaderStyle CssClass="info" />
+                    <ItemStyle HorizontalAlign="Center" />
+                    </asp:BoundField>
+<asp:TemplateField HeaderText="網站名稱" SortExpression="fName">
                         <EditItemTemplate>
                             <asp:TextBox ID="TextBox1" runat="server" Text='<%# Bind("fName") %>' Width="100%"></asp:TextBox>
                         </EditItemTemplate>

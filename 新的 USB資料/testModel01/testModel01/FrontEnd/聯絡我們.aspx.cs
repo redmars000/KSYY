@@ -12,10 +12,7 @@ namespace testModel01
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            YourSubject.Text = "";
-            YourEmail.Text = "";
-            YourPassword.Text = "";
-            Comments.Text = "";
+
         }
 
         protected void SendMail()
@@ -47,14 +44,25 @@ namespace testModel01
         {
             try
             {
-                //here on button click what will done 
-                SendMail();
-                DisplayMessage.Text = "您的Email已發送成功!";
-                DisplayMessage.Visible = true;
-                YourSubject.Text = "";
-                YourEmail.Text = "";
-                YourPassword.Text = "";
-                Comments.Text = "";
+                //here on button click what will done
+                if (YourPassword.Text != YourPasswordCheck.Text)
+                {
+                    DisplayMessage.Text = "*密碼錯認錯誤!";
+                    DisplayMessage.Visible = true;                  
+                }
+                else
+                {
+                    SendMail();
+                    DisplayMessage2.Text = "Email已發送成功!";
+                    DisplayMessage2.Visible = true;
+                    DisplayMessage.Text = "";
+                    YourPasswordCheck.Text = "";
+                    YourSubject.Text = "";
+                    YourEmail.Text = "";
+                    YourPassword.Text = "";
+                    Comments.Text = "";
+                }
+
             }
             catch (Exception) { }
         }

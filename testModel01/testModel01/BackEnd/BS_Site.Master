@@ -55,12 +55,7 @@
                         <a runat="server" href="~/BackEnd/BS_連結.aspx">
                             <span class="glyphicon glyphicon-tag" aria-hidden="true"></span> 前台連結編輯<span class="icon"></span>
                         </a>
-                    </li>
-                    <li>
-                        <a runat="server" href="~/BackEnd/BS_編輯影片.aspx">
-                            <span class="glyphicon glyphicon-asterisk" aria-hidden="true"></span> 編輯影片<span class="icon"></span>
-                        </a>
-                    </li>
+                    </li>                    
                     <li>
                         <a runat="server" href="~/BackEnd/BS_前台輪播編輯.aspx">
                             <span class="glyphicon glyphicon-book" aria-hidden="true"></span>前台輪播編輯<span class="icon"></span>
@@ -83,7 +78,12 @@
                             <li><a runat="server" href="~/BackEnd/BS_活動剪影後台.aspx?witchphoto=5">義剪照片<span class="icon"></span></a></li>
                             <li class="dropdown-header divider"></li>
                         </ul>
-                    </li>       
+                    </li>
+        	    <li>
+                        <a runat="server" href="~/BackEnd/BS_編輯影片.aspx">
+                            <span class="glyphicon glyphicon-asterisk" aria-hidden="true"></span> 編輯影片<span class="icon"></span>
+                        </a>
+                    </li>
                     <li>
                         <a id="A3" runat="server" href="~/BackEnd/BS_修改密碼.aspx">
                             <span class="glyphicon glyphicon-lock" aria-hidden="true"></span> 修改後台密碼<span class="icon"></span>

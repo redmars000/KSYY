@@ -18,6 +18,7 @@ select * from T康欣_活動剪影
 select * from T後台登入系統
 select * from t連結
 select * from tUrl
+select * from t收費評估表
 
 -----------------------------------------------------------------------------------------------------------
 
@@ -33,6 +34,7 @@ drop table T康欣_活動剪影
 drop table T後台登入系統
 drop table t連結
 drop table tUrl
+drop table t收費評估表
 
 -----------------------------------------------------------------------------------------------------------
 
@@ -277,7 +279,11 @@ values('庭院環境',NULL,NULL,NULL,NULL,'\.\pic\康欣_照片\慶生\慶生_102 (1).jpg','
 	  (NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'\.\pic\康欣_照片\復健\復健_L (19).jpg','復健_L (19).jpg',NULL,NULL,NULL,NULL),
 	  (NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'\.\pic\康欣_照片\復健\復健_L (20).jpg','復健_L (20).jpg',NULL,NULL,NULL,NULL),
 	  (NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'\.\pic\康欣_照片\復健\復健_L (21).jpg','復健_L (21).jpg',NULL,NULL,NULL,NULL),
-	  (NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'\.\pic\康欣_照片\復健\復健_L (22).jpg','復健_L (22).jpg',NULL,NULL,NULL,NULL);
+	  (NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'\.\pic\康欣_照片\復健\復健_L (22).jpg','復健_L (22).jpg',NULL,NULL,NULL,NULL),
+	  (NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'\.\pic\康欣_照片\義剪\義剪_L (1).jpg','義剪_L (1).jpg',NULL,NULL),
+	  (NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'\.\pic\康欣_照片\義剪\義剪_L (2).jpg','義剪_L (2).jpg',NULL,NULL),
+	  (NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'\.\pic\康欣_照片\義剪\義剪_L (3).jpg','義剪_L (3).jpg',NULL,NULL),
+	  (NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'\.\pic\康欣_照片\義剪\義剪_L (4).jpg','義剪_L (4).jpg',NULL,NULL);
 	  --('NULL','NULL','NULL','NULL','NULL','NULL','NULL','NULL','NULL','NULL','NULL','NULL','NULL','NULL','NULL'),
 
 
@@ -408,3 +414,48 @@ create table tUrl
  f2 nvarchar(max),
  f3 nvarchar(max)
  )
+
+-----------------------------------------------------------------------------------------------------------
+
+create table t收費評估表
+(f1 int primary key identity(1,1),
+ f2 nvarchar(max),
+ f3 nvarchar(max),
+ f4 nvarchar(max),
+ f5 nvarchar(max))
+
+insert into t收費評估表 values
+('病史:','姓名:','性別:',NULL),
+('床號:','出生日期:','評估者:','日期:'),
+('項目','自我照顧能力程度',NULL,NULL),
+('1)進食','可自行進食','A',NULL),
+(NULL,'需協助進食','B',NULL),
+(NULL,'完全需餵食或管灌','C',NULL),
+('2)個人清潔','能自行獨立完成梳洗','A',NULL),
+(NULL,'需部分協助','B',NULL),
+(NULL,'完全依賴','C',NULL),
+('3)穿脫衣服','可自行穿脫衣服、鞋子、輔具','A',NULL),
+(NULL,'需部分協助','B',NULL),
+(NULL,'完全依賴','C',NULL),
+('4)上廁所,如廁','可自行進出廁所、完成如廁','A',NULL),
+(NULL,'需協助倒尿壺、便盆、並清洗','B',NULL),
+(NULL,'失禁換尿布或協助帶至廁所','C',NULL),
+('5)洗澡','可自行脫衣服、洗澡','A',NULL),
+(NULL,'部分協助、參與洗澡','B',NULL),
+(NULL,'完全依賴','C',NULL),
+('6)移位,上下床,輪椅,如廁','獨立上下床及輪椅','A',NULL),
+(NULL,'需注意與部分協助','B',NULL),
+(NULL,'完全依賴','C',NULL),
+('7)行走','可獨立行走','A',NULL),
+(NULL,'部分需協助','B',NULL),
+(NULL,'完全依賴、行走全程配陪伴','C',NULL),
+('8)翻身','可自行翻身','A',NULL),
+(NULL,'需協助翻身','B',NULL),
+(NULL,NULL,NULL,NULL),
+('分級標準','一個C以上,照護費為 3000 元',NULL,NULL),
+(NULL,'三個B以上無C項者照護費為1500元',NULL,NULL),
+(NULL,'二個B以下照護費為0元',NULL,NULL),
+('失智者CDR表評估為:',NULL,NULL,NULL),
+('1分輕度(30000元)',NULL,NULL,NULL),
+('2分中度(35000元)',NULL,NULL,NULL),
+('3分重度(40000元)',NULL,NULL,NULL)

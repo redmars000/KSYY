@@ -49,7 +49,7 @@ namespace testModel01
             {
                 //here on button click what will done 
                 SendMail();
-                DisplayMessage.Text = "Your Comments after sending the mail";
+                DisplayMessage.Text = "您的Email已發送成功!";
                 DisplayMessage.Visible = true;
                 YourSubject.Text = "";
                 YourEmail.Text = "";

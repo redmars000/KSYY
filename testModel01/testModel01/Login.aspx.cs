@@ -38,12 +38,11 @@ namespace testModel01
                 SqlDataSource sds = new SqlDataSource();
                 sds.DataSourceMode = SqlDataSourceMode.DataReader;
                 sds.ConnectionString = str_Data_Source;
-                sds.SelectCommand = "SELECT f密碼 from  T後台登入系統 WHERE f帳號 ='" + TBox_id.Text + "'";
+                sds.SelectCommand = "SELECT * from  T後台登入系統 ";
                 dn = (System.Data.SqlClient.SqlDataReader)sds.Select(DataSourceSelectArguments.Empty);
-                if (dn.HasRows)
-                {
-                    while (dn.Read())
-                    {
+                dn.Read();
+                if (TBox_id.Text == (dn["f帳號"].ToString()))
+                {                   
                         if (TBox_pw.Text == dn["f密碼"].ToString())
                         {
                             Session["login"] = "已登入";
@@ -56,16 +55,13 @@ namespace testModel01
                             Response.Write("<script>alert('密碼錯誤，請重新輸入')</script>");
                             dn = null;
                             return;
-                        }
-                    }
+                        }                    
                 }
                 else
                 {
                     Response.Write("<script>alert('帳號錯誤，請重新輸入')</script>");
                     //Response.Redirect(@"/./Login.aspx");
                 }
-
-
             }
             catch (ArgumentException nex)
             {

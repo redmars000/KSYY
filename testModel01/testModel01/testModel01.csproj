@@ -66,6 +66,7 @@
     <Content Include="BackEnd\BS_Main.aspx" />
     <Content Include="BackEnd\BS_NewsContent.aspx" />
     <Content Include="BackEnd\BS_NewsList.aspx" />
+    <Content Include="BackEnd\BS_修改密碼.aspx" />
     <Content Include="BackEnd\BS_入住事項.aspx" />
     <Content Include="BackEnd\BS_入住事項editAttention.aspx" />
     <Content Include="BackEnd\BS_入住事項editCommodity.aspx" />
@@ -752,6 +753,12 @@
     </Compile>
     <Compile Include="BackEnd\BS_Site.Master.designer.cs">
       <DependentUpon>BS_Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="BackEnd\BS_修改密碼.aspx.cs">
+      <DependentUpon>BS_修改密碼.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BackEnd\BS_修改密碼.aspx.designer.cs">
+      <DependentUpon>BS_修改密碼.aspx</DependentUpon>
     </Compile>
     <Compile Include="BackEnd\BS_入住事項editAttention.aspx.cs">
       <DependentUpon>BS_入住事項editAttention.aspx</DependentUpon>

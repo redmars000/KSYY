@@ -7,72 +7,54 @@
 // </自動產生的>
 //------------------------------------------------------------------------------
 
-namespace testModel01 {
+namespace testModel01.BackEnd {
     
     
-    public partial class BS_Site {
+    public partial class WebForm12 {
         
         /// <summary>
-        /// form1 控制項。
+        /// TBox_pw0 控制項。
         /// </summary>
         /// <remarks>
         /// 自動產生的欄位。
         /// 將移動欄位宣告從設計檔案修改為程式碼後置檔案。
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
+        protected global::System.Web.UI.WebControls.TextBox TBox_pw0;
         
         /// <summary>
-        /// A3 控制項。
+        /// TBox_pw1 控制項。
         /// </summary>
         /// <remarks>
         /// 自動產生的欄位。
         /// 將移動欄位宣告從設計檔案修改為程式碼後置檔案。
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlAnchor A3;
+        protected global::System.Web.UI.WebControls.TextBox TBox_pw1;
         
         /// <summary>
-        /// A1 控制項。
+        /// TBox_pw2 控制項。
         /// </summary>
         /// <remarks>
         /// 自動產生的欄位。
         /// 將移動欄位宣告從設計檔案修改為程式碼後置檔案。
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlAnchor A1;
+        protected global::System.Web.UI.WebControls.TextBox TBox_pw2;
         
         /// <summary>
-        /// A2 控制項。
+        /// btn_change 控制項。
         /// </summary>
         /// <remarks>
         /// 自動產生的欄位。
         /// 將移動欄位宣告從設計檔案修改為程式碼後置檔案。
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlAnchor A2;
+        protected global::System.Web.UI.WebControls.Button btn_change;
         
         /// <summary>
-        /// Button1 控制項。
+        /// btn_clear 控制項。
         /// </summary>
         /// <remarks>
         /// 自動產生的欄位。
         /// 將移動欄位宣告從設計檔案修改為程式碼後置檔案。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Button1;
-        
-        /// <summary>
-        /// BS_HeadContent 控制項。
-        /// </summary>
-        /// <remarks>
-        /// 自動產生的欄位。
-        /// 將移動欄位宣告從設計檔案修改為程式碼後置檔案。
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder BS_HeadContent;
-        
-        /// <summary>
-        /// BS_BodyContent 控制項。
-        /// </summary>
-        /// <remarks>
-        /// 自動產生的欄位。
-        /// 將移動欄位宣告從設計檔案修改為程式碼後置檔案。
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder BS_BodyContent;
+        protected global::System.Web.UI.WebControls.Button btn_clear;
     }
 }

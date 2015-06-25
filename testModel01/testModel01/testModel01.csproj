@@ -476,6 +476,9 @@
     <Content Include="Content\Sidebar.css" />
     <Content Include="fonts\fontawesome-webfont.svg" />
     <Content Include="FrontEnd\Main.aspx" />
+    <Content Include="FrontEnd\WebForm2.aspx" />
+    <Content Include="FrontEnd\影片.aspx" />
+    <Content Include="FrontEnd\影片播放.aspx" />
     <Content Include="FrontEnd\收費標準.aspx" />
     <Content Include="images\1.jpg" />
     <Content Include="images\2.jpg" />
@@ -897,8 +900,30 @@
     <Compile Include="FrontEnd\Site.Master.designer.cs">
       <DependentUpon>Site.Master</DependentUpon>
     </Compile>
+    <Compile Include="FrontEnd\WebForm2.aspx.cs">
+      <DependentUpon>WebForm2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrontEnd\WebForm2.aspx.designer.cs">
+      <DependentUpon>WebForm2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrontEnd\影片.aspx.cs">
+      <DependentUpon>影片.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrontEnd\影片.aspx.designer.cs">
+      <DependentUpon>影片.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrontEnd\影片播放.aspx.cs">
+      <DependentUpon>影片播放.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrontEnd\影片播放.aspx.designer.cs">
+      <DependentUpon>影片播放.aspx</DependentUpon>
+    </Compile>
     <Compile Include="FrontEnd\收費標準.aspx.cs">
       <DependentUpon>收費標準.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="FrontEnd\收費標準.aspx.designer.cs">
       <DependentUpon>收費標準.aspx</DependentUpon>

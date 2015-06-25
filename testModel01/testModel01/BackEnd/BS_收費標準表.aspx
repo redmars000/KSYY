@@ -11,19 +11,19 @@
             
             <asp:BoundField DataField="room" HeaderText="住  房" ReadOnly="True" SortExpression="room">
             <HeaderStyle CssClass="info text-center" Font-Size="Medium" />
-            <ItemStyle CssClass="text-center" Font-Size="Medium"/>
+            <ItemStyle CssClass="text-center" />
             </asp:BoundField>
             <asp:BoundField DataField="price" HeaderText="基本月費（含住房費、水電費、洗衣費、一般伙食費）" SortExpression="price">
             <HeaderStyle CssClass="info text-center" Font-Size="Medium" />
-            <ItemStyle CssClass="text-center" Font-Size="Medium"/>
+            <ItemStyle CssClass="text-center" />
             </asp:BoundField>
             <asp:BoundField DataField="care" HeaderText="特殊照護費" SortExpression="care">
             <HeaderStyle CssClass="info text-center" Font-Size="Medium" />
-            <ItemStyle CssClass="text-center" Font-Size="Medium"/>
+            <ItemStyle CssClass="text-center" />
             </asp:BoundField>
             <asp:BoundField DataField="careprice" HeaderText="費  用" SortExpression="careprice">
             <HeaderStyle CssClass="info text-center" Font-Size="Medium" />
-            <ItemStyle CssClass="text-center" Font-Size="Medium"/>
+            <ItemStyle CssClass="text-center" />
             </asp:BoundField>
             
 

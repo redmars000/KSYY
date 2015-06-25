@@ -86,6 +86,9 @@
                                 <a href="/./FrontEnd/活動剪影.aspx">康欣剪影</a>
                             </li>
                             <li>
+                                <a href="/./FrontEnd/影片播放.aspx">影片播放</a>
+                            </li>
+                            <li>
                                 <a href="#">收費標準</a>
                                 <ul class="dropdown">
                                     <li><a href="/./FrontEnd/收費標準.aspx#收費標準表">收費標準表</a></li>

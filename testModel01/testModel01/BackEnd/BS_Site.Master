@@ -32,15 +32,15 @@
                         </div>
                     </li>
                     <li>
-                        <a runat="server" href="~/BackEnd/BS_NewsList.aspx">
-                            <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span> 最新消息<span class="icon"></span>
-                        </a>
-                    </li>
-                    <li>
                         <a runat="server" href="~/BackEnd/BS_關於康欣.aspx">
                             <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> 關於康欣<span class="icon"></span>
                         </a>
                     </li>
+                    <li>
+                        <a runat="server" href="~/BackEnd/BS_NewsList.aspx">
+                            <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span> 最新消息<span class="icon"></span>
+                        </a>
+                    </li>                    
                     <li>
                         <a runat="server" href="~/BackEnd/BS_收費標準表.aspx">
                             <span class="glyphicon glyphicon-phone" aria-hidden="true"></span> 收費標準表<span class="icon"></span>
@@ -54,6 +54,11 @@
                     <li>
                         <a runat="server" href="~/BackEnd/BS_連結.aspx">
                             <span class="glyphicon glyphicon-tag" aria-hidden="true"></span> 前台連結編輯<span class="icon"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a runat="server" href="~/BackEnd/BS_編輯影片.aspx">
+                            <span class="glyphicon glyphicon-asterisk" aria-hidden="true"></span> 編輯影片<span class="icon"></span>
                         </a>
                     </li>
                     <li>

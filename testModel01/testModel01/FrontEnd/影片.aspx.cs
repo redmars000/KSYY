@@ -5,9 +5,9 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace testModel01.BackEnd
+namespace testModel01.FrontEnd
 {
-    public partial class BS_影片播放 : System.Web.UI.Page
+    public partial class 影片 : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -16,9 +16,6 @@ namespace testModel01.BackEnd
 
         protected void btnClose_Click(object sender, EventArgs e)
         {
-            //Response.Write("alert('132')");
-            //Response.Write("<script>window.opener.location.href='/./BackEnd/BS_編輯影片.aspx';window.close();</script>");
-            //Response.Redirect(@"/./BackEnd/BS_編輯影片.aspx");
             Response.Redirect(this.Page.Request.UrlReferrer.ToString());
         }
     }

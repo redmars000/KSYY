@@ -19,17 +19,20 @@
         <div>
             <asp:ListView ID="ListView1" runat="server" DataSourceID="SqlDataSource1" >
                 <ItemTemplate>
+
                     <div class="modal-header">
-                        <%--<button id="btnClose" runat="server" type="button" class="close" data-dismiss="modal" aria-label="Close" onclick="window.close();window.open('/./BackEnd/BS_編輯影片.aspx')" >
+                        <%--<button id="btnClose" runat="server" type="button" class="close" aria-label="Close" onclick="btnClose_Click" >
                             <span aria-hidden="true">&times;</span>                                       
                         </button>--%>
-                        <asp:Button ID="btn" runat="server" type="button" class="close" data-dismiss="modal" aria-label="Close" OnClientClick="javascript:window.close();window.open('/./BackEnd/BS_編輯影片.aspx');" aria-hidden="true" Text="&times;"/>
-                        <h4 class="modal-title" id="myModalLabel">影片欣賞</h4>
+                        <asp:Button ID="btn" runat="server" type="button" class="close"  aria-label="Close" OnClientClick="" aria-hidden="true" Text="&times;" OnClick="btnClose_Click"/>
+
+                        <h4 class="modal-title" id="myModalLabel" >影片欣賞</h4>
                     </div>
                     <div class="modal-body">
                         
-                        <iframe width="560" height="315" src='<%# "https://www.youtube.com/embed/" + Eval("fUrl") %>' frameborder="0" allowfullscreen></iframe>                        
+                        <iframe style="width: 100%;height:500px; align-items: center; "  src='<%# "https://www.youtube.com/embed/" + Eval("fUrl") %>' frameborder="0" allowfullscreen></iframe>                        
                     </div>
+
                 </ItemTemplate>
             </asp:ListView>
         </div>
@@ -37,3 +40,8 @@
 </body>
 </html>
 <%--<iframe width="560" height="315" src="https://www.youtube.com/embed/PQjovLrnvVo" frameborder="0" allowfullscreen></iframe>--%>
+
+
+<%--<button id="btnClose" runat="server" type="button" class="close" aria-label="Close" onclick="window.close();window.open('/./BackEnd/BS_編輯影片.aspx')" >
+                            <span aria-hidden="true">&times;</span>                                       
+                        </button>--%>

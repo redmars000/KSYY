@@ -20,7 +20,7 @@ namespace testModel01
             // Gmail Address from where you send the mail
             var fromAddress = YourEmail.Text.ToString();
             // any address where the email will be sending
-            var toAddress = "libertas19910308@gmail.com";
+            var toAddress = "iiiclass80@gmail.com";
             //Password of your gmail address
             string fromPassword = YourPassword.Text;
             // Passing the values and make a email formate to display

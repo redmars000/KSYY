@@ -46,6 +46,11 @@
                             <span class="glyphicon glyphicon-phone" aria-hidden="true"></span> 收費標準表<span class="icon"></span>
                         </a>
                     </li>
+		    <li>
+                        <a runat="server" href="~/BackEnd/BS_收費評估表.aspx">
+                            <span class="glyphicon glyphicon-earphone" aria-hidden="true"></span> 收費評估表<span class="icon"></span>
+                        </a>
+                    </li>
                     <li>
                         <a runat="server" href="~/BackEnd/BS_入住事項.aspx">
                             <span class="glyphicon glyphicon-star" aria-hidden="true"></span> 入住注意事項<span class="icon"></span>
@@ -60,12 +65,7 @@
                         <a runat="server" href="~/BackEnd/BS_前台輪播編輯.aspx">
                             <span class="glyphicon glyphicon-book" aria-hidden="true"></span> 前台輪播編輯<span class="icon"></span>
                         </a>
-                    </li>
-                    <li>
-                        <a runat="server" href="~/BackEnd/BS_收費評估表.aspx">
-                            <span class="glyphicon glyphicon-earphone" aria-hidden="true"></span> 收費評估表<span class="icon"></span>
-                        </a>
-                    </li>
+                    </li>                    
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-headphones" aria-hidden="true"></span> 活動剪影<span class="caret"></span></a>
                         <ul class="dropdown-menu" role="menu">
@@ -83,12 +83,7 @@
                         <a runat="server" href="~/BackEnd/BS_編輯影片.aspx">
                             <span class="glyphicon glyphicon-asterisk" aria-hidden="true"></span> 編輯影片<span class="icon"></span>
                         </a>
-                    </li>
-                    <li>
-                        <a id="A3" runat="server" href="~/BackEnd/BS_修改密碼.aspx">
-                            <span class="glyphicon glyphicon-lock" aria-hidden="true"></span> 修改後台密碼<span class="icon"></span>
-                        </a>
-                    </li>             
+                    </li>                                
                      <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-bed" aria-hidden="true"></span> 床位系統<span class="caret"></span></a>
                         <ul class="dropdown-menu" role="menu">
@@ -98,6 +93,11 @@
                             <li class="dropdown-header divider"></li>
                         </ul>
                     </li>
+		    <li>
+                        <a id="A3" runat="server" href="~/BackEnd/BS_修改密碼.aspx">
+                            <span class="glyphicon glyphicon-lock" aria-hidden="true"></span> 修改後台密碼<span class="icon"></span>
+                        </a>
+                    </li> 
                     <li>
                         <br />
                         <br />

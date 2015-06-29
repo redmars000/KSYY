@@ -19,41 +19,17 @@
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="BodyContent" runat="server">
-    <form runat="server">
-    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString='<%$ ConnectionStrings:dbKSYYConnectionString %>' SelectCommand="SELECT * FROM [tUrl]"></asp:SqlDataSource>
-    <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
-    
-    <asp:UpdatePanel ID="UpdatePanel1" runat="server">
-<ContentTemplate>
-    
-    <div class="row">
-        <asp:ListView ID="ListView1" runat="server" DataSourceID="SqlDataSource1" DataKeyNames="fId">
-            <ItemTemplate>
-                <div class="col-sm-6 col-md-3">
-                    <div class="thumbnail">   
-                        <a  href= '<%# Eval("fId", "/./FrontEnd/影片.aspx?fId={0}") %>'  
-                            data-toggle="modal" data-target="#myModal">
-                            <img src=' <%# "http://img.youtube.com/vi/" + Eval("fUrl") +"/0.jpg" %> ' />
-                        </a>   
-                        <%--<asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl='<%# Eval("fId", "/./FrontEnd/影片.aspx?fId={0}") %>' ImageUrl=' <%# "http://img.youtube.com/vi/" + Eval("fUrl") +"/0.jpg" %> ' data-toggle="modal" data-target="#myModal">123</asp:HyperLink>--%>
-                    </div>
-                    <div class="caption">
-                        <h3><%# Eval("fSubject") %></h3>                        
+    <form id="formvideo" runat="server">
+        <asp:SqlDataSource ID="SqlDataSourceVideo" runat="server" ConnectionString='<%$ ConnectionStrings:dbKSYYConnectionString %>' SelectCommand="SELECT * FROM [tUrl]" DataSourceMode="DataReader"></asp:SqlDataSource>
+        <div class="project">
+            <div class="container">
+                <div class="recent-projects">
+                    <h4 class="title"><span>影片播放</span></h4>
+                    <div class="projects-carousel touch-carousel">
+                        <asp:Literal ID="ltlVideo" runat="server"></asp:Literal>
                     </div>
                 </div>
-            </ItemTemplate>
-        </asp:ListView>
-    </div>
-</ContentTemplate>
-    </asp:UpdatePanel>
-        
-    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="static" data-keyboard="false" >
-        <div class="modal-dialog" style="width:50%;">
-            <div class="modal-content" >
             </div>
         </div>
-    </div>
-
-    
     </form>
 </asp:Content>
